@@ -1,15 +1,17 @@
 .home {
     width: 100%;
     height: 6000px; 
-    padding: 0% 15%;
-    padding-top: 30px;
-    box-sizing: border-box;
     background-image: linear-gradient(to top right, #181818, #252525);
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 .nav-bar {
-    width: 100%; 
-    height: 40px; 
+    height: 100px; 
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
@@ -17,7 +19,7 @@
 }
 
 #navlogo {
-    height: 100%;
+    height: 40%;
 }
 
 .nav {
@@ -29,7 +31,68 @@
     text-decoration: none;
     color: white; 
     margin-left: 30px;
+}
 
+.hero {
+    height: calc(100vh - 100px);
+    width: 100%;
+    /* background-color: #343434; */
+    display: flex;
+    align-items: center;
+}
+
+.hero-text-container {
+    height: 500px; 
+    /* background-color: black; */
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    display: flex;
+
+}
+
+.hero-text-container .intro h1 {
+    font-size: 8rem;
+}
+
+#lastName {
+    margin-top: -30px;
+}
+
+#introDesc {
+    width: 50%;
+}
+
+.design-container {
+    writing-mode:vertical-rl;
+    text-align: right;
+}
+
+.develop-container {
+    writing-mode:vertical-rl;
+    text-align: left;
+}
+
+#plus {
+    margin: 10px 0 10px 10px;
+}
+
+.des-anim {
+    width: 1000px;
+    position: absolute;
+    right: 350px;
+    opacity: 0.05;
+}
+
+.round-btn {
+    margin-top: 20px;
+    border: none;
+    padding: .5em 1.50em;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    background-color: #E74949;
+    color: white;
 }
 
 
@@ -37,12 +100,61 @@
 
 
 
+.project-slide {
+    height: 700px;
+    width: 100%;
+    /* background-color: black; */
+}
+
+.project-slide-content {
+    display: flex;
+    position: relative;
+}
+
+.macbook-container {
+    width: 905px; 
+    height: 520px;
+    margin-left: -98px;
+    background-image: url('../images/macbook.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+.site {
+    width: 698px;
+    height: 440px; 
+    margin-top: -30px;
+    background-color: black;
+}
+
+.project-card {
+    width: 100%;
+    height: 400px; 
+    background-color: aquamarine;
+    margin-top: 46px;
+    border-radius: 12px;
+
+}
+
+.dev-anim {
+    width: 1200px;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    opacity: 0.07;
+}
 
 
 
 
 @media screen and (max-width: 1000px) {
-    .home {
-        padding: 0% 10%;
-    }
+
 }

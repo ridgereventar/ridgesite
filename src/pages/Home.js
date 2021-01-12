@@ -3,6 +3,8 @@ import '../styles/Home.css';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
+import Lowfi from '../components/Lowfi';
+
 import logowhite from '../images/ridgelogo_white.png'
 import macbook from '../images/macbook.png';
 
@@ -13,13 +15,6 @@ const Home = (props) => {
         loop: false,
         autoplay: true, 
         animationData: require('../images/designanim2.json')
-    }
-
-    const devAnimOptions = {
-        renderer: 'svg',
-        loop: false,
-        autoplay: true, 
-        animationData: require('../images/devanim.json')
     }
 
     return (
@@ -68,10 +63,7 @@ const Home = (props) => {
 
             <div className="project-slide">
                 <Fade delay={1000}>
-                    <Lottie
-                        className="dev-anim"
-                        options={devAnimOptions}
-                        playingState='play'/>
+                    <Lowfi></Lowfi>
                 </Fade>
 
 

@@ -1,10 +1,7 @@
-.dev-anim {
-    width: 1200px;
-    position: absolute;
-    margin-top: 180px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+.anim-wrapper {
+    width: 1000px;
+    height: max-content; 
+    margin: 0 auto;
+    margin-top: 60px;
     opacity: 0.07;
 }

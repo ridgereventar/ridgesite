@@ -62,10 +62,6 @@ const Home = (props) => {
             </div>
 
             <div className="project-slide">
-                <Fade delay={1000}>
-                    <Lowfi></Lowfi>
-                </Fade>
-
 
                 <div className="container project-slide-content">
                     <div className="macbook-container">
@@ -77,6 +73,9 @@ const Home = (props) => {
 
                     </div>
                 </div>
+                
+                <Lowfi onEnterViewport={() => console.log("enter")} onLeaveViewport={() => console.log("leave")}/>
+
             </div>
 
 

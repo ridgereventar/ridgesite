@@ -70,12 +70,45 @@ const Home = (props) => {
                         </div>
                     </div>
                     <div className="project-card">
-
                     </div>
                 </div>
-                
-                <Lowfi onEnterViewport={() => console.log("enter")} onLeaveViewport={() => console.log("leave")}/>
 
+            </div>
+
+            <Lowfi onEnterViewport={() => console.log("enter")} onLeaveViewport={() => console.log("leave")}/>
+
+            <div className="container skills-content">
+                <h1 className="section-title">Skills</h1>
+                <div className="design-skills-container">
+                    <h2 className="sm-header">DESIGN</h2>
+                    <div className="vect-divider"></div>
+                    <ul className="skills-list">
+                        <li>Sketch</li>
+                        <li>Figma</li>
+                        <li>After Effects</li>
+                    </ul>
+                </div>
+                <div className="dev-skills-container">
+                    <h2 className="sm-header">DEVELOPMENT</h2>
+                    <div className="vect-divider"></div>
+                    <div className="skills-list-container">
+                        <ul className="skills-list">
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+                        <ul className="skills-list">
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                        </ul>
+                        <ul className="skills-list">
+                            <li>MongoDB</li>
+                            <li>Jquery</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
 
 

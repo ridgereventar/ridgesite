@@ -99,9 +99,8 @@
 
 
 
-
 .project-slide {
-    height: 700px;
+    height: max-content;
     width: 100%;
     /* background-color: black; */
 }
@@ -141,10 +140,64 @@
 
 }
 
+.skills-content {
+    display: flex; 
+    margin-top: 30px;
+}
 
+.section-title {
+    color: white; 
+    font-size: 5rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
+.design-skills-container {
+    width: 30%;
+    height: 300px; 
+    /* background-color: blue; */
+    margin-left: 60px;
+}
 
+.dev-skills-container {
+    width: 70%;
+    height: 300px; 
+    /* background-color: grey; */
+    margin-left: 60px;
+}
+
+.sm-header {
+    margin: 13px 0 13px 20px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.vect-divider {
+    width: 100%;
+    height: 6px;
+    background-color: #E74949; 
+
+}
+
+.skills-list-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-list {
+    padding-left: 20px;
+    color: white; 
+    list-style-type: none;
+}
+
+.skills-list li {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
 
 @media screen and (max-width: 1000px) {
 
 }
+
+

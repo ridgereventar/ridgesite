@@ -76,10 +76,19 @@
     margin: 10px 0 10px 10px;
 }
 
-.des-anim {
-    width: 1000px;
+.hero-anim-wrapper {
     position: absolute;
-    right: 350px;
+    width: 1200px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 900px; 
+}
+
+.des-anim {
+    width: 670px;
+    float: right;
+    margin-right: 70px;
     opacity: 0.05;
 }
 
@@ -134,11 +143,37 @@
 .project-card {
     width: 100%;
     height: 400px; 
-    background-color: aquamarine;
+    background-color: #E74949;
     margin-top: 46px;
     border-radius: 12px;
 
 }
+
+.anim-wrapper {
+    width: 850px;
+    height: 562px; 
+    margin: 0 auto;
+    margin-top: 60px;
+    opacity: 0.07;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .skills-content {
     display: flex; 
@@ -153,14 +188,14 @@
 
 .design-skills-container {
     width: 30%;
-    height: 300px; 
+    height: 260px; 
     /* background-color: blue; */
     margin-left: 60px;
 }
 
 .dev-skills-container {
     width: 70%;
-    height: 300px; 
+    height: 260px; 
     /* background-color: grey; */
     margin-left: 60px;
 }
@@ -195,6 +230,21 @@
     font-size: 1.3rem;
     margin-bottom: 15px;
 }
+
+
+.logo-anim-wrapper {
+    height: 560px; 
+    /* background-color: #E74949; */
+}
+
+.logo-anim {
+    width: 750px;
+    opacity: 0.05;
+}
+
+
+
+
 
 @media screen and (max-width: 1000px) {
 

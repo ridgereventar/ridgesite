@@ -1,21 +1,38 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import '../styles/Home.css';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
 import Lowfi from '../components/Lowfi';
+import Trigger from '../components/Trigger';
 
-import logowhite from '../images/ridgelogo_white.png'
+import logowhite from '../images/Rlogo.png'
 import macbook from '../images/macbook.png';
 
 const Home = (props) => {
 
-    const animOptions = {
+    const pepiAnim = {
         renderer: 'svg',
         loop: false,
         autoplay: true, 
-        animationData: require('../images/designanim2.json')
+        animationData: require('../images/designanimFinal.json')
     }
+
+    const devAnim = {
+        renderer: 'svg',
+        loop: false, 
+        autoplay: true,
+        animationData: require('../images/devanimFinal.json')
+    }
+
+    const logoanim = {
+        renderer: 'svg',
+        loop: false, 
+        autoplay: true,
+        animationData: require('../images/logoanim3.json')
+    }
+
+    const [playAnim, setplayAnim] = useState(false);
 
     return (
         <div className="home">
@@ -31,30 +48,44 @@ const Home = (props) => {
 
 
             <div className="hero">
-                <Lottie
+                <div className="hero-anim-wrapper">
+                    <Lottie
+                        className="des-anim"
+                        options={pepiAnim}
+                        playingState='play'/>
+                </div>
+                {/* <Lottie
                     className="des-anim"
-                    options={animOptions}
-                    playingState='play'/>
+                    options={pepiAnim}
+                    playingState='play'/> */}
 
                 <div className="container hero-text-container">
                     <div className="intro">
-                        <h1 id="firstName">Ridge</h1>
-                        <h1 id="lastName">Reventar</h1>
-                        <p id="introDesc">With 7 years experience of free lance graphic design I transitioned my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications</p>
-                        <button className="round-btn">
-                            View my work
-                        </button>
+                        <Fade left>
+                           <h1 id="firstName">Ridge</h1>
+                            <h1 id="lastName">Reventar</h1>
+                            <p id="introDesc">With 7 years experience of free lance graphic design I transitioned my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications</p>
+                            <button className="round-btn">
+                                View my work
+                            </button> 
+                        </Fade>
+                        
                     </div> 
+
+                    
                     <div className="titles">
-                        <div className="design-container">
-                            <span>Graphic</span>
-                            <h1>DESIGNER</h1>
-                        </div>
-                        <h1 id="plus">+</h1>
-                        <div className="develop-container">
-                            <span>Front End</span>
-                            <h1>DEVELOPER</h1>
-                        </div>
+                        <Fade right>
+                            <div className="design-container">
+                                <span>Graphic</span>
+                                <h1>DESIGNER</h1>
+                            </div>
+                            <h1 id="plus">+</h1>
+                            <div className="develop-container">
+                                <span>Front End</span>
+                                <h1>DEVELOPER</h1>
+                            </div>
+                        </Fade>
+                        
 
                     </div>
                     
@@ -75,7 +106,16 @@ const Home = (props) => {
 
             </div>
 
-            <Lowfi onEnterViewport={() => console.log("enter")} onLeaveViewport={() => console.log("leave")}/>
+            <div className="anim-wrapper">
+                {playAnim? 
+                    <Lottie
+                        options={devAnim}
+                        playingState='play'/>
+                    : null
+                }
+            </div>
+
+            <Trigger onEnterViewport={() => setplayAnim(true)} onLeaveViewport={() => console.log("leave")}/>
 
             <div className="container skills-content">
                 <h1 className="section-title">Skills</h1>
@@ -109,6 +149,14 @@ const Home = (props) => {
                     </div>
 
                 </div>
+               
+            </div>
+
+            <div className="container logo-anim-wrapper">
+                <Lottie
+                    className="logo-anim"
+                    options={logoanim}
+                    playingState='play'/>
             </div>
 
 

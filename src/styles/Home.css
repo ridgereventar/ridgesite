@@ -1,6 +1,6 @@
 .home {
     width: 100%;
-    height: 6000px; 
+    height: 2930px; 
     background-image: linear-gradient(to top right, #181818, #252525);
 }
 
@@ -42,11 +42,13 @@
 }
 
 .hero-text-container {
+    width: 1200px;
     height: 500px; 
     /* background-color: black; */
     font-family: 'Source Sans Pro', sans-serif;
     color: white;
     display: flex;
+    justify-content: space-between;
 
 }
 
@@ -59,7 +61,7 @@
 }
 
 #introDesc {
-    width: 50%;
+    width: 55%;
 }
 
 .design-container {
@@ -105,9 +107,6 @@
 }
 
 
-
-
-
 .project-slide {
     height: max-content;
     width: 100%;
@@ -150,14 +149,43 @@
 }
 
 .anim-wrapper {
-    width: 850px;
     height: 562px; 
     margin: 0 auto;
-    margin-top: 60px;
-    opacity: 0.07;
+    margin-top: 30px;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.background-intro {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
 }
 
 
+#background-logo {
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+.background-text {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 35px;
+    width: 80%;
+}
+
+.dev-anim {
+    opacity: 0.06;
+    width: 900px;
+    position: absolute;
+    
+}
 
 
 
@@ -180,11 +208,6 @@
     margin-top: 30px;
 }
 
-.section-title {
-    color: white; 
-    font-size: 5rem;
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
 .design-skills-container {
     width: 30%;
@@ -200,13 +223,7 @@
     margin-left: 60px;
 }
 
-.sm-header {
-    margin: 13px 0 13px 20px;
-    color: white;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 2px;
 
-}
 
 .vect-divider {
     width: 100%;
@@ -220,16 +237,6 @@
     justify-content: space-between;
 }
 
-.skills-list {
-    padding-left: 20px;
-    color: white; 
-    list-style-type: none;
-}
-
-.skills-list li {
-    font-size: 1.3rem;
-    margin-bottom: 15px;
-}
 
 
 .logo-anim-wrapper {
@@ -243,7 +250,134 @@
 }
 
 
+.section-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: white; 
+    font-size: 3rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
+.tools-container { 
+    margin-top: 50px;
+    height: 750px;
+    /* background-color: black; */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.tools-wrapper {
+    margin-top: 20px;
+    height: 500px; 
+    width: 70%; 
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.tool-category {
+    width: 250px; 
+    height: 450px; 
+    /* background-color: #E74949; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool-icon {
+    height: 190px;
+    margin-bottom: 15px;
+}
+
+.sm-header {
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.4rem;
+}
+
+.tools-list {
+    padding: 0;
+    color: white; 
+    list-style-type: none;
+    text-align: center;
+}
+
+.tools-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-container {
+    /* background-color: red; */
+    /* max-width: 780px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container h1 {
+    padding-bottom: 10px;
+}
+
+.projects-nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 300px;
+    /* background-color: red; */
+}
+
+.projects-nav li {
+    color: white;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+}
+
+.active {
+    border-bottom: 2px solid red;
+}
+
+.home2 {
+    width: 100%;
+    height: 3000px; 
+    background-color: white;
+}
+
+
+.projects-grid {
+    max-width: 900px;
+    height: max-content; 
+    padding-top: 50px;
+    /* background-color: gray; */
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+.testimonial-container {
+    height: 500px; 
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+
+}
+
+.testimonial-card {
+    width: 380px; 
+    height: 450px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.testimonial-card img {
+    height: 100px; 
+    width: 100px;
+}
 
 
 @media screen and (max-width: 1000px) {

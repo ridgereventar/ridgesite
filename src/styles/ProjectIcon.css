@@ -1,0 +1,32 @@
+.projicon-container {
+    width: 200px; 
+    height: 200px;
+    /* background-color: white; */
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.1s linear;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.projicon-title {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: -30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    padding-left: 10px;
+    transition: 0.1s linear;
+}
+
+.projicon-container:hover .projicon-title{
+    bottom: 0;
+}
+
+.icon {
+    width: 100%;
+    height: 100%;
+}

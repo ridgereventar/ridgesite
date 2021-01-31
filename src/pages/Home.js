@@ -14,6 +14,9 @@ import macbook from '../images/macbook.png';
 import vectorIcon from '../images/vectorIcon.png';
 import webIcon from '../images/webIcon.png';
 import motionIcon from '../images/motionIcon.png';
+import jazelbites from '../images/jazelbites.png';
+import me from '../images/me.png';
+import suiSample from '../images/suidemo2.mov';
 
 const Home = (props) => {
 
@@ -100,19 +103,17 @@ const Home = (props) => {
                     </div>
                 </div>
 
-                <div className="project-slide">
 
-                    <div className="container project-slide-content">
-                        <div className="macbook-container">
-                            <div className="site">
-
-                            </div>
-                        </div>
-                        <div className="project-card">
+                <div className="container project-slide">
+                    <div className="macbook-container">
+                        <div className="site">
+                            <video src={suiSample} type="video/mp4" autoPlay muted></video>
                         </div>
                     </div>
-
+                    <div className="project-card">
+                    </div>
                 </div>
+
 
                 <div className="container anim-wrapper">
                     
@@ -195,18 +196,42 @@ const Home = (props) => {
 
                 <div className="container testimonial-container">
                     <div className="testimonial-card">
-                        <img className="testimonial-logo" src={PROJECTS[3].iconhover}></img>
-                        <h1>JazelBites</h1>
+                        <img className="testimonial-logo" src={jazelbites}></img>
+                        <h1>Jazel Bites</h1>
+                        <div className="underline"></div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
                         <p>- Jazel Zulueta, Owner</p>
                     </div>
                     <div className="testimonial-card">
-
+                        <img className="testimonial-logo" src={jazelbites}></img>
+                        <h1>NextGen Edu.</h1>
+                        <div className="underline"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  consectetur adipiscing elit, sed! sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <p>- Christopher Gonzales, Co-owner</p>
                     </div>
                     <div className="testimonial-card">
-
+                        <img className="testimonial-logo" src={jazelbites}></img>
+                        <h1>Pepi's Techsuit</h1>
+                        <div className="underline"></div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+                        <p>- Mir Afgan Talpur, Owner</p>
                     </div>
                 </div>
+
+                <div className="container about-container">
+                    <div className="about-text-container">
+                        <h1 className="section-title about-title">About</h1>
+                        <p>With 5 years experience of free lance graphic design I transitioned my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications</p>
+                        <p>I am a designer and front-end web developer currently studying computer science at Ontario Tech University. </p>
+                        <p>Through free lance work over the last 5 years, I have developed a strong passion for design and am continuously striving to transition my skills and knowledge into the web application world.</p>
+                    </div>
+                    <img src={me}></img>
+
+                </div>
+
+            </div>
+
+            <div className="home3">
 
             </div>
         </React.Fragment>

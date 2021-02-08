@@ -11,12 +11,21 @@ import {PROJECTS} from '../helpers/constants';
 
 import logowhite from '../images/Rlogo.png';
 import macbook from '../images/macbook.png';
+import mac from '../images/mac.png';
 import vectorIcon from '../images/vectorIcon.png';
 import webIcon from '../images/webIcon.png';
 import motionIcon from '../images/motionIcon.png';
 import jazelbites from '../images/jazelbites.png';
 import me from '../images/me.png';
-import suiSample from '../images/suidemo2.mov';
+
+import suiSample from '../images/suiDemoFinal.mov';
+import nextSample from '../images/nextDemo.mov';
+
+import suiT from '../images/titles/suititle.png';
+import nextT from '../images/titles/nextlogo.png';
+import uniT from '../images/titles/unititle.png';
+import arrow from '../images/arrow.png';
+
 
 const Home = (props) => {
 
@@ -43,9 +52,55 @@ const Home = (props) => {
 
     const [playAnim, setplayAnim] = useState(false);
 
+    const [slideArray, setSlideArray] = useState([
+        {
+            title: suiT,
+            width: "50%",
+            color: "#FFFFFF",
+            bgcolor: "#2A2A2A",
+            demo: suiSample,
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        },
+        {
+            title: nextT,
+            width: "60%",
+            color: "#000000",
+            bgcolor: "#C4C4C4",
+            demo: nextSample,
+            desc: "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            title: uniT,
+            width: "100%",
+            color: "#000000",
+            bgcolor: "#FAE19D",
+            demo: suiSample,
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+    ])
+
+    const [displayElement, setDisplayElement] = useState(slideArray[0]);
+    let index = 1;
+
+    useEffect(() => {
+        console.log(slideArray.length)
+        const interval = setInterval(() => {
+            setDisplayElement(slideArray[index]);
+            index += 1;
+            if(index >= slideArray.length) {
+                index = 0;
+            }
+        }, 5000);
+        return () => {
+            clearInterval(interval);
+        }
+    }, []);
+
+
+
     return (
         <React.Fragment>
-
+            {console.log(index)}
             <div className="home">
 
                 <div className="container nav-bar">
@@ -103,16 +158,41 @@ const Home = (props) => {
                     </div>
                 </div>
 
-
-                <div className="container project-slide">
-                    <div className="macbook-container">
-                        <div className="site">
-                            <video src={suiSample} type="video/mp4" autoPlay muted></video>
+                <div className="container slide">
+                    <div className="card" style={{color: displayElement.color, backgroundColor: displayElement.bgcolor}}>
+                        <img id="cardTitle" src={displayElement.title} style={{width: displayElement.width}}></img>
+                        <p>{displayElement.desc}</p>
+                        <img id="cardArrow" src={arrow}></img>
+                        <div className="load-bar"></div>
+                    </div>
+                    <div className="mac-container">
+                        <img src={mac}></img>
+                        <div className="demo">
+                            <video src={displayElement.demo} type="video/mp4" autoPlay muted></video>
                         </div>
                     </div>
-                    <div className="project-card">
-                    </div>
+                    
                 </div>
+
+                {/* <div className="container project-slide">
+                    <Fade bottom> 
+                        <div className="macbook-container">
+                            <div className="site">
+                                <video src={displayElement.demo} type="video/mp4" autoPlay muted></video>
+                            </div>
+                        </div>
+                    </Fade>
+                    <Fade left delay={500}>
+                        <div className="project-card">
+
+                        </div>
+                        <div className="project-card" style={{color: displayElement.color, backgroundColor: displayElement.bgcolor}}>
+                            <img src={displayElement.title}/>
+                            <p>{displayElement.desc}</p>
+                        </div>
+                    </Fade>
+                    
+                </div> */}
 
 
                 <div className="container anim-wrapper">

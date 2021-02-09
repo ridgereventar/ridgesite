@@ -1,7 +1,8 @@
 .home {
     width: 100%;
     height: max-content; 
-    background-image: linear-gradient(to top right, #121212, #212121);
+    /* background-image: linear-gradient(to top right, #090909, #121212); */
+    background-image: linear-gradient(to top right, #090909, #212121);
     overflow: hidden;
 }
 
@@ -122,13 +123,13 @@
 .mac-container {
     width: 1200px;
     height: max-content;
-    margin-right: -425px;
-    /* background-color: red; */
-    /* overflow: hidden; */
+    margin-left: -105px;
     display: flex; 
     justify-content: center;
     align-items: center;
+    /* background-color: red; */
     position: relative;
+    z-index: 3;
 }
 
 .mac-container img {
@@ -140,7 +141,7 @@
     height: 80%;
     margin-top: -1vw;
     border-radius: 10px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     position: absolute;
 }
 
@@ -152,27 +153,28 @@
 
 .card {
     width: 380px; 
-    height: 300px;
-    margin-right: -145px;
-    padding: 100px 90px;
-    border-radius: 15px 0 0 15px;
-    background-color: #2A2A2A;
+    height: 250px;
     color: white;
     display: flex; 
     flex-direction: column; 
-    justify-content: space-between;
     position: relative;
+    /* background-color: blue; */
 }
 
-#cardTitle {
-    width: 50%;
-    /* margin-bottom: 20px; */
+.title-container {
+    height: 120px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
+
+
+
 
 #cardArrow {
     width: 20px; 
     float: right;
-    align-self: flex-end;
+
 }
 
 .load-bar {
@@ -181,9 +183,9 @@
     background-color: black;
     border-radius: 20px;
     transition: 5s ease;
-    animation-name: changewidth;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation: changewidth 10s linear infinite;
+    position: absolute;
+    bottom: 0;
 
 }
 
@@ -201,58 +203,8 @@
 
 
 
-.project-slide {
-    margin-top: 50px;
-    height: 585px;
-    /* position: relative; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: black; */
-}
 
-.macbook-container {
-    width: 85%; 
-    height: 100%;
-    margin-left: -93px;
-    margin-bottom: -25px;
-    background-image: url('../images/macbook.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    background-color: aquamarine;
-}
 
-.site {
-    width: 77.5%;
-    height: 35vw; 
-    margin-top: -2.5vw;
-    background-color: red;
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.site video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.project-card {
-    flex: 1;
-    height: 100%;
-    padding: 50px 0px 50px 30px;
-    box-sizing: border-box;
-    margin-left: -105px; 
-    /* background-color: #2A2A2A; */
-    border-radius: 0px 12px 12px 0;
-    z-index: 1;
-
-}
 
 .anim-wrapper {
     height: 506px; 

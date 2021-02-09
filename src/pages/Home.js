@@ -21,9 +21,9 @@ import me from '../images/me.png';
 import suiSample from '../images/suiDemoFinal.mov';
 import nextSample from '../images/nextDemo.mov';
 
-import suiT from '../images/titles/suititle.png';
-import nextT from '../images/titles/nextlogo.png';
-import uniT from '../images/titles/unititle.png';
+import suiT from '../images/suiT.png';
+import nextT from '../images/nextgenT.png';
+import uniT from '../images/unicityT.png';
 import arrow from '../images/arrow.png';
 
 
@@ -59,7 +59,7 @@ const Home = (props) => {
             color: "#FFFFFF",
             bgcolor: "#2A2A2A",
             demo: suiSample,
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
         },
         {
             title: nextT,
@@ -67,7 +67,7 @@ const Home = (props) => {
             color: "#000000",
             bgcolor: "#C4C4C4",
             demo: nextSample,
-            desc: "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            desc: "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut magna aliqua."
         },
         {
             title: uniT,
@@ -75,7 +75,7 @@ const Home = (props) => {
             color: "#000000",
             bgcolor: "#FAE19D",
             demo: suiSample,
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut enim ad minim veniam."
         }
     ])
 
@@ -90,7 +90,7 @@ const Home = (props) => {
             if(index >= slideArray.length) {
                 index = 0;
             }
-        }, 5000);
+        }, 10000);
         return () => {
             clearInterval(interval);
         }
@@ -159,19 +159,25 @@ const Home = (props) => {
                 </div>
 
                 <div className="container slide">
-                    <div className="card" style={{color: displayElement.color, backgroundColor: displayElement.bgcolor}}>
-                        <img id="cardTitle" src={displayElement.title} style={{width: displayElement.width}}></img>
-                        <p>{displayElement.desc}</p>
-                        <img id="cardArrow" src={arrow}></img>
-                        <div className="load-bar"></div>
-                    </div>
-                    <div className="mac-container">
-                        <img src={mac}></img>
-                        <div className="demo">
-                            <video src={displayElement.demo} type="video/mp4" autoPlay muted></video>
+                    <Fade left delay={300}>
+                        <div className="mac-container">
+                            <img src={mac}></img>
+                            <div className="demo">
+                                <video src={displayElement.demo} type="video/mp4" autoPlay muted></video>
+                            </div>
                         </div>
-                    </div>
-                    
+                    </Fade>
+                    <Fade left delay={1000}>
+                        <div className="card">
+                            <div className="title-container">
+                                <img id="cardTitle" src={displayElement.title} style={{width: displayElement.width}}></img>
+                            </div>
+                            <p>{displayElement.desc}</p>
+                            {/* <img id="cardArrow" src={arrow}></img> */}
+                            <div className="load-bar"></div>
+                        </div>
+                    </Fade>
+
                 </div>
 
                 {/* <div className="container project-slide">

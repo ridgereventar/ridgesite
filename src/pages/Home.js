@@ -12,9 +12,9 @@ import {PROJECTS} from '../helpers/constants';
 import logowhite from '../images/Rlogo.png';
 import macbook from '../images/macbook.png';
 import mac from '../images/mac.png';
-import vectorIcon from '../images/vectorIcon.png';
-import webIcon from '../images/webIcon.png';
-import motionIcon from '../images/motionIcon.png';
+// import vectorIcon from '../images/vectorIcon.png';
+// import webIcon from '../images/webIcon.png';
+// import motionIcon from '../images/motionIcon.png';
 import jazelbites from '../images/jazelbites.png';
 import me from '../images/me.png';
 
@@ -26,6 +26,9 @@ import nextT from '../images/nextgenT.png';
 import uniT from '../images/unicityT.png';
 import arrow from '../images/arrow.png';
 
+import designIcon from '../images/designIcon.json';
+import developIcon from '../images/devIcon.json';
+import motionIcon from '../images/motionIcon.json';
 
 const Home = (props) => {
 
@@ -43,14 +46,37 @@ const Home = (props) => {
         animationData: require('../images/devanimFinal.json')
     }
 
-    const logoanim = {
+    const desIcon = {
         renderer: 'svg',
-        loop: false, 
+        loop: false,
         autoplay: true,
-        animationData: require('../images/logoanim3.json')
+        animationData: designIcon
+    }
+
+    const devIcon = {
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        animationData: developIcon
+    }
+
+    const motIcon = {
+        renderer: 'svg',
+        loop: false,
+        autoplay: true,
+        animationData: motionIcon
     }
 
     const [playAnim, setplayAnim] = useState(false);
+    const [playDesIcon, setPlayDesIcon] = useState(false);
+    const [playDevIcon, setPlayDevIcon] = useState(false);
+    const [playMotIcon, setPlayMotIcon] = useState(false);
+
+    const playIcons = () => {
+        setPlayDesIcon(true);
+        setTimeout(() => {setPlayDevIcon(true);}, 500);
+        setTimeout(() => {setPlayMotIcon(true);}, 1000);
+    }
 
     const [slideArray, setSlideArray] = useState([
         {
@@ -95,7 +121,6 @@ const Home = (props) => {
             clearInterval(interval);
         }
     }, []);
-
 
 
     return (
@@ -180,32 +205,14 @@ const Home = (props) => {
 
                 </div>
 
-                {/* <div className="container project-slide">
-                    <Fade bottom> 
-                        <div className="macbook-container">
-                            <div className="site">
-                                <video src={displayElement.demo} type="video/mp4" autoPlay muted></video>
-                            </div>
-                        </div>
-                    </Fade>
-                    <Fade left delay={500}>
-                        <div className="project-card">
-
-                        </div>
-                        <div className="project-card" style={{color: displayElement.color, backgroundColor: displayElement.bgcolor}}>
-                            <img src={displayElement.title}/>
-                            <p>{displayElement.desc}</p>
-                        </div>
-                    </Fade>
-                    
-                </div> */}
-
 
                 <div className="container anim-wrapper">
                     
                     <div className="background-intro">
-                        <img id="background-logo" src={logowhite}></img>
-                        <p className="background-text">Through 7 years experience of free lance design I expanded my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications.</p>
+                        <Fade delay={1000}>
+                            <img id="background-logo" src={logowhite}></img>
+                            <p className="background-text">Through 7 years experience of free lance design I expanded my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications.</p>
+                        </Fade>
                     </div>
 
                     {playAnim? 
@@ -220,44 +227,81 @@ const Home = (props) => {
                 <Trigger onEnterViewport={() => setplayAnim(true)} onLeaveViewport={() => console.log("leave")}/>
 
                 <div className="container tools-container">
-                    <h1 className="section-title">Tools</h1>
+                    {playDesIcon?
+                    <Fade>
+                        <h1 className="section-title">Tools</h1>
+                    </Fade>
+                    : null}
+                
                     <div className="tools-wrapper">
                         <div className="tool-category">
-                            <img className="tool-icon" src={vectorIcon}></img>
-                            <h1 className="sm-header">DESIGN</h1>
-                            <ul className="tools-list">
-                                <li>Sketch</li>
-                                <li>Figma</li>
-                                <li>Illustrator</li>
-                            </ul>
+                            {playDesIcon?
+                            <React.Fragment>
+                                <Lottie
+                                    className="tool-icon"
+                                    options={desIcon}
+                                    playingState='play'/> 
+                                <Fade bottom>
+                                    <h1 className="sm-header">DESIGN</h1>
+                                    <ul className="tools-list">
+                                        <li>Sketch</li>
+                                        <li>Figma</li>
+                                        <li>Illustrator</li>
+                                    </ul>
+                                </Fade>
+                            </React.Fragment>
+                            : null}
                         </div>
-                        <div className="tool-category">
-                            <img className="tool-icon" src={webIcon}></img>
-                            <h1 className="sm-header">DEVELOPMENT</h1>
-                            <ul className="tools-list">
-                                <li>JavaScript</li>
-                                <li>HTML / CSS</li>
-                                <li>React</li>
-                                <li>Node.js</li>
-                                <li>Express</li>
-                                <li>MongoDB</li>
 
-                            </ul>
-                        </div>
                         <div className="tool-category">
-                            <img className="tool-icon" src={motionIcon}></img>
-                            <h1 className="sm-header">MOTION</h1>
-                            <ul className="tools-list">
-                                <li>After Effects</li>
-                                <li>Bodymovin</li>
-                                <li>AEUX</li>
-                            </ul>
+                            {playDevIcon?
+                            <React.Fragment>
+                                <Lottie
+                                    className="tool-icon"
+                                    options={devIcon}
+                                    playingState='play'/>
+                                <Fade bottom>
+                                    <h1 className="sm-header">DEVELOPMENT</h1>
+                                    <ul className="tools-list">
+                                        <li>JavaScript</li>
+                                        <li>HTML / CSS</li>
+                                        <li>React</li>
+                                        <li>Node.js</li>
+                                        <li>Express</li>
+                                        <li>MongoDB</li>
+                                    </ul>
+                                </Fade>
+                            </React.Fragment>
+                            : null}
+                        </div>
+
+                        <div className="tool-category">
+                            {playMotIcon?
+                            <React.Fragment>
+                                <Lottie
+                                    className="tool-icon"
+                                    options={motIcon}
+                                    playingState='play'/>
+                                <Fade bottom>
+                                    <h1 className="sm-header">MOTION</h1>
+                                    <ul className="tools-list">
+                                        <li>After Effects</li>
+                                        <li>Bodymovin</li>
+                                        <li>AEUX</li>
+                                    </ul>
+                                </Fade>
+                            </React.Fragment>
+                            : null}
                         </div>
                     </div>
                 </div>  
 
-                <div className="container project-container">                        
-                    <h1 className="section-title">Projects</h1>
+                <Trigger onEnterViewport={() => playIcons()} onLeaveViewport={() => console.log("leave")}/>
+
+                <div className="container project-container"> 
+                    <Fade delay={500}>
+                        <h1 className="section-title">Projects</h1>
+                    </Fade>                       
                     {/* <ul className="projects-nav">
                         <li className="active">All</li>
                         <li>Development</li>

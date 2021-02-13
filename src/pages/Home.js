@@ -135,47 +135,36 @@ const Home = (props) => {
                 <Nav/>
 
                 <div className="hero">
-                    <div className="hero-anim-wrapper">
-                        <Lottie
-                            className="des-anim"
-                            options={pepiAnim}
-                            playingState='play'/>
-                    </div>
-                    {/* <Lottie
-                        className="des-anim"
+                    <Lottie
+                        className="hero-anim"
                         options={pepiAnim}
-                        playingState='play'/> */}
+                        playingState='play'/>
 
-                    <div className="container hero-text-container">
-                        <div className="intro">
+                    <div className="container hero-content">
+                        <div className="hero-intro">
                             <Fade left>
-                            <h1 id="firstName">Ridge</h1>
+                                <h1 id="firstName">Ridge</h1>
                                 <h1 id="lastName">Reventar</h1>
                                 {/* <p id="introDesc">Welcome to my personal portfolio!</p> */}
-                                <button className="round-btn">
-                                    View my work
-                                </button> 
+                                <button className="round-btn">View my work</button> 
                             </Fade>
-                            
                         </div> 
 
-                        
-                        <div className="titles">
+                        <div className="hero-titles">
                             <Fade right>
-                                <div className="design-container">
+                                <div className="designer-title">
                                     <span>Graphic</span>
                                     <h1>DESIGNER</h1>
                                 </div>
+
                                 <h1 id="plus">+</h1>
-                                <div className="develop-container">
+                                
+                                <div className="developer-title">
                                     <span>Front End</span>
                                     <h1>DEVELOPER</h1>
                                 </div>
                             </Fade>
-                            
-
                         </div>
-                        
                     </div>
                 </div>
 
@@ -188,7 +177,7 @@ const Home = (props) => {
                             </div>
                         </div>
                     </Fade>
-                    <Fade left delay={1000}>
+                    <Fade left delay={800}>
                         <div className="card">
                             <div className="title-container">
                                 <img id="cardTitle" src={displayElement.title} style={{width: displayElement.width}}></img>
@@ -198,7 +187,6 @@ const Home = (props) => {
                             <div className="load-bar"></div>
                         </div>
                     </Fade>
-
                 </div>
 
 
@@ -320,7 +308,7 @@ const Home = (props) => {
                     })}
                 </div>
 
-                <div className="container testimonial-container">
+                {/* <div className="container testimonial-container">
                     <div className="testimonial-card">
                         <img className="testimonial-logo" src={jazelbites}></img>
                         <h1>Jazel Bites</h1>
@@ -342,7 +330,7 @@ const Home = (props) => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
                         <p>- Mir Afgan Talpur, Owner</p>
                     </div>
-                </div>
+                </div> */}
 
                 <div className="container about-container">
                     <div className="about-text-container">
@@ -351,7 +339,7 @@ const Home = (props) => {
                         <p>I am a designer and front-end web developer currently studying computer science at Ontario Tech University. </p>
                         <p>Through free lance work over the last 5 years, I have developed a strong passion for design and am continuously striving to transition my skills and knowledge into the web application world.</p>
                     </div>
-                    <img src={me}></img>
+                    {/* <img src={me}></img> */}
 
                 </div>
 

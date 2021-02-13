@@ -189,15 +189,12 @@ const Home = (props) => {
                     </Fade>
                 </div>
 
-
-                <div className="container anim-wrapper">
+                <div className="container background">
                     
-                    <div className="background-intro">
-                        <Fade delay={1000}>
-                            <img id="background-logo" src={logowhite}></img>
-                            <p className="background-text">Through 7 years experience of free lance design I expanded my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications.</p>
-                        </Fade>
-                    </div>
+                    <Fade delay={1000}>
+                        <img id="background-logo" src={logowhite}></img>
+                        <p className="background-text">Through 7 years experience of free lance design I expanded my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications.</p>
+                    </Fade>
 
                     {playAnim? 
                         <Lottie
@@ -210,14 +207,12 @@ const Home = (props) => {
 
                 <Trigger onEnterViewport={() => setplayAnim(true)} onLeaveViewport={() => console.log("leave")}/>
 
-                <div className="container tools-container">
-                    {playDesIcon?
-                    <Fade>
+                <div className="container tools">
+                    <Fade delay={800}>
                         <h1 className="section-title">Tools</h1>
                     </Fade>
-                    : null}
                 
-                    <div className="tools-wrapper">
+                    <div className="tools-content">
                         <div className="tool-category">
                             {playDesIcon?
                             <React.Fragment>
@@ -282,25 +277,18 @@ const Home = (props) => {
 
                 <Trigger onEnterViewport={() => playIcons()} onLeaveViewport={() => console.log("leave")}/>
 
-                <div className="container project-container"> 
+                <div className="container project"> 
                     <Fade delay={500}>
                         <h1 className="section-title">Projects</h1>
                     </Fade>                       
-                    {/* <ul className="projects-nav">
-                        <li className="active">All</li>
-                        <li>Development</li>
-                        <li>Design</li>
-                    </ul> */}
                 </div>
 
             </div>
             
             <div className="home2">
                 <div className="container projects-grid">
-                    
                     {PROJECTS.map((proj, index) => {
                         return (
-                            
                             <ProjectIcon
                                 key={index}
                                 proj={proj}/>
@@ -308,7 +296,7 @@ const Home = (props) => {
                     })}
                 </div>
 
-                {/* <div className="container testimonial-container">
+                <div className="container testimonials">
                     <div className="testimonial-card">
                         <img className="testimonial-logo" src={jazelbites}></img>
                         <h1>Jazel Bites</h1>
@@ -330,7 +318,7 @@ const Home = (props) => {
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
                         <p>- Mir Afgan Talpur, Owner</p>
                     </div>
-                </div> */}
+                </div>
 
                 <div className="container about-container">
                     <div className="about-text-container">
@@ -339,15 +327,12 @@ const Home = (props) => {
                         <p>I am a designer and front-end web developer currently studying computer science at Ontario Tech University. </p>
                         <p>Through free lance work over the last 5 years, I have developed a strong passion for design and am continuously striving to transition my skills and knowledge into the web application world.</p>
                     </div>
-                    {/* <img src={me}></img> */}
+                    <img src={me}></img>
 
                 </div>
 
             </div>
 
-            <div className="home3">
-
-            </div>
         </React.Fragment>
     )
 }

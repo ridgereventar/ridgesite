@@ -12,29 +12,6 @@
     padding: 0 40px;
 }
 
-.nav-bar {
-    height: 100px; 
-    /* background-color: red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#navlogo {
-    height: 40%;
-}
-
-.nav {
-    display: flex;
-    list-style-type: none;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: white; 
-    margin-left: 30px;
-}
-
 .hero {
     height: calc(100vh - 100px);
     width: 100%;

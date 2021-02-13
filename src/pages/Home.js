@@ -3,6 +3,11 @@ import '../styles/Home.css';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
+// components
+import Nav from '../components/Nav';
+
+
+
 import Lowfi from '../components/Lowfi';
 import Trigger from '../components/Trigger';
 import ProjectIcon from '../components/ProjectIcon';
@@ -125,18 +130,9 @@ const Home = (props) => {
 
     return (
         <React.Fragment>
-            {console.log(index)}
             <div className="home">
 
-                <div className="container nav-bar">
-                    <img id="navlogo" src={logowhite}></img>
-                    <ul className="nav">
-                        <li className="nav-link">About</li>
-                        <li className="nav-link">Projects</li>
-                        <li className="nav-link">Contact</li>
-                    </ul>
-                </div>
-
+                <Nav/>
 
                 <div className="hero">
                     <div className="hero-anim-wrapper">

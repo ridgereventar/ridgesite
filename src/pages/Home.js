@@ -221,12 +221,16 @@ const Home = (props) => {
                                     options={desIcon}
                                     playingState='play'/> 
                                 <Fade bottom>
-                                    <h1 className="sm-header">DESIGN</h1>
-                                    <ul className="tools-list">
-                                        <li>Sketch</li>
-                                        <li>Figma</li>
-                                        <li>Illustrator</li>
-                                    </ul>
+                                    <div className="tool-content">
+                                        <h1 className="sm-header">DESIGN</h1>
+                                        <p>Sketch, Figma, Illustrator</p>
+                                        <ul className="tools-list">
+                                            <li>Sketch</li>
+                                            <li>Figma</li>
+                                            <li>Illustrator</li>
+                                        </ul>
+                                    </div>
+                                    
                                 </Fade>
                             </React.Fragment>
                             : null}
@@ -240,15 +244,18 @@ const Home = (props) => {
                                     options={devIcon}
                                     playingState='play'/>
                                 <Fade bottom>
-                                    <h1 className="sm-header">DEVELOPMENT</h1>
-                                    <ul className="tools-list">
-                                        <li>JavaScript</li>
-                                        <li>HTML / CSS</li>
-                                        <li>React</li>
-                                        <li>Node.js</li>
-                                        <li>Express</li>
-                                        <li>MongoDB</li>
-                                    </ul>
+                                    <div className="tool-content">
+                                        <h1 className="sm-header">DEVELOPMENT</h1>
+                                        <p>JavaScript, HTML / CSS, React, Node.js, Express, MongoDB</p>
+                                        <ul className="tools-list">
+                                            <li>JavaScript</li>
+                                            <li>HTML / CSS</li>
+                                            <li>React</li>
+                                            <li>Node.js</li>
+                                            <li>Express</li>
+                                            <li>MongoDB</li>
+                                        </ul>
+                                    </div>
                                 </Fade>
                             </React.Fragment>
                             : null}
@@ -262,12 +269,15 @@ const Home = (props) => {
                                     options={motIcon}
                                     playingState='play'/>
                                 <Fade bottom>
-                                    <h1 className="sm-header">MOTION</h1>
-                                    <ul className="tools-list">
-                                        <li>After Effects</li>
-                                        <li>Bodymovin</li>
-                                        <li>AEUX</li>
-                                    </ul>
+                                    <div className="tool-content">
+                                        <h1 className="sm-header">MOTION</h1>
+                                        <p>After Effects, Bodymovin, AEUX</p>
+                                        <ul className="tools-list">
+                                            <li>After Effects</li>
+                                            <li>Bodymovin</li>
+                                            <li>AEUX</li>
+                                        </ul>
+                                    </div>
                                 </Fade>
                             </React.Fragment>
                             : null}
@@ -289,45 +299,60 @@ const Home = (props) => {
                 <div className="container projects-grid">
                     {PROJECTS.map((proj, index) => {
                         return (
-                            <ProjectIcon
-                                key={index}
-                                proj={proj}/>
+                            <Fade>
+                                <ProjectIcon
+                                    key={index}
+                                    proj={proj}/>
+                            </Fade>
+
                         );
                     })}
                 </div>
 
                 <div className="container testimonials">
-                    <div className="testimonial-card">
-                        <img className="testimonial-logo" src={jazelbites}></img>
-                        <h1>Jazel Bites</h1>
-                        <div className="underline"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
-                        <p>- Jazel Zulueta, Owner</p>
-                    </div>
-                    <div className="testimonial-card">
-                        <img className="testimonial-logo" src={jazelbites}></img>
-                        <h1>NextGen Edu.</h1>
-                        <div className="underline"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  consectetur adipiscing elit, sed! sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                        <p>- Christopher Gonzales, Co-owner</p>
-                    </div>
-                    <div className="testimonial-card">
-                        <img className="testimonial-logo" src={jazelbites}></img>
-                        <h1>Pepi's Techsuit</h1>
-                        <div className="underline"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
-                        <p>- Mir Afgan Talpur, Owner</p>
-                    </div>
+                    <Fade>
+                        <div className="testimonial-card">
+                            <img className="testimonial-logo" src={jazelbites}></img>
+                            <h1>Jazel Bites</h1>
+                            <div className="underline"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
+                            <p>- Jazel Zulueta, Owner</p>
+                        </div>
+                    </Fade>
+                    <Fade delay={300}>
+                        <div className="testimonial-card">
+                            <img className="testimonial-logo" src={jazelbites}></img>
+                            <h1>NextGen Edu.</h1>
+                            <div className="underline"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  consectetur adipiscing elit, sed! sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            <p>- Christopher Gonzales, Co-owner</p>
+                        </div>
+                    </Fade>
+                    <Fade delay={800}>
+                        <div className="testimonial-card">
+                            <img className="testimonial-logo" src={jazelbites}></img>
+                            <h1>Pepi's Techsuit</h1>
+                            <div className="underline"></div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+                            <p>- Mir Afgan Talpur, Owner</p>
+                        </div>
+                    </Fade>
+
                 </div>
 
                 <div className="container about-container">
                     <div className="about-text-container">
-                        <h1 className="section-title about-title">About</h1>
-                        <p>With 5 years experience of free lance graphic design I transitioned my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications</p>
-                        <p>I am a designer and front-end web developer currently studying computer science at Ontario Tech University. </p>
-                        <p>Through free lance work over the last 5 years, I have developed a strong passion for design and am continuously striving to transition my skills and knowledge into the web application world.</p>
+                        <Fade left>                        
+                            <h1 className="section-title about-title">About</h1>
+                            <p>With 5 years experience of free lance graphic design I transitioned my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications</p>
+                            <p>I am a designer and front-end web developer currently studying computer science at Ontario Tech University. </p>
+                            <p>Through free lance work over the last 5 years, I have developed a strong passion for design and am continuously striving to transition my skills and knowledge into the web application world.</p>
+                        </Fade>
+
                     </div>
-                    <img src={me}></img>
+                    <Fade right>
+                        <img src={me}></img>
+                    </Fade>
 
                 </div>
 

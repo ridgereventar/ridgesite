@@ -251,6 +251,12 @@
     position: absolute;
 }
 
+@media screen and (max-width: 800px) {
+    .background {
+        height: 550px;
+    }
+}
+
 
 /* Tools */
 
@@ -280,7 +286,7 @@
 }
 
 .tool-category {
-    width: 250px; 
+    width: 30%; 
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -299,6 +305,10 @@
     font-size: 1.4rem;
 }
 
+.tool-content p {
+    display: none;
+}
+
 .tools-list {
     padding: 0;
     color: white; 
@@ -309,6 +319,41 @@
 .tools-list li {
     font-size: 1.2rem;
     margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .tools {
+        margin-top: 0;
+    }
+    .tools-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .tools-content {
+        flex-direction: column;
+    }
+    .tool-category {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center ;
+    }
+    .tool-icon {
+        width: 22%;
+        margin-bottom: 0;
+    }
+    .tool-content {
+        margin-left: 30px;
+        width: 50%;
+    }
+    .tool-content p {
+        display: block;
+    }
+    .tools-list {
+        display: none;
+    }
 }
 
 
@@ -438,8 +483,5 @@
 }
 
 
-@media screen and (max-width: 1000px) {
-
-}
 
 

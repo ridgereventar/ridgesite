@@ -1,76 +1,28 @@
 import React, {useState, useEffect} from 'react';
-import '../styles/Home.css';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
-// components
+import '../styles/Home.css';
+
 import Nav from '../components/Nav';
-
-
-
-import Lowfi from '../components/Lowfi';
 import Trigger from '../components/Trigger';
 import ProjectIcon from '../components/ProjectIcon';
 
+import {pepiAnim, lowfiAnim, desAnim, devAnim, motionAnim} from '../helpers/anims';
 import {PROJECTS} from '../helpers/constants';
 
+import suiSample from '../images/demos/suiDemoFinal.mov';
+import nextSample from '../images/demos/nextDemo.mov';
+import suiT from '../images/titles/suiT.png';
+import nextT from '../images/titles/nextgenT.png';
+import uniT from '../images/titles/unicityT.png';
+
 import logowhite from '../images/Rlogo.png';
-import macbook from '../images/macbook.png';
 import mac from '../images/mac.png';
-// import vectorIcon from '../images/vectorIcon.png';
-// import webIcon from '../images/webIcon.png';
-// import motionIcon from '../images/motionIcon.png';
 import jazelbites from '../images/jazelbites.png';
 import me from '../images/me.png';
 
-import suiSample from '../images/suiDemoFinal.mov';
-import nextSample from '../images/nextDemo.mov';
-
-import suiT from '../images/suiT.png';
-import nextT from '../images/nextgenT.png';
-import uniT from '../images/unicityT.png';
-import arrow from '../images/arrow.png';
-
-import designIcon from '../images/designIcon.json';
-import developIcon from '../images/devIcon.json';
-import motionIcon from '../images/motionIcon.json';
-
 const Home = (props) => {
-
-    const pepiAnim = {
-        renderer: 'svg',
-        loop: false,
-        autoplay: true, 
-        animationData: require('../images/designanimFinal.json')
-    }
-
-    const devAnim = {
-        renderer: 'svg',
-        loop: false, 
-        autoplay: true,
-        animationData: require('../images/devanimFinal.json')
-    }
-
-    const desIcon = {
-        renderer: 'svg',
-        loop: false,
-        autoplay: true,
-        animationData: designIcon
-    }
-
-    const devIcon = {
-        renderer: 'svg',
-        loop: false,
-        autoplay: true,
-        animationData: developIcon
-    }
-
-    const motIcon = {
-        renderer: 'svg',
-        loop: false,
-        autoplay: true,
-        animationData: motionIcon
-    }
 
     const [playAnim, setplayAnim] = useState(false);
     const [playDesIcon, setPlayDesIcon] = useState(false);
@@ -199,7 +151,7 @@ const Home = (props) => {
                     {playAnim? 
                         <Lottie
                             className="dev-anim"
-                            options={devAnim}
+                            options={lowfiAnim}
                             playingState='play'/>
                         : null
                     }
@@ -218,7 +170,7 @@ const Home = (props) => {
                             <React.Fragment>
                                 <Lottie
                                     className="tool-icon"
-                                    options={desIcon}
+                                    options={desAnim}
                                     playingState='play'/> 
                                 <Fade bottom>
                                     <div className="tool-content">
@@ -241,7 +193,7 @@ const Home = (props) => {
                             <React.Fragment>
                                 <Lottie
                                     className="tool-icon"
-                                    options={devIcon}
+                                    options={devAnim}
                                     playingState='play'/>
                                 <Fade bottom>
                                     <div className="tool-content">
@@ -266,7 +218,7 @@ const Home = (props) => {
                             <React.Fragment>
                                 <Lottie
                                     className="tool-icon"
-                                    options={motIcon}
+                                    options={motionAnim}
                                     playingState='play'/>
                                 <Fade bottom>
                                     <div className="tool-content">

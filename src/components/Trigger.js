@@ -10,7 +10,6 @@ const TriggerComp = (props) => {
 
     return (
         <div className="trigger" ref={forwardedRef}>
-
         </div>
     )
 }

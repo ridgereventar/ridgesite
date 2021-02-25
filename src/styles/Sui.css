@@ -1,0 +1,90 @@
+.logo-hero {
+    width: 100%;
+    height: 100vh;
+    /* background-color: antiquewhite; */
+
+}
+
+.logo-hero-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.logo-hero img {
+    width: 270px;
+}
+
+.logo-hero p {
+    margin-top: 30px;
+}
+
+.breakdown {
+    height: max-content;
+    display: flex;
+    /* background-color: bisque;  */
+}
+
+.breakdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.breakdown li {
+    line-height: 35px;
+
+}
+
+.roles-container {
+    width: 25%;
+}
+
+.goal-container {
+    width: 75%;
+}
+
+.goal-container p {
+    line-height: 35px;
+    margin: 0;
+}
+
+
+.intro-graphic-section {
+    width: 100%;
+    height: 770px;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.intro-strip {
+    width: 100%;
+    height: 570px;
+    background-color: #3CB7E6;
+}
+
+.intro-anim {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.intro-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.intro-title {
+    color: white;
+    width: 35%;
+}
+
+.brand-section {
+    height: 600px; 
+    background-color: beige;
+}

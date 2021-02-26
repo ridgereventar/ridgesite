@@ -17,7 +17,7 @@ import suiT from '../images/titles/suiT.png';
 import nextT from '../images/titles/nextgenT.png';
 import uniT from '../images/titles/unicityT.png';
 
-import logowhite from '../images/Rlogo.png';
+import logo from '../images/Rlogo.png';
 import mac from '../images/mac.png';
 import jazelbites from '../images/jazelbites.png';
 import me from '../images/me.png';
@@ -144,7 +144,7 @@ const Home = (props) => {
                 <div className="container background">
                     
                     <Fade delay={1000}>
-                        <img id="background-logo" src={logowhite}></img>
+                        <img id="background-logo" src={logo}></img>
                         <p className="background-text">Through 7 years experience of free lance design I expanded my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications.</p>
                     </Fade>
 

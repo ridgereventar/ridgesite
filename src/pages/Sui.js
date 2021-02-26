@@ -8,8 +8,13 @@ import {suiAnim} from '../helpers/anims';
 
 import Trigger from '../components/Trigger';
 
-import suiLogo from "../images/projectLogos/sui.png";
-
+import suiLogo from "../images/projects/sui/sui.png";
+import slogo from '../images/projects/sui/slogo.png';
+import sdrafts from '../images/projects/sui/sdrafts.png';
+import fonts from '../images/projects/sui/fonts.png';
+import colors from '../images/projects/sui/colors.png';
+import lowfis from '../images/projects/sui/lowfis.png';
+import mac from '../images/projects/sui/macNS.png';
 
 const Sui = (props) => {
 
@@ -63,6 +68,36 @@ const Sui = (props) => {
 
             <div className="container brand-section">
                 <h3>Brand Definition / Logo Concept</h3>
+                <div className="brand-images">
+                    <img id="slogo" src={slogo}/>
+                    <img id="sdrafts" src={sdrafts}/>
+                    <img id="fonts" src={fonts}/>
+                    <img id="colors" src={colors}/>
+                </div>
+            </div>
+
+            <div className="container">
+                <h3>Design Stage</h3>
+            </div>
+
+            <div className="design-section">
+                <div className="lowfi-wrapper">
+                    <img id="lowfis" src={lowfis}></img>
+                </div>
+                <div className="highfiMac-wrapper">
+                    <img id="highfiMac" src={mac}></img>
+                    <div className="highfi">
+
+                    </div>
+                </div>
+            </div>
+
+            <div className="container">
+                <h3>Final State</h3>
+            </div>
+
+            <div className="finalsite-section">
+                
             </div>
 
         </React.Fragment>

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Lottie from 'lottie-web-react';
 import handleViewport from 'react-in-viewport';
 
-import '../styles/Anim.css';
+import '../styles/Viewport.css';
 
 const TriggerComp = (props) => {
     

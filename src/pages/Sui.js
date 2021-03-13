@@ -98,38 +98,46 @@ const Sui = (props) => {
             <Nav proj={true}/>
             
             <div className="proj-container proj-hero">
-                <img src={suiLogo}></img>
-                <p>A Style Guide & Ui Component Generator</p>
+                <Fade left distance="80px">
+                    <img src={suiLogo}></img>
+                    <p>A Style Guide & Ui Component Generator</p>
+                    <Trigger onLeaveViewport={() => setPlayAnim(true)}></Trigger>        
+                </Fade>
             </div>
 
             <div className="proj-container breakdown">
-                <div className="roles-container">
-                    <h2>Deliverables</h2>
-                    <ul className="proj-p">
-                        <li>Responsive Website</li>
-                        <li>Brand Identity</li>
-                    </ul>
-                    <h2>Roles</h2>
-                    <ul className="proj-p">
-                        <li>UI / UX Design</li>
-                        <li>Develop</li>
-                        <li>Database Management</li>
-                    </ul>
-                </div>
-                <div className="goal-container">
-                    <h2>Goals</h2>
-                    <p className="proj-p">Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. The goal of SUi is to allow users to easily generate their own custom style guides and UI components through one seamless interface. The style guide provides brand consistency and quality while the generated UI components become the building blocks to any website.</p>
-                </div>
+                <Fade>
+                    <div className="roles-container">
+                        <h2>Deliverables</h2>
+                        <ul className="proj-p">
+                            <li>Responsive Website</li>
+                            <li>Brand Identity</li>
+                        </ul>
+                        <h2>Roles</h2>
+                        <ul className="proj-p">
+                            <li>UI / UX Design</li>
+                            <li>Develop</li>
+                            <li>Database Management</li>
+                        </ul>
+                    </div>
+                    <div className="goal-container">
+                        <h2>Goals</h2>
+                        <p className="proj-p">Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. The goal of SUi is to allow users to easily generate their own custom style guides and UI components through one seamless interface. The style guide provides brand consistency and quality while the generated UI components become the building blocks to any website.</p>
+                    </div>
+                </Fade>
             </div>
 
-            <Trigger onEnterViewport={() => setPlayAnim(true)}></Trigger>        
-            
             <div className="graphic">
-                <div className="graphic-strip">
-                    <div className="proj-container graphic-content">
-                        <h1 className="intro-title">Branding & Development Made Easy</h1>
-                    </div>      
-                </div>
+                <Fade left>
+                    <div className="graphic-strip">
+                        <div className="proj-container graphic-content">
+                            <Fade delay={500}>
+                                <h1 className="intro-title">Branding & Development Made Easy</h1>
+                            </Fade>
+                        </div>      
+                    </div>
+                </Fade>
+
                 {playAnim?
                     <Lottie
                         className="intro-anim"
@@ -140,25 +148,32 @@ const Sui = (props) => {
             </div>
             
             <div className="proj-container brand">
-                <div className="context">
-                    <h1>Brand Definition</h1>
-                    <p className="proj-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                <div className="visual">
-                    <img src={brand}></img>
-                </div>
+                <Fade>
+                    <div className="context">
+                        <h1>Brand Definition</h1>
+                        <p className="proj-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </Fade>
+                <Fade right>
+                    <div className="visual">
+                        <img src={brand}></img>
+                    </div>
+                </Fade>
             </div>
 
-            <div className="proj-container design">   
-                <div className="context">
-                    <h1>Design / Prototyping</h1>
-                    <p className="proj-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                </div>
-                <div className="visual">
-                    <span id="lowfi-text" className="light-text">Lowfi's</span>
-                    <img id="lowfis" src={lowfis}></img>         
-                </div>
-
+            <div className="proj-container design"> 
+                <Fade>
+                    <div className="context">
+                        <h1>Design / Prototyping</h1>
+                        <p className="proj-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    </div>
+                </Fade>
+                <Fade right>
+                    <div className="visual">
+                        <span id="lowfi-text" className="light-text">Lowfi's</span>
+                        <img id="lowfis" src={lowfis}></img>         
+                    </div>
+                </Fade>
             </div>
 
             <div className="highfis">
@@ -166,11 +181,13 @@ const Sui = (props) => {
                 <div className="proj-container highfi-imgs">
                     <div className="highfi-imgs-wrapper">
                         <span id="highfi-text" className="light-text">HighFi's</span>
-                        <img id="landing" src={landing}></img>
-                        <img id="login" src={login}></img>
-                        <img id="signup" src={signup}></img>
-                        <img id="home" src={home}></img>
-                        <img id="create" src={create}></img>
+                        <Fade top distance="80px">
+                            <img id="landing" src={landing}></img>
+                            <img id="login" src={login}></img>
+                            <img id="signup" src={signup}></img>
+                            <img id="home" src={home}></img>
+                            <img id="create" src={create}></img>
+                        </Fade>
                     </div>
                 </div>                
             </div>

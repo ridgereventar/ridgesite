@@ -93,14 +93,14 @@ const Home = (props) => {
                         playingState='play'/>
 
                     <div className="container hero-content">
-                        <div className="hero-intro">
-                            <Fade left>
-                                <h1 id="firstName">Ridge</h1>
-                                <h1 id="lastName">Reventar</h1>
-                                {/* <p id="introDesc">Welcome to my personal portfolio!</p> */}
-                                <button className="round-btn">View my work</button> 
-                            </Fade>
-                        </div> 
+                        <Fade left distance="80px">
+                            <div className="hero-intro">
+                                        <h1 id="firstName">Ridge</h1>
+                                        <h1 id="lastName">Reventar</h1>
+                                        {/* <p id="introDesc">Welcome to my personal portfolio!</p> */}
+                                        <button className="round-btn">View my work</button> 
+                            </div> 
+                        </Fade>
 
                         <div className="hero-titles">
                             <Fade right>

@@ -9,6 +9,8 @@ import {suiAnim} from '../helpers/anims';
 
 import Trigger from '../components/Trigger';
 import Tech from '../components/Tech';
+import Nav from '../components/Nav';
+import ProjNav from '../components/ProjNav';
 
 import suiLogo from "../images/projects/sui/sui.png";
 import slogo from '../images/projects/sui/slogo.png';
@@ -118,14 +120,15 @@ const Sui = (props) => {
 
     return (
         <React.Fragment>
+            <ProjNav/>
             <div className="logo-hero">
-                <div className="container logo-hero-content">
+                <div className="p-container logo-hero-content">
                     <img src={suiLogo}></img>
                     <p>A Style Guide & Ui Component Generator</p>
                 </div>
             </div>
 
-            <div className="container breakdown">
+            <div className="p-container breakdown">
                 <div className="roles-container">
                     <h3>Deliverables</h3>
                     <ul>
@@ -148,7 +151,7 @@ const Sui = (props) => {
             <Trigger onEnterViewport={() => setPlayAnim(true)}></Trigger>        
             <div className="intro-graphic-section">
                 <div className="intro-strip">
-                    <div className="container intro-content">
+                    <div className="p-container intro-content">
                         <h1 className="intro-title">Branding & Development Made Easy</h1>
                     </div>      
                 </div>
@@ -161,7 +164,7 @@ const Sui = (props) => {
                 }
             </div>
             
-            <div className="container brand-section">
+            <div className="p-container brand-section">
                 <div className="context">
                     <h1>Brand Definition</h1>
                     <p className="context-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -171,7 +174,7 @@ const Sui = (props) => {
                 </div>
             </div>
 
-            <div className="container design-section">   
+            <div className="p-container design-section">   
                 <div className="context">
                     <h1>Design / Prototyping</h1>
                     <p className="context-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -185,7 +188,7 @@ const Sui = (props) => {
 
             <div className="highfi-section">
                 <div className="slant-bg"/>
-                <div className="container highfis">
+                <div className="p-container highfis">
                     <div className="highfi-imgs-wrapper">
                         <span id="highfi-text" className="light-text">HighFi's</span>
                         <img id="landing" src={landing}></img>
@@ -223,7 +226,7 @@ const Sui = (props) => {
 
             </div>
 
-            <div className="container finalsite-header">
+            <div className="p-container finalsite-header">
                 <h3>Final Site</h3>
                 <video className="final-demo" src={demo} controls></video>
             </div>                

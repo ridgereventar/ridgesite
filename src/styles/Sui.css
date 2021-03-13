@@ -1,6 +1,6 @@
 .logo-hero {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px);
     /* background-color: antiquewhite; */
 
 }
@@ -81,7 +81,7 @@
 
 .intro-title {
     color: white;
-    width: 35%;
+    width: 40%;
 }
 
 .brand-section {
@@ -140,7 +140,7 @@
 
 .highfi-section {
     width: 100%;
-    height: 2400px;
+    height: 2170px;
     margin-top: 150px;
     /* background-color: aqua; */
     position: relative;
@@ -167,7 +167,7 @@
 }
 
 .highfi-imgs-wrapper {
-    width: 90%;
+    width: 100%;
     height: 100%;
     /* background-color: red; */
     position: relative;
@@ -184,32 +184,32 @@
 }
 
 #landing {
-    width: 680px;
+    width: 750px;
     top: 0;
     left: 0;
 }
 
 #login {
-    width: 350px;
-    top: 300px;
+    width: 280px;
+    top: 150px;
     right: 0;
 }
 
 #signup {
-    width: 350px;
-    top: 600px;
+    width: 280px;
+    top: 400px;
     right: 0;
 }
 
 #home {
-    width: 800px;
+    width: 700px;
     right: 0;
     top: 1100px;
 }
 
 #create {
-    width: 100%;
-    bottom: -50px;
+    width: 850px;
+    top: 1600px;
     left: 0;
 }
 
@@ -224,21 +224,23 @@
 
 .screen-wrapper {
     position: absolute;
-    right: 4.5vw; 
+    right: -4.5vw; 
     top: 0;
     height: 100%;
 }
 
 .screen {
-    width: 45vw;
-    height: 28.6vw;
+    width: 50vw;
+    height: 33.6vw;
     background: white;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;    
     position: sticky;
-    top: 24vh;
+    top: 11vw;
+    /* transform: translate(0%, -50%); */
+    bottom: 0;
     box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
     0 2px 4px rgba(0,0,0,0.07), 
     0 4px 8px rgba(0,0,0,0.07), 
@@ -294,28 +296,6 @@
     height: 500px;
 }
 
-.sticky-cont {
-    width: 100%;
-    height: 1000px; 
-    background-color: #3CB7E6;
-    position: relative;
-}
-
-.sticky-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-}
-
-.sticky {
-    width: 200px;
-    height: 200px;
-    position: sticky;
-    top: 40vh;
-    right: 0;
-    background-color: red;
-}
 
 .temp {
     width: 100%;

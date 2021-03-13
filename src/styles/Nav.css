@@ -1,3 +1,9 @@
+.nav-wrapper {
+    height: 100px; 
+    width: 100%;
+    /* background-color: #212121; */
+}
+
 .nav-bar {
     height: 100px; 
     /* background-color: red; */
@@ -17,6 +23,22 @@
 
 .nav-link {
     text-decoration: none;
-    color: white; 
+    color: black; 
     margin-left: 30px;
+}
+
+.proj-nav-bar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* background-color: blue; */
+}
+
+#darklogo {
+    height: 35px;
+}
+
+#burger {
+    height: 30px;
 }

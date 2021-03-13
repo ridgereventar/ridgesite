@@ -84,7 +84,7 @@ const Home = (props) => {
         <React.Fragment>
             <div className="home">
 
-                <Nav/>
+                <Nav proj={false}/>
 
                 <div className="hero">
                     <Lottie

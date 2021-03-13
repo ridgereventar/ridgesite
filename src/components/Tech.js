@@ -8,7 +8,7 @@ const TechContext = (props) => {
     const {inViewport, forwardedRef} = props;
 
     return (
-        <div className="p-container tech-section">
+        <div className="proj-container tech-section">
             <div className="tech-context">
                 <div className="tech-trigger" ref={forwardedRef}></div>
                 <h1>{props.title}</h1>

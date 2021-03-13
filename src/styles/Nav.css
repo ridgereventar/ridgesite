@@ -1,19 +1,20 @@
-.nav-wrapper {
+/* .nav-wrapper {
     height: 100px; 
     width: 100%;
-    /* background-color: #212121; */
-}
+    background-color: #212121;
+} */
 
 .nav-bar {
-    height: 100px; 
-    /* background-color: red; */
+    height: 35px;
+    margin-top: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* background-color: blue; */
 }
 
-#navlogo {
-    height: 40%;
+#navLogo {
+    height: 35px;
 }
 
 .nav {
@@ -23,20 +24,7 @@
 
 .nav-link {
     text-decoration: none;
-    color: black; 
     margin-left: 30px;
-}
-
-.proj-nav-bar {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    /* background-color: blue; */
-}
-
-#darklogo {
-    height: 35px;
 }
 
 #burger {

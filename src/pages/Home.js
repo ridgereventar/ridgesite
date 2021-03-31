@@ -17,6 +17,7 @@ import suiT from '../images/titles/suiT.png';
 import nextT from '../images/titles/nextgenT.png';
 import uniT from '../images/titles/unicityT.png';
 
+import arrow from '../images/arrow.png';
 import logo from '../images/Rlogo.png';
 import mac from '../images/mac.png';
 import jazelbites from '../images/jazelbites.png';
@@ -38,7 +39,6 @@ const Home = (props) => {
     const [slideArray, setSlideArray] = useState([
         {
             title: suiT,
-            width: "50%",
             color: "#FFFFFF",
             bgcolor: "#2A2A2A",
             demo: suiSample,
@@ -46,19 +46,10 @@ const Home = (props) => {
         },
         {
             title: nextT,
-            width: "60%",
             color: "#000000",
             bgcolor: "#C4C4C4",
             demo: nextSample,
             desc: "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut magna aliqua."
-        },
-        {
-            title: uniT,
-            width: "100%",
-            color: "#000000",
-            bgcolor: "#FAE19D",
-            demo: suiSample,
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit Ut enim ad minim veniam."
         }
     ])
 
@@ -82,38 +73,37 @@ const Home = (props) => {
 
     return (
         <React.Fragment>
+            {console.log(displayElement.demo)}
+
             <div className="home">
 
                 <Nav proj={false}/>
 
                 <div className="hero">
-                    <Lottie
-                        className="hero-anim"
-                        options={pepiAnim}
-                        playingState='play'/>
-
                     <div className="container hero-content">
                         <Fade left distance="80px">
                             <div className="hero-intro">
-                                        <h1 id="firstName">Ridge</h1>
-                                        <h1 id="lastName">Reventar</h1>
-                                        {/* <p id="introDesc">Welcome to my personal portfolio!</p> */}
-                                        <button className="round-btn">View my work</button> 
+                                <h1 id="fullName">RIDGE REVENTAR</h1>
+                                <p id="introDesc">I am a front end developer and designer that inspires to bring visions to life through visual graphics and full stack applications.</p>
+                                <button className="site-btn">View my work</button> 
                             </div> 
                         </Fade>
 
+                        <Lottie
+                            className="hero-anim"
+                            options={pepiAnim}
+                            playingState='play'/>
+
                         <div className="hero-titles">
                             <Fade right>
-                                <div className="designer-title">
+                                <div>
                                     <span>Graphic</span>
-                                    <h1>DESIGNER</h1>
+                                    <p>DESIGNER</p>
                                 </div>
-
-                                <h1 id="plus">+</h1>
-                                
-                                <div className="developer-title">
+                                <h2 id="plus">+</h2>
+                                <div>
                                     <span>Front End</span>
-                                    <h1>DEVELOPER</h1>
+                                    <p>DEVELOPER</p>
                                 </div>
                             </Fade>
                         </div>
@@ -125,28 +115,31 @@ const Home = (props) => {
                         <div className="mac-container">
                             <img src={mac}></img>
                             <div className="demo">
-                                <video src={displayElement.demo} type="video/mp4" autoPlay muted></video>
+                                <video src={displayElement.demo} type="video/mp4" playsInline autoPlay loop muted></video>
                             </div>
                         </div>
                     </Fade>
                     <Fade left delay={800}>
                         <div className="card">
-                            <div className="title-container">
-                                <img id="cardTitle" src={displayElement.title} style={{width: displayElement.width}}></img>
-                            </div>
+                            <img className="card-title" src={displayElement.title}></img>
                             <p>{displayElement.desc}</p>
-                            {/* <img id="cardArrow" src={arrow}></img> */}
                             <div className="load-bar"></div>
+                            <img id="cardArrow" src={arrow}></img>
                         </div>
                     </Fade>
                 </div>
 
                 <div className="container background">
                     
-                    <Fade delay={1000}>
+                    <div className="container background-content">
                         <img id="background-logo" src={logo}></img>
-                        <p className="background-text">Through 7 years experience of free lance design I expanded my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications.</p>
-                    </Fade>
+                        <p className="background-text">
+                            Through 7 years experience of free lance design I expanded my passion into web development. 
+                            I inspire to bring visions to life through visual graphics and full stack applications.
+                        </p>
+                    </div>
+                    
+                    <Trigger onEnterViewport={() => setplayAnim(true)} onLeaveViewport={() => console.log("leave")}/>
 
                     {playAnim? 
                         <Lottie
@@ -156,8 +149,6 @@ const Home = (props) => {
                         : null
                     }
                 </div>
-
-                <Trigger onEnterViewport={() => setplayAnim(true)} onLeaveViewport={() => console.log("leave")}/>
 
                 <div className="container tools">
                     <Fade delay={800}>

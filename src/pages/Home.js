@@ -42,33 +42,47 @@ const Home = (props) => {
             color: "#FFFFFF",
             bgcolor: "#2A2A2A",
             demo: suiSample,
-            desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            desc: "Full Stack Application"
         },
         {
             title: nextT,
             color: "#000000",
             bgcolor: "#C4C4C4",
             demo: nextSample,
-            desc: "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut magna aliqua."
+            desc: "Front End Design & Development"
         }
     ])
 
     const [displayElement, setDisplayElement] = useState(slideArray[0]);
-    let index = 1;
+    const [index, setIndex] = useState(1);
 
-    useEffect(() => {
-        console.log(slideArray.length)
-        const interval = setInterval(() => {
-            setDisplayElement(slideArray[index]);
-            index += 1;
-            if(index >= slideArray.length) {
-                index = 0;
-            }
-        }, 10000);
-        return () => {
-            clearInterval(interval);
-        }
-    }, []);
+    const slideNext = () => {
+        setDisplayElement(slideArray[index]);
+        // Promise.resolve().then(() => {
+        //     if(index >= 2) {
+        //         console.log("YES");
+        //         setIndex(0);
+        //     }
+        //     console.log(index);
+        //     setDisplayElement(slideArray[index]);
+        //     setIndex(index + 1);
+        // })
+
+    }
+
+    // useEffect(() => {
+    //     console.log(slideArray.length)
+    //     const interval = setInterval(() => {
+    //         setDisplayElement(slideArray[index]);
+    //         index += 1;
+    //         if(index >= slideArray.length) {
+    //             index = 0;
+    //         }
+    //     }, 10000);
+    //     return () => {
+    //         clearInterval(interval);
+    //     }
+    // }, []);
 
 
     return (
@@ -111,7 +125,7 @@ const Home = (props) => {
                 </div>
 
                 <div className="container slide">
-                    <Fade left delay={300}>
+                    <Fade left>
                         <div className="mac-container">
                             <img src={mac}></img>
                             <div className="demo">
@@ -119,40 +133,45 @@ const Home = (props) => {
                             </div>
                         </div>
                     </Fade>
-                    <Fade left delay={800}>
+                    <Fade left>
                         <div className="card">
                             <img className="card-title" src={displayElement.title}></img>
                             <p>{displayElement.desc}</p>
-                            <div className="load-bar"></div>
-                            <img id="cardArrow" src={arrow}></img>
+                            <button className="proj-btn">View Project</button> 
+                            {/* <div className="load-bar"></div> */}
                         </div>
                     </Fade>
+
+                    <div className="next-btn" onClick={slideNext}>
+                        <img src={arrow}></img>
+                    </div>
                 </div>
 
-                <div className="container background">
-                    
-                    <div className="container background-content">
-                        <img id="background-logo" src={logo}></img>
-                        <p className="background-text">
+                <div className="container bg">
+                    <Fade>
+                        <img className="bg-logo" src={logo}></img>
+                        <p className="bg-p">
                             Through 7 years experience of free lance design I expanded my passion into web development. 
                             I inspire to bring visions to life through visual graphics and full stack applications.
                         </p>
-                    </div>
-                    
+                    </Fade>
+
                     <Trigger onEnterViewport={() => setplayAnim(true)} onLeaveViewport={() => console.log("leave")}/>
 
-                    {playAnim? 
+                    {playAnim?
                         <Lottie
                             className="dev-anim"
                             options={lowfiAnim}
                             playingState='play'/>
                         : null
                     }
+
                 </div>
 
                 <div className="container tools">
-                    <Fade delay={800}>
-                        <h1 className="section-title">Tools</h1>
+
+                    <Fade>
+                        <h1 className="section-title">TOOLS</h1>
                     </Fade>
                 
                     <div className="tools-content">
@@ -231,7 +250,7 @@ const Home = (props) => {
                 <Trigger onEnterViewport={() => playIcons()} onLeaveViewport={() => console.log("leave")}/>
 
                 <div className="container project"> 
-                    <Fade delay={500}>
+                    <Fade>
                         <h1 className="section-title">Projects</h1>
                     </Fade>                       
                 </div>
@@ -262,7 +281,7 @@ const Home = (props) => {
                             <p>- Jazel Zulueta, Owner</p>
                         </div>
                     </Fade>
-                    <Fade delay={300}>
+                    <Fade>
                         <div className="testimonial-card">
                             <img className="testimonial-logo" src={jazelbites}></img>
                             <h1>NextGen Edu.</h1>
@@ -271,7 +290,7 @@ const Home = (props) => {
                             <p>- Christopher Gonzales, Co-owner</p>
                         </div>
                     </Fade>
-                    <Fade delay={800}>
+                    <Fade>
                         <div className="testimonial-card">
                             <img className="testimonial-logo" src={jazelbites}></img>
                             <h1>Pepi's Techsuit</h1>

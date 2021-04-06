@@ -43,6 +43,44 @@
     width: 75%;
 }
 
+@media screen and (max-width: 1000px) {
+    .roles-container {
+        width: 30%;
+    }
+    .goal-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .roles-container {
+        width: 35%;
+    }
+    .goal-container {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .breakdown {
+        flex-direction: column;
+    }
+    .roles-container {
+        display: flex;
+        justify-content: space-between;
+        width: 380px;
+    }
+    .goal-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .roles-container {
+        flex-direction: column;
+        width: 100%;
+    }
+}
 
 /* Intro Graphic */
 
@@ -76,6 +114,13 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .graphic {}
+    .graphic-strip {
+        height: 47vw;
+    }
 }
 
 

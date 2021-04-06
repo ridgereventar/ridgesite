@@ -108,17 +108,21 @@ const Sui = (props) => {
             <div className="proj-container breakdown">
                 <Fade>
                     <div className="roles-container">
-                        <h2>Deliverables</h2>
-                        <ul className="proj-p">
-                            <li>Responsive Website</li>
-                            <li>Brand Identity</li>
-                        </ul>
-                        <h2>Roles</h2>
-                        <ul className="proj-p">
-                            <li>UI / UX Design</li>
-                            <li>Develop</li>
-                            <li>Database Management</li>
-                        </ul>
+                        <div>
+                            <h2>Deliverables</h2>
+                            <ul className="proj-p">
+                                <li>Responsive Website</li>
+                                <li>Brand Identity</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Roles</h2>
+                            <ul className="proj-p">
+                                <li>UI / UX Design</li>
+                                <li>Develop</li>
+                                <li>Database Management</li>
+                            </ul>
+                        </div>
                     </div>
                     <div className="goal-container">
                         <h2>Goals</h2>

@@ -22,6 +22,8 @@ import logo from '../images/Rlogo.png';
 import mac from '../images/mac.png';
 import jazelbites from '../images/jazelbites.png';
 import me from '../images/me.png';
+import nextbtn from '../images/next.png';
+import { isElementOfType } from 'react-dom/test-utils';
 
 const Home = (props) => {
 
@@ -53,11 +55,15 @@ const Home = (props) => {
         }
     ])
 
-    const [displayElement, setDisplayElement] = useState(slideArray[0]);
-    const [index, setIndex] = useState(1);
+    const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
     const slideNext = () => {
-        setDisplayElement(slideArray[index]);
+        if(currentSlideIndex >= slideArray.length - 1) {
+            setCurrentSlideIndex(0)
+        } else {
+            setCurrentSlideIndex(currentSlideIndex + 1);            
+        }
+        // setDisplayElement(slideArray[index]);
         // Promise.resolve().then(() => {
         //     if(index >= 2) {
         //         console.log("YES");
@@ -84,10 +90,9 @@ const Home = (props) => {
     //     }
     // }, []);
 
-
+    const currentSlideObj = slideArray[currentSlideIndex]
     return (
         <React.Fragment>
-            {console.log(displayElement.demo)}
 
             <div className="home">
 
@@ -129,21 +134,21 @@ const Home = (props) => {
                         <div className="mac-container">
                             <img src={mac}></img>
                             <div className="demo">
-                                <video src={displayElement.demo} type="video/mp4" playsInline autoPlay loop muted></video>
+                                <video src={currentSlideObj.demo} type="video/mp4" playsInline autoPlay loop muted></video>
                             </div>
                         </div>
                     </Fade>
                     <Fade left>
                         <div className="card">
-                            <img className="card-title" src={displayElement.title}></img>
-                            <p>{displayElement.desc}</p>
+                            <img className="card-title" src={currentSlideObj.title}></img>
+                            <p>{currentSlideObj.desc}</p>
                             <button className="proj-btn">View Project</button> 
                             {/* <div className="load-bar"></div> */}
                         </div>
                     </Fade>
 
                     <div className="next-btn" onClick={slideNext}>
-                        <img src={arrow}></img>
+                        <img src={nextbtn}></img>
                     </div>
                 </div>
 

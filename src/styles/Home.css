@@ -11,18 +11,21 @@
     padding: 0 60px;
 }
 
-@media screen and (max-width: 570px) {
-    .container {
-        padding: 0 30px;
-    }
-}
 
 .proj-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 100px;
+    padding: 0 60px;
 }
 
+@media screen and (max-width: 570px) {
+    .container {
+        padding: 0 20px;
+    }
+    .proj-container {
+        padding: 0 20px;
+    }
+}
 .site-btn {
     margin-top: 20px;
     border: none;
@@ -142,9 +145,6 @@
     .hero {
         height: calc(100vh - 35px);
     }
-    .container {
-        padding: 0 20px;
-    }
     #introDesc {
         font-size: 1rem;
     }
@@ -195,7 +195,7 @@
 }
 
 .card {
-    width: 260px; 
+    width: 300px; 
     height: max-content;
     color: white;
     /* padding: 40px 40px; */
@@ -218,9 +218,14 @@
 }
 
 .next-btn {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
     /* background-color: red; */
+}
+
+.next-btn img {
+    width: 45px;
+    height: 45px;
 }
 
 #cardArrow {
@@ -374,8 +379,6 @@
 
 
 .tools { 
-    margin-top: 50px;
-    height: 500px;
     display: flex; 
     flex-direction: column; 
     align-items: center;
@@ -392,7 +395,7 @@
 }
 
 .tools-content {
-    width: 70%;   
+    width: 770px;   
     height: max-content;  
     display: flex;
     justify-content: space-between;    
@@ -404,7 +407,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;    
-    /* background-color: #E74949; */
+    /* background-color: blue; */
 }
 
 .tool-icon {
@@ -420,6 +423,7 @@
 }
 
 .tool-content p {
+    line-height: 25px;
     display: none;
 }
 
@@ -435,20 +439,20 @@
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 800px) {
-    .tools {
-        margin-top: 0;
-    }
+@media screen and (max-width: 770px) {
     .tools-content {
         width: 100%;
     }
-    .section-title {
-        font-size: 8vw; 
-        margin-bottom: 50px;
+    .tool-category {
+        width: 125px;
     }
+    .tool-icon {
+        margin-bottom: 20px;
+    }
+
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
     .tools-content {
         flex-direction: column;
     }
@@ -459,7 +463,7 @@
         align-items: center ;
     }
     .tool-icon {
-        width: 22%;
+        width: 100px;
         margin-bottom: 0;
     }
     .tool-content {
@@ -474,6 +478,11 @@
     }
 }
 
+@media screen and (max-width: 365px) {
+    .sm-header {
+        font-size: 1rem;
+    }
+}
 
 /* Projects */
 
@@ -503,10 +512,6 @@
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 720px) {
-    
-}
-
 
 /* Testimonials  */
 
@@ -526,6 +531,7 @@
     color: white;
     padding: 30px;    
     background-color: #232323;
+    position: relative;
 }
 
 .testimonial-card img {
@@ -545,14 +551,14 @@
     background-color: #E74949;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .testimonials {
         height: max-content;
         flex-direction: column;
         align-items: center;
     }
     .testimonial-card {
-        width: 65%;
+        width: 80%;
         margin-bottom: 35px;
     }
 }

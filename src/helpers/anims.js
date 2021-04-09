@@ -5,6 +5,7 @@ import devJson from '../svgs/devIcon.json';
 import motionJson from '../svgs/motionIcon.json';
 
 import suiJson from '../svgs/suiAnim4.json';
+import suiJson2 from '../svgs/suianim.json';
 
 
 export const pepiAnim = {
@@ -46,5 +47,5 @@ export const suiAnim = {
     renderer: 'svg',
     loop: false,
     autoplay: true,
-    animationData: suiJson
+    animationData: suiJson2
 }

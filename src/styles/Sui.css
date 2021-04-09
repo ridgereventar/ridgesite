@@ -6,25 +6,12 @@
 
 /* Project Hero */
 
-.proj-hero {
-    height: calc(100vh - 100px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-}
 
-.proj-hero img {
-    width: 270px;
-}
-
-.proj-hero p {
-    margin-top: 30px;
-}
 
 
 /* Breakdown */
 
-.breakdown {
+/* .breakdown {
     height: max-content;
     display: flex;
 }
@@ -80,7 +67,7 @@
         flex-direction: column;
         width: 100%;
     }
-}
+} */
 
 /* Intro Graphic */
 

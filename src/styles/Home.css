@@ -5,11 +5,6 @@
     overflow: hidden;
 }
 
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 60px;
-}
 
 
 .proj-container {
@@ -18,14 +13,7 @@
     padding: 0 60px;
 }
 
-@media screen and (max-width: 570px) {
-    .container {
-        padding: 0 20px;
-    }
-    .proj-container {
-        padding: 0 20px;
-    }
-}
+
 .site-btn {
     margin-top: 20px;
     border: none;

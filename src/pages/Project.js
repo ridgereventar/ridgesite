@@ -53,10 +53,11 @@ const Project = () => {
                 </div>
             </section>
 
-            <section>
+            <section className="proj-intro-section">
+                <div className="blue-bg"/>
                 <div className="container proj-intro">
                     
-                    <h1>Branding & Development Made Easy</h1>
+                    <h1>Branding & Development <br/> Made Easy</h1>
                     <Lottie
                         className="sui-intro-anim"
                         options={suiAnim}
@@ -65,29 +66,34 @@ const Project = () => {
             </section>
 
             <section>
-                <div className="container">
-                    <h1>Brand Definition</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div className="container text-img-container">
+                    <div>
+                        <h1>Brand Definition</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
                     <img src={brand}/>
                 </div>
             </section>
 
             <section>
-                <div className="container">
-                    <h1>Design / Prototyping</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div className="container text-img-container">
+                    <div>
+                        <h1>Design / Prototyping</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
                     <img src={lowfis}/>
                 </div>
       
             </section>
 
-            <section>
-                <div className="container">
-                    <img src={landing}/>
-                    <img src={login}/>
-                    <img src={signup}/>
-                    <img src={home}/>
-                    <img src={create}/>
+            <section className="slant-container">
+                <div className="grey-slant-bg"/>
+                <div className="container highfi-container">
+                    <img id="hfLanding" src={landing}/>
+                    <img id="hfLogin" src={login}/>
+                    <img id="hfSignup" src={signup}/>
+                    <img id="hfHome" src={home}/>
+                    <img id="hfCreate" src={create}/>
                 </div>
             </section>
 

@@ -24,6 +24,73 @@ import {TECH_BLOBS} from '../helpers/constants';
 import demo from '../images/demos/SUidemoS.mov';
 
 const Project = () => {
+
+    const [show1, setShow1] = useState(true);
+    const [show2, setShow2] = useState(false);
+    const [show3, setShow3] = useState(false);
+    const [show4, setShow4] = useState(false);
+    const [show5, setShow5] = useState(false);
+
+    const setArray = [setShow1, setShow2, setShow3, setShow4, setShow5]
+    const [scrollDir, setScrollDir] = useState("down");
+
+    useEffect(() => {
+        const threshold = 0;
+        let lastScrollY = window.pageYOffset;
+        let ticking = false;
+      
+        const updateScrollDir = () => {
+          const scrollY = window.pageYOffset;
+      
+          if (Math.abs(scrollY - lastScrollY) < threshold) {
+            ticking = false;
+            return;
+          }
+          setScrollDir(scrollY > lastScrollY ? "down" : "up");
+          lastScrollY = scrollY > 0 ? scrollY : 0;
+          ticking = false;
+        };
+      
+        const onScroll = () => {
+          if (!ticking) {
+            window.requestAnimationFrame(updateScrollDir);
+            ticking = true;
+          }
+        };
+      
+        window.addEventListener("scroll", onScroll);
+        console.log(scrollDir);
+      
+        return () => window.removeEventListener("scroll", onScroll);
+    }, [scrollDir]);
+
+    const setAllFalse = () => {
+        setShow1(false);
+        setShow2(false);
+        setShow3(false);
+        setShow4(false);
+        setShow5(false);
+    }
+
+    const switchTech = (index) => {
+        setAllFalse();
+        console.log(index);
+        
+        if(scrollDir === "down") {
+            if(index < 4) {
+                setArray[index + 1](true);
+            } else if (index == 4) {
+                setArray[index](true);
+            }    
+        } else {
+            if(index > 0) {
+                setArray[index - 1](true);
+            } else if(index == 0) {
+                setArray[index](true);
+            }
+        }
+    }
+
     return (
         <React.Fragment>
             
@@ -97,14 +164,29 @@ const Project = () => {
                 </div>
             </section>
 
-            <section>
-                {TECH_BLOBS.map((tech, index) => {
-                    return (
-                        <Tech 
-                        title={tech.title}
-                        par={tech.par}></Tech>
-                    )
-                })}
+            <section className="dev-section">
+                <div className="screen-wrapper">
+                    <div className="screen">
+                        <div className="screen-content">
+                            {show1? <img src={landing}/> : null}
+                            {show2? <img src={create}/> : null}
+                            {show3? <img src={landing}/> : null}
+                            {show4? <img src={home}/> : null}
+                            {show5? <img src={create}/> : null}
+                        </div>
+                    </div>
+                </div>
+                <div className="tech-blob-wrapper">
+                    {TECH_BLOBS.map((tech, index) => {
+                        return (
+                            <Tech 
+                            onLeaveViewport={() => switchTech(index)}
+                            title={tech.title}
+                            par={tech.par}></Tech>
+                        )
+                    })}
+                </div>
+
             </section>
 
             <section>

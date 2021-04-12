@@ -189,9 +189,9 @@ const Project = () => {
 
             </section>
 
-            <section>
-                <div className="container">
-                    <h1>Final Site Demo</h1>
+            <section className="demo-section">
+                <div className="container demo-container">
+                    <h1>Demo</h1>
                     <video src={demo} controls></video>
                 </div>
             </section>

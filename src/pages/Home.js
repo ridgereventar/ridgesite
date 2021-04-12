@@ -63,32 +63,7 @@ const Home = (props) => {
         } else {
             setCurrentSlideIndex(currentSlideIndex + 1);            
         }
-        // setDisplayElement(slideArray[index]);
-        // Promise.resolve().then(() => {
-        //     if(index >= 2) {
-        //         console.log("YES");
-        //         setIndex(0);
-        //     }
-        //     console.log(index);
-        //     setDisplayElement(slideArray[index]);
-        //     setIndex(index + 1);
-        // })
-
     }
-
-    // useEffect(() => {
-    //     console.log(slideArray.length)
-    //     const interval = setInterval(() => {
-    //         setDisplayElement(slideArray[index]);
-    //         index += 1;
-    //         if(index >= slideArray.length) {
-    //             index = 0;
-    //         }
-    //     }, 10000);
-    //     return () => {
-    //         clearInterval(interval);
-    //     }
-    // }, []);
 
     const currentSlideObj = slideArray[currentSlideIndex]
     return (

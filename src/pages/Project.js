@@ -6,6 +6,7 @@ import '../styles/Project.css';
 //components
 import Nav from '../components/Nav';
 import Tech from '../components/Tech';
+import Trigger from '../components/Trigger';
 
 
 //assets
@@ -25,6 +26,7 @@ import demo from '../images/demos/SUidemoS.mov';
 
 const Project = () => {
 
+    const [playAnim, setPlayAnim] = useState(false);
     const [show1, setShow1] = useState(true);
     const [show2, setShow2] = useState(false);
     const [show3, setShow3] = useState(false);
@@ -100,6 +102,7 @@ const Project = () => {
                 <div className="container proj-hero">
                     <img id="suiHeroTitle" src={suiLogo}></img>
                     <p>A Style Guide & Ui Component Generator</p>
+                    <Trigger onLeaveViewport={() => setPlayAnim(true)}></Trigger>        
                 </div>
             </section>
 
@@ -121,15 +124,15 @@ const Project = () => {
             </section>
 
             <section className="proj-intro-section">
-                <div className="blue-bg"/>
-                <div className="container proj-intro">
-                    
-                    <h1>Branding & Development <br/> Made Easy</h1>
-                    <Lottie
-                        className="sui-intro-anim"
-                        options={suiAnim}
-                        playingState='play'/>
-                </div>
+                    <div className="blue-bg"/>
+                    <div className="container proj-intro">
+                        
+                        <h1>Branding & Development <br/> Made Easy</h1>
+                        <Lottie
+                            className="sui-intro-anim"
+                            options={suiAnim}
+                            playingState='play'/>            
+                    </div>
             </section>
 
             <section>

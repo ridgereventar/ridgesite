@@ -1,16 +1,21 @@
-/* .nav-wrapper {
-    height: 100px; 
+
+
+.nav-wrapper {
     width: 100%;
-    background-color: #212121;
-} */
+    height: max-content;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: top 0.3s;
+
+}
 
 .nav-bar {
-    height: 35px;
-    margin-top: 40px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: blue; */
 }
 
 #navLogo {

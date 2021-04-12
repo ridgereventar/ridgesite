@@ -3,7 +3,6 @@ import Lottie from 'lottie-web-react';
 import {Fade} from 'react-reveal';
 import { StickyContainer, Sticky } from 'react-sticky';
 
-import '../styles/Sui.css';
 
 import {suiAnim} from '../helpers/anims';
 import {TECH_BLOBS} from '../helpers/constants';

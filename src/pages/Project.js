@@ -26,6 +26,7 @@ import demo from '../images/demos/SUidemoS.mov';
 
 const Project = () => {
 
+
     const [playAnim, setPlayAnim] = useState(false);
     const [show1, setShow1] = useState(true);
     const [show2, setShow2] = useState(false);
@@ -35,6 +36,10 @@ const Project = () => {
 
     const setArray = [setShow1, setShow2, setShow3, setShow4, setShow5]
     const [scrollDir, setScrollDir] = useState("down");
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     useEffect(() => {
         const threshold = 0;

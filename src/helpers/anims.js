@@ -7,6 +7,8 @@ import motionJson from '../svgs/motionIcon.json';
 import suiJson from '../svgs/suiAnim4.json';
 import suiJson2 from '../svgs/suianim.json';
 
+import burgerFJson from '../svgs/burgerFlight.json';
+import burgerBJson from '../svgs/burgerBlight.json';
 
 export const pepiAnim = {
     renderer: 'svg',
@@ -48,4 +50,18 @@ export const suiAnim = {
     loop: false,
     autoplay: true,
     animationData: suiJson2
+}
+
+export const burgerF = {
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    animationData: burgerFJson
+}
+
+export const burgerB = {
+    renderer: 'svg',
+    loop: false,
+    autoplay: false,
+    animationData: burgerBJson
 }

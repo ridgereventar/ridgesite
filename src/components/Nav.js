@@ -1,14 +1,33 @@
 import React, {useState, useEffect} from 'react';
+import Lottie from 'lottie-web-react';
 import {NavLink} from "react-router-dom"; 
 
 import '../styles/Nav.css';
 
 import logodark from '../images/logodark.png';
 import logolight from '../images/logolight.png';
-import burger from '../images/burger.png';
+
+import {burgerF, burgerB} from '../helpers/anims';
 
 const ProjNav = (props) => {
+
+    const [logo, setLogo] = useState(logolight);
+    const [color, setColor] = useState("white");
+
+    const [showSlider, setShowSlider] = useState(false);
+    const [toggleBurger, setToggleBurger] = useState(true);  
+
+    const toggleSlider = () => {
+        setShowSlider(!showSlider);
+        setToggleBurger(!toggleBurger);
+    }
+
     useEffect(() => {
+        if(props.proj) {
+            document.getElementById("burgerWrapper").style.filter = "invert(1)";
+            setLogo(logodark);
+            setColor("black");
+        }
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
 
@@ -20,12 +39,23 @@ const ProjNav = (props) => {
             }
             prevScrollpos = currentScrollPos;
 
-            console.log(window.pageYOffset);
             if ( window.pageYOffset == 0) {
+                if(!props.proj) {
+                    setLogo(logolight);
+                    setColor("white"); 
+                    document.getElementById("burgerWrapper").style.filter = "invert(0)";
+                }
                 document.getElementById("navbar").style.backgroundColor = "";
+                document.getElementById("navbar").style.boxShadow = "";
+
             } 
             if (window.pageYOffset > 300) {
-                document.getElementById("navbar").style.backgroundColor = "black";
+                setLogo(logodark);
+                setColor("black");
+                document.getElementById("burgerWrapper").style.filter = "invert(1)";
+                document.getElementById("navbar").style.backgroundColor = "white";
+                document.getElementById("navbar").style.boxShadow = "0 1px 5px rgb(0 0 0 / 10%)";
+
             }
         }
         
@@ -33,12 +63,26 @@ const ProjNav = (props) => {
     
     return (
         <div id="navbar" className="nav-wrapper">
+
             <div className="container nav-bar">
+                
                 <NavLink to="/">
-                    {props.proj? <img id="navLogo" src={logodark}/> : <img id="navLogo" src={logolight}/>}
+                    <img id="navLogo" src={logo}/>
                 </NavLink>
-                {/* <img id="burger" src={burger}></img> */}
-                <ul className="nav" style={props.proj? {color: "black"} : {color: "white"}}>
+
+                <div id="burgerWrapper" className="burger-wrapper" onClick={toggleSlider}>
+                    {toggleBurger? 
+                        <Lottie
+                            options={burgerB}
+                            playingState="play"/>
+                        : 
+                        <Lottie
+                            options={burgerF}
+                            playingState="play"/>}                 
+                </div>
+
+                
+                <ul className="nav" style={{color: color}}>
                     <NavLink to="/about">
                         <li className="nav-link">About</li>
                     </NavLink>

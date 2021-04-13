@@ -20,6 +20,41 @@
     transition: top 0.3s;
 }
 
+.proj-slider {
+    width: 100%;
+    height: 120px; 
+    padding-top: 80px;
+    position: fixed;
+    background-color: white;
+    z-index: -1;
+    transition: top 0.3s;
+}
+
+.proj-slider-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.scrollLeft {
+    height: 120px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.scrollRight {
+    height: 120px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
 
 
 .nav-bar {

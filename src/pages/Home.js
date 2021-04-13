@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
@@ -30,6 +30,7 @@ const Home = (props) => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
+
 
     const [playAnim, setplayAnim] = useState(false);
     const [playDesIcon, setPlayDesIcon] = useState(false);

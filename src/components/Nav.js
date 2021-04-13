@@ -7,8 +7,10 @@ import '../styles/Nav.css';
 
 import logodark from '../images/logodark.png';
 import logolight from '../images/logolight.png';
+import ProjectIcon from '../components/ProjectIcon';
 
 import {burgerF, burgerB} from '../helpers/anims';
+import {PROJECTS} from '../helpers/constants';
 
 const ProjNav = (props) => {
 
@@ -20,6 +22,8 @@ const ProjNav = (props) => {
 
 
     const [showSlider, setShowSlider] = useState(false);
+    const [showProjSlider, setShowProjSlider] = useState(false);
+
     const [toggleBurger, setToggleBurger] = useState(true);  
 
     const toggleSlider = () => {
@@ -29,6 +33,14 @@ const ProjNav = (props) => {
         }
         setShowSlider(!showSlider);
         setToggleBurger(!toggleBurger);
+    }
+
+    const toggleProjSlider = () => {
+        if(allowInvert) {
+            setDarkLogo(!darkLogo);
+            setDarkColor(!darkColor);
+        }
+        setShowProjSlider(!showProjSlider);
     }
 
     useEffect(() => {
@@ -41,6 +53,7 @@ const ProjNav = (props) => {
                 document.getElementById("navbar").style.top = "0";
             } else {
                 setShowSlider(false);
+                setShowProjSlider(false);
                 document.getElementById("navbar").style.top = "-100px";
                 
             }
@@ -69,6 +82,31 @@ const ProjNav = (props) => {
         }
         
     }, []);
+
+    var scrolling = null;
+
+    const scrollLeft = () => {
+        var d = document.getElementById('scroller');
+        d.scrollLeft = d.scrollLeft - 5;
+        scrolling = window.setTimeout(function() {
+            scrollLeft();
+        }, 20);
+        console.log("Scrolling left");
+    }
+
+    const scrollRight = () => {
+        var d = document.getElementById('scroller');
+        d.scrollLeft = d.scrollLeft + 5;
+        scrolling = window.setTimeout(function() {
+            scrollRight();
+        }, 20);
+        console.log("Scrolling Right");
+    }
+
+    const stopScroll = () => {
+        window.clearTimeout(scrolling);
+    }
+
     
     return (
         <div id="navbar" className="nav-wrapper">
@@ -84,6 +122,28 @@ const ProjNav = (props) => {
                     : null}
                  
                 </div>
+            </div>
+
+            <div className="proj-slider" style={showProjSlider? {top: "0"} : {top: "-300px"}}>
+                
+                <div className="scrollLeft" onMouseOver={scrollLeft} onMouseOut={stopScroll}></div>
+                <div className="scrollRight" onMouseOver={scrollRight} onMouseOut={stopScroll}></div>
+
+                <div id="scroller" className="container proj-slider-container">
+
+                    {PROJECTS.map((proj, index) => {
+                        return (
+                            <Fade>
+                                <ProjectIcon
+                                    small={true}
+                                    key={index}
+                                    proj={proj}/>
+                            </Fade>
+
+                        );
+                    })}
+                </div>
+
             </div>
 
             <div className="container nav-bar">
@@ -110,9 +170,9 @@ const ProjNav = (props) => {
                     <NavLink to="/about">
                         <li className="nav-link">About</li>
                     </NavLink>
-                    <NavLink to="/projects">
-                        <li className="nav-link">Projects</li>
-                    </NavLink>
+
+                    <li className="nav-link" onClick={toggleProjSlider}>Projects</li>
+
                     <NavLink to="/contact">
                         <li className="nav-link">Contact</li>
                     </NavLink>

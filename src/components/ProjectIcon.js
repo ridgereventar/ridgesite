@@ -14,19 +14,38 @@ const ProjectIcon = (props) => {
     }
 
     return (
-        <div 
-            className="projicon-container"
-            style={styles}
-            onMouseEnter={() => {setBgcolor(props.proj.bgcolor); setIcon(props.proj.iconhover)}}
-            onMouseLeave={() => {setBgcolor("white"); setIcon(props.proj.icon)}}>
-                
-                <img className="icon" src={icon}/>
 
-                <div className="projicon-title">
-                    {props.proj.title}
-                </div>
+        <React.Fragment>
+            {props.small? 
 
-        </div>
+            <div 
+                className="projicon-container-small"
+                style={styles}
+                onMouseEnter={() => {setBgcolor(props.proj.bgcolor); setIcon(props.proj.iconhover)}}
+                onMouseLeave={() => {setBgcolor("white"); setIcon(props.proj.icon)}}>
+                    <img className="icon" src={icon}/>
+            </div>
+
+            :
+            <div 
+                className="projicon-container"
+                style={styles}
+                onMouseEnter={() => {setBgcolor(props.proj.bgcolor); setIcon(props.proj.iconhover)}}
+                onMouseLeave={() => {setBgcolor("white"); setIcon(props.proj.icon)}}>
+                    
+                    <img className="icon" src={icon}/>
+
+                    <div className="projicon-title">
+                        {props.proj.title}
+                    </div>
+
+            </div>
+            }
+        </React.Fragment>
+
+
+        
+
     )
 }
 

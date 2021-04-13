@@ -33,26 +33,45 @@
 .proj-slider-container {
     display: flex;
     overflow-x: auto;
+    box-sizing: border-box;
 }
 
-.scrollLeft {
+.proj-slider-container::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.slider-control {
+    padding: 0 100px;
+    position: relative;
+}
+
+.scroll-area {
     height: 120px;
-    width: 100px;
-    background-color: red;
+    width: 60px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: white;
+
+}
+
+.scroll-area img {
+    width: 20px;
+    margin-bottom: 20px;
+}
+
+#scrollLeft {
+    /* background-color: red; */
+    display: none;
     left: 0;
-    bottom: 0;
-    z-index: 2;
 }
 
-.scrollRight {
-    height: 120px;
-    width: 100px;
-    background-color: blue;
-    position: absolute;
+#scrollRight {
+    /* background-color: blue; */
     right: 0;
-    bottom: 0;
-    z-index: 2;
 }
 
 
@@ -92,6 +111,9 @@
 }
 
 @media screen and (max-width: 700px) {
+    .proj-slider {
+        display: none;
+    }
     .burger-wrapper {
         display: block;
     }

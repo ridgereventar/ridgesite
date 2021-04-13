@@ -7,6 +7,9 @@ import '../styles/Nav.css';
 
 import logodark from '../images/logodark.png';
 import logolight from '../images/logolight.png';
+import arrowLeft from '../images/scrollleft.png';
+import arrowRight from '../images/scrollright.png';
+
 import ProjectIcon from '../components/ProjectIcon';
 
 import {burgerF, burgerB} from '../helpers/anims';
@@ -59,7 +62,7 @@ const ProjNav = (props) => {
             }
             prevScrollpos = currentScrollPos;
 
-            if ( window.pageYOffset == 0) {
+            if ( window.pageYOffset < 300) {
                 if(!props.proj) {
                     setDarkLogo(false);
                     setDarkColor(false);
@@ -87,24 +90,40 @@ const ProjNav = (props) => {
 
     const scrollLeft = () => {
         var d = document.getElementById('scroller');
+        console.log(d.scrollLeft);
         d.scrollLeft = d.scrollLeft - 5;
         scrolling = window.setTimeout(function() {
             scrollLeft();
-        }, 20);
-        console.log("Scrolling left");
+        }, 15);
     }
 
     const scrollRight = () => {
         var d = document.getElementById('scroller');
+        console.log(d.scrollLeft);
         d.scrollLeft = d.scrollLeft + 5;
         scrolling = window.setTimeout(function() {
             scrollRight();
-        }, 20);
-        console.log("Scrolling Right");
+        }, 15);
     }
 
     const stopScroll = () => {
         window.clearTimeout(scrolling);
+    }
+
+    const handleArrows = () => {
+        var d = document.getElementById('scroller');
+        if(d.scrollLeft == 0) {
+            document.getElementById("scrollLeft").style.display = "none";
+        } else {
+            document.getElementById("scrollLeft").style.display = "flex";
+        }
+
+        if((d.scrollWidth - d.scrollLeft - d.offsetWidth) == 0) {
+            document.getElementById("scrollRight").style.display = "none";
+        } else {
+            document.getElementById("scrollRight").style.display = "flex";
+        }
+
     }
 
     
@@ -125,12 +144,15 @@ const ProjNav = (props) => {
             </div>
 
             <div className="proj-slider" style={showProjSlider? {top: "0"} : {top: "-300px"}}>
-                
-                <div className="scrollLeft" onMouseOver={scrollLeft} onMouseOut={stopScroll}></div>
-                <div className="scrollRight" onMouseOver={scrollRight} onMouseOut={stopScroll}></div>
-
-                <div id="scroller" className="container proj-slider-container">
-
+                <div className="container slider-control">
+                    <div id="scrollLeft" className="scroll-area" onMouseOver={scrollLeft} onMouseOut={stopScroll}>
+                        <img src={arrowLeft}></img>
+                    </div>
+                    <div id="scrollRight" className="scroll-area" onMouseOver={scrollRight} onMouseOut={stopScroll}>
+                        <img src={arrowRight}></img>
+                    </div>
+                </div>
+                <div id="scroller" className="container proj-slider-container" onScroll={handleArrows}>
                     {PROJECTS.map((proj, index) => {
                         return (
                             <Fade>

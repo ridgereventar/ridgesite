@@ -11,6 +11,7 @@ const ProjNav = (props) => {
     useEffect(() => {
         var prevScrollpos = window.pageYOffset;
         window.onscroll = function() {
+
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
                 document.getElementById("navbar").style.top = "0";
@@ -18,6 +19,14 @@ const ProjNav = (props) => {
                 document.getElementById("navbar").style.top = "-100px";
             }
             prevScrollpos = currentScrollPos;
+
+            console.log(window.pageYOffset);
+            if ( window.pageYOffset == 0) {
+                document.getElementById("navbar").style.backgroundColor = "";
+            } 
+            if (window.pageYOffset > 300) {
+                document.getElementById("navbar").style.backgroundColor = "black";
+            }
         }
         
     }, []);

@@ -3,7 +3,7 @@
 .nav-wrapper {
     width: 100%;
     height: max-content;
-    background-color: red;
+    /* background-color: #343434; */
     position: fixed;
     top: 0;
     z-index: 999;

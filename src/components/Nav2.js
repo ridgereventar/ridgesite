@@ -5,6 +5,8 @@ import { Fade } from "react-reveal";
 
 import '../styles/Nav2.css';
 
+import ProjectSlider from '../components/ProjectSlider';
+
 import logodark from '../images/logodark.png';
 import logolight from '../images/logolight.png';
 // import arrowLeft from '../images/scrollleft.png';
@@ -24,6 +26,8 @@ const Nav2 = (props) => {
     const [showBurgerSlider, setShowBurgerSlider] = useState(false);
     const [showProjSlider, setShowProjSlider] = useState(false);
 
+    const [toggleMiniProjSlider, setToggleMiniProjSlider] = useState(false);
+
     const toggleBurgerSlider = () => {
         if(allowInvert) {
             setLightNav(!lightNav);
@@ -37,6 +41,10 @@ const Nav2 = (props) => {
             setLightNav(!lightNav);
         }
         setShowProjSlider(!showProjSlider);
+    }
+
+    const toggleMiniProj = () => {
+        setToggleMiniProjSlider(!toggleMiniProjSlider);
     }
 
 
@@ -90,18 +98,19 @@ const Nav2 = (props) => {
         <div id="nav" className="nav-wrapper">
             
 
-            <div className="slider burger-slider" style={showBurgerSlider? {top: "0"} : {top: "-280px"}}>
+            <div className="slider burger-slider" style={showBurgerSlider? {top: "0"} : {top: "-400px"}}>
                 <div className="container">
                     <h2>About</h2>
-                    <h2>Projects</h2>
+                    <h2 onClick={toggleMiniProj}>Projects</h2>
+                    {toggleMiniProjSlider?
+                        <ProjectSlider></ProjectSlider>
+                    : null}
                     <h2>Contact</h2>
                 </div>
             </div>
 
             <div className="slider proj-slider" style={showProjSlider? {top: "0"} : {top: "-200px"}}>
-                <div className="container">
-                    <h2>proj slider</h2>
-                </div>
+                <ProjectSlider/>
             </div>
 
             <div className="container navbar">

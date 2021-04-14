@@ -77,7 +77,7 @@ const Home = (props) => {
             <div className="home">
 
                 {/* <Nav proj={false}/> */}
-                <Nav2 light={true}></Nav2>
+                <Nav2 defaultLight={true}></Nav2>
 
                 <div className="hero">
                     <div className="container hero-content">

@@ -17,41 +17,79 @@ import {burgerF, burgerB} from '../helpers/anims';
 
 const Nav2 = (props) => {
 
-    const [lightNav, setLightNav] = useState(props.light);
+    const [lightNav, setLightNav] = useState(false);
+    const [allowInvert, setAllowInvert] = useState(false);
+
     const [toggleBurger, setToggleBurger] = useState(true);
     const [showBurgerSlider, setShowBurgerSlider] = useState(false);
     const [showProjSlider, setShowProjSlider] = useState(false);
 
     const toggleBurgerSlider = () => {
-        // if Nav already light: 
-        setLightNav(!lightNav);
-        // else
+        if(allowInvert) {
+            setLightNav(!lightNav);
+        }
         setToggleBurger(!toggleBurger);
         setShowBurgerSlider(!showBurgerSlider);
     }
 
     const toggleProjSlider = () => {
-        // if Nav already light:
-        setLightNav(!lightNav);
-        // else
+        if(allowInvert) {
+            setLightNav(!lightNav);
+        }
         setShowProjSlider(!showProjSlider);
     }
 
 
     useEffect(() => {
-        window.addEventListener('resize', function(event){
-            if(document.getElementById("burgerAnim").offsetParent == null) {
-                setToggleBurger(true);
-                setShowBurgerSlider(false);
+
+        if(window.scrollY == 0) {
+            if(props.defaultLight) {
+                setLightNav(true);
+                setAllowInvert(true);
+            }        
+        }
+        
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("nav").style.top = "0";
             } else {
                 setShowProjSlider(false);
-            }      
-        });
+                setShowBurgerSlider(false);
+                setToggleBurger(true);
+                document.getElementById("nav").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
+
+            if ( window.pageYOffset == 0) {
+                if(props.defaultLight) {
+                    setLightNav(true);
+                    setAllowInvert(true);
+                }
+                document.getElementById("nav").style.backgroundColor = "";
+                document.getElementById("nav").style.boxShadow = "";
+            } 
+            if (window.pageYOffset > 200) {
+                if(props.defaultLight) {
+                    setLightNav(false);
+                    setAllowInvert(false);
+                }
+                document.getElementById("nav").style.backgroundColor = "white";
+                document.getElementById("nav").style.boxShadow = "0 1px 5px rgb(0 0 0 / 10%)";
+            }
+
+        }
+
+
+
+
     }, []);
     
     return (
-        <div className="nav-wrapper">
+        <div id="nav" className="nav-wrapper">
             
+
             <div className="slider burger-slider" style={showBurgerSlider? {top: "0"} : {top: "-280px"}}>
                 <div className="container">
                     <h2>About</h2>

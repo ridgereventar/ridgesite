@@ -4,7 +4,9 @@ import Lottie from 'lottie-web-react';
 import '../styles/Project.css';
 
 //components
-import Nav from '../components/Nav';
+// import Nav from '../components/Nav';
+import Nav2 from '../components/Nav2';
+
 import Tech from '../components/Tech';
 import Trigger from '../components/Trigger';
 
@@ -101,7 +103,7 @@ const Project = () => {
     return (
         <React.Fragment>
             
-            <Nav proj={true}/>
+            <Nav2 light={false}></Nav2>
 
             <section>
                 <div className="container proj-hero">

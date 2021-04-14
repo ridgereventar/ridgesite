@@ -17,6 +17,10 @@ import {PROJECTS} from '../helpers/constants';
 
 const ProjNav = (props) => {
 
+    const [darkNav, setDarkNav] = useState();
+
+
+
     const [darkLogo, setDarkLogo] = useState(props.proj);
     const [darkColor, setDarkColor] = useState(props.proj);
     const [darkBurger, setDarkBurger] = useState(props.proj);

@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 
 import '../styles/Home.css';
 
-import Nav from '../components/Nav';
+import Nav2 from '../components/Nav2';
 import Trigger from '../components/Trigger';
 import ProjectIcon from '../components/ProjectIcon';
 
@@ -76,7 +76,8 @@ const Home = (props) => {
 
             <div className="home">
 
-                <Nav proj={false}/>
+                {/* <Nav proj={false}/> */}
+                <Nav2 light={true}></Nav2>
 
                 <div className="hero">
                     <div className="container hero-content">

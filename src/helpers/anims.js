@@ -7,8 +7,8 @@ import motionJson from '../svgs/motionIcon.json';
 import suiJson from '../svgs/suiAnim4.json';
 import suiJson2 from '../svgs/suianim.json';
 
-import burgerFJson from '../svgs/burgerFlight.json';
-import burgerBJson from '../svgs/burgerBlight.json';
+import burgerFJson from '../svgs/burgerFdark.json';
+import burgerBJson from '../svgs/burgerBdark.json';
 
 export const pepiAnim = {
     renderer: 'svg',

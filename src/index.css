@@ -10,6 +10,18 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 0 25px;
+  }
+}
+
 h1 {
   margin: 0;
 }
@@ -19,14 +31,50 @@ a {
   color: inherit;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1100px;
-  padding: 0 60px;
+p {
+  font-size: 1rem;
+  line-height: 2rem;
 }
 
-@media screen and (max-width: 570px) {
-  .container {
-      padding: 0 25px;
-  }
+.section-title {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+
+
+.site-btn {
+  margin-top: 20px;
+  border: none;
+  padding: 0.7em 1.50em;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  background-color: #E96D2F;
+  color: white;
+}
+
+.proj-btn {
+  border: none;
+  padding: 0.9em 0.5em;
+  border-radius: 4px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  color: lightgray;
+  background-color: #181818;
+  width: 100px;
+}
+
+.round-btn {
+  margin-top: 20px;
+  border: none;
+  padding: .5em 1.50em;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  background-color: #E74949;
+  color: white;
 }

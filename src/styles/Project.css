@@ -4,7 +4,7 @@ img,video {
 
 
 .proj-hero {
-    height: calc(100vh - 60px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;   
@@ -22,12 +22,6 @@ img,video {
 @media screen and (max-width: 572px) {
     #suiHeroTitle {
         max-width: 230px;
-    }
-}
-
-@media screen and (min-width: 572px) {
-    .proj-hero {
-        height: calc(100vh - 95px)
     }
 }
 
@@ -66,15 +60,18 @@ img,video {
     margin-bottom: 50px;
 }
 
-.blue-bg {
+.proj-intro-bg {
     position: absolute;
     margin: auto;
     top: 0;
     bottom: 0;
-    background-image: linear-gradient(to top right, #2BAAE4, #67D8EC);
     height: 450px;
     width: 100%;
     z-index: -1;
+}
+
+.blue-bg {
+    background-image: linear-gradient(to top right, #2BAAE4, #67D8EC);
 }
 
 .proj-intro {
@@ -108,6 +105,10 @@ img,video {
 @media screen and (max-width: 572px) {
     .proj-intro h1 {
         font-size: 1.4rem;
+    }
+
+    .proj-intro h2 {
+        font-size: 1rem;
     }
 }
 

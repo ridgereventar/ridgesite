@@ -4,12 +4,11 @@ import { Fade } from "react-reveal";
 
 import '../styles/Home.css';
 
-import Nav2 from '../components/Nav2';
+import Nav from '../components/Nav';
 import Trigger from '../components/Trigger';
-import ProjectIcon from '../components/ProjectIcon';
+import ProjectGrid from '../components/ProjectGrid';
 
 import {pepiAnim, lowfiAnim, desAnim, devAnim, motionAnim} from '../helpers/anims';
-import {PROJECTS} from '../helpers/constants';
 
 import suiSample from '../images/demos/suiDemoFinal.mov';
 import nextSample from '../images/demos/nextDemo.mov';
@@ -76,8 +75,7 @@ const Home = (props) => {
 
             <div className="home">
 
-                {/* <Nav proj={false}/> */}
-                <Nav2 defaultLight={true}></Nav2>
+                <Nav defaultNav={false}/>
 
                 <div className="hero">
                     <div className="container hero-content">
@@ -98,12 +96,12 @@ const Home = (props) => {
                             <Fade right>
                                 <div>
                                     <span>Graphic</span>
-                                    <p>DESIGNER</p>
+                                    <span className="hero-title-lg">DESIGNER</span>
                                 </div>
                                 <h2 id="plus">+</h2>
                                 <div>
                                     <span>Front End</span>
-                                    <p>DEVELOPER</p>
+                                    <span className="hero-title-lg">DEVELOPER</span>
                                 </div>
                             </Fade>
                         </div>
@@ -124,7 +122,6 @@ const Home = (props) => {
                             <img className="card-title" src={currentSlideObj.title}></img>
                             <p>{currentSlideObj.desc}</p>
                             <button className="proj-btn">View Project</button> 
-                            {/* <div className="load-bar"></div> */}
                         </div>
                     </Fade>
 
@@ -244,20 +241,9 @@ const Home = (props) => {
             </div>
             
             <div className="home2">
-                <div className="container projects-grid">
-                    {PROJECTS.map((proj, index) => {
-                        return (
-                            <Fade>
-                                <ProjectIcon
-                                    key={index}
-                                    proj={proj}/>
-                            </Fade>
+                <ProjectGrid/>
 
-                        );
-                    })}
-                </div>
-
-                <div className="container testimonials">
+                {/* <div className="container testimonials">
                     <Fade>
                         <div className="testimonial-card">
                             <img className="testimonial-logo" src={jazelbites}></img>
@@ -286,7 +272,7 @@ const Home = (props) => {
                         </div>
                     </Fade>
 
-                </div>
+                </div> */}
 
                 <div className="container about-container">
                     <div className="about-text-container">

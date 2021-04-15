@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 
 import '../styles/ProjectIcon.css';
 
+import {PROJECTS} from '../helpers/constants';
 
 const ProjectIcon = (props) => { 
     

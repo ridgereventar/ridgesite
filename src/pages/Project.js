@@ -4,8 +4,7 @@ import Lottie from 'lottie-web-react';
 import '../styles/Project.css';
 
 //components
-// import Nav from '../components/Nav';
-import Nav2 from '../components/Nav2';
+import Nav from '../components/Nav';
 
 import Tech from '../components/Tech';
 import Trigger from '../components/Trigger';
@@ -103,7 +102,7 @@ const Project = () => {
     return (
         <React.Fragment>
             
-            <Nav2 light={false}></Nav2>
+            <Nav defaultNav={true}/>
 
             <section>
                 <div className="container proj-hero">
@@ -131,7 +130,7 @@ const Project = () => {
             </section>
 
             <section className="proj-intro-section">
-                    <div className="blue-bg"/>
+                    <div className="proj-intro-bg blue-bg"/>
                     <div className="container proj-intro">
                         
                         <h1>Branding & Development <br/> Made Easy</h1>

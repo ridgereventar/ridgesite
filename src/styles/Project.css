@@ -19,7 +19,7 @@ img,video {
     max-width: 272px;
 }
 
-@media screen and (max-width: 572px) {
+@media screen and (max-width: 500px) {
     #suiHeroTitle {
         max-width: 230px;
     }
@@ -39,7 +39,7 @@ img,video {
     line-height: 2.125rem;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
     .breakdown {
         flex-direction: row;
     }
@@ -71,6 +71,7 @@ img,video {
 }
 
 .blue-bg {
+    min-height: 200px;
     background-image: linear-gradient(to top right, #2BAAE4, #67D8EC);
 }
 
@@ -86,29 +87,36 @@ img,video {
 
 }
 .sui-intro-anim {
+    min-width: 240px;
     max-width: 550px;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
     .blue-bg {
         height: 45vw;
     }
 }
 
-@media screen and (max-width: 650px) {
-    .blue-bg {
-        height: 37vw;
-    }
-}
-
-@media screen and (max-width: 572px) {
+@media screen and (max-width: 768px) {
     .proj-intro h1 {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
     }
 
     .proj-intro h2 {
         font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sui-intro-anim {
+        margin-left: 20px;
+    }
+    .blue-bg {
+        height: 35vw;
+    }
+    .proj-intro h1 {
+        font-size: 1.4rem;
     }
 }
 
@@ -119,12 +127,12 @@ img,video {
 }
 
 .text-img-container p{
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     font-size: 1.1rem;
     line-height: 2.125rem;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 992px) {
     .text-img-container {
         display: flex;
         justify-content: space-between;
@@ -214,22 +222,13 @@ img,video {
     }
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 992px) {
     #hfLogin, #hfSignup {
         right: 5%;
     }
 }
 
-@media screen and (max-width: 700px) {
-    #hfLogin, #hfSignup {
-        right: 2%;
-    }
-}
-
-@media screen and (max-width: 570px) {
-    #hfLogin, #hfSignup {
-        right: 7%;
-    }
+@media screen and (max-width: 768px) {
     .highfi-container img {
         margin: 0 25px; 
     }
@@ -312,7 +311,7 @@ img,video {
     width: 50%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     .screen-wrapper {
         display: none;
     }

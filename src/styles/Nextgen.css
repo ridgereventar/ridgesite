@@ -19,13 +19,3 @@
     .black-bg {
     }
 }
-
-@media screen and (max-width: 572px) {
-    .proj-intro h1 {
-        font-size: 1.4rem;
-    }
-
-    .proj-intro h2 {
-        font-size: 1rem;
-    }
-}

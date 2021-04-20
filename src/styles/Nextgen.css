@@ -19,3 +19,65 @@
     .black-bg {
     }
 }
+
+
+.mockup-container {
+    margin-bottom: 150px;
+    
+}
+
+.ngslant-container {
+    height: 2070px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+@media screen and (max-width: 1082px) {
+    .ngslant-container {
+        height: 192vw;
+    }
+}
+
+.nghighfi-container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 40px;
+    height: 100%;
+    position: relative;
+}
+
+.nghighfi-container img {
+    border-radius: 0.5vw;
+    position: absolute;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07); 
+    margin: 0 60px;  
+}
+
+#ngcover {
+    width: 18%;
+    top: 0;
+    left: 0;
+}
+
+#nglanding {
+    width: 33%;
+    top: 0;
+    left: 20.5%;
+}
+
+#ngworkshop {
+    width: 33%;
+    top: 8%; 
+    right: 0;
+}
+
+#ngabout {
+    width: 53.5%;
+    bottom: -2%; 
+    left: 0;
+}

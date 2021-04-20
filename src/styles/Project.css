@@ -57,7 +57,7 @@ img,video {
 .proj-intro-section {
     position: relative;
     overflow: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .proj-intro-bg {
@@ -291,7 +291,7 @@ img,video {
     justify-content: center;
     margin-bottom: 200px;
     position: relative;
-    /* background-color: lightblue; */
+    background-color: lightblue;
     
 }
 

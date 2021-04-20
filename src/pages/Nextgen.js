@@ -4,11 +4,51 @@ import '../styles/Project.css';
 import '../styles/Nextgen.css';
 
 import Nav from '../components/Nav';
+import Tech from '../components/Tech';
 
 import nextgenLogo from '../images/projects/nextgen/nextgenLogo.png';
 import booklet from '../images/projects/nextgen/booklet.png';
 
+import ngLogoDes from '../images/projects/nextgen/nglogodesign.png';
+import ngproto from '../images/projects/nextgen/ngprototyping.png';
+import ngmockups from '../images/projects/nextgen/ngmockups.png';
+import nglanding from '../images/projects/nextgen/nglanding.png';
+import ngcover from '../images/projects/nextgen/ngcover.png';
+import ngabout from '../images/projects/nextgen/ngabout.png';
+import ngworkshop from '../images/projects/nextgen/ngworkshop.png';
+
+import {TECH_BLOBS} from '../helpers/constants';
+
+import landing from '../images/projects/sui/landing.png';
+import login from '../images/projects/sui/loginpanel.png';
+import signup from '../images/projects/sui/signuppanel.png';
+import home from '../images/projects/sui/home.png';
+import create from '../images/projects/sui/create.png';
+
+import demo from '../images/demos/SUidemoS.mov';
+
+
 const Nextgen = () => {
+
+    const switchTech = (index) => {
+        // setAllFalse();
+        // console.log(index);
+        
+        // if(scrollDir === "down") {
+        //     if(index < 4) {
+        //         setArray[index + 1](true);
+        //     } else if (index == 4) {
+        //         setArray[index](true);
+        //     }    
+        // } else {
+        //     if(index > 0) {
+        //         setArray[index - 1](true);
+        //     } else if(index == 0) {
+        //         setArray[index](true);
+        //     }
+        // }
+    }
+
     return (
         <React.Fragment>
             <Nav defaultNav={true}/>
@@ -44,6 +84,74 @@ const Nextgen = () => {
                         <h2>A school seeking to lead the next generation of barbers towards success.</h2>
                         <img id="nextgenBooklet" src={booklet}/>          
                     </div>
+            </section>
+
+            <section>
+                <div className="container text-img-container">
+                    <div>
+                        <h1>Brand Definition</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <img src={ngLogoDes}/>
+                </div>
+            </section>
+
+            <section>
+                <div className="container text-img-container">
+                    <div>
+                        <h1>Design / Prototyping</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <img src={ngproto}/>
+                </div>
+            </section>
+
+            <section>
+                <div className="container mockup-container">
+                    <img src={ngmockups}></img>
+                </div>
+            </section>
+
+            <section className="ngslant-container">
+                <div className="grey-slant-bg"/>
+                <div className="nghighfi-container">
+                    <img id="ngcover" src={ngcover}/>
+                    <img id="nglanding" src={nglanding}/>
+                    <img id="ngworkshop" src={ngworkshop}/>
+                    <img id="ngabout" src={ngabout}/>
+                </div>
+            </section>
+
+            <section className="dev-section">
+                <div className="screen-wrapper">
+                    <div className="screen">
+                        <div className="screen-content">
+                            {/* {show1? <img src={landing}/> : null}
+                            {show2? <img src={create}/> : null}
+                            {show3? <img src={landing}/> : null}
+                            {show4? <img src={home}/> : null}
+                            {show5? <img src={create}/> : null} */}
+                        </div>
+                    </div>
+                </div>
+                <div className="tech-blob-wrapper">
+                    {TECH_BLOBS.map((tech, index) => {
+                        return (
+                            <Tech 
+                            onLeaveViewport={() => switchTech(index)}
+                            title={tech.title}
+                            par={tech.par}></Tech>
+                        )
+                    })}
+                </div>
+
+            </section>
+            
+            <section className="demo-section">
+                <div className="container demo-container">
+                    <h1>Demo</h1>
+                    <video src={demo} controls></video>
+                </div>
             </section>
 
         </React.Fragment>

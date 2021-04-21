@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Lottie from 'lottie-web-react';
 
 import '../styles/Project.css';
-import '../styles/Sui.css';
+import '../styles/projects/Sui.css';
 
 //components
 import Nav from '../components/Nav';
@@ -25,10 +25,17 @@ import demo from '../images/demos/SUidemoS.mov';
 const Sui = () => {
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
         }
-    }, [])
+      }, [])
+
+    // useEffect(() => {
+    //     window.onbeforeunload = function () {
+    //         window.scrollTo(0, 0);
+    //     }
+    // }, [])
 
     const techScrollImgs = [landing, create, brand, home, lowfis];
 

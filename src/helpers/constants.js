@@ -32,6 +32,9 @@ import evoColor from '../images/iconscolor/3-3c.png';
 import denz from '../images/icons/3-4.png';
 import denzColor from '../images/iconscolor/3-4c.png';
 
+import jazelbites from '../images/icons/jazelbitesicon.png';
+import jazelbitesColor from '../images/iconscolor/jazelbitescolor.png';
+
 
 export const PROJECTS = [
     {
@@ -43,28 +46,12 @@ export const PROJECTS = [
         iconhover: suiColor
     },
     {
-        id: 'uni',
-        title: "UniCity Film Club",
-        color: "white",
-        bgcolor: "black",
-        icon: uni,
-        iconhover: uniColor
-    },
-    {
         id: 'nextgen',
         title: "NextGen Edu.",
         color: "white",
         bgcolor: "#DE5C5C",
         icon: next,
         iconhover: nextColor
-    },
-    {
-        id: 'rev',
-        title: "Reventar Group",
-        color: "white",
-        bgcolor: "#309DF5",
-        icon: rev,
-        iconhover: rev
     },
     {
         id: 'pepi',
@@ -75,7 +62,7 @@ export const PROJECTS = [
         iconhover: pepiColor
     },
     {
-        id: 'mary',
+        id: 'maryrevs',
         title: "Mary Revs",
         color: "white",
         bgcolor: "#FF99D2",
@@ -83,20 +70,20 @@ export const PROJECTS = [
         iconhover: maryColor
     },
     {
-        id: 'sound',
+        id: 'jazelbites',
+        title: "Jazel Bites",
+        color: "white",
+        bgcolor: "#FF5D5D",
+        icon: jazelbites,
+        iconhover: jazelbitesColor
+    },
+    {
+        id: 'sounddistrict',
         title: "Sound District",
         color: "white",
         bgcolor: "#222121",
         icon: sound,
         iconhover: soundColor
-    },
-    {
-        id: 'nildas',
-        title: "Nilda's Bakery",
-        color: "white",
-        bgcolor: "#FA6666",
-        icon: nil,
-        iconhover: nilColor
     },
     {
         id: 'jv',
@@ -113,24 +100,53 @@ export const PROJECTS = [
         bgcolor: "#EEEEEE",
         icon: cg,
         iconhover: cg
-    },
-    {
-        id: 'evo',
-        title: "Toronto Evo Nation",
-        color: "white",
-        bgcolor: "#3D3D3D",
-        icon: evo,
-        iconhover: evoColor
-    },
-    {
-        id: 'denz',
-        title: "Barber Denz",
-        color: "black",
-        bgcolor: "#FAF7F1",
-        icon: denz,
-        iconhover: denzColor
     }
 ]
+
+// {
+//     id: 'uni',
+//     title: "UniCity Film Club",
+//     color: "white",
+//     bgcolor: "black",
+//     icon: uni,
+//     iconhover: uniColor
+// },
+
+// {
+//     id: 'rev',
+//     title: "Reventar Group",
+//     color: "white",
+//     bgcolor: "#309DF5",
+//     icon: rev,
+//     iconhover: rev
+// },
+
+// {
+//     id: 'nildas',
+//     title: "Nilda's Bakery",
+//     color: "white",
+//     bgcolor: "#FA6666",
+//     icon: nil,
+//     iconhover: nilColor
+// },
+
+// {
+//     id: 'evo',
+//     title: "Toronto Evo Nation",
+//     color: "white",
+//     bgcolor: "#3D3D3D",
+//     icon: evo,
+//     iconhover: evoColor
+// },
+
+// {
+//     id: 'denz',
+//     title: "Barber Denz",
+//     color: "black",
+//     bgcolor: "#FAF7F1",
+//     icon: denz,
+//     iconhover: denzColor
+// }
 
 export const TECH_BLOBS = [
     {

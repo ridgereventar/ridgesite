@@ -27,16 +27,6 @@ const TechScroll = (props) => {
     useEffect(() => {
         window.addEventListener("scroll", updownListener);
         return () => {window.removeEventListener("scroll", updownListener)}
-        // var prevScrollpos = window.pageYOffset;
-        // window.onscroll = function() {
-        //     var currentScrollPos = window.pageYOffset;
-        //     if (prevScrollpos > currentScrollPos) {
-        //         setScrollingDown(false);
-        //     } else {
-        //         setScrollingDown(true);
-        //     }
-        //     prevScrollpos = currentScrollPos;
-        // }
     }, []);
 
 

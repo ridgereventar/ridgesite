@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 
 import '../styles/Project.css';
-import '../styles/Nextgen.css';
+import '../styles/projects/Nextgen.css';
 
 import Nav from '../components/Nav';
 import TechScroll from '../components/TechScroll';
@@ -29,6 +29,13 @@ import demo from '../images/demos/SUidemoS.mov';
 
 
 const Nextgen = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+      }, [])
 
     const techScrollImgs = [landing, create, login, home, signup];
     

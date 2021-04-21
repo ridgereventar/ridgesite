@@ -15,6 +15,10 @@ img,video {
     color: #343434;
 }
 
+.proj-hero img {
+    max-width: 350px;
+}
+
 /* Breakdown */
 
 .breakdown {

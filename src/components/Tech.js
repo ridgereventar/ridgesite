@@ -14,14 +14,6 @@ const TechContext = (props) => {
             <h1>{props.title}</h1>
             <p>{props.par}</p>
         </div>
-        // <div className="proj-container tech-section">
-        //     <div className="tech-context">
-        //         <div className="tech-trigger" ref={forwardedRef}></div>
-        //         <h1>{props.title}</h1>
-        //         <p className="tech-p">{props.par}</p>
-        //     </div>
-        // </div>
-
     )
 }
 

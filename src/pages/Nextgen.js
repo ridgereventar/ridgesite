@@ -4,7 +4,7 @@ import '../styles/Project.css';
 import '../styles/Nextgen.css';
 
 import Nav from '../components/Nav';
-import Tech from '../components/Tech';
+import TechScroll from '../components/TechScroll';
 
 import nextgenLogo from '../images/projects/nextgen/nextgenLogo.png';
 import booklet from '../images/projects/nextgen/booklet.png';
@@ -30,25 +30,8 @@ import demo from '../images/demos/SUidemoS.mov';
 
 const Nextgen = () => {
 
-    const switchTech = (index) => {
-        // setAllFalse();
-        // console.log(index);
-        
-        // if(scrollDir === "down") {
-        //     if(index < 4) {
-        //         setArray[index + 1](true);
-        //     } else if (index == 4) {
-        //         setArray[index](true);
-        //     }    
-        // } else {
-        //     if(index > 0) {
-        //         setArray[index - 1](true);
-        //     } else if(index == 0) {
-        //         setArray[index](true);
-        //     }
-        // }
-    }
-
+    const techScrollImgs = [landing, create, login, home, signup];
+    
     return (
         <React.Fragment>
             <Nav defaultNav={true}/>
@@ -122,31 +105,11 @@ const Nextgen = () => {
                 </div>
             </section>
 
-            <section className="dev-section">
-                <div className="screen-wrapper">
-                    <div className="screen">
-                        <div className="screen-content">
-                            {/* {show1? <img src={landing}/> : null}
-                            {show2? <img src={create}/> : null}
-                            {show3? <img src={landing}/> : null}
-                            {show4? <img src={home}/> : null}
-                            {show5? <img src={create}/> : null} */}
-                        </div>
-                    </div>
-                </div>
-                <div className="tech-blob-wrapper">
-                    {TECH_BLOBS.map((tech, index) => {
-                        return (
-                            <Tech 
-                            onLeaveViewport={() => switchTech(index)}
-                            title={tech.title}
-                            par={tech.par}></Tech>
-                        )
-                    })}
-                </div>
+            <TechScroll
+                imgs={techScrollImgs}
+                blobs={TECH_BLOBS}
+            />
 
-            </section>
-            
             <section className="demo-section">
                 <div className="container demo-container">
                     <h1>Demo</h1>

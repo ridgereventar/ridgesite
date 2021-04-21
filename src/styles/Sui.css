@@ -1,0 +1,74 @@
+#suiHeroTitle {
+    max-width: 272px;
+}
+
+@media screen and (max-width: 500px) {
+    #suiHeroTitle {
+        max-width: 230px;
+    }
+}
+
+.blue-bg {
+    min-height: 200px;
+    background-image: linear-gradient(to top right, #2BAAE4, #67D8EC);
+}
+
+.sui-intro-anim {
+    min-width: 240px;
+    max-width: 550px;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 992px) {
+    .blue-bg {
+        height: 45vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .blue-bg {
+        height: 35vw;
+    }
+    .sui-intro-anim {
+        margin-left: 20px;
+    }
+}
+
+#hfLanding {
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+#hfLogin {
+    top: 7%;
+    right: 10%;
+    width: 25%;
+}
+
+#hfSignup {
+    top: 20%;
+    right: 10%;
+    width: 25%;
+}
+
+#hfHome {
+    top: 41%;
+    right: 0;
+    width: 64%;
+    
+}
+
+#hfCreate {
+    width: 71%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -2%;
+}
+
+@media screen and (max-width: 992px) {
+    #hfLogin, #hfSignup {
+        right: 5%;
+    }
+}

@@ -6,9 +6,9 @@ import '../styles/projects/Maryrevs.css';
 import Nav from '../components/Nav';
 
 import maryrevsLogo from '../images/projects/maryrevs/maryrevslogo.png';
-import maryrevsIcon from '../images/projects/maryrevs/logoicon.png';
+import maryrevsIcon from '../images/projects/maryrevs/maryrevsIcon.png';
 import breakdown from '../images/projects/maryrevs/mrbreakdown.png';
-import styleguide from '../images/projects/maryrevs/maryrevsstyle.png';
+import styleguide from '../images/projects/maryrevs/mrstyle.png';
 import ig1 from '../images/projects/maryrevs/ig1.png';
 import ig2 from '../images/projects/maryrevs/ig2.png';
 
@@ -46,28 +46,32 @@ const Maryrevs = () => {
 
             <section>
                 <div className="container">
-                    <img src={maryrevsIcon}></img>
-                    <img src={breakdown}></img>
+                    <h1 className="img-header">Logo Design</h1>
                 </div>
             </section>
 
-            <section>
+            <section className="border-line">
                 <div className="container">
-                    <img src={styleguide}></img>
+                    <span className="light-header">Breakdown & Brand Guide</span>
+                    <div className="logo-split">
+                        <img id="maryrevsIcon" src={maryrevsIcon}></img>
+                        <img id="maryrevsBreakdown" src={breakdown}></img>
+                        {/* <img id="maryrevsStyle" src={styleguide}></img> */}
+                    </div>
                 </div>
             </section>
 
-            <section>
+            <section className="pink-bg">
                 <div className="container">
-                    <div>
+                    <div className="mobile-anim">
 
                     </div>
-                    <div>
+                    <div className="mobile-anim">
 
                     </div>
-                    <div>
-                        <img src={ig1}></img>
-                        <img src={ig2}></img>
+                    <div className="ig-post-container">
+                        <img id="maryrevsIg1" src={ig1}></img>
+                        <img id="maryrevsIg2" src={ig2}></img>
                     </div>
                 </div>
             </section>

@@ -7,7 +7,7 @@ import Nav from '../components/Nav';
 
 import jazelbitesLogo from '../images/projects/jazelbites/jblogo.png';
 import jazelbitesIcon from '../images/projects/jazelbites/logoicon.png';
-import breakdown from '../images/projects/jazelbites/jbbreakdown.png';
+import breakdown from '../images/projects/jazelbites/jazelbitesbreakdown.png';
 import styleguide from '../images/projects/jazelbites/jazelbitesstyle.png';
 import ipad from '../images/projects/jazelbites/ipad.png';
 import bc1 from '../images/projects/jazelbites/jbbc1.png';
@@ -51,12 +51,23 @@ const Jazelbites = () => {
 
             <section>
                 <div className="container">
-                    <img src={jazelbitesIcon}></img>
-                    <img src={breakdown}></img>
+                    <h1 className="img-header">Logo Design</h1>
                 </div>
             </section>
 
-            <section>
+
+            <section className="border-line">
+                <div className="container">
+                    <span className="light-header">Logo Breakdown</span>
+                    <div className="logo-split">
+                        <img id="jazelbitesIcon" src={jazelbitesIcon}></img>
+                        <img id="jazelbitesBreakdown" src={breakdown}></img>
+                    </div>
+                    <span className="light-header">Brand Definition</span>
+                </div>
+            </section>
+
+            <section className="light-grey-bg">
                 <div className="container">
                     <img src={styleguide}></img>
                 </div>
@@ -64,19 +75,32 @@ const Jazelbites = () => {
 
             <section>
                 <div className="container">
-                    <div>
-                        <img src={ipad}></img>
+                    <h1 className="img-header">Applications</h1>
+                </div>
+            </section>
+
+
+            <section className="border-line">
+                <div className="container">
+                    <span className="light-header">Animation  &nbsp;&nbsp; | &nbsp;&nbsp; Instagram  &nbsp;&nbsp; | &nbsp;&nbsp; Business Cards</span>
+                </div>
+            </section>
+
+            <section className="red-bg">
+                <div className="container">
+                    <div className="ipad-container">
+                        <img id="jazelbitesIpad" src={ipad}></img>
                     </div>
-                    <div>
+                    <div className="mobile-anim">
 
                     </div>
-                    <div>
-                        <img src={bc1}></img>
-                        <img src={bc2}></img>
+                    <div className="bc-container bc-container-right">
+                        <img className="jazelbites-card-right" src={bc1}></img>
+                        <img  className="jazelbites-card-right"src={bc2}></img>
                     </div>
-                    <div>
-                        <img src={ty1}></img>
-                        <img src={ty2}></img>
+                    <div className="bc-container">
+                        <img  className="jazelbites-card-left" src={ty1}></img>
+                        <img  className="jazelbites-card-left" src={ty2}></img>
                     </div>
                 </div>
             </section>

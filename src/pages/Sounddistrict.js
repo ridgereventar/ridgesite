@@ -30,7 +30,7 @@ const Sounddistrict = () => {
 
             <section>
                 <div className="container proj-hero">
-                    <img src={sdLogo}></img>
+                    <img id="sdLogo" src={sdLogo}></img>
                 </div>
             </section>
 
@@ -49,47 +49,63 @@ const Sounddistrict = () => {
 
             <section>
                 <div className="container">
-                    <img src={sdLogo}></img>
-                    <img src={breakdown}></img>
+                    <h1 className="img-header">Rebranding Project</h1>
+                </div>
+            </section>
+
+            <section className="border-line">
+                <div className="container">
+                    <span className="light-header">Logo breakdown</span>
+                    <div className="logo-split">
+                        <img id="sdIcon" src={sdLogo}></img>
+                        <img id="sdBreakdown" src={breakdown}></img>
+                    </div>
+                </div>
+            </section>
+
+            <section className="dark-bg">
+                <div className="container full-logo-container">
+                    <img id="sdLogoFull" src={sdLogoFull}></img>
                 </div>
             </section>
 
             <section>
                 <div className="container">
-                    <img src={sdLogoFull}></img>
+                    <h1 className="img-header">Marketing Designs</h1>
                 </div>
             </section>
 
-            <section>
+            <section className="border-line">
                 <div className="container">
-                    <div>
-                        <div>
+                    <span className="light-header">Event Promotion</span>
+                    <div className="event-container">
+                        <div className="event-info-container">
                             <h1>No Limit</h1>
                             <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
                         </div>
-                        <div>
-                            <img src={nl1}></img>
-                            <img src={nl2}></img>
+                        <div className="poster-container">
+                            <img className="event-poster" src={nl1}></img>
+                            <img className="event-poster" src={nl2}></img>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div className="event-container">
+                        <div className="event-info-container">
                             <h1>Summer Nights</h1>
                             <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
                         </div>
-                        <div>
-                            <img src={sm1}></img>
-                            <img src={sm2}></img>
+                        <div className="poster-container">
+                            <img className="event-poster" src={sm1}></img>
+                            <img className="event-poster" src={sm2}></img>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div className="event-container">
+                        <div className="event-info-container">
                             <h1>Halloween Sound</h1>
                             <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
                         </div>
-                        <div>
-                            <img src={hs1}></img>
-                            <img src={hs2}></img>
+                        <div className="poster-container">
+                            <img className="event-poster" src={hs1}></img>
+                            <img className="event-poster" src={hs2}></img>
                         </div>
                     </div>
                 </div>

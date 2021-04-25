@@ -59,7 +59,6 @@ const Pepi = () => {
                 </div>
             </section>
 
-
             <section className="border-line img-section">
                 <div className="container">
                     <span className="light-header">Original Logo</span>
@@ -90,7 +89,6 @@ const Pepi = () => {
                     {/* <img id="pepiStyle" src={styleguide}></img> */}
                 </div>
             </section>
-
 
             <section className="grey-bg">
                 <div>
@@ -127,7 +125,6 @@ const Pepi = () => {
                     </div>
                 </div>
             </section>
-
 
         </React.Fragment>
     )

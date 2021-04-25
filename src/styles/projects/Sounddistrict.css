@@ -1,0 +1,67 @@
+#sdLogo {
+    width: 150px;
+}
+
+#sdIcon {
+    width: 180px;
+    margin-right: 100px;
+}
+
+#sdBreakdown {
+    width: 300px;
+}
+
+.dark-bg {
+    background-color: #171717;
+    margin-bottom: 100px;
+}
+
+#sdLogoFull {
+    width: 500px;
+}
+
+.full-logo-container {
+    display: flex; 
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.event-container {
+    margin-bottom: 100px;
+}
+
+.event-container p {
+    margin-bottom: 50px;
+}
+
+.poster-container {
+    display: flex;
+}
+
+.event-poster {
+    width: 50%;
+}
+
+@media screen and (min-width: 992px) {
+    .event-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .event-info-container {
+        width: 40%;
+    }
+    .event-info-container p {
+        padding-right: 40px;
+    }
+
+    .poster-container {
+        width: 60%;
+    }
+    
+
+    .event-poster {
+        width: 50%;
+        margin-left: 10px;
+    }
+}

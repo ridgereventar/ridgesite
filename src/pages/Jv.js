@@ -29,6 +29,7 @@ const Jv = () => {
                     <img src={jvLogo}></img>
                 </div>
             </section>
+            
 
             <section>
                 <div className="container breakdown">
@@ -43,15 +44,26 @@ const Jv = () => {
                 </div>
             </section>
 
-            <section>
-                <div className="container">
-                    <img src={jvLogo}></img>
-                    <img src={breakdown}></img>
-                </div>
-            </section>
 
             <section>
                 <div className="container">
+                    <h1 className="img-header">Rebranding Project</h1>
+                </div>
+            </section>
+
+
+            <section className="border-line">
+                <div className="container">
+                    <span className="light-header">Original Logo</span>
+                    <div className="logo-split">
+                        <img id="jvLogo" src={jvLogo}></img>
+                        <img id="jvBreakdown" src={breakdown}></img>
+                    </div>
+                </div>
+            </section>
+
+            <section className="light-grey-bg">
+                <div className="container half-split">
                     <img src={bc1}></img>
                     <img src={bc2}></img>
                 </div>

@@ -1,0 +1,16 @@
+$lightGreyBg: #F2F2F2;
+$lightGreyTxt: #7E7E7E;
+$marginBottomSm: 50px;
+$marginBottomLg: 100px;
+
+@import "./pepi";
+
+
+img, video {
+    max-width: 100%;
+}
+
+.light-header {
+    margin: 50px 0;
+    color: $lightGreyTxt;
+}

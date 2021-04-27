@@ -1,0 +1,78 @@
+@mixin displayFlex($dir: row, $j: flex-start, $a: center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $j;
+    align-items: $a;
+}
+
+@mixin imgSplit($triple: false, $w1: 0, $w2: 0, $w3: 0) {
+    @include displayFlex(0, space-between, 0);
+    @if $triple {
+        img:nth-child(1) {
+            width: $w1;
+        }
+        img:nth-child(2) {
+            width: $w2;
+        }
+        img:nth-child(3) {
+            width: $w3;
+        }
+    } @else {
+        img {
+            width: 49%;
+        }
+    }
+}
+
+@mixin colorSection() {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.proj-hero {
+    height: 100vh;
+    @include displayFlex(column, center, flex-start);
+    img {
+        width: 400px;
+    }
+    p {
+        margin-top: 30px;
+        color: #343434;
+    }
+}
+
+.breakdown {
+    @include displayFlex(column, flex-start , flex-start);
+    margin-bottom: $marginBottomLg;
+    p {
+        font-size: 1.1rem;
+        line-height: 2.125rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .breakdown {
+        flex-direction: row;
+    }
+    .breakdown-1 {
+        white-space: nowrap;
+    }
+    .breakdown-2 {
+        margin-left: 70px;
+    }
+}
+
+.proj-section-header {
+    border-bottom: 1px solid #D5D5D5;
+    padding-bottom: 10px;
+}
+
+.img-split {
+    @include imgSplit();
+    margin-bottom: $marginBottomLg;
+}
+
+.grey-bg {
+    @include colorSection();
+    background-color: $lightGreyBg;
+}

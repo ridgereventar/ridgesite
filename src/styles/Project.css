@@ -1,7 +1,4 @@
-img,video {
-    max-width: 100%;
-}
-
+/* 
 .img-section {
     margin-bottom: 100px;
 }
@@ -35,58 +32,12 @@ img,video {
     margin-bottom: 50px;
     background-color: white;
 }
-
-
-
-
-
-
-
-.proj-hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.proj-hero p{
-    margin-top: 30px;
-    color: #343434;
-}
-
-.proj-hero img {
-    max-width: 350px;
-}
-
-/* Breakdown */
-
-.breakdown {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
-}
-
-.breakdown p {
-    font-size: 1.1rem;
-    line-height: 2.125rem;
-}
-
-@media screen and (min-width: 768px) {
-    .breakdown {
-        flex-direction: row;
-    }
-    .breakdown-split-1 {
-        white-space: nowrap;
-    }
-    .breakdown-split-2 {
-        margin-left: 70px;
-    }
-}
+ */
 
 
 /* Proj-Intro */
 
-.proj-intro-section {
+/* .proj-intro-section {
     position: relative;
     overflow: hidden;
     margin-bottom: 150px;
@@ -128,11 +79,11 @@ img,video {
     .proj-intro h1 {
         font-size: 1.4rem;
     }
-}
+} */
 
 /* Text Img Container */
 
-.text-img-container {
+/* .text-img-container {
     margin-bottom: 100px;
 }
 
@@ -155,11 +106,11 @@ img,video {
     .text-img-container img {
         width: 40%;
     }
-}
+} */
 
 /* Highfi's */
 
-.slant-container {
+/* .slant-container {
     height: 1900px;
     position: relative;
     margin-bottom: 300px;
@@ -171,7 +122,6 @@ img,video {
     width: 100%;
     clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
     background-color: #F2F2F2;
-    /* background-color: red; */
 
 }
 
@@ -204,11 +154,11 @@ img,video {
     .highfi-container img {
         margin: 0 25px; 
     }
-}
+} */
 
 /* Demo Section */
 
-.demo-section {
+/* .demo-section {
     clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
     background-color: #F2F2F2;
     padding: 6rem 0;    
@@ -227,4 +177,4 @@ img,video {
     0 16px 32px rgba(0,0,0,0.07), 
     0 32px 64px rgba(0,0,0,0.07);
 }
-
+ */

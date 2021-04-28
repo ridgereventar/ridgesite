@@ -75,21 +75,55 @@
 .grey-bg {
     @include colorSection();
     background-color: $lightGreyBg;
+    margin-bottom: $marginBottomXLg;
 }
 
 .logo-section {
-    height: 600px;
+    height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 10%;
-    margin-bottom: $marginBottomLg
+    background-position-y: 29%;
+    margin-bottom: $marginBottomXLg;
+    position: relative;
+}
+
+.white-grad {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.7), rgba(255,0,0,0));
+    position: absolute;
+    z-index: 1;
 }
 
 .logo-split {
     @include displayFlex(column, center, center);
-    margin-bottom: $marginBottomLg;
+    margin-bottom: $marginBottomXLg;
 }
 
+.styleguide-container {
+    @include displayFlex(row, space-between, flex-start);
+    img:nth-child(1) {
+        width: 41%;
+    }
+    img:nth-child(2) {
+        width: 53%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .styleguide-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        img:nth-child(1) {
+            width: 450px;
+            margin-bottom: $marginBottomSm;
+        }
+        img:nth-child(2) {
+            width: 450px;
+        }
+    }
+}
 // @media screen and (max-width: 992px) {
 //     .logo-split {
 //         @include displayFlex(column, flex-start, flex-start)

@@ -1,10 +1,12 @@
-$lightGreyBg: #F2F2F2;
+$lightGreyBg: #F8F8F8;
 $lightGreyTxt: #7E7E7E;
 $marginBottomSm: 50px;
 $marginBottomLg: 100px;
+$marginBottomXLg: 200px;
 
 @import "./pepi";
 @import "./maryrevs";
+@import "./phone";
 
 
 img, video {

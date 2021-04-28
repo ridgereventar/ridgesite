@@ -1,20 +1,26 @@
 @import "../containers";
 
 #maryrevsIcon {
-    width: 380px;
-    margin-top: 50px;
+    width: 300px;
 }
 
 #maryrevsBreakdown {
-    margin-top: 100px;
+    margin-top: 80px;
     width: 250px;
+}
+
+#hometohome {
+    width: 400px;
+    z-index: 2;
 }
 
 .maryrevs-intro {
     @include displayFlex(0, center, center);
     height: 100%;
-    color: white;
-    font-size: 1.5rem;
-    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7); 
+}
 
+.pink-bg {
+    background-color: #FFDBEF;
+    position: relative;
+    z-index: -2;
 }

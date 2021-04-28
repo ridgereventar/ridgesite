@@ -76,3 +76,22 @@
     @include colorSection();
     background-color: $lightGreyBg;
 }
+
+.logo-section {
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 10%;
+    margin-bottom: $marginBottomLg
+}
+
+.logo-split {
+    @include displayFlex(column, center, center);
+    margin-bottom: $marginBottomLg;
+}
+
+// @media screen and (max-width: 992px) {
+//     .logo-split {
+//         @include displayFlex(column, flex-start, flex-start)
+//     }
+// }

@@ -1,0 +1,20 @@
+@import "../containers";
+
+#maryrevsIcon {
+    width: 380px;
+    margin-top: 50px;
+}
+
+#maryrevsBreakdown {
+    margin-top: 100px;
+    width: 250px;
+}
+
+.maryrevs-intro {
+    @include displayFlex(0, center, center);
+    height: 100%;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.7); 
+
+}

@@ -124,8 +124,9 @@
         }
     }
 }
-// @media screen and (max-width: 992px) {
-//     .logo-split {
-//         @include displayFlex(column, flex-start, flex-start)
-//     }
-// }
+
+@media screen and (max-width: 992px){
+    .mobile-anim {
+        margin-top: 100px;
+    }
+}

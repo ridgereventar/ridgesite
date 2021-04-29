@@ -2,22 +2,27 @@
     // background-color: red;
     position: relative;
     @include displayFlex(row, flex-start, center);
+    transform: scale(0.8);
 }
 
 .phone-shell {
     width: 350px;
+    margin-top: -150px;
 }
 
 .ig-slide {
     max-width: none;
     width: 937px;
+    width: 940px;
     position: absolute;
     margin-top: auto;
     margin-bottom: auto;
-    top: 28px; 
+    top: -119px; 
     bottom: 0;
     transition: 0.3s linear;
     z-index: -1;
+    // z-index: 1;
+
 }
 
 .ig-slide-left {
@@ -34,10 +39,10 @@
 
 @keyframes igslideL {
     0% {
-        left: -605px;
+        left: -608px;
     }
     40% {
-        left: -605px;
+        left: -608px;
     }
     50% {
         left: -293px;
@@ -52,10 +57,10 @@
 
 @keyframes igslideR {
     0% {
-        right: -605px;
+        right: -608px;
     }
     40% {
-        right: -605px;
+        right: -608px;
     }
     50% {
         right: -293px;
@@ -68,7 +73,7 @@
     }
 }
 
-@keyframes igslideResp {
+@keyframes igslideRespL {
     0% {
         left: -173%;
     }
@@ -86,11 +91,39 @@
     }
 }
 
+@keyframes igslideRespR {
+    0% {
+        right: -173%;
+    }
+    40% {
+        right: -173%;
+    }
+    50% {
+        right: -84%;
+    }
+    90% {
+        right: -84%;
+    }
+    100% {
+        right: 5.5%;
+    }
+}
+
 @media screen and (max-width: 415px) {
-    .ig-slide { 
+    .ig-slide-left { 
         max-width: 268%;
-        animation: igslideResp 2s linear;
+        animation: igslideRespL 2s linear;
         animation-fill-mode: forwards;        
-        top: 4%;
+        top: -19%;
+    }
+    .ig-slide-right { 
+        max-width: 268%;
+        animation: igslideRespR 2s linear;
+        animation-fill-mode: forwards;        
+        top: -19%;
+    }
+    .phone-shell {
+        width: 350px;
+        margin-top: -40%;
     }
 }

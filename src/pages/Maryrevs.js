@@ -22,6 +22,11 @@ import ig1 from '../images/projects/maryrevs/ig1.png';
 import ig2 from '../images/projects/maryrevs/ig2.png';
 import hometohome from '../images/projects/maryrevs/hometohome.png';
 
+import phone from '../images/projects/maryrevs/maryrevsphone.png';
+import sushi from '../images/projects/maryrevs/sushilines.png';
+import mango from '../images/projects/maryrevs/mango.png';
+
+
 const Maryrevs = () => {
     
     // useEffect(() => {
@@ -75,19 +80,27 @@ const Maryrevs = () => {
 
             <div className="container">
                 <h2>Deliverables</h2>
-                <span className="light-header">Animation  &nbsp;&nbsp; | &nbsp;&nbsp; Instagram  &nbsp;&nbsp; | &nbsp;&nbsp; Business Cards</span>
+                <span className="light-header light-list">Animation  &nbsp;&nbsp; | &nbsp;&nbsp; Instagram  &nbsp;&nbsp; | &nbsp;&nbsp; Business Cards</span>
             </div>
 
 
             <div className="pink-bg">
                 <div className="container">
-                    <Phone right={true}></Phone>
                     <div className="mobile-anim">
-
+                        <Phone 
+                            right={true}
+                            shell={phone}
+                            slide={sushi}/>                    
+                    </div>
+                    <div className="mobile-anim">
+                        <Phone 
+                            right={false}
+                            shell={phone}
+                            slide={mango}/>
                     </div>
                     <div className="ig-post-container">
-                        <img id="maryrevsIg1" src={ig1}></img>
                         <img id="maryrevsIg2" src={ig2}></img>
+                        <img id="maryrevsIg1" src={ig1}></img>
                     </div>
                 </div>
             </div>

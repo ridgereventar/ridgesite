@@ -21,6 +21,41 @@
 
 .pink-bg {
     background-color: #FFDBEF;
-    position: relative;
     z-index: -2;
+    padding-bottom: 50px;
+}
+
+.ig-post-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#maryrevsIg1 {
+    width: 43%;
+    margin-left: -80px;
+
+}
+
+#maryrevsIg2 {
+    width: 43%;
+    margin-bottom: -200px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .ig-post-container {
+        flex-direction: column;
+    }
+    #maryrevsIg1 {
+        width: 80%;
+        margin-left: 0px;
+    }
+    #maryrevsIg2 {
+        width: 80%;
+        margin-bottom: 0px;
+    
+    }
 }

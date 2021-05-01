@@ -6,14 +6,15 @@ import logo from '../images/Rlogo.png';
 const Footer = () => {
 
     return (
-        <div className="footer">
-            <div className="container">
+        <div className="footer-container">
+            <div className="container footer">
                 <div className="footer-content">
                     <div className="personal-desc">
-                        <p>RIDGE REVENTAR</p>
-                        <p>Front end developer and designer that inspires to bring visions to life through visual graphics and full stack applications.</p>
+                        <p id="footerName">RIDGE REVENTAR</p>
+                        <p className="footer-desc footer-desc-desktop">Front end developer and designer that inspires to bring visions to life through visual graphics and full stack applications.</p>
+                        <p className="footer-desc footer-desc-mobile">Front End Developer <br/> & Designer.</p>
                     </div>
-                    <ul>
+                    <ul className="footer-nav">
                         <li>About</li>
                         <li>Projects</li>
                         <li>Contact</li>

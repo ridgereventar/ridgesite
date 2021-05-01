@@ -1,0 +1,77 @@
+.footer {
+  height: 300px;
+  width: 100%;
+  background-color: #181818;
+  color: white;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: red;
+}
+
+.footer-links {
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: blue;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-icon {
+  width: 30px;
+  height: 100%;
+  margin-right: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+#mail {
+  background-image: url("../images/mail.png");
+}
+
+#mail:hover {
+  background-image: url("../images/mailc.png");
+}
+
+#ig {
+  background-image: url("../images/ig.png");
+}
+
+#ig:hover {
+  background-image: url("../images/igc.png");
+}
+
+#linked {
+  background-image: url("../images/linked.png");
+}
+
+#linked:hover {
+  background-image: url("../images/linkedc.png");
+}
+
+#git {
+  background-image: url("../images/git.png");
+}
+
+#git:hover {
+  background-image: url("../images/gitc.png");
+}
+/*# sourceMappingURL=styles.css.map */

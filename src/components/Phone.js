@@ -12,8 +12,10 @@ const Phone = (props) => {
 
     return (
         <div className="phone-container" style={right? {justifyContent: 'flex-end'} : {justifyContent : 'flex-start'}}>
-            <img className="phone-shell" src={shell}></img>
-            <img className={`ig-slide ${right? "ig-slide-right" : "ig-slide-left"}`} src={slide}></img>
+            <div className={`phone-wrapper ${right? "phone-wrapper-right" : "phone-wrapper-left"}`}>
+                <img className="phone-shell" src={shell}></img>
+                <img className={`ig-slide ${right? "ig-slide-right" : "ig-slide-left"}`} src={slide}></img>
+            </div>
         </div>
         
     )

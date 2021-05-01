@@ -23,39 +23,53 @@
     background-color: #FFDBEF;
     z-index: -2;
     padding-bottom: 50px;
+    margin-bottom: $marginBottomLg;
 }
 
 .ig-post-container {
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+    justify-content: flex-end;
 }
 
 #maryrevsIg1 {
-    width: 43%;
+    width: 378px;
     margin-left: -80px;
 
 }
 
 #maryrevsIg2 {
-    width: 43%;
+    width: 378px;
     margin-bottom: -200px;
 
 }
 
 @media screen and (max-width: 768px) {
     .ig-post-container {
-        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
     }
     #maryrevsIg1 {
-        width: 80%;
-        margin-left: 0px;
+        width: 55%;
     }
     #maryrevsIg2 {
-        width: 80%;
+        width: 55%;
+
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ig-post-container {
+        flex-direction: column; 
+    }
+    #maryrevsIg1 {
+        width: 100%;
+        margin-left: 0px;
+
+    }
+    #maryrevsIg2 {
+        width: 100%;
         margin-bottom: 0px;
-    
     }
 }

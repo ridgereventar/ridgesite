@@ -175,9 +175,25 @@
   }
 }
 
+.mobile-anim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (max-width: 992px) {
   .mobile-anim {
-    margin-top: 100px;
+    margin-top: 120px;
   }
 }
 
@@ -473,9 +489,25 @@
   }
 }
 
+.mobile-anim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (max-width: 992px) {
   .mobile-anim {
-    margin-top: 100px;
+    margin-top: 120px;
   }
 }
 
@@ -514,6 +546,7 @@
   background-color: #FFDBEF;
   z-index: -2;
   padding-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .ig-post-container {
@@ -524,23 +557,37 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 50px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 #maryrevsIg1 {
-  width: 43%;
+  width: 378px;
   margin-left: -80px;
 }
 
 #maryrevsIg2 {
-  width: 43%;
+  width: 378px;
   margin-bottom: -200px;
 }
 
 @media screen and (max-width: 768px) {
+  .ig-post-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 50px;
+  }
+  #maryrevsIg1 {
+    width: 55%;
+  }
+  #maryrevsIg2 {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .ig-post-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -548,17 +595,17 @@
             flex-direction: column;
   }
   #maryrevsIg1 {
-    width: 80%;
+    width: 100%;
     margin-left: 0px;
   }
   #maryrevsIg2 {
-    width: 80%;
+    width: 100%;
     margin-bottom: 0px;
   }
 }
 
 .phone-container {
-  position: relative;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -572,13 +619,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+}
+
+.phone-wrapper {
+  position: relative;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.phone-wrapper-right {
+  margin-right: -20px;
+}
+
+.phone-wrapper-left {
+  margin-left: -20px;
 }
 
 .phone-shell {
   width: 350px;
-  margin-top: -150px;
+  margin-top: -100px;
 }
 
 .ig-slide {
@@ -588,7 +647,7 @@
   position: absolute;
   margin-top: auto;
   margin-bottom: auto;
-  top: -119px;
+  top: -71px;
   bottom: 0;
   -webkit-transition: 0.3s linear;
   transition: 0.3s linear;
@@ -755,6 +814,13 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .phone-wrapper {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 415px) {
   .ig-slide-left {
     max-width: 268%;
@@ -762,7 +828,7 @@
             animation: igslideRespL 2s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    top: -19%;
+    top: -19.5%;
   }
   .ig-slide-right {
     max-width: 268%;
@@ -770,7 +836,7 @@
             animation: igslideRespR 2s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    top: -19%;
+    top: -19.5%;
   }
   .phone-shell {
     width: 350px;

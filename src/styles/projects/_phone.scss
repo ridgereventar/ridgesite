@@ -1,13 +1,25 @@
 .phone-container {
+    width: 100%;
     // background-color: red;
-    position: relative;
     @include displayFlex(row, flex-start, center);
-    transform: scale(0.8);
+}
+
+.phone-wrapper {
+    position: relative;
+    transform: scale(0.9);
+}
+
+.phone-wrapper-right {
+    margin-right: -20px;
+}
+
+.phone-wrapper-left {
+    margin-left: -20px;
 }
 
 .phone-shell {
     width: 350px;
-    margin-top: -150px;
+    margin-top: -100px;
 }
 
 .ig-slide {
@@ -17,12 +29,10 @@
     position: absolute;
     margin-top: auto;
     margin-bottom: auto;
-    top: -119px; 
+    top: -71px; 
     bottom: 0;
     transition: 0.3s linear;
     z-index: -1;
-    // z-index: 1;
-
 }
 
 .ig-slide-left {
@@ -109,18 +119,25 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .phone-wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
 @media screen and (max-width: 415px) {
     .ig-slide-left { 
         max-width: 268%;
         animation: igslideRespL 2s linear;
         animation-fill-mode: forwards;        
-        top: -19%;
+        top: -19.5%;
     }
     .ig-slide-right { 
         max-width: 268%;
         animation: igslideRespR 2s linear;
         animation-fill-mode: forwards;        
-        top: -19%;
+        top: -19.5%;
     }
     .phone-shell {
         width: 350px;

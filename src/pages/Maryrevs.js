@@ -8,6 +8,8 @@ import '../styles/projects/projects.css';
 
 import Nav from '../components/Nav';
 import Phone from '../components/Phone';
+import ProjectGrid from '../components/ProjectGrid';
+import Footer from '../components/Footer';
 
 import maryrevsLogo from '../images/projects/maryrevs/maryrevslogo.png';
 import maryrevsIcon from '../images/projects/maryrevs/maryrevsIcon.png';
@@ -104,6 +106,10 @@ const Maryrevs = () => {
                     </div>
                 </div>
             </div>
+
+            <ProjectGrid/>
+
+            <Footer/>
 
         </React.Fragment>
     )

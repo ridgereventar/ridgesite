@@ -1,0 +1,61 @@
+.footer {
+    height: 300px; 
+    width: 100%;
+    background-color: #181818;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+
+.footer-links {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+}
+
+.socials {
+    display: flex;
+}
+
+.social-icon {
+    width: 30px;
+    height: 100%;
+    margin-right: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.1s linear;
+}
+
+#mail {
+    background-image: url("../images/mail.png");
+    &:hover {
+        background-image: url("../images/mailc.png");
+    }
+}
+
+#ig {
+    background-image: url("../images/ig.png");
+    &:hover {
+        background-image: url("../images/igc.png");
+    }
+}
+
+#linked {
+    background-image: url("../images/linked.png");
+    &:hover {
+        background-image: url("../images/linkedc.png");
+    }
+}
+
+#git {
+    background-image: url("../images/git.png");
+    &:hover {
+        background-image: url("../images/gitc.png");
+    }
+}

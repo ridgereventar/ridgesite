@@ -1,0 +1,86 @@
+@import "../containers";
+
+#jazelbitesIcon {
+    width: 200px;
+}
+
+#jazelbitesBreakdown {
+    margin-left: -20px;
+    margin-top: 60px;
+    width: 150px;
+}
+
+.red-bg {
+    @include colorSection();
+    padding-bottom: 10px;
+    background-color: #FF5D5D;
+}
+
+.ipad-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 80px;
+}
+
+#jazelbitesIpad {
+    width: 650px;
+    margin-top: -80px;
+}
+
+.bc-container {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.bc-container-right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.jazelbites-card-right {
+    width: 280px;
+    margin-left: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07); 
+}
+
+.jazelbites-card-left {
+    width: 280px;
+    margin-right: 20px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07); 
+}
+
+@media screen and (max-width: 650px) {
+    .bc-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .bc-container-right {
+        align-items: flex-end;
+    }
+    .jazelbites-card-right {
+        margin-left: 0px;
+        margin-bottom: 20px;
+
+    }
+    .jazelbites-card-left {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .bc-container {
+        align-items: center;
+    }
+}

@@ -1,5 +1,15 @@
 @import "../containers";
 
+.maryrevs-intro {
+    @include displayFlex(0, center, center);
+    height: 100%;
+}
+
+#hometohome {
+    width: 400px;
+    z-index: 2;
+}
+
 #maryrevsIcon {
     width: 300px;
 }
@@ -9,21 +19,10 @@
     width: 250px;
 }
 
-#hometohome {
-    width: 400px;
-    z-index: 2;
-}
-
-.maryrevs-intro {
-    @include displayFlex(0, center, center);
-    height: 100%;
-}
-
 .pink-bg {
-    background-color: #FFDBEF;
-    z-index: -2;
+    @include colorSection();
     padding-bottom: 50px;
-    margin-bottom: $marginBottomLg;
+    background-color: #FFDBEF;
 }
 
 .ig-post-container {
@@ -42,7 +41,6 @@
 #maryrevsIg2 {
     width: 378px;
     margin-bottom: -200px;
-
 }
 
 @media screen and (max-width: 768px) {

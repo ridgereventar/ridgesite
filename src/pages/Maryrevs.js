@@ -1,10 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-// import '../styles/Project.css';
-// import '../styles/projects/Maryrevs.css';
-
 import '../styles/projects/projects.css';
-
 
 import Nav from '../components/Nav';
 import Phone from '../components/Phone';
@@ -46,7 +42,6 @@ const Maryrevs = () => {
                 <img src={maryrevsLogo}></img>
             </div>
 
-
             <div className="container breakdown">
                 <div className="breakdown-1">
                     <h2>Deliverables</h2>
@@ -58,19 +53,16 @@ const Maryrevs = () => {
                 </div>
             </div>
 
-            <div className="logo-section" style={{backgroundImage: `url("${maryrevsBg}")`}}>
-                <div className="white-grad"></div>
+            <div className="banner" style={{backgroundImage: `url("${maryrevsBg}")`}}>
+                <div className="white-gradient"></div>
                 <div className="container maryrevs-intro">
                     <img id="hometohome" src={hometohome}/>
                 </div>
             </div>
 
-
-            <div className="container">
-                <div className="logo-split">
-                    <img id="maryrevsIcon" src={maryrevsIcon}></img>
-                    <img id="maryrevsBreakdown" src={breakdown}></img>
-                </div>
+            <div className="container logo-breakdown">
+                <img id="maryrevsIcon" src={maryrevsIcon}></img>
+                <img id="maryrevsBreakdown" src={breakdown}></img>
             </div>
 
             <div className="grey-bg">
@@ -88,18 +80,14 @@ const Maryrevs = () => {
 
             <div className="pink-bg">
                 <div className="container">
-                    <div className="mobile-anim">
-                        <Phone 
-                            right={true}
-                            shell={phone}
-                            slide={sushi}/>                    
-                    </div>
-                    <div className="mobile-anim">
-                        <Phone 
-                            right={false}
-                            shell={phone}
-                            slide={mango}/>
-                    </div>
+                    <Phone 
+                        right={true}
+                        shell={phone}
+                        slide={sushi}/>                    
+                    <Phone 
+                        right={false}
+                        shell={phone}
+                        slide={mango}/>
                     <div className="ig-post-container">
                         <img id="maryrevsIg2" src={ig2}></img>
                         <img id="maryrevsIg1" src={ig1}></img>

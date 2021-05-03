@@ -3,6 +3,8 @@ import React, {useState, useEffect} from 'react';
 import '../styles/projects/projects.css';
 
 import Nav from '../components/Nav';
+import ProjectGrid from '../components/ProjectGrid';
+import Footer from '../components/Footer';
 
 import pepiTech from '../images/projects/pepi/pepitech.png';
 import pepiWet from '../images/projects/pepi/pepiwet.png';
@@ -19,6 +21,10 @@ import avatar from '../images/projects/pepi/avatar.png';
 import blue from '../images/projects/pepi/bluehex.png';
 import yellow from '../images/projects/pepi/yellowhex.png';
 import purple from '../images/projects/pepi/purplehex.png';
+
+import pepiBanner from '../images/projects/pepi/pepibanner2.jpg';
+import pepiIntro from '../images/projects/pepi/pepiintro.png';
+
 
 const Pepi = () => {
 
@@ -45,6 +51,13 @@ const Pepi = () => {
                 <div className="breakdown-2">
                     <h2>Goals</h2>
                     <p>Creating a tool to assist the early stages of both design and development. When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. The goal of SUi is to allow users to easily generate their own custom style guides and UI components through one seamless interface.</p>
+                </div>
+            </div>
+
+            <div className="banner" style={{backgroundImage: `url("${pepiBanner}")`}}>
+                <div className="white-gradient"></div>
+                <div className="container maryrevs-intro">
+                    <img id="hometohome" src={pepiIntro}/>
                 </div>
             </div>
 
@@ -111,6 +124,10 @@ const Pepi = () => {
                     <img className="hexColor desktop-hex" src={purple}></img>
                 </div>
             </div>
+
+            <ProjectGrid/>
+
+            <Footer/>
 
         </>
     )

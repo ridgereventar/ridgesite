@@ -27,12 +27,12 @@ import mango from '../images/projects/maryrevs/mango.png';
 
 const Maryrevs = () => {
     
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    //     window.onbeforeunload = function () {
-    //         window.scrollTo(0, 0);
-    //     }
-    // }, [])
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    }, [])
 
     return (
         <React.Fragment>
@@ -55,7 +55,7 @@ const Maryrevs = () => {
 
             <div className="banner" style={{backgroundImage: `url("${maryrevsBg}")`}}>
                 <div className="white-gradient"></div>
-                <div className="container maryrevs-intro">
+                <div className="container banner-intro">
                     <img id="hometohome" src={hometohome}/>
                 </div>
             </div>

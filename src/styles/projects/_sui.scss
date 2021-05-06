@@ -1,0 +1,112 @@
+@import "../containers";
+
+#suiHeroTitle {
+    width: 272px;
+}
+
+@media screen and (max-width: 500px) {
+    #suiHeroTitle {
+        max-width: 230px;
+    }
+}
+
+.sui-banner {
+    height: 450px;
+    background-image: linear-gradient(to top right, #2BAAE4, #67D8EC);
+    margin-top: $marginBottomXLg;
+    margin-bottom: 250px;
+}
+
+.sui-intro {
+    height: 100%;
+    @include displayFlex(0, space-between, center);
+    h1 {
+        color: white;
+        font-size: 2rem;
+    }
+}
+
+.sui-intro-anim {
+    max-width: 550px;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .sui-banner {
+        padding-top: 50px;
+        height: 550px;
+    }
+    .sui-intro {
+        flex-direction: column;
+    }
+    .sui-intro-anim {
+        max-width: 450px;
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sui-banner {
+        height: 110vw;
+    }
+}
+
+@media screen and (max-width: 417px) {
+    .sui-intro-anim {
+        margin-top: 20px;
+    }
+    .sui-banner {
+        height: 127vw;
+    }
+}
+
+#suiBreakdown {
+    width: 300px;
+}
+
+.sui-style {
+    margin-bottom: 200px !important;
+}
+
+#lowfis {
+    width: 500px;
+}
+
+#hfLanding {
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+#hfLogin {
+    top: 7%;
+    right: 10%;
+    width: 25%;
+}
+
+#hfSignup {
+    top: 20%;
+    right: 10%;
+    width: 25%;
+}
+
+#hfHome {
+    top: 41%;
+    right: 0;
+    width: 64%;
+    
+}
+
+#hfCreate {
+    width: 71%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: -2%;
+}
+
+@media screen and (max-width: 992px) {
+    #hfLogin, #hfSignup {
+        right: 5%;
+    }
+}

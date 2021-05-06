@@ -59,7 +59,7 @@ const Jazelbites = () => {
 
             <div className="banner" style={{backgroundImage: `url("${jbbanner}")`}}>
                 <div className="white-gradient"></div>
-                <div className="container maryrevs-intro">
+                <div className="container banner-intro">
                     <img id="hometohome" src={jbintro}/>
                 </div>
             </div>

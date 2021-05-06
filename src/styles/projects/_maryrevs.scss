@@ -1,13 +1,7 @@
 @import "../containers";
 
-.maryrevs-intro {
-    @include displayFlex(0, center, center);
-    height: 100%;
-}
-
 #hometohome {
     width: 400px;
-    z-index: 2;
 }
 
 #maryrevsIcon {

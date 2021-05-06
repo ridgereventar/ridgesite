@@ -75,10 +75,18 @@
     height: 700px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: 29%;
+    // background-position-y: 29%;
     // background-position-y: 50%;
     margin-bottom: $marginBottomXLg;
     position: relative;
+}
+
+.banner-intro {
+    @include displayFlex(0, center, center);
+    height: 100%;
+    img {
+        z-index: 2;
+    }
 }
 
 .logo-breakdown {
@@ -110,3 +118,93 @@
         }
     }
 }
+
+
+.text-img-container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .text-img-container {
+        flex-direction: column;
+        align-items: center;
+        p {
+            width: 100%;
+            margin-bottom: 100px;
+        }
+    }
+}
+
+.slant-container {
+    height: 1900px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+.grey-slant-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+    background-color: #F2F2F2;
+
+}
+
+.highfi-container {
+    height: 100%;
+    position: relative;
+}
+
+.highfi-container img {
+    border-radius: 0.5vw;
+    position: absolute;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07); 
+    margin: 0 60px;  
+
+}
+
+
+@media screen and (max-width: 1230px) {
+    .slant-container {
+        height: 155vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .highfi-container img {
+        margin: 0 25px; 
+    }
+}
+
+.demo-section {
+    clip-path: polygon(0 0, 100% 8%, 100% 100%, 0 100%);
+    background-color: #F2F2F2;
+    padding: 6rem 0;    
+}
+
+.demo-container h1 {
+    color: darkgray;
+    margin-bottom: 20px;
+}
+
+.demo-container video {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+    0 2px 4px rgba(0,0,0,0.07), 
+    0 4px 8px rgba(0,0,0,0.07), 
+    0 8px 16px rgba(0,0,0,0.07),
+    0 16px 32px rgba(0,0,0,0.07), 
+    0 32px 64px rgba(0,0,0,0.07);
+}
+

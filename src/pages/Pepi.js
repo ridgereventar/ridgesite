@@ -56,7 +56,7 @@ const Pepi = () => {
 
             <div className="banner" style={{backgroundImage: `url("${pepiBanner}")`}}>
                 <div className="white-gradient"></div>
-                <div className="container maryrevs-intro">
+                <div className="container banner-intro">
                     <img id="hometohome" src={pepiIntro}/>
                 </div>
             </div>

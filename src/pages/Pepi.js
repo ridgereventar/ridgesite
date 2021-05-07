@@ -22,7 +22,7 @@ import blue from '../images/projects/pepi/bluehex.png';
 import yellow from '../images/projects/pepi/yellowhex.png';
 import purple from '../images/projects/pepi/purplehex.png';
 
-import pepiBanner from '../images/projects/pepi/pepibanner2.jpg';
+import pepiBanner from '../images/projects/pepi/pepibg3.jpg';
 import pepiIntro from '../images/projects/pepi/pepiintro.png';
 
 
@@ -54,10 +54,10 @@ const Pepi = () => {
                 </div>
             </div>
 
-            <div className="banner" style={{backgroundImage: `url("${pepiBanner}")`}}>
-                <div className="white-gradient"></div>
+            <div className="banner pepi-banner" style={{backgroundImage: `url("${pepiBanner}")`}}>
+                {/* <div className="white-gradient"></div> */}
                 <div className="container banner-intro">
-                    <img id="hometohome" src={pepiIntro}/>
+                    {/* <img id="hometohome" src={pepiIntro}/> */}
                 </div>
             </div>
 
@@ -75,24 +75,14 @@ const Pepi = () => {
                 </div>
             </div>
 
-            <div className="proj-section-header">
-                <div className="container">
-                    <h2>Design Process</h2>
-                </div>
-            </div>
-
             <div className="container">
-                <p className="light-header">Creating the avatar</p>
-                <img src={avatar}/>
-                
-                <p className="light-header">Finalizing Logo</p>
+                <p className="light-header">Design Process</p>
+                <img id="pepiBreakdown" src={avatar}/>
                 <div className="pepi-img-split">
                     <img src={pepiTech}></img>
                     <img src={pepiWet}></img>
                     <img id="pepiSpace" src={pepiSpace}></img>
-                </div>
-                
-                <p className="light-header">Branding</p>
+                </div>                
             </div>
 
             <div className="grey-bg">

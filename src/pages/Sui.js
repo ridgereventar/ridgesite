@@ -73,17 +73,9 @@ const Sui = () => {
                 </div>
             </div>
 
-            {/* <div className="container text-img-container">
-                <div>
-                    <h1>Brand Definition</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <img id="suiBreakdown" src={suibreakdown}/>
-            </div> */}
-
             <div className="container">
                 <h2>Brand Definition</h2>
-                <div className="text-img-ng">
+                <div className="text-img">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <img id="suiBreakdown" src={suibreakdown}/>
                 </div>
@@ -96,12 +88,13 @@ const Sui = () => {
                 </div>
             </div>
 
-            <div className="container text-img-container">
-                <div>
-                    <h1>Design / Prototyping</h1>
+
+            <div className="container">
+                <h2>Design / Prototyping</h2>
+                <div className="text-img">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <img id="lowfis" src={lowfis}/>
                 </div>
-                <img id="lowfis" src={lowfis}/>
             </div>
 
             <div className="slant-container">

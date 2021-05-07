@@ -4,8 +4,14 @@
     margin-bottom: -8px;
 }
 
+#pepiBreakdown {
+    margin-bottom: $marginBottomXLg;
+}
+
 .pepi-img-split {
     @include imgSplit(true, 260px, 244px, 300px);
+    margin-bottom: $marginBottomXLg;
+
 }
 
 @media screen and (max-width: 992px) {
@@ -64,4 +70,8 @@
             margin: 0;
         }
     }
+}
+
+.pepi-banner {
+    background-position: center bottom;
 }

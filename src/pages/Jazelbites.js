@@ -17,13 +17,15 @@ import ty1 from '../images/projects/jazelbites/jbty1.png';
 import ty2 from '../images/projects/jazelbites/jbty2.png';
 
 import jbbanner from '../images/projects/jazelbites/jbbanner3.jpg';
-import jbintro from '../images/projects/jazelbites/jbcrave3.png';
+import jbintro from '../images/projects/jazelbites/jbintro.png';
 
 import palette from '../images/projects/jazelbites/jbpalette.png';
 import style from '../images/projects/jazelbites/jbstyle.png';
 
 import phone from '../images/projects/jazelbites/jbphone.png';
 import post from '../images/projects/jazelbites/jbpost.png';
+import sweets from '../images/projects/jazelbites/sweets2.png';
+import jbbg from '../images/projects/jazelbites/jbbg.png';
 
 
 const Jazelbites = () => {
@@ -54,8 +56,8 @@ const Jazelbites = () => {
                 </div>
             </div>
 
-            <div className="banner" style={{backgroundImage: `url("${jbbanner}")`}}>
-                <div className="white-gradient"></div>
+            <div className="banner jazelbites-banner" style={{backgroundImage: `url("${jbbg}")`}}>
+                {/* <img id="sweets" src={sweets}/> */}
                 <div className="container banner-intro">
                     <img id="hometohome" src={jbintro}/>
                 </div>

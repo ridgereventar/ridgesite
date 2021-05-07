@@ -8,11 +8,12 @@
     width: 300px;
 }
 
+.ng-breakdown {
+    margin-bottom: 200px;
+}
 
 #ngBreakdown {
     width: 500px;
-    margin-bottom: $marginBottomXLg;
-
 }
 
 #ngProto {
@@ -23,4 +24,8 @@
     margin-bottom: $marginBottomXLg;
 }
 
-
+@media screen and (max-width: 768px) {
+    .mockup-container {
+        margin-bottom: $marginBottomLg;
+    }
+}

@@ -25,16 +25,17 @@ import demo from '../images/demos/SUidemoS.mov';
 import suibreakdown from '../images/projects/sui/suibreakdown.png';
 import suipalette from '../images/projects/sui/suipalette.png';
 import suistyle from '../images/projects/sui/suistyle.png';
+import suihifi from '../images/projects/sui/suihifi2.png';
 
 
 const Sui = () => {
 
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    //     window.onbeforeunload = function () {
-    //         window.scrollTo(0, 0);
-    //     }
-    //   }, [])
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    }, [])
 
     const techScrollImgs = [landing, create, brand, home, lowfis];
 
@@ -72,12 +73,20 @@ const Sui = () => {
                 </div>
             </div>
 
-            <div className="container text-img-container">
+            {/* <div className="container text-img-container">
                 <div>
                     <h1>Brand Definition</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 </div>
                 <img id="suiBreakdown" src={suibreakdown}/>
+            </div> */}
+
+            <div className="container">
+                <h2>Brand Definition</h2>
+                <div className="text-img-ng">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <img id="suiBreakdown" src={suibreakdown}/>
+                </div>
             </div>
 
             <div className="grey-bg sui-style">
@@ -96,13 +105,9 @@ const Sui = () => {
             </div>
 
             <div className="slant-container">
-                <div className="grey-slant-bg"/>
-                <div className="container highfi-container">
-                    <img id="hfLanding" src={landing}/>
-                    <img id="hfLogin" src={login}/>
-                    <img id="hfSignup" src={signup}/>
-                    <img id="hfHome" src={home}/>
-                    <img id="hfCreate" src={create}/>
+                <div className="slant-bg"></div>
+                <div className="container">
+                    <img src={suihifi}></img>
                 </div>
             </div>
 
@@ -111,12 +116,12 @@ const Sui = () => {
                 blobs={TECH_BLOBS}
             />
 
-            <section className="demo-section">
+            <div className="demo-section">
                 <div className="container demo-container">
                     <h1>Demo</h1>
                     <video src={demo} controls></video>
                 </div>
-            </section>
+            </div>
 
             <ProjectGrid/>
 

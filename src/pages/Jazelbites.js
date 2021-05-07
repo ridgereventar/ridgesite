@@ -1,8 +1,5 @@
 import React, {useState, useEffect} from 'react';
 
-// import '../styles/Project.css';
-// import '../styles/projects/Jazelbites.css';
-
 import '../styles/projects/projects.css';
 
 import Nav from '../components/Nav';
@@ -31,12 +28,12 @@ import post from '../images/projects/jazelbites/jbpost.png';
 
 const Jazelbites = () => {
     
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    //     window.onbeforeunload = function () {
-    //         window.scrollTo(0, 0);
-    //     }
-    // }, [])
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    }, [])
 
     return (
         <>

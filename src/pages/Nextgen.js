@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 
-// import '../styles/projects/Nextgen.css';
 import '../styles/projects/projects.css';
 
 import Nav from '../components/Nav';

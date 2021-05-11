@@ -2,13 +2,13 @@ import React, {useState, useEffect, useRef} from 'react';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
-import '../styles/Home.css';
+import '../styles/styles.css';
 
 import Nav from '../components/Nav';
 import Trigger from '../components/Trigger';
 import ProjectGrid from '../components/ProjectGrid';
 
-import {pepiAnim, lowfiAnim, desAnim, devAnim, motionAnim} from '../helpers/anims';
+import {macAnim, pepiAnim, lowfiAnim, desAnim, devAnim, motionAnim} from '../helpers/anims';
 
 import suiSample from '../images/demos/suiDemoFinal.mov';
 import nextSample from '../images/demos/nextDemo.mov';
@@ -23,6 +23,8 @@ import jazelbites from '../images/jazelbites.png';
 import me from '../images/me.png';
 import nextbtn from '../images/next.png';
 import { isElementOfType } from 'react-dom/test-utils';
+
+import macrender from '../images/mac-webm.webm';
 
 const Home = (props) => {
 
@@ -71,40 +73,64 @@ const Home = (props) => {
 
     const currentSlideObj = slideArray[currentSlideIndex]
     return (
-        <React.Fragment>
+        <>
+
+            <Nav defaultNav={false}/>
 
             <div className="home">
-
-                <Nav defaultNav={false}/>
 
                 <div className="hero">
                     <div className="container hero-content">
                         <Fade left distance="80px">
-                            <div className="hero-intro">
-                                <h1 id="fullName">RIDGE REVENTAR</h1>
-                                <p id="introDesc">I am a front end developer and designer that inspires to bring visions to life through visual graphics and full stack applications.</p>
+                            <div>
+                                <h1>RIDGE REVENTAR</h1>
+                                <p>I am a front end developer and designer that inspires to bring visions to life through visual graphics and full stack applications.</p>
                                 <button className="site-btn">View my work</button> 
                             </div> 
                         </Fade>
+                        
+                        {/* <video src={macrender} type='video/mp4' codecs="hvc1" ></video> */}
 
-                        <Lottie
+                        <video autoPlay muted>
+                            <source src={macrender} type="video/webm"/>
+                        </video>
+                        {/* <Lottie
+                            className="macrender"
+                            options={macAnim}
+                            playingState='play'/> */}
+
+                        {/* <div className="mac-container">
+                            <img src={mac}></img>
+                            <div className="demo">
+                                <video src={currentSlideObj.demo} type="video/mp4" playsInline autoPlay loop muted></video>
+                            </div>
+                            <div className="card2">
+                                <img src={currentSlideObj.title}></img>
+                                <p>{currentSlideObj.desc}</p>
+                                <button className="proj-btn">View Project</button>
+                            </div>
+                            <img className="nextbtn" src={nextbtn} onClick={slideNext}></img>
+                        </div> */}
+
+                        {/* <Lottie
                             className="hero-anim"
                             options={pepiAnim}
-                            playingState='play'/>
+                            playingState='play'/> */}
 
-                        <div className="hero-titles">
+                        
+                        {/* <div className="hero-titles">
                             <Fade right>
                                 <div>
-                                    <span>Graphic</span>
+                                    <p>Graphic</p>
                                     <span className="hero-title-lg">DESIGNER</span>
                                 </div>
                                 <h2 id="plus">+</h2>
                                 <div>
-                                    <span>Front End</span>
+                                    <p>Front End</p>
                                     <span className="hero-title-lg">DEVELOPER</span>
                                 </div>
                             </Fade>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -119,7 +145,7 @@ const Home = (props) => {
                     </Fade>
                     <Fade left>
                         <div className="card">
-                            <img className="card-title" src={currentSlideObj.title}></img>
+                            <img src={currentSlideObj.title}></img>
                             <p>{currentSlideObj.desc}</p>
                             <button className="proj-btn">View Project</button> 
                         </div>
@@ -130,103 +156,86 @@ const Home = (props) => {
                     </div>
                 </div>
 
-                <div className="container bg">
-                    <Fade>
-                        <img className="bg-logo" src={logo}></img>
-                        <p className="bg-p">
-                            Through 7 years experience of free lance design I expanded my passion into web development. 
-                            I inspire to bring visions to life through visual graphics and full stack applications.
-                        </p>
-                    </Fade>
-
-                    <Trigger onEnterViewport={() => setplayAnim(true)} onLeaveViewport={() => console.log("leave")}/>
-
+                <div className="container dev-anim-wrapper"> 
                     {playAnim?
                         <Lottie
                             className="dev-anim"
                             options={lowfiAnim}
                             playingState='play'/>
-                        : null
+                        :null
                     }
+                    <Trigger onEnterViewport={() => setplayAnim(true)} onLeaveViewport={() => console.log("leave")}/>
+                </div>
+
+                <div className="container background">
+                    <Fade>
+                        <img className="bg-logo" src={logo}></img>
+                        <div className="background-content">
+                            <h1 className="section-title">QUALITY & GROWTH</h1>
+                            <p>
+                                Through 7 years experience of free lance design I expanded my passion into web development. 
+                                From front end sites to full stack applications, I utilize my design experience and technology capabilities to bring visions to life.
+                                I continue to expand my skills and grow my toolset to ensure my applications meet the current requirements of high level development. 
+                                This site showcases my work so far, however I only intend on learning much more. 
+                            </p>
+                        </div>
+                    </Fade>
 
                 </div>
 
-                <div className="container tools">
+                <div className="container tools-section">
+                    <div className="tool-category">
+                        {playDesIcon?
+                        <>
+                            <Lottie
+                                className="tool-icon"
+                                options={desAnim}
+                                playingState='play'/> 
+                            <Fade bottom>
+                                <div>
+                                    <h1>DESIGN</h1>
+                                    <p className="tools-stacked">Sketch <br/> Figma <br/> Illustrator</p>
+                                    <p className="tools-inline">Sketch, Figma, Illustrator</p>                                
+                                </div>
+                            </Fade>
+                        </>
+                        : null}
+                    </div>
 
-                    <Fade>
-                        <h1 className="section-title">TOOLS</h1>
-                    </Fade>
-                
-                    <div className="tools-content">
-                        <div className="tool-category">
-                            {playDesIcon?
-                            <React.Fragment>
-                                <Lottie
-                                    className="tool-icon"
-                                    options={desAnim}
-                                    playingState='play'/> 
-                                <Fade bottom>
-                                    <div className="tool-content">
-                                        <h1 className="sm-header">DESIGN</h1>
-                                        <p>Sketch, Figma, Illustrator</p>
-                                        <ul className="tools-list">
-                                            <li>Sketch</li>
-                                            <li>Figma</li>
-                                            <li>Illustrator</li>
-                                        </ul>
-                                    </div>
-                                    
-                                </Fade>
-                            </React.Fragment>
-                            : null}
-                        </div>
+                    <div className="tool-category">
+                        {playDevIcon?
+                        <React.Fragment>
+                            <Lottie
+                                className="tool-icon"
+                                options={devAnim}
+                                playingState='play'/>
+                            <Fade bottom>
+                                <div>
+                                    <h1>DEVELOPMENT</h1>
+                                    <p className="tools-stacked">JavaScript <br/> HTML / CSS <br/> React <br/> Node.js <br/> Express <br/> MongoDB</p>
+                                    <p className="tools-inline">JavaScript, HTML / CSS, React, Node.js, Express, MongoDB</p>
+                                </div>
+                            </Fade>
+                        </React.Fragment>
+                        : null}
+                    </div>
 
-                        <div className="tool-category">
-                            {playDevIcon?
-                            <React.Fragment>
-                                <Lottie
-                                    className="tool-icon"
-                                    options={devAnim}
-                                    playingState='play'/>
-                                <Fade bottom>
-                                    <div className="tool-content">
-                                        <h1 className="sm-header">DEVELOPMENT</h1>
-                                        <p>JavaScript, HTML / CSS, React, Node.js, Express, MongoDB</p>
-                                        <ul className="tools-list">
-                                            <li>JavaScript</li>
-                                            <li>HTML / CSS</li>
-                                            <li>React</li>
-                                            <li>Node.js</li>
-                                            <li>Express</li>
-                                            <li>MongoDB</li>
-                                        </ul>
-                                    </div>
-                                </Fade>
-                            </React.Fragment>
-                            : null}
-                        </div>
-
-                        <div className="tool-category">
-                            {playMotIcon?
-                            <React.Fragment>
-                                <Lottie
-                                    className="tool-icon"
-                                    options={motionAnim}
-                                    playingState='play'/>
-                                <Fade bottom>
-                                    <div className="tool-content">
-                                        <h1 className="sm-header">MOTION</h1>
-                                        <p>After Effects, Bodymovin, AEUX</p>
-                                        <ul className="tools-list">
-                                            <li>After Effects</li>
-                                            <li>Bodymovin</li>
-                                            <li>AEUX</li>
-                                        </ul>
-                                    </div>
-                                </Fade>
-                            </React.Fragment>
-                            : null}
-                        </div>
+                    <div className="tool-category">
+                        {playMotIcon?
+                        <React.Fragment>
+                            <Lottie
+                                className="tool-icon"
+                                options={motionAnim}
+                                playingState='play'/>
+                            <Fade bottom>
+                                <div>
+                                    <h1>MOTION</h1>
+                                    <p className="tools-stacked">After Effects <br/> Bodymovin <br/> AEUX</p>
+                                    <p className="tools-inline">After Effects, Bodymovin, AEUX</p>
+                                </div>
+                            </Fade>
+                        </React.Fragment>
+                        : null}
                     </div>
                 </div>  
 
@@ -292,7 +301,7 @@ const Home = (props) => {
 
             </div>
 
-        </React.Fragment>
+        </>
     )
 }
 

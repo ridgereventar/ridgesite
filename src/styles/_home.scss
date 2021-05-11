@@ -25,8 +25,10 @@
 .hero-content {
     flex: 1;
     color: white;
-    @include displayFlex(0, space-between, center);
+    @include displayFlex(0, flex-start, center);
+    height: 100%;
     position: relative;
+    background-color: red;
     h1 {
         font-size: 3rem;
         letter-spacing: 5px;
@@ -34,52 +36,82 @@
     p {
         max-width: 450px;
     }
-    video {
-        width: 100%;
-        z-index: 999;
-    }
 }
 
-.mac-container {
-    flex: 1;
-    margin-right: -70px;
-    @include displayFlex(0, center, center);
+.mockup-section {
+    height: max-content;
+    max-width: 1000px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: -120px;
+    @include displayFlex(row, flex-start, center);
+}
+
+.mockup-wrapper {
     position: relative;
 }
 
-.demo {
-    width: 75%;
-    height: 80%;
-    margin-top: -1vw;
-    border-radius: 12px;
+.mac-wrapper {
+    width: 87%;
+    z-index: 1;
+}
+
+.mobile-wrapper {
+    width: 21%;
+    margin-bottom: -7%;
+    margin-left: -10%;
+    z-index: 2;
+}
+
+.mockup-demo {
     position: absolute;
     overflow: hidden;
-
+    z-index: -1;
     video {
         width: 100%;
         height: 100%;
-        object-fit: cover;
     }
 }
 
-.card2 {
-    width: 93%;
-    height: 80px; 
-    padding: 20px 7%;
-    box-sizing: border-box;
-    border-radius: 10px;
-    @include displayFlex(row, center, center);
-    transition: 0.1s linear;
-    position: absolute;
-    bottom: -80px;
-    img {
-        height: 100%;
-        margin-right: 40px;
+.mac-demo {
+    height: 66%;
+    width: 62%;
+    right: 7%;
+    top: 5.5%;
+    transform: perspective(400px) rotateY(-10.5deg);
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+}
+
+.phone-demo {
+    height: 92%;
+    width: 83%;
+    right: 2%;
+    top: 2.3%;
+    transform: perspective(400px) rotateY(5deg);
+    border-radius: 22px;
+    background-color: #f0f0f0;
+}
+
+
+@media screen and (max-width: 1125px) {
+    .hero-content {
+        flex-direction: column;
+        height: max-content;
     }
-    button {
-        justify-self: flex-end;
+    .mockup-section {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        top: unset;
+        bottom: unset;
+        right: unset;
+
     }
 }
+
 
 .nextbtn {
     width: 50px;
@@ -87,159 +119,11 @@
     right: -50px;
 }
 
-
-
-// .card2:hover {
-//     background-color: #181818;
-// }
-
-// .mac-container {
-//     flex: 1;
-//     margin-left: -95px;
-//     @include displayFlex(0, center, center);
-//     position: relative;
-// }
-
-// .demo {
-//     width: 75%;
-//     height: 80%;
-//     margin-top: -1vw;
-//     border-radius: 12px;
-//     position: absolute;
-//     overflow: hidden;
-
-//     video {
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//     }
-// }
-
-
-
-
-
-
-
-
-
-
-.hero-anim {    
-    width: 400px;
-    opacity: 0.05;
-    position: absolute;
-    right: 170px;
-    align-self: center;
-}
-
-.hero-titles {
-    align-self: flex-end;
-    text-align: right;
-    p {
-        margin: 0;
-    }
-    span {
-        font-size: 1.7rem;
-    }
-    h2 {
-        margin: 10px 0 10px 10px;
-        text-align: right;  
-    }
-}
-
-
-@media screen and (max-width: 992px) {  
-    .hero-titles {
-        display: none;
-    }    
-    .hero-anim {
-        right: 0;
-    }    
-}
-
-@media screen and (max-width: 768px) {
-    .hero-anim {
-        right: -150px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #fullName {
-        font-size: 3rem;
-        letter-spacing: 5px;
-    }
-}
-
-.slide {
-    @include displayFlex(0, space-between, center);
-}
-
-
-
-.card {
-    width: 300px; 
-    color: white;
-    position: relative;
-    img {
-        width: 150px;
-    }
-    p {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        opacity: 0.5;
-    }
-}
-
 .next-btn {
     width: 45px;
     height: 45px;
 }
 
-
-@media screen and (max-width: 1200px) {
-    .mac-container {
-        margin-left: -7vw;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .mac-container {
-        margin-left: -12vw;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .card {
-        width: 35%; 
-        order: 1;
-        img {
-            width: 70%;
-        }
-    }
-    .mac-container {
-        order: 2;
-        margin-left: 0px;
-        margin-right: -200px;
-    }
-    .next-btn {
-        position: absolute;
-        right: 20px;
-        z-index: 3;
-        order: 3;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .card {
-        img {
-            width: 100%;
-            margin-bottom: 30px;
-        }
-        p {
-            display: none;
-        }
-    }
-}
 
 .dev-anim-wrapper {
     height: 421px;

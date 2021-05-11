@@ -8,7 +8,7 @@ import Nav from '../components/Nav';
 import Trigger from '../components/Trigger';
 import ProjectGrid from '../components/ProjectGrid';
 
-import {macAnim, pepiAnim, lowfiAnim, desAnim, devAnim, motionAnim} from '../helpers/anims';
+import {pepiAnim, lowfiAnim, desAnim, devAnim, motionAnim} from '../helpers/anims';
 
 import suiSample from '../images/demos/suiDemoFinal.mov';
 import nextSample from '../images/demos/nextDemo.mov';
@@ -24,7 +24,11 @@ import me from '../images/me.png';
 import nextbtn from '../images/next.png';
 import { isElementOfType } from 'react-dom/test-utils';
 
-import macrender from '../images/mac-webm.webm';
+import darkmac from '../images/darkmac2.png';
+import darkphone from '../images/darkphone2.png';
+import ngphone from '../images/demos/nextgenmobile.mov';
+
+// import macrender from '../images/mac-bg-test.mp4';
 
 const Home = (props) => {
 
@@ -89,72 +93,25 @@ const Home = (props) => {
                             </div> 
                         </Fade>
                         
-                        {/* <video src={macrender} type='video/mp4' codecs="hvc1" ></video> */}
-
-                        <video autoPlay muted>
-                            <source src={macrender} type="video/webm"/>
-                        </video>
-                        {/* <Lottie
-                            className="macrender"
-                            options={macAnim}
-                            playingState='play'/> */}
-
-                        {/* <div className="mac-container">
-                            <img src={mac}></img>
-                            <div className="demo">
-                                <video src={currentSlideObj.demo} type="video/mp4" playsInline autoPlay loop muted></video>
-                            </div>
-                            <div className="card2">
-                                <img src={currentSlideObj.title}></img>
-                                <p>{currentSlideObj.desc}</p>
-                                <button className="proj-btn">View Project</button>
-                            </div>
-                            <img className="nextbtn" src={nextbtn} onClick={slideNext}></img>
-                        </div> */}
-
-                        {/* <Lottie
-                            className="hero-anim"
-                            options={pepiAnim}
-                            playingState='play'/> */}
-
-                        
-                        {/* <div className="hero-titles">
-                            <Fade right>
-                                <div>
-                                    <p>Graphic</p>
-                                    <span className="hero-title-lg">DESIGNER</span>
+                        <Fade>
+                            <div className="mockup-section">
+                                <div className="mockup-wrapper mac-wrapper">
+                                    <img id="darkMac" src={darkmac}/>
+                                    <div className="mockup-demo mac-demo">
+                                        <video src={currentSlideObj.demo} type="video/mp4" playsInline autoPlay loop muted></video>
+                                    </div>
                                 </div>
-                                <h2 id="plus">+</h2>
-                                <div>
-                                    <p>Front End</p>
-                                    <span className="hero-title-lg">DEVELOPER</span>
+                                <div className="mockup-wrapper mobile-wrapper">
+                                    <img id="darkPhone" src={darkphone}></img>
+                                    <div className="mockup-demo phone-demo">
+                                        <video src={ngphone} type="video/mp4" playsInline autoPlay loop muted></video>
+                                    </div>
                                 </div>
-                            </Fade>
-                        </div> */}
+                            </div>
+                        </Fade>
                     </div>
                 </div>
 
-                <div className="container slide">
-                    <Fade left>
-                        <div className="mac-container">
-                            <img src={mac}></img>
-                            <div className="demo">
-                                <video src={currentSlideObj.demo} type="video/mp4" playsInline autoPlay loop muted></video>
-                            </div>
-                        </div>
-                    </Fade>
-                    <Fade left>
-                        <div className="card">
-                            <img src={currentSlideObj.title}></img>
-                            <p>{currentSlideObj.desc}</p>
-                            <button className="proj-btn">View Project</button> 
-                        </div>
-                    </Fade>
-
-                    <div className="next-btn" onClick={slideNext}>
-                        <img src={nextbtn}></img>
-                    </div>
-                </div>
 
                 <div className="container dev-anim-wrapper"> 
                     {playAnim?

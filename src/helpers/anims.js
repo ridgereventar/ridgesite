@@ -10,16 +10,6 @@ import suiJson2 from '../svgs/suianim.json';
 import burgerFJson from '../svgs/burgerFdark.json';
 import burgerBJson from '../svgs/burgerBdark.json';
 
-import macJson from '../svgs/macrender.json';
-
-export const macAnim = {
-    renderer: 'canvas',
-    loop: false,
-    autoplay: true, 
-    animationData: macJson
-}
-
-
 export const pepiAnim = {
     renderer: 'svg',
     loop: false,

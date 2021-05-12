@@ -24,11 +24,10 @@ import me from '../images/me.png';
 import nextbtn from '../images/next.png';
 import { isElementOfType } from 'react-dom/test-utils';
 
-import darkmac from '../images/darkmac2.png';
-import darkphone from '../images/darkphone2.png';
+import darkmac from '../images/darkmac4.png';
+import darkphone from '../images/darkphone3.png';
 import ngphone from '../images/demos/nextgenmobile.mov';
 
-// import macrender from '../images/mac-bg-test.mp4';
 
 const Home = (props) => {
 
@@ -84,24 +83,23 @@ const Home = (props) => {
             <div className="home">
 
                 <div className="hero">
-                    <div className="container hero-content">
-                        <Fade left distance="80px">
-                            <div>
-                                <h1>RIDGE REVENTAR</h1>
-                                <p>I am a front end developer and designer that inspires to bring visions to life through visual graphics and full stack applications.</p>
-                                <button className="site-btn">View my work</button> 
-                            </div> 
-                        </Fade>
-                        
-                        <Fade>
-                            <div className="mockup-section">
-                                <div className="mockup-wrapper mac-wrapper">
+                    <div className="container hero-wrapper">
+
+                        <div className="hero-intro">
+                            <h1>RIDGE REVENTAR</h1>
+                            <p>I am a front end developer and designer that inspires to bring visions to life through visual graphics and full stack applications.</p>
+                            <button className="site-btn">View my work</button> 
+                        </div>
+                   
+                        <Fade right>
+                            <div className="hero-mockup">
+                                <div className="mockup-wrapper mac-mockup">
                                     <img id="darkMac" src={darkmac}/>
                                     <div className="mockup-demo mac-demo">
                                         <video src={currentSlideObj.demo} type="video/mp4" playsInline autoPlay loop muted></video>
                                     </div>
                                 </div>
-                                <div className="mockup-wrapper mobile-wrapper">
+                                <div className="mockup-wrapper mobile-mockup">
                                     <img id="darkPhone" src={darkphone}></img>
                                     <div className="mockup-demo phone-demo">
                                         <video src={ngphone} type="video/mp4" playsInline autoPlay loop muted></video>
@@ -109,11 +107,18 @@ const Home = (props) => {
                                 </div>
                             </div>
                         </Fade>
+                        
                     </div>
+
+                    <Lottie
+                        className="dev-anim"
+                        options={lowfiAnim}
+                        playingState='play'/>
+                        
                 </div>
 
 
-                <div className="container dev-anim-wrapper"> 
+                {/* <div className="container dev-anim-wrapper"> 
                     {playAnim?
                         <Lottie
                             className="dev-anim"
@@ -122,7 +127,7 @@ const Home = (props) => {
                         :null
                     }
                     <Trigger onEnterViewport={() => setplayAnim(true)} onLeaveViewport={() => console.log("leave")}/>
-                </div>
+                </div> */}
 
                 <div className="container background">
                     <Fade>

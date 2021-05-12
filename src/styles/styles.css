@@ -156,25 +156,6 @@
 .hero {
   height: 100vh;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: 0;
-          flex-direction: 0;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -189,57 +170,61 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
   position: relative;
-  background-color: red;
 }
 
-.hero-content h1 {
+.hero h1 {
   font-size: 3rem;
   letter-spacing: 5px;
 }
 
-.hero-content p {
+.hero p {
   max-width: 450px;
 }
 
-.mockup-section {
+.hero-wrapper {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: 0;
+          flex-direction: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-mockup {
+  max-width: 1000px;
+  padding-top: 100px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  max-width: 1000px;
   position: absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
   right: -120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .mockup-wrapper {
   position: relative;
 }
 
-.mac-wrapper {
-  width: 87%;
+.mac-mockup {
   z-index: 1;
 }
 
-.mobile-wrapper {
-  width: 21%;
-  margin-bottom: -7%;
+.mobile-mockup {
   margin-left: -10%;
   z-index: 2;
 }
@@ -278,23 +263,65 @@
 }
 
 @media screen and (max-width: 1125px) {
-  .hero-content {
+  .hero-mockup {
+    max-width: 640px;
+    right: 20px;
+  }
+  .mac-demo {
+    height: 65%;
+    width: 63%;
+    right: 6%;
+    top: 6%;
+    -webkit-transform: perspective(400px) rotateY(-15deg);
+            transform: perspective(400px) rotateY(-15deg);
+    border-radius: 5px 5px 0 0;
+  }
+  .phone-demo {
+    height: 91.5%;
+    top: 2.5%;
+    -webkit-transform: perspective(400px) rotateY(8deg);
+            transform: perspective(400px) rotateY(8deg);
+    border-radius: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-intro {
+    margin-bottom: 150px;
+  }
+  .hero-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
+    position: unset;
   }
-  .mockup-section {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    top: unset;
-    bottom: unset;
-    right: unset;
+  .hero-mockup {
+    bottom: 0;
   }
+}
+
+@media screen and (max-width: 674px) {
+  .mac-demo {
+    -webkit-transform: perspective(60vw) rotateY(-15deg);
+            transform: perspective(60vw) rotateY(-15deg);
+    border-radius: 0px;
+  }
+  .phone-demo {
+    -webkit-transform: perspective(60vw) rotateY(8deg);
+            transform: perspective(60vw) rotateY(8deg);
+    border-radius: 2vw;
+  }
+}
+
+.dev-anim {
+  position: absolute;
+  width: 700px;
+  right: 200px;
+  bottom: -200px;
+  opacity: 0.05;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .nextbtn {
@@ -326,19 +353,6 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-.dev-anim {
-  width: 700px;
-  opacity: 0.05;
-}
-
-@media screen and (max-width: 768px) {
-  .dev-anim {
-    margin-right: -150px;
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-  }
 }
 
 .background {

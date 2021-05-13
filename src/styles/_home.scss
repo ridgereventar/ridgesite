@@ -18,10 +18,13 @@
 
 .hero {
     height: 100vh;
+    min-height: 700px;
+    max-height: 1120px;
     width: 100%;
     color: white;
     @include displayFlex(0, flex-start, center);
     position: relative;
+    // margin-bottom: 100px;
     h1 {
         font-size: 3rem;
         letter-spacing: 5px;
@@ -35,7 +38,7 @@
     width: 100%;
     position: relative;
     @include displayFlex(0, space-between, center);
-
+    z-index: 2;
 }
 
 .hero-mockup {
@@ -54,6 +57,7 @@
 
 .mac-mockup {
     z-index: 1;
+    // background-color: red;
 }
 
 .mobile-mockup {
@@ -141,14 +145,61 @@
 }
 
 
-.dev-anim {
-    position: absolute;
-    width: 700px;
-    right: 200px;
-    bottom: -200px;
-    opacity: 0.05;
-    transform: scaleX(-1);
+
+
+// .dev-anim {
+//     position: absolute;
+//     width: 700px;
+//     right: 200px;
+//     bottom: -200px;
+//     opacity: 0.05;
+//     transform: scaleX(-1);
+// }
+
+
+.animation-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 40px;
+    height: max-content;
+    // background-color: black;
+    @include displayFlex(row, space-between, center);
+} 
+
+.pepi-anim {
+    width: 300px;
 }
+
+.dev-wrapper {
+    // background-color: blue;
+    position: absolute;
+    right: -250px;
+    top: -250px;
+}
+
+.dev-anim {
+    width: 700px;
+    opacity: 0.08;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -178,19 +229,22 @@
 
 
 .background {
-    @include displayFlex(0, flex-start, flex-start);
+    @include displayFlex(0, space-between, center);
     color: white;
     margin-bottom: 200px;
+    // background-color: red;
+    position: relative;
+    z-index: 1;
 }
 
 .background-content {
-    border-left: 1px solid grey;
-    padding-left: 50px;
+    // border-left: 1px solid grey;
+    // padding-left: 50px;
     h1 {
         margin-top: -10px;
     }
     p {
-        width: 80%;
+        width: 50%;
         color: white;
         margin-bottom: 0px;
     }

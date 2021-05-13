@@ -1,5 +1,8 @@
 import pepiJson from '../svgs/designanimFinal.json';
-import lowfiJson from '../svgs/devanimFinal.json';
+
+// import lowfiJson from '../svgs/devanimFinal.json';
+import lowfiJson from '../svgs/devanimupdate.json';
+
 import desJson from '../svgs/designIcon.json';
 import devJson from '../svgs/devIcon.json';
 import motionJson from '../svgs/motionIcon.json';

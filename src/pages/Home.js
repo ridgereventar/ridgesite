@@ -31,9 +31,9 @@ import ngphone from '../images/demos/nextgenmobile.mov';
 
 const Home = (props) => {
 
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+    // useEffect(() => {
+    //     window.scrollTo(0, 0)
+    // }, [])
 
 
     const [playAnim, setplayAnim] = useState(false);
@@ -87,7 +87,7 @@ const Home = (props) => {
 
                         <div className="hero-intro">
                             <h1>RIDGE REVENTAR</h1>
-                            <p>I am a front end developer and designer that inspires to bring visions to life through visual graphics and full stack applications.</p>
+                            <p>Front End Developer & Designer</p>
                             <button className="site-btn">View my work</button> 
                         </div>
                    
@@ -109,13 +109,47 @@ const Home = (props) => {
                         </Fade>
                         
                     </div>
-
-                    <Lottie
-                        className="dev-anim"
-                        options={lowfiAnim}
-                        playingState='play'/>
-                        
                 </div>
+
+                <div className="container background">
+                    <Fade>
+                        {/* <img className="bg-logo" src={logo}></img> */}
+                        <div className="background-content">
+                            <h1 className="section-title">QUALITY & GROWTH</h1>
+                            <p>
+                                Through 7 years experience of free lance design I expanded my passion into web development. 
+                                From front end sites to full stack applications, I utilize my design experience and technology capabilities to bring visions to life.
+                                I continue to expand my skills and grow my toolset to ensure my applications meet the current requirements of high level development. 
+                                This site showcases my work so far, however I only intend on learning much more. 
+                            </p>
+                        </div>
+
+                        <Trigger onEnterViewport={() => setplayAnim(true)} onLeaveViewport={() => console.log("leave")}/>
+
+                    </Fade>
+
+                    <div className="dev-wrapper">
+                        {playAnim? 
+                            <Lottie
+                                className="dev-anim"
+                                options={lowfiAnim}
+                                playingState='play'/>
+                            : null   
+                        }
+                    </div>
+
+                </div>
+
+                {/* <div className="animation-container">
+                    <Lottie
+                            className="pepi-anim"
+                            options={pepiAnim}
+                            playingState='play'/>
+                    <Lottie
+                            className="dev-anim"
+                            options={lowfiAnim}
+                            playingState='play'/>
+                </div> */}
 
 
                 {/* <div className="container dev-anim-wrapper"> 
@@ -128,22 +162,6 @@ const Home = (props) => {
                     }
                     <Trigger onEnterViewport={() => setplayAnim(true)} onLeaveViewport={() => console.log("leave")}/>
                 </div> */}
-
-                <div className="container background">
-                    <Fade>
-                        <img className="bg-logo" src={logo}></img>
-                        <div className="background-content">
-                            <h1 className="section-title">QUALITY & GROWTH</h1>
-                            <p>
-                                Through 7 years experience of free lance design I expanded my passion into web development. 
-                                From front end sites to full stack applications, I utilize my design experience and technology capabilities to bring visions to life.
-                                I continue to expand my skills and grow my toolset to ensure my applications meet the current requirements of high level development. 
-                                This site showcases my work so far, however I only intend on learning much more. 
-                            </p>
-                        </div>
-                    </Fade>
-
-                </div>
 
                 <div className="container tools-section">
                     <div className="tool-category">

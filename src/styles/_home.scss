@@ -7,7 +7,10 @@
 
 .section-title {
     letter-spacing: 3px;
+    color: white;
 }
+
+// Hero
 
 .home {
     width: 100%;
@@ -18,13 +21,12 @@
 
 .hero {
     height: 100vh;
-    min-height: 700px;
-    max-height: 1120px;
+    min-height: 800px;
+    max-height: 1100px;
     width: 100%;
     color: white;
-    @include displayFlex(0, flex-start, center);
     position: relative;
-    // margin-bottom: 100px;
+    @include displayFlex(0, flex-start, center);
     h1 {
         font-size: 3rem;
         letter-spacing: 5px;
@@ -81,7 +83,6 @@
     right: 7%;
     top: 5.5%;
     transform: perspective(400px) rotateY(-10.5deg);
-    // transform: perspective(400px) rotateY(-20deg);
     border-radius: 10px 10px 0 0;
     background-color: white;
 }
@@ -96,11 +97,11 @@
     background-color: #f0f0f0;
 }
 
-
 @media screen and (max-width: 1125px) {
     .hero-mockup {
         max-width: 640px;
         right: 20px;
+        top: -100px;
     }
     .mac-demo {
         height: 65%;
@@ -129,6 +130,7 @@
     }
     .hero-mockup {
         bottom: 0;
+        top: unset;
     }
 }
 
@@ -137,116 +139,60 @@
         transform: perspective(60vw) rotateY(-15deg);
         border-radius: 0px;
     }
-
     .phone-demo {
         transform: perspective(60vw) rotateY(8deg);
         border-radius: 2vw;
     }
 }
 
+// Background Intro
 
-
-
-// .dev-anim {
-//     position: absolute;
-//     width: 700px;
-//     right: 200px;
-//     bottom: -200px;
-//     opacity: 0.05;
-//     transform: scaleX(-1);
-// }
-
-
-.animation-container {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 40px;
+.bg-intro {
     height: max-content;
+    color: white;
+    margin-bottom: 150px;
+    @include displayFlex(row, space-between, flex-start);
     // background-color: black;
-    @include displayFlex(row, space-between, center);
-} 
-
-.pepi-anim {
-    width: 300px;
 }
 
-.dev-wrapper {
-    // background-color: blue;
-    position: absolute;
-    right: -250px;
-    top: -250px;
+.bg-intro-anim {
+    margin-left: 100px;
+    margin-right: -250px;
+    margin-top: -250px;
+    opacity: 0.08;
+    // background-color: grey;
 }
 
 .dev-anim {
     width: 700px;
-    opacity: 0.08;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.nextbtn {
-    width: 50px;
-    position: absolute;
-    right: -50px;
-}
-
-.next-btn {
-    width: 45px;
-    height: 45px;
-}
-
-
-.dev-anim-wrapper {
-    height: 421px;
-    margin-top: -60px;
-    position: relative;
-    margin-bottom: 100px;
-    @include displayFlex(column, flex-end, flex-end);
-}
-
-
-
-
-.background {
-    @include displayFlex(0, space-between, center);
-    color: white;
-    margin-bottom: 200px;
-    // background-color: red;
-    position: relative;
-    z-index: 1;
-}
-
-.background-content {
-    // border-left: 1px solid grey;
-    // padding-left: 50px;
-    h1 {
-        margin-top: -10px;
+@media screen and (max-width: 992px) {
+    .bg-intro {
+        flex-direction: column;
+        align-items: flex-end;
     }
-    p {
-        width: 50%;
-        color: white;
-        margin-bottom: 0px;
+    .bg-intro-p {
+        order: 2;
+    }
+    .bg-intro-anim {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: -125px;
+        margin-bottom: 50px;
+    }
+    .dev-anim {
+        width: unset;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bg-intro-anim {
+        margin-top: -70px;
+    }
+    .dev-anim {
+        transform: scaleX(-1);
     }
 }
 
@@ -256,10 +202,13 @@
 }
 
 
+// Tools section
+
 .tools-section { 
     max-width: 770px;   
     @include displayFlex(row, space-between, flex-start);
     color: white; 
+    margin-bottom: 150px;
     // background-color: aquamarine; 
 }
 
@@ -268,9 +217,12 @@
     @include displayFlex(column, center, center);
     // background-color: blue;
     text-align: center;
-    .tool-icon {
+    .tool-icon-wrapper {
         height: 100px;
         margin-bottom: 35px;
+    }
+    .tool-icon {
+        height: 100%;
     }
     h1 {
         letter-spacing: 2px;
@@ -311,8 +263,22 @@
 }
 
 
-// @media screen and (max-width: 500px) {
-//     .sm-header {
-//         font-size: 1.2rem;
-//     }
-// }
+// Projects Section
+
+.projects-title {
+    h1 {
+        margin: 50px 0;
+        text-align: center;
+    }
+}
+
+
+// Home About
+
+.home-about {
+    @include displayFlex(row, space-between, center);
+    img {
+        max-width: 350px;
+        margin-bottom: -14.5px;
+    }
+}

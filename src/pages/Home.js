@@ -32,11 +32,6 @@ import ngphone from '../images/demos/nextgenmobile.mov';
 
 const Home = (props) => {
 
-    // useEffect(() => {
-    //     window.scrollTo(0, 0)
-    // }, [])
-
-
     const [playAnim, setplayAnim] = useState(false);
     const [playDesIcon, setPlayDesIcon] = useState(false);
     const [playDevIcon, setPlayDevIcon] = useState(false);

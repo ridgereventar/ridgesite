@@ -13,6 +13,24 @@ import suiJson2 from '../svgs/suianim.json';
 import burgerFJson from '../svgs/burgerFdark.json';
 import burgerBJson from '../svgs/burgerBdark.json';
 
+import fullAnimJson from '../svgs/fullanim2.json';
+import fullAnimCenterJson from '../svgs/fullanimCenter.json';
+
+export const fullAnim = {
+    renderer: 'svg',
+    loop: true,
+    autoplay: true, 
+    animationData: fullAnimJson
+}
+
+export const fullAnimCenter = {
+    renderer: 'svg',
+    loop: true,
+    autoplay: true, 
+    animationData: fullAnimCenterJson
+}
+
+
 export const pepiAnim = {
     renderer: 'svg',
     loop: false,

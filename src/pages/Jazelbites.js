@@ -10,13 +10,8 @@ import Footer from '../components/Footer';
 import jazelbitesLogo from '../images/projects/jazelbites/jblogo.png';
 import jazelbitesIcon from '../images/projects/jazelbites/logoicon.png';
 import breakdown from '../images/projects/jazelbites/jazelbitesbreakdown.png';
-import ipad from '../images/projects/jazelbites/ipad.png';
-import bc1 from '../images/projects/jazelbites/jbbc1.png';
-import bc2 from '../images/projects/jazelbites/jbbc2.png';
-import ty1 from '../images/projects/jazelbites/jbty1.png';
-import ty2 from '../images/projects/jazelbites/jbty2.png';
 
-import jbbanner from '../images/projects/jazelbites/jbbanner3.jpg';
+import jbbg from '../images/projects/jazelbites/jbbg.png';
 import jbintro from '../images/projects/jazelbites/jbintro.png';
 
 import palette from '../images/projects/jazelbites/jbpalette.png';
@@ -24,8 +19,12 @@ import style from '../images/projects/jazelbites/jbstyle.png';
 
 import phone from '../images/projects/jazelbites/jbphone.png';
 import post from '../images/projects/jazelbites/jbpost.png';
-import sweets from '../images/projects/jazelbites/sweets2.png';
-import jbbg from '../images/projects/jazelbites/jbbg.png';
+
+import ipad from '../images/projects/jazelbites/ipad.png';
+import bc1 from '../images/projects/jazelbites/jbbc1.png';
+import bc2 from '../images/projects/jazelbites/jbbc2.png';
+import ty1 from '../images/projects/jazelbites/jbty1.png';
+import ty2 from '../images/projects/jazelbites/jbty2.png';
 
 
 const Jazelbites = () => {

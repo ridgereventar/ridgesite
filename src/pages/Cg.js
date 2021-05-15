@@ -6,9 +6,7 @@ import Nav from '../components/Nav';
 import ProjectGrid from '../components/ProjectGrid';
 import Footer from '../components/Footer';
 
-import cgLogo from '../images/projects/cg/cglogo.png';
 import cgIcon from '../images/projects/cg/cglogoicon.png';
-import breakdown from '../images/projects/cg/cgbreakdown.png';
 import breakdown2 from '../images/projects/cg/cgbreakdown2.png';
 import bc1 from '../images/projects/cg/cgfront.png';
 import bc2 from '../images/projects/cg/cgback.png';
@@ -20,12 +18,12 @@ import cgProcess from '../images/projects/cg/cgsteps.png';
 
 const Cg = () => {
     
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    //     window.onbeforeunload = function () {
-    //         window.scrollTo(0, 0);
-    //     }
-    // }, [])
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    }, [])
 
     return (
         <React.Fragment>

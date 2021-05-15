@@ -12,18 +12,16 @@ import maryrevsIcon from '../images/projects/maryrevs/maryrevsIcon.png';
 import breakdown from '../images/projects/maryrevs/mrbreakdown.png';
 
 import maryrevsBg from '../images/projects/maryrevs/maryrevsbg5.jpg';
+import hometohome from '../images/projects/maryrevs/hometohome.png';
 
 import palette from '../images/projects/maryrevs/maryrevspalette.png';
 import styleguide from '../images/projects/maryrevs/maryrevsstyle.png';
 
 import ig1 from '../images/projects/maryrevs/ig1.png';
 import ig2 from '../images/projects/maryrevs/ig2.png';
-import hometohome from '../images/projects/maryrevs/hometohome.png';
-
 import phone from '../images/projects/maryrevs/maryrevsphone.png';
 import sushi from '../images/projects/maryrevs/sushilines.png';
 import mango from '../images/projects/maryrevs/mango.png';
-
 
 const Maryrevs = () => {
     

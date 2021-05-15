@@ -8,23 +8,14 @@ import ProjectGrid from '../components/ProjectGrid';
 import Footer from '../components/Footer';
 
 import nextgenLogo from '../images/projects/nextgen/nextgenLogo.png';
-import booklet from '../images/projects/nextgen/booklet.png';
 
-import ngLogoDes from '../images/projects/nextgen/nglogodesign.png';
 import ngproto from '../images/projects/nextgen/ngprototyping.png';
 import ngmockups from '../images/projects/nextgen/ngmockups.png';
-import nglanding from '../images/projects/nextgen/nglanding.png';
-import ngcover from '../images/projects/nextgen/ngcover.png';
-import ngabout from '../images/projects/nextgen/ngabout.png';
-import ngworkshop from '../images/projects/nextgen/ngworkshop.png';
 
 import {TECH_BLOBS} from '../helpers/constants';
 
 import landing from '../images/projects/sui/landing.png';
-import login from '../images/projects/sui/loginpanel.png';
-import signup from '../images/projects/sui/signuppanel.png';
 import home from '../images/projects/sui/home.png';
-import create from '../images/projects/sui/create.png';
 
 import ngbanner from '../images/projects/nextgen/ngbanner.jpg';
 import ngintro from '../images/projects/nextgen/ngintro.png';
@@ -38,14 +29,14 @@ import demo from '../images/demos/SUidemoS.mov';
 
 const Nextgen = () => {
 
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    //     window.onbeforeunload = function () {
-    //         window.scrollTo(0, 0);
-    //     }
-    //   }, [])
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+      }, [])
 
-    const techScrollImgs = [landing, create, login, home, signup];
+    const techScrollImgs = [landing, home, landing, home, landing];
     
     return (
         <React.Fragment>

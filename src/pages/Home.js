@@ -1,30 +1,24 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React, {useState, useEffect} from 'react';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
 import '../styles/styles.css';
 
+// components 
 import Nav from '../components/Nav';
 import Trigger from '../components/Trigger';
 import ProjectGrid from '../components/ProjectGrid';
 import Footer from '../components/Footer';
 
-import {pepiAnim, lowfiAnim, desAnim, devAnim, motionAnim} from '../helpers/anims';
-
+// anims
+import {lowfiAnim, desAnim, devAnim, motionAnim} from '../helpers/anims';
 import suiSample from '../images/demos/suiDemoFinal.mov';
 import nextSample from '../images/demos/nextDemo.mov';
+
+// images
 import suiT from '../images/titles/suiT.png';
 import nextT from '../images/titles/nextgenT.png';
-import uniT from '../images/titles/unicityT.png';
-
-import arrow from '../images/arrow.png';
-import logo from '../images/Rlogo.png';
-import mac from '../images/mac.png';
-import jazelbites from '../images/jazelbites.png';
 import me from '../images/me.png';
-import nextbtn from '../images/next.png';
-import { isElementOfType } from 'react-dom/test-utils';
-
 import darkmac from '../images/darkmac4.png';
 import darkphone from '../images/darkphone3.png';
 import ngphone from '../images/demos/nextgenmobile.mov';
@@ -32,7 +26,6 @@ import ngphone from '../images/demos/nextgenmobile.mov';
 
 const Home = (props) => {
 
-    const [playAnim, setplayAnim] = useState(false);
     const [playDesIcon, setPlayDesIcon] = useState(false);
     const [playDevIcon, setPlayDevIcon] = useState(false);
     const [playMotIcon, setPlayMotIcon] = useState(false);
@@ -71,6 +64,7 @@ const Home = (props) => {
     }
 
     const currentSlideObj = slideArray[currentSlideIndex]
+
     return (
         <>
 
@@ -209,53 +203,6 @@ const Home = (props) => {
                 </div>
 
                 <Footer/>
-
-                {/* <div className="container testimonials">
-                    <Fade>
-                        <div className="testimonial-card">
-                            <img className="testimonial-logo" src={jazelbites}></img>
-                            <h1>Jazel Bites</h1>
-                            <div className="underline"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
-                            <p>- Jazel Zulueta, Owner</p>
-                        </div>
-                    </Fade>
-                    <Fade>
-                        <div className="testimonial-card">
-                            <img className="testimonial-logo" src={jazelbites}></img>
-                            <h1>NextGen Edu.</h1>
-                            <div className="underline"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  consectetur adipiscing elit, sed! sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                            <p>- Christopher Gonzales, Co-owner</p>
-                        </div>
-                    </Fade>
-                    <Fade>
-                        <div className="testimonial-card">
-                            <img className="testimonial-logo" src={jazelbites}></img>
-                            <h1>Pepi's Techsuit</h1>
-                            <div className="underline"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
-                            <p>- Mir Afgan Talpur, Owner</p>
-                        </div>
-                    </Fade>
-
-                </div> */}
-
-                {/* <div className="container about-container">
-                    <div className="about-text-container">
-                        <Fade left>                        
-                            <h1 className="section-title about-title">About</h1>
-                            <p>With 5 years experience of free lance graphic design I transitioned my passion into web development. I inspire to bring visions to life through visual graphics and full stack applications</p>
-                            <p>I am a designer and front-end web developer currently studying computer science at Ontario Tech University. </p>
-                            <p>Through free lance work over the last 5 years, I have developed a strong passion for design and am continuously striving to transition my skills and knowledge into the web application world.</p>
-                        </Fade>
-
-                    </div>
-                    <Fade right>
-                        <img src={me}></img>
-                    </Fade>
-
-                </div> */}
 
             </div>
 

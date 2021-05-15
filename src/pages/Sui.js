@@ -12,13 +12,9 @@ import Footer from '../components/Footer';
 //assets
 import suiLogo from "../images/projects/sui/sui.png";
 import {suiAnim} from '../helpers/anims';
-import brand from '../images/projects/sui/brand.png';
 import lowfis from '../images/projects/sui/lowfis.png';
 import landing from '../images/projects/sui/landing.png';
-import login from '../images/projects/sui/loginpanel.png';
-import signup from '../images/projects/sui/signuppanel.png';
 import home from '../images/projects/sui/home.png';
-import create from '../images/projects/sui/create.png';
 import {TECH_BLOBS} from '../helpers/constants';
 import demo from '../images/demos/SUidemoS.mov';
 
@@ -37,7 +33,7 @@ const Sui = () => {
         }
     }, [])
 
-    const techScrollImgs = [landing, create, brand, home, lowfis];
+    const techScrollImgs = [landing, home, landing, home, landing];
 
     return (
         <React.Fragment>

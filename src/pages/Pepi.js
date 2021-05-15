@@ -23,7 +23,6 @@ import yellow from '../images/projects/pepi/yellowhex.png';
 import purple from '../images/projects/pepi/purplehex.png';
 
 import pepiBanner from '../images/projects/pepi/pepibg3.jpg';
-import pepiIntro from '../images/projects/pepi/pepiintro.png';
 
 
 const Pepi = () => {

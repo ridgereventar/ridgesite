@@ -14,6 +14,7 @@ import Footer from '../components/Footer';
 import {lowfiAnim, desAnim, devAnim, motionAnim} from '../helpers/anims';
 import suiSample from '../images/demos/suiDemoFinal.mov';
 import nextSample from '../images/demos/nextDemo.mov';
+import ngphone from '../images/demos/nextgenmobile.mov';
 
 // images
 import suiT from '../images/titles/suiT.png';
@@ -21,7 +22,6 @@ import nextT from '../images/titles/nextgenT.png';
 import me from '../images/me.png';
 import darkmac from '../images/darkmac4.png';
 import darkphone from '../images/darkphone3.png';
-import ngphone from '../images/demos/nextgenmobile.mov';
 
 
 const Home = (props) => {

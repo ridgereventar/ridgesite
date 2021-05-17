@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
 
@@ -41,7 +42,9 @@ const Jazelbites = () => {
             <Nav defaultNav={true}/>
 
             <div className="container proj-hero">
-                <img src={jazelbitesLogo}></img>
+                <Fade>
+                    <img src={jazelbitesLogo}></img>
+                </Fade>
             </div>
 
             <div className="container breakdown">
@@ -58,19 +61,25 @@ const Jazelbites = () => {
             <div className="banner jazelbites-banner" style={{backgroundImage: `url("${jbbg}")`}}>
                 {/* <img id="sweets" src={sweets}/> */}
                 <div className="container banner-intro">
-                    <img id="hometohome" src={jbintro}/>
+                    <Fade>
+                        <img id="hometohome" src={jbintro}/>
+                    </Fade>
                 </div>
             </div>
 
             <div className="container logo-breakdown">
+                <Fade bottom>
                     <img id="jazelbitesIcon" src={jazelbitesIcon}></img>
                     <img id="jazelbitesBreakdown" src={breakdown}></img>
+                </Fade>
             </div>
 
             <div className="grey-bg">
                 <div className="container styleguide-container">
-                    <img src={palette}></img>
-                    <img src={style}></img>
+                    <Fade>
+                        <img src={palette}></img>
+                        <img src={style}></img>
+                    </Fade>
                 </div>
             </div>
 
@@ -82,21 +91,23 @@ const Jazelbites = () => {
 
             <div className="red-bg">
                 <div className="container">
-                    <div className="ipad-container">
-                        <img id="jazelbitesIpad" src={ipad}></img>
-                    </div>
-                    <Phone 
-                        right={false}
-                        shell={phone}
-                        slide={post}/>        
-                    <div className="bc-container bc-container-right">
-                        <img className="jazelbites-card-right" src={bc1}></img>
-                        <img  className="jazelbites-card-right"src={bc2}></img>
-                    </div>
-                    <div className="bc-container">
-                        <img  className="jazelbites-card-left" src={ty1}></img>
-                        <img  className="jazelbites-card-left" src={ty2}></img>
-                    </div>
+                    <Fade>
+                        <div className="ipad-container">
+                            <img id="jazelbitesIpad" src={ipad}></img>
+                        </div>
+                        <Phone 
+                            right={false}
+                            shell={phone}
+                            slide={post}/>        
+                        <div className="bc-container bc-container-right">
+                            <img className="jazelbites-card-right" src={bc1}></img>
+                            <img  className="jazelbites-card-right"src={bc2}></img>
+                        </div>
+                        <div className="bc-container">
+                            <img  className="jazelbites-card-left" src={ty1}></img>
+                            <img  className="jazelbites-card-left" src={ty2}></img>
+                        </div>
+                    </Fade>
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
 
@@ -30,7 +31,9 @@ const Cg = () => {
             <Nav defaultNav={true}/>
 
             <div className="container proj-hero">
-                <img id="cgLogo" src={cgIcon}></img>
+                <Fade>
+                    <img id="cgLogo" src={cgIcon}></img>
+                </Fade>
             </div>
 
             <div className="container breakdown">
@@ -45,15 +48,18 @@ const Cg = () => {
             </div>
 
             <div className="banner cg-banner" style={{backgroundImage: `url("${cgbanner}")`}}>
-                {/* <div className="white-gradient"></div> */}
                 <div className="container banner-intro">
-                    <img id="cgName" src={cgname}/>
+                    <Fade>
+                        <img id="cgName" src={cgname}/>
+                    </Fade>
                 </div>
             </div>
 
             <div className="container logo-breakdown">
-                <img id="cgIcon" src={cgIcon}></img>
-                <img id="cgBreak" src={breakdown2}></img>
+                <Fade bottom>
+                    <img id="cgIcon" src={cgIcon}></img>
+                    <img id="cgBreak" src={breakdown2}></img>
+                </Fade>
             </div>
 
             <div className="proj-section-header">
@@ -63,7 +69,9 @@ const Cg = () => {
             </div>
 
             <div className="container">
-                <img id="cgProcess" src={cgProcess}></img>
+                <Fade>
+                    <img id="cgProcess" src={cgProcess}></img>
+                </Fade>
             </div>
 
             <div className="container">
@@ -73,8 +81,10 @@ const Cg = () => {
 
             <div className="grey-bg">
                 <div className="container half-split">
-                    <img src={bc1}></img>
-                    <img src={bc2}></img>
+                    <Fade>
+                        <img src={bc1}></img>
+                        <img src={bc2}></img>
+                    </Fade>
                 </div>
             </div>
 

@@ -26,6 +26,7 @@ import darkphone from '../images/darkphone3.png';
 
 const Home = (props) => {
 
+    const [playBgAnim, setPlayBgAnim] = useState(false);
     const [playDesIcon, setPlayDesIcon] = useState(false);
     const [playDevIcon, setPlayDevIcon] = useState(false);
     const [playMotIcon, setPlayMotIcon] = useState(false);
@@ -75,11 +76,13 @@ const Home = (props) => {
                 <div className="hero">
                     <div className="container hero-wrapper">
 
-                        <div className="hero-intro">
-                            <h1>RIDGE REVENTAR</h1>
-                            <p>Front End Developer & Designer</p>
-                            <button className="site-btn">View my work</button> 
-                        </div>
+                        <Fade left>
+                            <div className="hero-intro">
+                                <h1>RIDGE REVENTAR</h1>
+                                <p>Front End Developer & Designer</p>
+                                <button className="site-btn">View my work</button> 
+                            </div>
+                        </Fade>
                    
                         <Fade right>
                             <div className="hero-mockup">
@@ -102,20 +105,26 @@ const Home = (props) => {
                 </div>
 
                 <div className="container bg-intro">
-                    <div className="bg-intro-p">
-                        <h1 className="section-title">QUALITY & GROWTH</h1>
-                        <p>
-                            Through 7 years experience of free lance design I expanded my passion into web development. 
-                            From front end sites to full stack applications, I utilize my design experience and technology capabilities to bring visions to life.
-                            I continue to expand my skills and grow my toolset to ensure my applications meet the current requirements of high level development. 
-                            This site showcases my work so far, however I only intend on learning much more. 
-                        </p>
-                    </div>
+                    <Fade>
+                        <div className="bg-intro-p">
+                            <h1 className="section-title">QUALITY & GROWTH</h1>
+                            <p>
+                                Through 7 years experience of free lance design I expanded my passion into web development. 
+                                From front end sites to full stack applications, I utilize my design experience and technology capabilities to bring visions to life.
+                                I continue to expand my skills and grow my toolset to ensure my applications meet the current requirements of high level development. 
+                                This site showcases my work so far, however I only intend on learning much more. 
+                            </p>
+                            <Trigger onEnterViewport={() => setPlayBgAnim(true)} onLeaveViewport={() => console.log("leave")}/>
+                        </div>
+                    </Fade>
+
                     <div className="bg-intro-anim">
-                        <Lottie
-                            className="dev-anim"
-                            options={lowfiAnim}
-                            playingState='play'/>
+                        {playBgAnim?
+                            <Lottie
+                                className="dev-anim"
+                                options={lowfiAnim}
+                                playingState='play'/>
+                        : null}
                     </div>
                 </div> 
 
@@ -180,26 +189,24 @@ const Home = (props) => {
                 <div className="container projects-title">
                     <h1 className="section-title">PROJECTS</h1>
                 </div>
-
-
-                {/* <div className="container project"> 
-                    <Fade>
-                        <h1 className="section-title">Projects</h1>
-                    </Fade>                       
-                </div> */}
-
+            
             </div>
             
             <div className="home2">
+
                 <ProjectGrid/>
 
                 <div className="container home-about">
-                    <div>
-                        <p>I inspire to bring visions to life through visual graphics and full stack applications</p>
-                        <button className="site-btn">About Me</button> 
-                        <button className="site-btn">Get In Touch</button> 
-                    </div>
-                    <img src={me}></img>
+                    <Fade>
+                        <div>
+                            <p>I inspire to bring visions to life through visual graphics and full stack applications</p>
+                            <button className="site-btn">About Me</button> 
+                            <button className="site-btn">Get In Touch</button> 
+                        </div>
+                    </Fade>
+                    <Fade right>
+                        <img src={me}></img>
+                    </Fade>
                 </div>
 
                 <Footer/>

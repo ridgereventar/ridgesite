@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
 
@@ -33,7 +34,9 @@ const Sounddistrict = () => {
             <Nav defaultNav={true}/>
 
             <div className="container proj-hero">
-                <img id="sdLogo" src={sdLogo}></img>
+                <Fade>
+                    <img id="sdLogo" src={sdLogo}></img>
+                </Fade>
             </div>
 
             <div className="container breakdown">
@@ -50,13 +53,17 @@ const Sounddistrict = () => {
             <div className="banner sd-banner" style={{backgroundImage: `url("${sdbanner}")`}}>
                 <div className="black-gradient"></div>
                 <div className="container banner-intro">
-                    <img id="hometohome" src={sdLogoFull}/>
+                    <Fade>
+                        <img id="hometohome" src={sdLogoFull}/>
+                    </Fade>
                 </div>
             </div>
 
             <div className="container logo-breakdown">
-                <img id="sdIcon" src={sdLogo}></img>
-                <img id="sdBreakdown" src={breakdown}></img>
+                <Fade bottom>
+                    <img id="sdIcon" src={sdLogo}></img>
+                    <img id="sdBreakdown" src={breakdown}></img>
+                </Fade>
             </div>
 
             <div className="container">
@@ -67,32 +74,44 @@ const Sounddistrict = () => {
             <div className="container">
                 <div className="event-container">
                     <div className="event-info-container">
-                        <h1>No Limit</h1>
-                        <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
+                        <Fade>
+                            <h1>No Limit</h1>
+                            <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
+                        </Fade>
                     </div>
                     <div className="poster-container">
-                        <img className="event-poster" src={nl1}></img>
-                        <img className="event-poster" src={nl2}></img>
+                        <Fade right>
+                            <img className="event-poster" src={nl1}></img>
+                            <img className="event-poster" src={nl2}></img>
+                        </Fade>
                     </div>
                 </div>
                 <div className="event-container">
                     <div className="event-info-container">
-                        <h1>Summer Nights</h1>
-                        <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
+                        <Fade>
+                            <h1>Summer Nights</h1>
+                            <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
+                        </Fade>
                     </div>
                     <div className="poster-container">
-                        <img className="event-poster" src={sm1}></img>
-                        <img className="event-poster" src={sm2}></img>
+                        <Fade right>
+                            <img className="event-poster" src={sm1}></img>
+                            <img className="event-poster" src={sm2}></img>
+                        </Fade>
                     </div>
                 </div>
                 <div className="event-container">
                     <div className="event-info-container">
-                        <h1>Halloween Sound</h1>
-                        <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
+                        <Fade>
+                            <h1>Halloween Sound</h1>
+                            <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
+                        </Fade>
                     </div>
                     <div className="poster-container">
-                        <img className="event-poster" src={hs1}></img>
-                        <img className="event-poster" src={hs2}></img>
+                        <Fade right>
+                            <img className="event-poster" src={hs1}></img>
+                            <img className="event-poster" src={hs2}></img>
+                        </Fade>
                     </div>
                 </div>
             </div>

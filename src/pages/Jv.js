@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
 
@@ -29,7 +30,9 @@ const Jv = () => {
             <Nav defaultNav={true}/>
 
             <div className="container proj-hero">
-                <img src={jvLogo}></img>
+                <Fade>
+                    <img src={jvLogo}></img>
+                </Fade>
             </div>
         
 
@@ -47,13 +50,17 @@ const Jv = () => {
             <div className="banner" style={{backgroundImage: `url("${jvbanner}")`}}>
                 <div className="black-gradient"></div>
                 <div className="container banner-intro">
-                    <img id="jvIntro" src={jvintro}/>
+                    <Fade>
+                        <img id="jvIntro" src={jvintro}/>
+                    </Fade>
                 </div>
             </div>
 
             <div className="container logo-breakdown">
-                <img id="jvLogo" src={jvLogo}></img>
-                <img id="jvBreakdown" src={breakdown}></img>
+                <Fade bottom>
+                    <img id="jvLogo" src={jvLogo}></img>
+                    <img id="jvBreakdown" src={breakdown}></img>
+                </Fade>
             </div>
 
             <div className="container">
@@ -63,8 +70,10 @@ const Jv = () => {
 
             <div className="grey-bg">
                 <div className="container half-split">
-                    <img src={bc1}></img>
-                    <img src={bc2}></img>
+                    <Fade>
+                        <img src={bc1}></img>
+                        <img src={bc2}></img>
+                    </Fade>
                 </div>
             </div>
 

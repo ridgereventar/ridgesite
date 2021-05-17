@@ -345,6 +345,10 @@
           align-items: flex-start;
 }
 
+.bg-intro-p {
+  max-width: 550px;
+}
+
 .bg-intro-anim {
   margin-left: 100px;
   margin-right: -250px;
@@ -367,6 +371,7 @@
             align-items: flex-end;
   }
   .bg-intro-p {
+    max-width: unset;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;

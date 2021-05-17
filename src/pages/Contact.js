@@ -19,13 +19,15 @@ const Contact = (props) => {
             <div className="contact-container">
                 <div className="container contact-content">
                     <div>
-                        <h1>Get in touch</h1>
-                        <div className="socials">
-                            <div id="mail" className="social-icon"></div>
-                            <div id="ig" className="social-icon"></div>
-                            <div id="linked" className="social-icon"></div>
-                            <div id="git" className="social-icon"></div>
-                        </div>
+                        <Fade left>
+                            <h1>Get in touch</h1>
+                            <div className="socials">
+                                <div id="mail" className="social-icon"></div>
+                                <div id="ig" className="social-icon"></div>
+                                <div id="linked" className="social-icon"></div>
+                                <div id="git" className="social-icon"></div>
+                            </div>
+                        </Fade>
                     </div>
                     <Lottie
                         className="full-anim"

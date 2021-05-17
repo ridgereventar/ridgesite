@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
 
@@ -43,7 +44,9 @@ const Nextgen = () => {
             <Nav defaultNav={true}/>
 
             <div className="container proj-hero">
-                <img id="suiHeroTitle" src={nextgenLogo}></img>
+                <Fade>
+                    <img id="suiHeroTitle" src={nextgenLogo}></img>
+                </Fade>
             </div>
 
             <div className="container breakdown">
@@ -63,35 +66,48 @@ const Nextgen = () => {
             <div className="banner" style={{backgroundImage: `url("${ngbanner}")`}}>
                 <div className="black-gradient"></div>
                 <div className="container banner-intro">
-                    {/* <h2 id="ngBannerText">Seeking to lead the next generation of barbers towards success</h2> */}
-                    <img id="ngIntro" src={ngintro}/>
+                    <Fade>
+                        <img id="ngIntro" src={ngintro}/>
+                    </Fade>
                 </div>
             </div>
 
             <div className="container ng-breakdown">
-                <h2>Brand Definition</h2>
-                <div className="text-img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <img id="ngBreakdown" src={ngBreakdown}/>
-                </div>
+                <Fade>
+                    <h2>Brand Definition</h2>
+                    <div className="text-img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <Fade bottom>
+                            <img id="ngBreakdown" src={ngBreakdown}/>
+                        </Fade>
+                    </div>
+                </Fade>
             </div>
 
             <div className="container">
-                <h2>Design Process</h2>
-                <div className="text-img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <img id="ngProto" src={ngproto}/>
-                </div>
+                <Fade>
+                    <h2>Design Process</h2>
+                    <div className="text-img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <Fade bottom>
+                            <img id="ngProto" src={ngproto}/>
+                        </Fade>
+                    </div>
+                </Fade>
             </div>
 
             <div className="container mockup-container">
-                <img src={ngmockups}></img>
+                <Fade>
+                    <img src={ngmockups}></img>
+                </Fade>
             </div>
 
             <div className="slant-container">
                 <div className="slant-bg"></div>
                 <div className="container">
-                    <img src={nghifi}></img>
+                    <Fade bottom>
+                       <img src={nghifi}></img>
+                    </Fade>
                 </div>
             </div>
 

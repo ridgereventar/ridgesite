@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
 
@@ -39,7 +40,9 @@ const Pepi = () => {
             <Nav defaultNav={true}/>
 
             <div className="container proj-hero">
-                <img src={pepiTech}></img>
+                <Fade>
+                    <img src={pepiTech}></img>
+                </Fade>
             </div>
 
             <div className="container breakdown">
@@ -54,63 +57,83 @@ const Pepi = () => {
             </div>
 
             <div className="banner pepi-banner" style={{backgroundImage: `url("${pepiBanner}")`}}>
-                {/* <div className="white-gradient"></div> */}
-                <div className="container banner-intro">
-                    {/* <img id="hometohome" src={pepiIntro}/> */}
-                </div>
             </div>
 
             <div className="proj-section-header">
                 <div className="container">
-                    <h2>Rebranding Project</h2>
+                    <Fade left>
+                       <h2>Rebranding Project</h2>
+                    </Fade>
                 </div>
             </div>
 
             <div className="container">
-                <p className="light-header">Original Logo</p>
-                <div className="img-split">
-                    <img src={og1}/>
-                    <img src={og2}/>
-                </div>
+                <Fade>
+                    <p className="light-header">Original Logo</p>
+                    <div className="img-split">
+                        <img src={og1}/>
+                        <img src={og2}/>
+                    </div>
+                </Fade>
             </div>
 
             <div className="container">
-                <p className="light-header">Design Process</p>
-                <img id="pepiBreakdown" src={avatar}/>
-                <div className="pepi-img-split">
-                    <img src={pepiTech}></img>
-                    <img src={pepiWet}></img>
-                    <img id="pepiSpace" src={pepiSpace}></img>
-                </div>                
+                <Fade>
+                    <p className="light-header">Design Process</p>
+                    <img id="pepiBreakdown" src={avatar}/>
+                    <div className="pepi-img-split">
+                        <img src={pepiTech}></img>
+                        <img src={pepiWet}></img>
+                        <img id="pepiSpace" src={pepiSpace}></img>
+                    </div>                
+                </Fade>
             </div>
 
             <div className="grey-bg">
                 <div className="container pepi-brand-container">
-                    <img className="suit" src={techsuit}></img>
+                    <Fade left>
+                        <img className="suit" src={techsuit}></img>
+                    </Fade>
                     <div>
-                        <h1>The Techsuit</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <img className="hexColor mobile-hex" src={blue}></img>
+                        <Fade>
+                            <h1>The Techsuit</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <img className="hexColor mobile-hex" src={blue}></img>
+                        </Fade>
                     </div>
-                    <img className="hexColor desktop-hex" src={blue}></img>
+                    <Fade right>
+                        <img className="hexColor desktop-hex" src={blue}></img>
+                    </Fade>
                 </div>
                 <div className="container pepi-brand-container">
-                    <img className="suit" src={wetsuit}></img>
+                    <Fade left>
+                        <img className="suit" src={wetsuit}></img>
+                    </Fade>
                     <div>
-                        <h1>The Wetsuit</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <img className="hexColor mobile-hex" src={yellow}></img>
+                        <Fade>
+                            <h1>The Wetsuit</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <img className="hexColor mobile-hex" src={yellow}></img>
+                        </Fade>
                     </div>
-                    <img className="hexColor desktop-hex" src={yellow}></img>
+                    <Fade right>
+                        <img className="hexColor desktop-hex" src={yellow}></img>
+                    </Fade>
                 </div>
                 <div className="container pepi-brand-container">
-                    <img className="suit" src={spacesuit}></img>
+                    <Fade left>
+                        <img className="suit" src={spacesuit}></img>
+                    </Fade>
                     <div>
-                        <h1>The Spacesuit</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        <img className="hexColor mobile-hex" src={purple}></img>
+                        <Fade>
+                            <h1>The Spacesuit</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <img className="hexColor mobile-hex" src={purple}></img>
+                        </Fade>
                     </div>
-                    <img className="hexColor desktop-hex" src={purple}></img>
+                    <Fade right>
+                        <img className="hexColor desktop-hex" src={purple}></img>
+                    </Fade>
                 </div>
             </div>
 

@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Lottie from 'lottie-web-react';
+import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
 
@@ -41,8 +42,10 @@ const Sui = () => {
             <Nav defaultNav={true}/>
 
             <div className="container proj-hero">
-                <img id="suiHeroTitle" src={suiLogo}></img>
-                <p>A Style Guide & Ui Component Generator</p>
+                <Fade>
+                    <img id="suiHeroTitle" src={suiLogo}></img>
+                    <p>A Style Guide & Ui Component Generator</p>
+                </Fade>
             </div>
 
             <div className="container breakdown">
@@ -61,7 +64,9 @@ const Sui = () => {
 
             <div className="sui-banner">
                 <div className="container sui-intro">
-                    <h1>Branding & Development <br/> Made Easy</h1>
+                    <Fade>
+                        <h1>Branding & Development <br/> Made Easy</h1>
+                    </Fade>
                     <Lottie
                             className="sui-intro-anim"
                             options={suiAnim}
@@ -70,33 +75,44 @@ const Sui = () => {
             </div>
 
             <div className="container">
-                <h2>Brand Definition</h2>
-                <div className="text-img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <img id="suiBreakdown" src={suibreakdown}/>
-                </div>
+                <Fade>
+                    <h2>Brand Definition</h2>
+                    <div className="text-img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <Fade bottom>
+                            <img id="suiBreakdown" src={suibreakdown}/>
+                        </Fade>
+                    </div>
+                </Fade>
             </div>
 
             <div className="grey-bg sui-style">
                 <div className="container styleguide-container">
-                    <img src={suipalette}></img>
-                    <img src={suistyle}></img>
+                    <Fade>
+                        <img src={suipalette}></img>
+                        <img src={suistyle}></img>
+                    </Fade>
                 </div>
             </div>
 
-
             <div className="container">
-                <h2>Design / Prototyping</h2>
-                <div className="text-img">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <img id="lowfis" src={lowfis}/>
-                </div>
+                <Fade>
+                    <h2>Design / Prototyping</h2>
+                    <div className="text-img">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <Fade bottom>
+                            <img id="lowfis" src={lowfis}/>
+                        </Fade>
+                    </div>
+                </Fade>
             </div>
 
             <div className="slant-container">
                 <div className="slant-bg"></div>
                 <div className="container">
-                    <img src={suihifi}></img>
+                    <Fade top>
+                        <img src={suihifi}></img>
+                    </Fade>
                 </div>
             </div>
 

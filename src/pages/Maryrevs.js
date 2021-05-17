@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
 
@@ -37,7 +38,9 @@ const Maryrevs = () => {
             <Nav defaultNav={true}/>
 
             <div className="container proj-hero">
-                <img src={maryrevsLogo}></img>
+                <Fade>
+                    <img src={maryrevsLogo}></img>
+                </Fade>
             </div>
 
             <div className="container breakdown">
@@ -54,19 +57,25 @@ const Maryrevs = () => {
             <div className="banner" style={{backgroundImage: `url("${maryrevsBg}")`}}>
                 <div className="white-gradient"></div>
                 <div className="container banner-intro">
-                    <img id="hometohome" src={hometohome}/>
+                    <Fade>
+                        <img id="hometohome" src={hometohome}/>
+                    </Fade>
                 </div>
             </div>
 
             <div className="container logo-breakdown">
-                <img id="maryrevsIcon" src={maryrevsIcon}></img>
-                <img id="maryrevsBreakdown" src={breakdown}></img>
+                <Fade bottom>
+                    <img id="maryrevsIcon" src={maryrevsIcon}></img>
+                    <img id="maryrevsBreakdown" src={breakdown}></img>
+                </Fade>
             </div>
 
             <div className="grey-bg">
                 <div className="container styleguide-container">
-                    <img src={palette}></img>
-                    <img src={styleguide}></img>
+                    <Fade>
+                        <img src={palette}></img>
+                        <img src={styleguide}></img>
+                    </Fade>
                 </div>
             </div>
 
@@ -78,18 +87,20 @@ const Maryrevs = () => {
 
             <div className="pink-bg">
                 <div className="container">
-                    <Phone 
-                        right={true}
-                        shell={phone}
-                        slide={sushi}/>                    
-                    <Phone 
-                        right={false}
-                        shell={phone}
-                        slide={mango}/>
-                    <div className="ig-post-container">
-                        <img id="maryrevsIg2" src={ig2}></img>
-                        <img id="maryrevsIg1" src={ig1}></img>
-                    </div>
+                    <Fade>
+                        <Phone 
+                            right={true}
+                            shell={phone}
+                            slide={sushi}/>                    
+                        <Phone 
+                            right={false}
+                            shell={phone}
+                            slide={mango}/>
+                        <div className="ig-post-container">
+                            <img id="maryrevsIg2" src={ig2}></img>
+                            <img id="maryrevsIg1" src={ig1}></img>
+                        </div>
+                    </Fade>
                 </div>
             </div>
 

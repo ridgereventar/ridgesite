@@ -155,6 +155,11 @@
     // background-color: black;
 }
 
+.bg-intro-p {
+    max-width: 550px;
+}
+
+
 .bg-intro-anim {
     margin-left: 100px;
     margin-right: -250px;
@@ -173,6 +178,7 @@
         align-items: flex-end;
     }
     .bg-intro-p {
+        max-width: unset;
         order: 2;
     }
     .bg-intro-anim {

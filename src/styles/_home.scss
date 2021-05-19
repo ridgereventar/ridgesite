@@ -7,7 +7,6 @@
 
 .section-title {
     letter-spacing: 3px;
-    color: white;
 }
 
 // Hero
@@ -15,8 +14,10 @@
 .home {
     width: 100%;
     height: max-content; 
-    background-image: linear-gradient(to top right, #181818, #343434);
+    // background-image: linear-gradient(to top right, #181818, #343434);
+
     overflow: hidden;
+
 }
 
 .hero {
@@ -34,6 +35,20 @@
     p {
         max-width: 450px;
     }
+}
+
+
+.dg-slant {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75vh;
+    min-height: 650px;
+    max-height: 820px;
+
+    background-image: linear-gradient(to top right, #181818, #343434);
+    transform-origin: left bottom;
+    transform: skewY(-10deg);
 }
 
 .hero-wrapper {
@@ -121,6 +136,10 @@
 }
 
 @media screen and (max-width: 992px) {
+    .dg-slant {
+        height: 65vh;
+        min-height: 550px;
+    }
     .hero-intro {
         margin-bottom: 150px;
     }
@@ -149,7 +168,6 @@
 
 .bg-intro {
     height: max-content;
-    color: white;
     margin-bottom: 150px;
     @include displayFlex(row, space-between, flex-start);
     // background-color: black;
@@ -164,7 +182,7 @@
     margin-left: 100px;
     margin-right: -250px;
     margin-top: -250px;
-    opacity: 0.08;
+    opacity: 0.6;
     // background-color: grey;
 }
 
@@ -213,7 +231,6 @@
 .tools-section { 
     max-width: 770px;   
     @include displayFlex(row, space-between, flex-start);
-    color: white; 
     margin-bottom: 150px;
     // background-color: aquamarine; 
 }

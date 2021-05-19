@@ -74,6 +74,7 @@ const Home = (props) => {
             <div className="home">
 
                 <div className="hero">
+                    <div className="dg-slant"/>
                     <div className="container hero-wrapper">
 
                         <Fade left>

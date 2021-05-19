@@ -14,8 +14,6 @@ import Footer from '../components/Footer';
 import suiLogo from "../images/projects/sui/sui.png";
 import {suiAnim} from '../helpers/anims';
 import lowfis from '../images/projects/sui/lowfis.png';
-import landing from '../images/projects/sui/landing.png';
-import home from '../images/projects/sui/home.png';
 import {TECH_BLOBS} from '../helpers/constants';
 import demo from '../images/demos/SUidemoS.mov';
 
@@ -34,8 +32,6 @@ const Sui = () => {
         }
     }, [])
 
-    const techScrollImgs = [landing, home, landing, home, landing];
-
     return (
         <React.Fragment>
             
@@ -51,13 +47,13 @@ const Sui = () => {
             <div className="container breakdown">
                 <div className="breakdown-1">
                     <h2>Deliverables</h2>
-                    <p>Responsive Website <br/> Brand Identity</p>
+                    <p> Full Stack Application <br/> Brand Identity <br/> Npm package</p>
             
                     <h2>Roles</h2>
-                    <p>UI / UX Design <br/> Develop <br/> Database Management</p>                        
+                    <p>UI / UX Design <br/> Full Stack Development </p>                        
                 </div>
                 <div className="breakdown-2">
-                    <h2>Goals</h2>
+                    <h2>Goal</h2>
                     <p>Creating a tool to assist the early stages of both design and development. When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. The goal of SUi is to allow users to easily generate their own custom style guides and UI components through one seamless interface. The style guide provides brand consistency and quality while the generated UI components become the building blocks to any website.</p>
                 </div>
             </div>
@@ -78,7 +74,10 @@ const Sui = () => {
                 <Fade>
                     <h2>Brand Definition</h2>
                     <div className="text-img">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>
+                            The logo design and brand execution for this project played a large role in encapsulating what SUI is all about; quality and consistent branding. 
+                            The final logo is minimal yet incorporates all three letters in ‘SUI’ when viewed upright and rotated on its side to reveal the ‘UI’.
+                        </p>
                         <Fade bottom>
                             <img id="suiBreakdown" src={suibreakdown}/>
                         </Fade>
@@ -99,7 +98,11 @@ const Sui = () => {
                 <Fade>
                     <h2>Design / Prototyping</h2>
                     <div className="text-img">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>
+                        The UI design of the application consisted of low-fi renders of each page as well as a prototype to plan user navigation within the site. 
+                        The purpose of SUI is to make the early design process simpler for users therefore ease of use within the interface was prioritized. 
+                        The high fi’s were then designed soon after to again capture the clean and consistent branding SUI promotes. 
+                        </p>
                         <Fade bottom>
                             <img id="lowfis" src={lowfis}/>
                         </Fade>
@@ -110,20 +113,19 @@ const Sui = () => {
             <div className="slant-container">
                 <div className="slant-bg"></div>
                 <div className="container">
-                    <Fade top>
+                    <Fade bottom>
                         <img src={suihifi}></img>
                     </Fade>
                 </div>
             </div>
 
             <TechScroll
-                imgs={techScrollImgs}
                 blobs={TECH_BLOBS}
             />
 
             <div className="demo-section">
                 <div className="container demo-container">
-                    <h1>Demo</h1>
+                    <h2>Demo</h2>
                     <video src={demo} controls></video>
                 </div>
             </div>

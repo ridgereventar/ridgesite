@@ -7,7 +7,15 @@ import Tech from '../components/Tech.js';
 
 const TechScroll = (props) => {
     
-    const {imgs, blobs} = props;
+    const {blobs} = props;
+
+    const [imgs, setImgs] = useState([]);
+
+    useEffect(() => {
+        let array = blobs.map(blob => blob.img);
+        console.log(array);
+        setImgs(array);
+    }, [])
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [scrollingDown, setScrollingDown] = useState(true);

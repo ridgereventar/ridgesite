@@ -36,6 +36,16 @@ import jazelbites from '../images/icons/jazelbitesicon.png';
 import jazelbitesColor from '../images/iconscolor/jazelbitescolor.png';
 
 
+// TECH images
+
+import landing from '../images/projects/sui/landing.png';
+import mern from '../images/projects/sui/mern.png';
+import hooks from '../images/projects/sui/hooks.png';
+import animation from '../images/projects/sui/animation.png';
+import npm from '../images/projects/sui/npm.png';
+
+
+
 export const PROJECTS = [
     {
         id: 'sui',
@@ -151,22 +161,28 @@ export const PROJECTS = [
 export const TECH_BLOBS = [
     {
         title: "Development Technologies",
-        par: ""
+        par: "",
+        img: landing
+    },
+
+    {
+        title: "MERN Stack",
+        par: "The full stack application involves all the technologies of MongoDB, Express, React, and Node. This 3 tier architecture allowed me to structure a database, server, and front-end. MongoDB contained storage for all the users, their public/private style guide projects, and image files while express (running inside a Node.js server) handled the models for URL routing and handling HTTP requests and responses to allow our react front end to communicate with the backend.",
+        img: mern 
     },
     {
-        title: "React Hooks & Contexts",
-        par: "This is when a huge portion of the work was devoted to learning React hooks and contexts. The idea behind this, is that all components wrapped by a context provider can consume its values. Therefore by wrapping my application in a Theme Context, I was able to retrieve and manipulate its object values with any component. React Hooks is a fairly new concept that allows functional components to maintain its own state. Originally, components must be a class to have a state, but with react hooks, my functional components were able to utilize state variables and consume the theme context." 
+        title: "React Hooks and Contexts",
+        par: "Using a context to manage the logged in user and their projects, I was able to pass the appropriate data to the different react components to form a fully interactive interface. On top of this I also practiced utilizing react hooks and managing states within functional components. ",
+        img: hooks
     },
     {
         title: "Animations",
-        par: "For example, to create this animation, I took the time to experiment with adobe after effects. To do this, I used a plugin called AEUX to transfer my sketch vectors into after effects. From there I animated each individual vector. Once the animation was complete, I used a plugin called bodymovin to export the animation as a json file so that it can be rendered as an svg through a library called lottie-web-react."
-    },
-    {
-        title: "Image Files in MongoDB",
-        par: "This was accomplished by first using mongoose to create a new connection to the database, then gridfs-stream to link to a new collection called “uploads”. Next a storage engine was made using multer-gridfs-storage. This allowed me to define what information was being stored and where to store it. Next a library called Multer was used to handle the storage of the file. Finally I used express to handle the post request using a multer file instance."
+        par: "After importing vector designs and creating animations within Adobe After Effects, I experimented with a plugin called bodymovin to export the animation as a json file which then could be used in web through the library ‘Lottie’.",
+        img: animation
     },
     {
         title: "Npm Package",
-        par: "The goal was to allow users to export their theme and bring the custom UI components into their own projects. To do this I first used a library called Blob to transform the theme object into a downloadable json document. The next step of creating my npm package took a fair amount of research however I discovered a rollup wrapper called micro-bundle to create a my react component library. This wrapper acted as a template that allowed me to create my custom components and have the code distributed through a private npm registry from GitHub. With this registry, anyone is able to download my package using ‘npm install @ridgereventar/sui’ to obtain the default components. Then by linking the theme object inside the json file, the components will automatically link to the defined colours and fonts."
+        par: "To allow users to export their theme and apply it to their own UI components I created an npm package. First step was to transform the theme made on the application to a downloadable json document using a library called ‘Blob’. I then used a rollup wrapper called ‘micro-bundle’ to create my react component library which is distributed through a private npm registry from GitHub. Users can then download the package to obtain the default components and simply link their json file to transform them into their own defined colours and fonts.",
+        img: npm
     } 
 ]

@@ -46,6 +46,14 @@
     width: 100%;
 }
 
+.full-width {
+    margin-bottom: 50px;
+}
+
+.full-width:first-of-type {
+    margin-top: 50px;
+}
+
 .tech-container {
     height: 530px;
     display: flex;

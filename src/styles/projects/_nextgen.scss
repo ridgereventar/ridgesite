@@ -29,3 +29,41 @@
         margin-bottom: $marginBottomLg;
     }
 }
+
+
+.visit-site {
+    height: 550px;
+    width: 100%;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    position: relative;    
+    margin-bottom: 80px;
+}   
+
+#ngDemo {
+    width: 100%;
+    position: absolute;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.05;
+}
+
+.visit-btn {
+    position: absolute;
+    margin: auto auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    color: lightgray;
+    background-color: #181818;
+    width: 180px;
+}

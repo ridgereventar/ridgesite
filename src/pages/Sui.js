@@ -120,6 +120,7 @@ const Sui = () => {
             </div>
 
             <TechScroll
+                hideScreen={false}
                 blobs={TECH_BLOBS}
             />
 

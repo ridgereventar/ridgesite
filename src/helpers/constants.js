@@ -186,3 +186,18 @@ export const TECH_BLOBS = [
         img: npm
     } 
 ]
+
+export const NEXTGEN_TECH_BLOBS = [
+    {
+        title: "Responsive Development",
+        par: "The website features full responsiveness down to the pixel and the main scrollable container adapts to the window size. Modern practices for testing each components responsiveness was implemented resulting in smooth transitions between devices. ",
+    },
+    {
+        title: "Simple Register System ",
+        par: "Rather than using a backend for tracking interested customers, the site includes a simple register system involving email newsletter sign up. This allows the business owners to store their clients emails and distribute any updates simultaneously. ",
+    },
+    {
+        title: "Deployment with Netlify",
+        par: "This service allowed for fast and easy deployments allowing us to track website traffic and apply updates when needed.",
+    }
+]

@@ -5,11 +5,11 @@ import {Fade} from 'react-reveal';
 import '../styles/Viewport.css';
 
 const TechContext = (props) => {
-    
-    const {inViewport, forwardedRef} = props;
+
+    const {fullWidth, inViewport, forwardedRef} = props;
 
     return (
-        <div className="container tech-container">
+        <div className={`container ${fullWidth? 'full-width' : 'tech-container'}`}>
             <div className="tech-trigger" ref={forwardedRef}/>
             <Fade>
                 <h1>{props.title}</h1>

@@ -7,7 +7,7 @@ import Tech from '../components/Tech.js';
 
 const TechScroll = (props) => {
     
-    const {blobs} = props;
+    const {blobs, hideScreen} = props;
 
     const [imgs, setImgs] = useState([]);
 
@@ -52,17 +52,20 @@ const TechScroll = (props) => {
 
     return (
         <section className="dev-section">
-            <div className="screen-wrapper">
-                <div className="screen">
-                    <div className="screen-content">
-                        <img src={imgs[currentIndex]}/>
+            {!hideScreen && (
+                <div className="screen-wrapper">
+                    <div className="screen">
+                        <div className="screen-content">
+                            <img src={imgs[currentIndex]}/>
+                        </div>
                     </div>
                 </div>
-            </div>
+            )}
             <div className="tech-blob-wrapper">
                 {blobs.map((tech, index) => {
                     return (
                         <Tech 
+                        fullWidth={hideScreen? true : false}
                         onLeaveViewport={() => switchTech(index)}
                         title={tech.title}
                         par={tech.par}></Tech>

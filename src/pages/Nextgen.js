@@ -13,7 +13,7 @@ import nextgenLogo from '../images/projects/nextgen/nextgenLogo.png';
 import ngproto from '../images/projects/nextgen/ngprototyping.png';
 import ngmockups from '../images/projects/nextgen/ngmockups.png';
 
-import {TECH_BLOBS} from '../helpers/constants';
+import {NEXTGEN_TECH_BLOBS} from '../helpers/constants';
 
 import landing from '../images/projects/sui/landing.png';
 import home from '../images/projects/sui/home.png';
@@ -25,7 +25,7 @@ import ngBreakdown from '../images/projects/nextgen/ngbreakdown2.png';
 import nghifi from '../images/projects/nextgen/nghifi5.png';
 
 
-import demo from '../images/demos/SUidemoS.mov';
+import demo from '../images/demos/nextDemo.mov';
 
 
 const Nextgen = () => {
@@ -52,14 +52,18 @@ const Nextgen = () => {
             <div className="container breakdown">
                 <div className="breakdown-1">
                     <h2>Deliverables</h2>
-                    <p>Responsive Website <br/> Brand Identity</p>
+                    <p>Logo Redesign <br/> Brand Identity <br/> Responsive Website </p>
             
                     <h2>Roles</h2>
-                    <p>UI / UX Design <br/> Develop <br/> Maintenance </p>                        
+                    <p>Brand Design <br/> UI / UX Design <br/> Front End Development <br/> Maintenance </p>                        
                 </div>
                 <div className="breakdown-2">
                     <h2>Goals</h2>
-                    <p>Creating a tool to assist the early stages of both design and development. When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. The goal of SUi is to allow users to easily generate their own custom style guides and UI components through one seamless interface. The style guide provides brand consistency and quality while the generated UI components become the building blocks to any website.</p>
+                    <p>
+                        Deliver a high quality website to officially represent Next Gen Barber Workshop. 
+                        Priorities involve an eye-catching landing page and clean front end design to overall solidify 
+                        the company’s brand and professionalism. This will be achieved through quality design elements, responsive web development, and proper user experience.
+                    </p>
                 </div>
             </div>
 
@@ -76,7 +80,11 @@ const Nextgen = () => {
                 <Fade>
                     <h2>Brand Definition</h2>
                     <div className="text-img">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>
+                            The direction for the rebrand focused on encapsulating the businesses professionalism. 
+                            The minimal yet effective colour palette of white, back and gold accents results in a clean and modern look. 
+                            The logo incorporating a pair of barber sheers gives the viewer an immediate understanding of the company.
+                        </p>
                         <Fade bottom>
                             <img id="ngBreakdown" src={ngBreakdown}/>
                         </Fade>
@@ -88,7 +96,12 @@ const Nextgen = () => {
                 <Fade>
                     <h2>Design Process</h2>
                     <div className="text-img">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>
+                            The web design consisted of lowfi renders and a prototype to plan out the page navigation. 
+                            This project required responsive design, therefore both desktop and mobile versions were created. 
+                            The highfi’s display a unique layout for the site rather than the conventional full page scroll. 
+                            The left panel is stationary while the right panel is the main scrollable container. 
+                        </p>
                         <Fade bottom>
                             <img id="ngProto" src={ngproto}/>
                         </Fade>
@@ -111,16 +124,23 @@ const Nextgen = () => {
                 </div>
             </div>
 
+            <div className="proj-section-header">
+                <div className="container">
+                    <Fade left>
+                       <h2>Features</h2>
+                    </Fade>
+                </div>
+            </div>
+
             <TechScroll
-                imgs={techScrollImgs}
-                blobs={TECH_BLOBS}
+                hideScreen={true}
+                blobs={NEXTGEN_TECH_BLOBS}
             />
 
-            <div className="demo-section">
-                <div className="container demo-container">
-                    <h2>Demo</h2>
-                    <video src={demo} controls></video>
-                </div>
+            <div className="visit-site">
+                <video id="ngDemo" src={demo} playsInline autoPlay loop muted>
+                </video>
+                <button className="visit-btn">Visit Site</button>
             </div>
 
             <ProjectGrid/>

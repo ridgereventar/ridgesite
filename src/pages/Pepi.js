@@ -48,11 +48,16 @@ const Pepi = () => {
             <div className="container breakdown">
                 <div className="breakdown-1">
                     <h2>Deliverables</h2>
-                    <p>Responsive Website <br/> Brand Identity <br/> Placeholder</p>
+                    <p> Logo Redesign <br/> Brand Identity </p>
                 </div>
                 <div className="breakdown-2">
                     <h2>Goals</h2>
-                    <p>Creating a tool to assist the early stages of both design and development. When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. The goal of SUi is to allow users to easily generate their own custom style guides and UI components through one seamless interface.</p>
+                    <p>
+                        The goal for this project was to create a foundation in which the three sub-brands could co-exist under the umbrella of Pepi’s Universe. 
+                        This consists of three separate social media outlets and YouTube channels based around different content categories. 
+                        The challenge was to provide each with their own distinct look while being unified under the same general branding/format. 
+                        This was accomplished through a base avatar as the logo styled three different ways with differentiable colour schemes. 
+                    </p>
                 </div>
             </div>
 
@@ -97,7 +102,7 @@ const Pepi = () => {
                     <div>
                         <Fade>
                             <h1>The Techsuit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p>The Tech Channel. From everyday tech videos to product overviews and reviews, Pepi gears up in his techsuit to provide quality content of the most recent products in the industry. </p>
                             <img className="hexColor mobile-hex" src={blue}></img>
                         </Fade>
                     </div>
@@ -112,7 +117,7 @@ const Pepi = () => {
                     <div>
                         <Fade>
                             <h1>The Wetsuit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p>The Lifestyle Channel. Join as Pepi puts on his wetsuit and enjoys life. This brand shares lifestyle content, and features the different journeys of the creator. </p>
                             <img className="hexColor mobile-hex" src={yellow}></img>
                         </Fade>
                     </div>
@@ -127,7 +132,7 @@ const Pepi = () => {
                     <div>
                         <Fade>
                             <h1>The Spacesuit</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            <p>The Entertainment Channel. Pepi throws on his new suit to explore a larger space showing off his creative side. From short films to entertaining videos this channel promotes nothing but good vibes.  </p>
                             <img className="hexColor mobile-hex" src={purple}></img>
                         </Fade>
                     </div>

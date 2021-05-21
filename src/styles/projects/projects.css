@@ -1990,16 +1990,22 @@
 
 .ig-slide-left {
   left: -605px;
-  -webkit-animation: igslideL 2s linear;
-          animation: igslideL 2s linear;
+}
+
+.animate-left {
+  -webkit-animation: igslideL 1.8s linear;
+          animation: igslideL 1.8s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
 .ig-slide-right {
   right: -605px;
-  -webkit-animation: igslideR 2s linear;
-          animation: igslideR 2s linear;
+}
+
+.animate-right {
+  -webkit-animation: igslideR 1.8s linear;
+          animation: igslideR 1.8s linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -2008,13 +2014,10 @@
   0% {
     left: -608px;
   }
-  40% {
-    left: -608px;
-  }
-  50% {
+  33% {
     left: -293px;
   }
-  90% {
+  66% {
     left: -293px;
   }
   100% {
@@ -2026,13 +2029,10 @@
   0% {
     left: -608px;
   }
-  40% {
-    left: -608px;
-  }
-  50% {
+  33% {
     left: -293px;
   }
-  90% {
+  66% {
     left: -293px;
   }
   100% {
@@ -2044,13 +2044,10 @@
   0% {
     right: -608px;
   }
-  40% {
-    right: -608px;
-  }
-  50% {
+  33% {
     right: -293px;
   }
-  90% {
+  66% {
     right: -293px;
   }
   100% {
@@ -2062,13 +2059,10 @@
   0% {
     right: -608px;
   }
-  40% {
-    right: -608px;
-  }
-  50% {
+  33% {
     right: -293px;
   }
-  90% {
+  66% {
     right: -293px;
   }
   100% {
@@ -2080,13 +2074,10 @@
   0% {
     left: -173%;
   }
-  40% {
-    left: -173%;
-  }
-  50% {
+  33% {
     left: -84%;
   }
-  90% {
+  66% {
     left: -84%;
   }
   100% {
@@ -2098,13 +2089,10 @@
   0% {
     left: -173%;
   }
-  40% {
-    left: -173%;
-  }
-  50% {
+  33% {
     left: -84%;
   }
-  90% {
+  66% {
     left: -84%;
   }
   100% {
@@ -2116,13 +2104,10 @@
   0% {
     right: -173%;
   }
-  40% {
-    right: -173%;
-  }
-  50% {
+  33% {
     right: -84%;
   }
-  90% {
+  66% {
     right: -84%;
   }
   100% {
@@ -2134,13 +2119,10 @@
   0% {
     right: -173%;
   }
-  40% {
-    right: -173%;
-  }
-  50% {
+  33% {
     right: -84%;
   }
-  90% {
+  66% {
     right: -84%;
   }
   100% {
@@ -2158,19 +2140,25 @@
 @media screen and (max-width: 415px) {
   .ig-slide-left {
     max-width: 268%;
+    top: -19.5%;
+    left: -173%;
+  }
+  .animate-left {
     -webkit-animation: igslideRespL 2s linear;
             animation: igslideRespL 2s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    top: -19.5%;
   }
   .ig-slide-right {
     max-width: 268%;
+    top: -19.5%;
+    right: -173%;
+  }
+  .animate-right {
     -webkit-animation: igslideRespR 2s linear;
             animation: igslideRespR 2s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    top: -19.5%;
   }
   .phone-shell {
     width: 350px;

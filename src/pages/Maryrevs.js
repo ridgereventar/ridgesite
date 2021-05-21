@@ -4,6 +4,7 @@ import { Fade } from "react-reveal";
 import '../styles/projects/projects.css';
 
 import Nav from '../components/Nav';
+import Trigger from '../components/Trigger';
 import Phone from '../components/Phone';
 import ProjectGrid from '../components/ProjectGrid';
 import Footer from '../components/Footer';
@@ -46,11 +47,14 @@ const Maryrevs = () => {
             <div className="container breakdown">
                 <div className="breakdown-1">
                     <h2>Deliverables</h2>
-                    <p>Responsive Website <br/> Brand Identity <br/> Placeholder</p>
+                    <p>Logo Design <br/> Brand Identity <br/>  Business Card / Flyers </p>
                 </div>
                 <div className="breakdown-2">
                     <h2>Goals</h2>
-                    <p>Creating a tool to assist the early stages of both design and development. When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. The goal of SUi is to allow users to easily generate their own custom style guides and UI components through one seamless interface.</p>
+                    <p>
+                        Creating a unified logo and brand that appropriately represents the home to home feel of this small business. 
+                        The goal was to create a light, simple, and unique design for the logo icon that incorporates an ‘M’ for the owners name and utensils to symbolize the meals.
+                    </p>
                 </div>
             </div>
 

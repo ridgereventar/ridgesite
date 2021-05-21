@@ -1,22 +1,32 @@
 import React, {useState, useEffect} from 'react';
+import Trigger from '../components/Trigger';
 
 import '../styles/projects/projects.css';
 
 const Phone = (props) => {
 
     const {right, shell, slide} = props
-
-    const leftValues = ["-605px", "-293px", "19px"]
-    const leftValuesResp = ["-173%", "-84%", "5.5%"]
-
+    const [animate, setAnimate] = useState(false);
 
     return (
-        <div className="phone-container" style={right? {justifyContent: 'flex-end'} : {justifyContent : 'flex-start'}}>
-            <div className={`phone-wrapper ${right? "phone-wrapper-right" : "phone-wrapper-left"}`}>
-                <img className="phone-shell" src={shell}></img>
-                <img className={`ig-slide ${right? "ig-slide-right" : "ig-slide-left"}`} src={slide}></img>
+        <>
+            <div className="phone-container" style={right? {justifyContent: 'flex-end'} : {justifyContent : 'flex-start'}}>
+                <div className={`phone-wrapper ${right? "phone-wrapper-right" : "phone-wrapper-left"}`}>
+                    <img className="phone-shell" src={shell}></img>
+                    <img 
+                        className={
+                            `
+                            ig-slide 
+                            ${right? "ig-slide-right" : "ig-slide-left"}
+                            ${(animate && right)? "animate-right" : ""}
+                            ${(animate && !right)? "animate-left" : ""}
+                            `
+                        } 
+                        src={slide}/>
+                </div>
             </div>
-        </div>
+            <Trigger onEnterViewport={() => setAnimate(true)}/>
+        </>
         
     )
 }

@@ -46,7 +46,11 @@ const Sounddistrict = () => {
                 </div>
                 <div className="breakdown-2">
                     <h2>Goals</h2>
-                    <p>Creating a tool to assist the early stages of both design and development. When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. The goal of SUi is to allow users to easily generate their own custom style guides and UI components through one seamless interface.</p>
+                    <p>
+                    Creating an impactful brand to showcase the professionalism behind Sound District’s events and promotions. 
+                    The company strives to give local artists a platform and stage to share their art through different social gatherings and events. 
+                    The direction for the logo and branding needed to encapsulate both the music these events showcase and the source being Toronto. 
+                    </p>
                 </div>
             </div>
 
@@ -71,48 +75,25 @@ const Sounddistrict = () => {
                 <span className="light-header light-list">Event Promotion  &nbsp;&nbsp; | &nbsp;&nbsp; Posters  &nbsp;&nbsp; | &nbsp;&nbsp; Flyers</span>
             </div>
 
+
             <div className="container">
                 <div className="event-container">
-                    <div className="event-info-container">
-                        <Fade>
-                            <h1>No Limit</h1>
-                            <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
-                        </Fade>
-                    </div>
-                    <div className="poster-container">
-                        <Fade right>
-                            <img className="event-poster" src={nl1}></img>
-                            <img className="event-poster" src={nl2}></img>
-                        </Fade>
-                    </div>
+                    <Fade>
+                        <img className="event-poster front-poster" src={nl1}></img>
+                        <img className="event-poster" src={nl2}></img>
+                    </Fade>
                 </div>
                 <div className="event-container">
-                    <div className="event-info-container">
-                        <Fade>
-                            <h1>Summer Nights</h1>
-                            <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
-                        </Fade>
-                    </div>
-                    <div className="poster-container">
-                        <Fade right>
-                            <img className="event-poster" src={sm1}></img>
-                            <img className="event-poster" src={sm2}></img>
-                        </Fade>
-                    </div>
+                    <Fade>
+                        <img className="event-poster front-poster" src={sm1}></img>
+                        <img className="event-poster" src={sm2}></img>
+                    </Fade>
                 </div>
                 <div className="event-container">
-                    <div className="event-info-container">
-                        <Fade>
-                            <h1>Halloween Sound</h1>
-                            <p>Creating a tool to assist the early stages of both design and development.  When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. </p>
-                        </Fade>
-                    </div>
-                    <div className="poster-container">
-                        <Fade right>
-                            <img className="event-poster" src={hs1}></img>
-                            <img className="event-poster" src={hs2}></img>
-                        </Fade>
-                    </div>
+                    <Fade>
+                        <img className="event-poster front-poster" src={hs1}></img>
+                        <img className="event-poster" src={hs2}></img>
+                    </Fade>
                 </div>
             </div>
 

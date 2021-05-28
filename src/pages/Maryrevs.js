@@ -4,7 +4,6 @@ import { Fade } from "react-reveal";
 import '../styles/projects/projects.css';
 
 import Nav from '../components/Nav';
-import Trigger from '../components/Trigger';
 import Phone from '../components/Phone';
 import ProjectGrid from '../components/ProjectGrid';
 import Footer from '../components/Footer';

@@ -4,10 +4,6 @@
     width: 200px;
 }
 
-.jazelbites-banner {
-}
-
-
 #jazelbitesBreakdown {
     margin-left: -20px;
     margin-top: 60px;
@@ -20,15 +16,47 @@
     background-color: #FF5D5D;
 }
 
+// .ipad-container {
+//     display: flex;
+//     justify-content: flex-end;
+//     margin-bottom: 80px;
+//     position: relative;
+//     background-color: green;
+// }
+
 .ipad-container {
-    display: flex;
-    justify-content: flex-end;
+    position: relative;
     margin-bottom: 80px;
+}
+
+.ipad-wrapper {
+    width: fit-content;
+    // background-color: blue;
+    float: right;
+    margin-top: -80px;
+    position: relative;
 }
 
 #jazelbitesIpad {
     width: 650px;
-    margin-top: -80px;
+    // margin-top: -80px;
+}
+
+.ipad-screen {
+    width: 90%;
+    height: 86%;
+    border-radius: 8px;
+    background-color: white;
+    position: absolute;
+    margin: auto auto;
+    top: -2.8%;
+    bottom: 0;
+    left: -1%;
+    right: 0;
+}
+
+#jazelBitesAnim {
+    height: 100%;
 }
 
 .bc-container {

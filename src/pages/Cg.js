@@ -43,7 +43,11 @@ const Cg = () => {
                 </div>
                 <div className="breakdown-2">
                     <h2>Goals</h2>
-                    <p>Creating a tool to assist the early stages of both design and development. When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. The goal of SUi is to allow users to easily generate their own custom style guides and UI components through one seamless interface.</p>
+                    <p>
+                        Creating a logo that professionally represents a personal brand. 
+                        The design direction was focused on a blend of both an elegant and modern approach. 
+                        The branding utilizes white space and high contrast to put emphasis on bold dark lines and crisp white text. 
+                    </p>
                 </div>
             </div>
 

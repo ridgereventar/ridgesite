@@ -115,7 +115,7 @@ const Home = (props) => {
                                 I continue to expand my skills and grow my toolset to ensure my applications meet the current requirements of high level development. 
                                 This site showcases my work so far, however I only intend on learning much more. 
                             </p>
-                            <Trigger onEnterViewport={() => setPlayBgAnim(true)} onLeaveViewport={() => console.log("leave")}/>
+                            <Trigger onEnterViewport={() => setPlayBgAnim(true)}/>
                         </div>
                     </Fade>
 
@@ -129,7 +129,7 @@ const Home = (props) => {
                     </div>
                 </div> 
 
-                <Trigger onEnterViewport={() => playIcons()} onLeaveViewport={() => console.log("leave")}/>
+                <Trigger onEnterViewport={() => playIcons()}/>
 
                 <div className="container tools-section">
                     <div className="tool-category">

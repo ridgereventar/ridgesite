@@ -11,41 +11,34 @@
     width: 250px;
 }
 
-.event-container {
-    margin-bottom: 100px;
+
+.event-wrapper {
+    // background-color: red;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
-.event-container p {
-    margin-bottom: 50px;
+.event-container {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: blue;
 }
 
 .poster-container {
     display: flex;
 }
 
+.front-poster {
+    margin-right: 15px;
+}
+
 .event-poster {
-    width: 50%;
+    width: 40%;
 }
 
 @media screen and (min-width: 992px) {
-    .event-container {
-        display: flex;
-        justify-content: space-between;
-    }
-    .event-info-container {
-        width: 40%;
-    }
-    .event-info-container p {
-        padding-right: 40px;
-    }
 
-    .poster-container {
-        width: 60%;
-    }
-    
-
-    .event-poster {
-        width: 50%;
-        margin-left: 10px;
-    }
 }

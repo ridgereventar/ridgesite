@@ -27,6 +27,8 @@ import bc2 from '../images/projects/jazelbites/jbbc2.png';
 import ty1 from '../images/projects/jazelbites/jbty1.png';
 import ty2 from '../images/projects/jazelbites/jbty2.png';
 
+// import jazelbitesAnim from '../images/projects/jazelbites/JazelBites_motion.mov';
+
 
 const Jazelbites = () => {
     
@@ -50,7 +52,7 @@ const Jazelbites = () => {
             <div className="container breakdown">
                 <div className="breakdown-1">
                     <h2>Deliverables</h2>
-                    <p>Responsive Website <br/> Brand Identity <br/> Placeholder</p>
+                    <p> Logo Design <br/> Brand Identity <br/> Social Media Posts <br/> Business Cards / Packaging</p>
                 </div>
                 <div className="breakdown-2">
                     <h2>Goals</h2>
@@ -91,9 +93,14 @@ const Jazelbites = () => {
 
             <div className="red-bg">
                 <div className="container">
-                    <Fade>
                         <div className="ipad-container">
-                            <img id="jazelbitesIpad" src={ipad}></img>
+                            <div className="ipad-wrapper">
+                                <img id="jazelbitesIpad" src={ipad}></img>
+                                <div className="ipad-screen">
+                                    {/* <video id="jazelBitesAnim" src={jazelbitesAnim} type="video/mp4" controls>
+                                    </video> */}
+                                </div>
+                            </div>
                         </div>
                         <Phone 
                             right={false}
@@ -107,7 +114,6 @@ const Jazelbites = () => {
                             <img  className="jazelbites-card-left" src={ty1}></img>
                             <img  className="jazelbites-card-left" src={ty2}></img>
                         </div>
-                    </Fade>
                 </div>
             </div>
 

@@ -3,9 +3,13 @@ import lowfiJson from '../svgs/devanimupdate.json';
 import fullAnimJson from '../svgs/fullanim2.json';
 import fullAnimCenterJson from '../svgs/fullanimCenter.json';
 
-import desJson from '../svgs/designIcon.json';
-import devJson from '../svgs/devIcon.json';
-import motionJson from '../svgs/motionIcon.json';
+// import desJson from '../svgs/designIcon.json';
+// import devJson from '../svgs/devIcon.json';
+// import motionJson from '../svgs/motionIcon.json';
+
+import desJson from '../svgs/desIconW.json';
+import devJson from '../svgs/devIconW.json';
+import motionJson from '../svgs/motIconW.json';
 
 import suiJson2 from '../svgs/suianim.json';
 

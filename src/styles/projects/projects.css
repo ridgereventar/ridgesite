@@ -1722,18 +1722,38 @@
 }
 
 .ipad-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  position: relative;
   margin-bottom: 80px;
+}
+
+.ipad-wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  float: right;
+  margin-top: -80px;
+  position: relative;
 }
 
 #jazelbitesIpad {
   width: 650px;
-  margin-top: -80px;
+}
+
+.ipad-screen {
+  width: 90%;
+  height: 86%;
+  border-radius: 8px;
+  background-color: white;
+  position: absolute;
+  margin: auto auto;
+  top: -2.8%;
+  bottom: 0;
+  left: -1%;
+  right: 0;
+}
+
+#jazelBitesAnim {
+  height: 100%;
 }
 
 .bc-container {
@@ -1813,12 +1833,22 @@
   width: 250px;
 }
 
-.event-container {
-  margin-bottom: 100px;
+.event-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.event-container p {
-  margin-bottom: 50px;
+.event-container {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .poster-container {
@@ -1827,32 +1857,12 @@
   display: flex;
 }
 
-.event-poster {
-  width: 50%;
+.front-poster {
+  margin-right: 15px;
 }
 
-@media screen and (min-width: 992px) {
-  .event-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .event-info-container {
-    width: 40%;
-  }
-  .event-info-container p {
-    padding-right: 40px;
-  }
-  .poster-container {
-    width: 60%;
-  }
-  .event-poster {
-    width: 50%;
-    margin-left: 10px;
-  }
+.event-poster {
+  width: 40%;
 }
 
 #jvIntro {

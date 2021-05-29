@@ -1,6 +1,5 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React from 'react';
 import {NavLink} from "react-router-dom"; 
-import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
 import '../styles/styles.css';
@@ -70,7 +69,7 @@ const About = (props) => {
                                 <ul>
                                     <li>
                                         Worked with <NavLink className="about-proj-link" to="/nextgen">Next Gen Barber Workshop</NavLink> to rebrand and create a front end site to professionally display their educational service. 
-                                        <a className="about-proj-link" href="https://www.nextgenbarbers.ca/" target="_blank"> (visit www.nextgenbarbers.ca)</a>
+                                        <a className="about-proj-link" href="https://www.nextgenbarbers.ca/" target="_blank" rel="noreferrer"> (visit www.nextgenbarbers.ca)</a>
                                     </li>
                                     <li>
                                         Utilizing my design experience I expanded my deliverables to UI / UX design, front end websites and full stack applications. 

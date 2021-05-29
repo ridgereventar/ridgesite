@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
@@ -13,12 +13,9 @@ import Footer from '../components/Footer';
 // anims
 import {lowfiAnim, desAnim, devAnim, motionAnim} from '../helpers/anims';
 import suiSample from '../images/demos/suiDemoFinal.mov';
-import nextSample from '../images/demos/nextDemo.mov';
 import ngphone from '../images/demos/nextgenmobile.mov';
 
 // images
-import suiT from '../images/titles/suiT.png';
-import nextT from '../images/titles/nextgenT.png';
 import me from '../images/me.png';
 import darkmac from '../images/darkmac4.png';
 import darkphone from '../images/darkphone3.png';
@@ -36,35 +33,6 @@ const Home = (props) => {
         setTimeout(() => {setPlayDevIcon(true);}, 500);
         setTimeout(() => {setPlayMotIcon(true);}, 1000);
     }
-
-    const [slideArray, setSlideArray] = useState([
-        {
-            title: suiT,
-            color: "#FFFFFF",
-            bgcolor: "#2A2A2A",
-            demo: suiSample,
-            desc: "Full Stack Application"
-        },
-        {
-            title: nextT,
-            color: "#000000",
-            bgcolor: "#C4C4C4",
-            demo: nextSample,
-            desc: "Front End Design & Development"
-        }
-    ])
-
-    const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
-
-    const slideNext = () => {
-        if(currentSlideIndex >= slideArray.length - 1) {
-            setCurrentSlideIndex(0)
-        } else {
-            setCurrentSlideIndex(currentSlideIndex + 1);            
-        }
-    }
-
-    const currentSlideObj = slideArray[currentSlideIndex]
 
     return (
         <>
@@ -88,13 +56,13 @@ const Home = (props) => {
                         <Fade right>
                             <div className="hero-mockup">
                                 <div className="mockup-wrapper mac-mockup">
-                                    <img id="darkMac" src={darkmac}/>
+                                    <img id="darkMac" src={darkmac} alt=""/>
                                     <div className="mockup-demo mac-demo">
-                                        <video src={currentSlideObj.demo} type="video/mp4" playsInline autoPlay loop muted></video>
+                                        <video src={suiSample} type="video/mp4" playsInline autoPlay loop muted></video>
                                     </div>
                                 </div>
                                 <div className="mockup-wrapper mobile-mockup">
-                                    <img id="darkPhone" src={darkphone}></img>
+                                    <img id="darkPhone" src={darkphone} alt=""/>
                                     <div className="mockup-demo phone-demo">
                                         <video src={ngphone} type="video/mp4" playsInline autoPlay loop muted></video>
                                     </div>
@@ -206,7 +174,7 @@ const Home = (props) => {
                         </div>
                     </Fade>
                     <Fade right>
-                        <img src={me}></img>
+                        <img src={me} alt=""/>
                     </Fade>
                 </div>
 

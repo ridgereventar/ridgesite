@@ -1,12 +1,11 @@
-import React, {useState, useEffect} from 'react';
-import Lottie from 'lottie-web-react';
+import React from 'react';
 import handleViewport from 'react-in-viewport';
 
 import '../styles/Viewport.css';
 
 const TriggerComp = (props) => {
     
-    const {inViewport, forwardedRef} = props;
+    const {forwardedRef} = props;
 
     return (
         <div className="trigger" ref={forwardedRef}>

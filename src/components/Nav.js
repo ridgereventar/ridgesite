@@ -30,7 +30,7 @@ const Nav = (props) => {
                 setDownToHide(true);
             }
             prevScrollpos = currentScrollPos;
-            if ( window.pageYOffset == 0) {
+            if ( window.pageYOffset === 0) {
                 setIsAtTop(true);
             } 
             if (window.pageYOffset > 200) {
@@ -92,7 +92,7 @@ const NavMobile = (props) => {
             <div className={`container navbar navbar-mobile ${isDarkTheme ? "dark" : "light"}`}>
                 <NavLink to="/">
                     <Fade>
-                        <img id="navLogo" src={isDarkTheme? logolight : logodark}></img> 
+                        <img id="navLogo" src={isDarkTheme? logolight : logodark} alt=""></img> 
                     </Fade>
                 </NavLink>
 
@@ -140,7 +140,7 @@ const NavDesktop = (props) => {
             
                 <NavLink to="/">
                     <Fade>
-                        <img id="navLogo" src={isDarkTheme? logolight : logodark}></img> 
+                        <img id="navLogo" src={isDarkTheme? logolight : logodark} alt=""></img> 
                     </Fade>
                 </NavLink>
                 

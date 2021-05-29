@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import { Fade } from "react-reveal";
+import React from 'react';
 
 import '../styles/ProjectSlider.css';
 
@@ -34,13 +33,13 @@ const ProjectSlider = (props) => {
 
     const handleArrows = () => {
         var d = document.getElementById('scroller');
-        if(d.scrollLeft == 0) {
+        if(d.scrollLeft === 0) {
             document.getElementById("scrollLeft").style.display = "none";
         } else {
             document.getElementById("scrollLeft").style.display = "flex";
         }
 
-        if((d.scrollWidth - d.scrollLeft - d.offsetWidth) == 0) {
+        if((d.scrollWidth - d.scrollLeft - d.offsetWidth) === 0) {
             document.getElementById("scrollRight").style.display = "none";
         } else {
             document.getElementById("scrollRight").style.display = "flex";
@@ -53,23 +52,20 @@ const ProjectSlider = (props) => {
 
             <div className="container proj-slider-controls">
                 <div id="scrollLeft" className="scroll-area" onMouseOver={scrollLeft} onMouseOut={stopScroll}>
-                    <img src={arrowLeft}></img>
+                    <img src={arrowLeft} alt=""></img>
                 </div>
                 <div id="scrollRight" className="scroll-area" onMouseOver={scrollRight} onMouseOut={stopScroll}>
-                    <img src={arrowRight}></img>
+                    <img src={arrowRight} alt=""></img>
                 </div>
             </div>
 
             <div id="scroller" className="container proj-slider-container" onScroll={handleArrows}>
                 {PROJECTS.map((proj, index) => {
                     return (
-                        <Fade>
-                            <ProjectIcon
-                                small={true}
-                                key={index}
-                                proj={proj}/>
-                        </Fade>
-
+                        <ProjectIcon
+                            key={index}
+                            small={true}
+                            proj={proj}/>
                     );
                 })}
             </div>

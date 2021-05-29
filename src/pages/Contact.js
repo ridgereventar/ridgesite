@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react';
+import React from 'react';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 

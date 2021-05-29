@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import {Fade} from 'react-reveal';
 
 import '../styles/TechScroll.css';
 
@@ -13,7 +12,6 @@ const TechScroll = (props) => {
 
     useEffect(() => {
         let array = blobs.map(blob => blob.img);
-        console.log(array);
         setImgs(array);
     }, [])
 
@@ -56,7 +54,7 @@ const TechScroll = (props) => {
                 <div className="screen-wrapper">
                     <div className="screen">
                         <div className="screen-content">
-                            <img src={imgs[currentIndex]}/>
+                            <img src={imgs[currentIndex]} alt=""/>
                         </div>
                     </div>
                 </div>

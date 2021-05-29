@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import handleViewport from 'react-in-viewport';
 import {Fade} from 'react-reveal';
 
@@ -6,7 +6,7 @@ import '../styles/Viewport.css';
 
 const TechContext = (props) => {
 
-    const {fullWidth, inViewport, forwardedRef} = props;
+    const {fullWidth, forwardedRef} = props;
 
     return (
         <div className={`container ${fullWidth? 'full-width' : 'tech-container'}`}>

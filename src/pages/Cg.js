@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
@@ -32,7 +32,7 @@ const Cg = () => {
 
             <div className="container proj-hero">
                 <Fade>
-                    <img id="cgLogo" src={cgIcon}></img>
+                    <img id="cgLogo" src={cgIcon} alt=""></img>
                 </Fade>
             </div>
 
@@ -54,15 +54,15 @@ const Cg = () => {
             <div className="banner cg-banner" style={{backgroundImage: `url("${cgbanner}")`}}>
                 <div className="container banner-intro">
                     <Fade>
-                        <img id="cgName" src={cgname}/>
+                        <img id="cgName" src={cgname} alt=""/>
                     </Fade>
                 </div>
             </div>
 
             <div className="container logo-breakdown">
                 <Fade bottom>
-                    <img id="cgIcon" src={cgIcon}></img>
-                    <img id="cgBreak" src={breakdown2}></img>
+                    <img id="cgIcon" src={cgIcon} alt=""></img>
+                    <img id="cgBreak" src={breakdown2} alt=""></img>
                 </Fade>
             </div>
 
@@ -74,7 +74,7 @@ const Cg = () => {
 
             <div className="container">
                 <Fade>
-                    <img id="cgProcess" src={cgProcess}></img>
+                    <img id="cgProcess" src={cgProcess} alt=""></img>
                 </Fade>
             </div>
 
@@ -86,8 +86,8 @@ const Cg = () => {
             <div className="grey-bg">
                 <div className="container half-split">
                     <Fade>
-                        <img src={bc1}></img>
-                        <img src={bc2}></img>
+                        <img src={bc1} alt=""></img>
+                        <img src={bc2} alt=""></img>
                     </Fade>
                 </div>
             </div>

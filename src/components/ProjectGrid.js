@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import { Fade } from "react-reveal";
+import React from 'react';
 
 import '../styles/ProjectIcon.css';
 
@@ -12,12 +11,10 @@ const ProjectGrid = (props) => {
         <div className="container project-grid">
             {PROJECTS.map((proj, index) => {
                 return (
-                    <Fade>
-                        <ProjectIcon
-                            small={false}
-                            key={index}
-                            proj={proj}/>
-                    </Fade>
+                    <ProjectIcon
+                        key={index}
+                        small={false}
+                        proj={proj}/>
                 );
             })}
         </div>

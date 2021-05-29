@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 
 import '../styles/styles.css';
 import logo from '../images/Rlogo.png';
@@ -27,7 +27,7 @@ const Footer = () => {
                         <div id="linked" className="social-icon"></div>
                         <div id="git" className="social-icon"></div>
                     </div>
-                    <img src={logo}></img>
+                    <img src={logo} alt=""></img>
                 </div>
                 
             </div>

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Trigger from '../components/Trigger';
 
 import '../styles/projects/projects.css';
@@ -12,7 +12,7 @@ const Phone = (props) => {
         <>
             <div className="phone-container" style={right? {justifyContent: 'flex-end'} : {justifyContent : 'flex-start'}}>
                 <div className={`phone-wrapper ${right? "phone-wrapper-right" : "phone-wrapper-left"}`}>
-                    <img className="phone-shell" src={shell}></img>
+                    <img className="phone-shell" src={shell} alt=""></img>
                     <img 
                         className={
                             `
@@ -22,7 +22,8 @@ const Phone = (props) => {
                             ${(animate && !right)? "animate-left" : ""}
                             `
                         } 
-                        src={slide}/>
+                        src={slide}
+                        alt=""/>
                 </div>
             </div>
             <Trigger onEnterViewport={() => setAnimate(true)}/>

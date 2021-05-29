@@ -7,17 +7,12 @@ import Tech from '../components/Tech.js';
 const TechScroll = (props) => {
     
     const {blobs, hideScreen} = props;
-
     const [imgs, setImgs] = useState([]);
-
-    useEffect(() => {
-        let array = blobs.map(blob => blob.img);
-        setImgs(array);
-    }, [])
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [scrollingDown, setScrollingDown] = useState(true);
 
+    
     var prevScrollpos = window.pageYOffset;
 
     const updownListener = () => {
@@ -30,12 +25,6 @@ const TechScroll = (props) => {
         prevScrollpos = currentScrollPos;
     }
 
-    useEffect(() => {
-        window.addEventListener("scroll", updownListener);
-        return () => {window.removeEventListener("scroll", updownListener)}
-    }, []);
-
-
     const switchTech = (index) => {
         if(scrollingDown) {
             if(index < imgs.length - 1) {
@@ -46,6 +35,16 @@ const TechScroll = (props) => {
             setCurrentIndex(--index);
         }
     }
+
+    useEffect(() => {
+        let array = blobs.map(blob => blob.img);
+        setImgs(array);
+    }, [blobs])
+
+    useEffect(() => {
+        window.addEventListener("scroll", updownListener);
+        return () => {window.removeEventListener("scroll", updownListener)}
+    });
 
 
     return (
@@ -63,6 +62,7 @@ const TechScroll = (props) => {
                 {blobs.map((tech, index) => {
                     return (
                         <Tech 
+                        key={index}
                         fullWidth={hideScreen? true : false}
                         onLeaveViewport={() => switchTech(index)}
                         title={tech.title}

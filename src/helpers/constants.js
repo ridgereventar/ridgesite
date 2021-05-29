@@ -21,12 +21,12 @@ import cg from '../images/icons/3-2.png';
 import jazelbites from '../images/icons/jazelbitesicon.png';
 import jazelbitesColor from '../images/iconscolor/jazelbitescolor.png';
 
-import nil from '../images/icons/2-4.png';
-import nilColor from '../images/iconscolor/2-4c.png';
-import evo from '../images/icons/3-3.png';
-import evoColor from '../images/iconscolor/3-3c.png';
-import denz from '../images/icons/3-4.png';
-import denzColor from '../images/iconscolor/3-4c.png';
+// import nil from '../images/icons/2-4.png';
+// import nilColor from '../images/iconscolor/2-4c.png';
+// import evo from '../images/icons/3-3.png';
+// import evoColor from '../images/iconscolor/3-3c.png';
+// import denz from '../images/icons/3-4.png';
+// import denzColor from '../images/iconscolor/3-4c.png';
 
 // TECH images
 

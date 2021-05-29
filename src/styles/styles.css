@@ -568,11 +568,11 @@
 }
 
 .about-content .about-col1 {
-  width: 60%;
+  width: 65%;
 }
 
 .about-content .about-col2 {
-  width: 34%;
+  width: 26%;
 }
 
 .about-section {
@@ -641,6 +641,14 @@
   .about-content .about-col2 {
     width: 100%;
   }
+}
+
+.about-proj-link {
+  color: #A0A0A0;
+}
+
+.about-proj-link:hover {
+  color: #E96D2F;
 }
 
 .contact-container {

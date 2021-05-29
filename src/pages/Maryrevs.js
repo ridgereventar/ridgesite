@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
@@ -39,7 +39,7 @@ const Maryrevs = () => {
 
             <div className="container proj-hero">
                 <Fade>
-                    <img src={maryrevsLogo}></img>
+                    <img src={maryrevsLogo} alt=""/>
                 </Fade>
             </div>
 
@@ -61,23 +61,23 @@ const Maryrevs = () => {
                 <div className="white-gradient"></div>
                 <div className="container banner-intro">
                     <Fade>
-                        <img id="hometohome" src={hometohome}/>
+                        <img id="hometohome" src={hometohome} alt=""/>
                     </Fade>
                 </div>
             </div>
 
             <div className="container logo-breakdown">
                 <Fade bottom>
-                    <img id="maryrevsIcon" src={maryrevsIcon}></img>
-                    <img id="maryrevsBreakdown" src={breakdown}></img>
+                    <img id="maryrevsIcon" src={maryrevsIcon} alt=""/>
+                    <img id="maryrevsBreakdown" src={breakdown} alt=""/>
                 </Fade>
             </div>
 
             <div className="grey-bg">
                 <div className="container styleguide-container">
                     <Fade>
-                        <img src={palette}></img>
-                        <img src={styleguide}></img>
+                        <img src={palette} alt=""/>
+                        <img src={styleguide} alt=""/>
                     </Fade>
                 </div>
             </div>
@@ -100,8 +100,8 @@ const Maryrevs = () => {
                             shell={phone}
                             slide={mango}/>
                         <div className="ig-post-container">
-                            <img id="maryrevsIg2" src={ig2}></img>
-                            <img id="maryrevsIg1" src={ig1}></img>
+                            <img id="maryrevsIg2" src={ig2} alt=""/>
+                            <img id="maryrevsIg1" src={ig1} alt=""/>
                         </div>
                     </Fade>
                 </div>

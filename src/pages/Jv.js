@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
@@ -31,7 +31,7 @@ const Jv = () => {
 
             <div className="container proj-hero">
                 <Fade>
-                    <img src={jvLogo}></img>
+                    <img src={jvLogo} alt=""/>
                 </Fade>
             </div>
         
@@ -54,15 +54,15 @@ const Jv = () => {
                 <div className="black-gradient"></div>
                 <div className="container banner-intro">
                     <Fade>
-                        <img id="jvIntro" src={jvintro}/>
+                        <img id="jvIntro" src={jvintro} alt=""/>
                     </Fade>
                 </div>
             </div>
 
             <div className="container logo-breakdown">
                 <Fade bottom>
-                    <img id="jvLogo" src={jvLogo}></img>
-                    <img id="jvBreakdown" src={breakdown}></img>
+                    <img id="jvLogo" src={jvLogo} alt=""/>
+                    <img id="jvBreakdown" src={breakdown} alt=""/>
                 </Fade>
             </div>
 
@@ -74,8 +74,8 @@ const Jv = () => {
             <div className="grey-bg">
                 <div className="container half-split">
                     <Fade>
-                        <img src={bc1}></img>
-                        <img src={bc2}></img>
+                        <img src={bc1} alt=""/>
+                        <img src={bc2} alt=""/>
                     </Fade>
                 </div>
             </div>

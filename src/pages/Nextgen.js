@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
@@ -15,15 +15,11 @@ import ngmockups from '../images/projects/nextgen/ngmockups.png';
 
 import {NEXTGEN_TECH_BLOBS} from '../helpers/constants';
 
-import landing from '../images/projects/sui/landing.png';
-import home from '../images/projects/sui/home.png';
-
 import ngbanner from '../images/projects/nextgen/ngbanner.jpg';
 import ngintro from '../images/projects/nextgen/ngintro.png';
 
 import ngBreakdown from '../images/projects/nextgen/ngbreakdown2.png';
 import nghifi from '../images/projects/nextgen/nghifi5.png';
-
 
 import demo from '../images/demos/nextDemo.mov';
 
@@ -36,8 +32,6 @@ const Nextgen = () => {
             window.scrollTo(0, 0);
         }
       }, [])
-
-    const techScrollImgs = [landing, home, landing, home, landing];
     
     return (
         <React.Fragment>
@@ -45,7 +39,7 @@ const Nextgen = () => {
 
             <div className="container proj-hero">
                 <Fade>
-                    <img id="suiHeroTitle" src={nextgenLogo}></img>
+                    <img id="suiHeroTitle" src={nextgenLogo} alt="" />
                 </Fade>
             </div>
 
@@ -71,7 +65,7 @@ const Nextgen = () => {
                 <div className="black-gradient"></div>
                 <div className="container banner-intro">
                     <Fade>
-                        <img id="ngIntro" src={ngintro}/>
+                        <img id="ngIntro" src={ngintro} alt=""/>
                     </Fade>
                 </div>
             </div>
@@ -86,7 +80,7 @@ const Nextgen = () => {
                             The logo incorporating a pair of barber sheers gives the viewer an immediate understanding of the company.
                         </p>
                         <Fade bottom>
-                            <img id="ngBreakdown" src={ngBreakdown}/>
+                            <img id="ngBreakdown" src={ngBreakdown} alt=""/>
                         </Fade>
                     </div>
                 </Fade>
@@ -103,7 +97,7 @@ const Nextgen = () => {
                             The left panel is stationary while the right panel is the main scrollable container. 
                         </p>
                         <Fade bottom>
-                            <img id="ngProto" src={ngproto}/>
+                            <img id="ngProto" src={ngproto} alt=""/>
                         </Fade>
                     </div>
                 </Fade>
@@ -111,7 +105,7 @@ const Nextgen = () => {
 
             <div className="container mockup-container">
                 <Fade>
-                    <img src={ngmockups}></img>
+                    <img src={ngmockups} alt=""/>
                 </Fade>
             </div>
 
@@ -119,7 +113,7 @@ const Nextgen = () => {
                 <div className="slant-bg"></div>
                 <div className="container">
                     <Fade bottom>
-                       <img src={nghifi}></img>
+                       <img src={nghifi} alt=""/>
                     </Fade>
                 </div>
             </div>

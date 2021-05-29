@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
@@ -34,12 +34,12 @@ import {jazelBitesAnim} from '../helpers/anims';
 
 const Jazelbites = () => {
     
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    //     window.onbeforeunload = function () {
-    //         window.scrollTo(0, 0);
-    //     }
-    // }, [])
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    }, [])
 
     return (
         <>
@@ -47,7 +47,7 @@ const Jazelbites = () => {
 
             <div className="container proj-hero">
                 <Fade>
-                    <img src={jazelbitesLogo}></img>
+                    <img src={jazelbitesLogo} alt=""/>
                 </Fade>
             </div>
 
@@ -63,26 +63,25 @@ const Jazelbites = () => {
             </div>
 
             <div className="banner jazelbites-banner" style={{backgroundImage: `url("${jbbg}")`}}>
-                {/* <img id="sweets" src={sweets}/> */}
                 <div className="container banner-intro">
                     <Fade>
-                        <img id="hometohome" src={jbintro}/>
+                        <img id="hometohome" src={jbintro} alt=""/>
                     </Fade>
                 </div>
             </div>
 
             <div className="container logo-breakdown">
                 <Fade bottom>
-                    <img id="jazelbitesIcon" src={jazelbitesIcon}></img>
-                    <img id="jazelbitesBreakdown" src={breakdown}></img>
+                    <img id="jazelbitesIcon" src={jazelbitesIcon} alt=""/>
+                    <img id="jazelbitesBreakdown" src={breakdown} alt=""/>
                 </Fade>
             </div>
 
             <div className="grey-bg">
                 <div className="container styleguide-container">
                     <Fade>
-                        <img src={palette}></img>
-                        <img src={style}></img>
+                        <img src={palette} alt=""/>
+                        <img src={style} alt=""/>
                     </Fade>
                 </div>
             </div>
@@ -98,7 +97,7 @@ const Jazelbites = () => {
 
                         <div className="ipad-section">
                             <div className="ipad-wrapper">
-                                <img id="jbIpad" src={ipad}></img>
+                                <img id="jbIpad" src={ipad} alt=""/>
                                 <Lottie
                                     className="jazelbites-anim"
                                     options={jazelBitesAnim}
@@ -111,12 +110,12 @@ const Jazelbites = () => {
                             shell={phone}
                             slide={post}/>        
                         <div className="bc-container bc-container-right">
-                            <img className="jazelbites-card-right" src={bc1}></img>
-                            <img  className="jazelbites-card-right"src={bc2}></img>
+                            <img className="jazelbites-card-right" src={bc1} alt=""/>
+                            <img  className="jazelbites-card-right"src={bc2} alt=""/>
                         </div>
                         <div className="bc-container">
-                            <img  className="jazelbites-card-left" src={ty1}></img>
-                            <img  className="jazelbites-card-left" src={ty2}></img>
+                            <img  className="jazelbites-card-left" src={ty1} alt=""/>
+                            <img  className="jazelbites-card-left" src={ty2} alt=""/>
                         </div>
                 </div>
             </div>

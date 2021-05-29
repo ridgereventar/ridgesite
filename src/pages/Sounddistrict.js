@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
@@ -35,7 +35,7 @@ const Sounddistrict = () => {
 
             <div className="container proj-hero">
                 <Fade>
-                    <img id="sdLogo" src={sdLogo}></img>
+                    <img id="sdLogo" src={sdLogo} alt=""/>
                 </Fade>
             </div>
 
@@ -58,15 +58,15 @@ const Sounddistrict = () => {
                 <div className="black-gradient"></div>
                 <div className="container banner-intro">
                     <Fade>
-                        <img id="hometohome" src={sdLogoFull}/>
+                        <img id="hometohome" src={sdLogoFull} alt=""/>
                     </Fade>
                 </div>
             </div>
 
             <div className="container logo-breakdown">
                 <Fade bottom>
-                    <img id="sdIcon" src={sdLogo}></img>
-                    <img id="sdBreakdown" src={breakdown}></img>
+                    <img id="sdIcon" src={sdLogo} alt=""/>
+                    <img id="sdBreakdown" src={breakdown} alt=""/>
                 </Fade>
             </div>
 
@@ -79,20 +79,20 @@ const Sounddistrict = () => {
             <div className="container">
                 <div className="event-container">
                     <Fade>
-                        <img className="event-poster front-poster" src={nl1}></img>
-                        <img className="event-poster" src={nl2}></img>
+                        <img className="event-poster front-poster" src={nl1} alt=""/>
+                        <img className="event-poster" src={nl2} alt=""/>
                     </Fade>
                 </div>
                 <div className="event-container">
                     <Fade>
-                        <img className="event-poster front-poster" src={sm1}></img>
-                        <img className="event-poster" src={sm2}></img>
+                        <img className="event-poster front-poster" src={sm1} alt=""/>
+                        <img className="event-poster" src={sm2} alt=""/>
                     </Fade>
                 </div>
                 <div className="event-container">
                     <Fade>
-                        <img className="event-poster front-poster" src={hs1}></img>
-                        <img className="event-poster" src={hs2}></img>
+                        <img className="event-poster front-poster" src={hs1} alt=""/>
+                        <img className="event-poster" src={hs2} alt=""/>
                     </Fade>
                 </div>
             </div>

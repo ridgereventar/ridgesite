@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
@@ -41,7 +41,7 @@ const Pepi = () => {
 
             <div className="container proj-hero">
                 <Fade>
-                    <img src={pepiTech}></img>
+                    <img src={pepiTech} alt=""/>
                 </Fade>
             </div>
 
@@ -76,8 +76,8 @@ const Pepi = () => {
                 <Fade>
                     <p className="light-header">Original Logo</p>
                     <div className="img-split">
-                        <img src={og1}/>
-                        <img src={og2}/>
+                        <img src={og1} alt=""/>
+                        <img src={og2} alt=""/>
                     </div>
                 </Fade>
             </div>
@@ -85,11 +85,11 @@ const Pepi = () => {
             <div className="container">
                 <Fade>
                     <p className="light-header">Design Process</p>
-                    <img id="pepiBreakdown" src={avatar}/>
+                    <img id="pepiBreakdown" src={avatar} alt=""/>
                     <div className="pepi-img-split">
-                        <img src={pepiTech}></img>
-                        <img src={pepiWet}></img>
-                        <img id="pepiSpace" src={pepiSpace}></img>
+                        <img src={pepiTech} alt=""/>
+                        <img src={pepiWet} alt=""/>
+                        <img id="pepiSpace" src={pepiSpace} alt=""/>
                     </div>                
                 </Fade>
             </div>
@@ -97,47 +97,47 @@ const Pepi = () => {
             <div className="grey-bg">
                 <div className="container pepi-brand-container">
                     <Fade left>
-                        <img className="suit" src={techsuit}></img>
+                        <img className="suit" src={techsuit} alt=""/>
                     </Fade>
                     <div>
                         <Fade>
                             <h1>The Techsuit</h1>
                             <p>The Tech Channel. From everyday tech videos to product overviews and reviews, Pepi gears up in his techsuit to provide quality content of the most recent products in the industry. </p>
-                            <img className="hexColor mobile-hex" src={blue}></img>
+                            <img className="hexColor mobile-hex" src={blue} alt=""/>
                         </Fade>
                     </div>
                     <Fade right>
-                        <img className="hexColor desktop-hex" src={blue}></img>
+                        <img className="hexColor desktop-hex" src={blue} alt=""/>
                     </Fade>
                 </div>
                 <div className="container pepi-brand-container">
                     <Fade left>
-                        <img className="suit" src={wetsuit}></img>
+                        <img className="suit" src={wetsuit} alt=""/>
                     </Fade>
                     <div>
                         <Fade>
                             <h1>The Wetsuit</h1>
                             <p>The Lifestyle Channel. Join as Pepi puts on his wetsuit and enjoys life. This brand shares lifestyle content, and features the different journeys of the creator. </p>
-                            <img className="hexColor mobile-hex" src={yellow}></img>
+                            <img className="hexColor mobile-hex" src={yellow} alt=""/>
                         </Fade>
                     </div>
                     <Fade right>
-                        <img className="hexColor desktop-hex" src={yellow}></img>
+                        <img className="hexColor desktop-hex" src={yellow} alt=""/>
                     </Fade>
                 </div>
                 <div className="container pepi-brand-container">
                     <Fade left>
-                        <img className="suit" src={spacesuit}></img>
+                        <img className="suit" src={spacesuit} alt=""/>
                     </Fade>
                     <div>
                         <Fade>
                             <h1>The Spacesuit</h1>
                             <p>The Entertainment Channel. Pepi throws on his new suit to explore a larger space showing off his creative side. From short films to entertaining videos this channel promotes nothing but good vibes.  </p>
-                            <img className="hexColor mobile-hex" src={purple}></img>
+                            <img className="hexColor mobile-hex" src={purple} alt=""/>
                         </Fade>
                     </div>
                     <Fade right>
-                        <img className="hexColor desktop-hex" src={purple}></img>
+                        <img className="hexColor desktop-hex" src={purple} alt=""/>
                     </Fade>
                 </div>
             </div>

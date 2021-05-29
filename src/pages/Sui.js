@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useEffect} from 'react';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
@@ -39,7 +39,7 @@ const Sui = () => {
 
             <div className="container proj-hero">
                 <Fade>
-                    <img id="suiHeroTitle" src={suiLogo}></img>
+                    <img id="suiHeroTitle" src={suiLogo} alt=""/>
                     <p>A Style Guide & Ui Component Generator</p>
                 </Fade>
             </div>
@@ -79,7 +79,7 @@ const Sui = () => {
                             The final logo is minimal yet incorporates all three letters in ‘SUI’ when viewed upright and rotated on its side to reveal the ‘UI’.
                         </p>
                         <Fade bottom>
-                            <img id="suiBreakdown" src={suibreakdown}/>
+                            <img id="suiBreakdown" src={suibreakdown} alt=""/>
                         </Fade>
                     </div>
                 </Fade>
@@ -88,8 +88,8 @@ const Sui = () => {
             <div className="grey-bg sui-style">
                 <div className="container styleguide-container">
                     <Fade>
-                        <img src={suipalette}></img>
-                        <img src={suistyle}></img>
+                        <img src={suipalette} alt=""/>
+                        <img src={suistyle} alt=""/>
                     </Fade>
                 </div>
             </div>
@@ -104,7 +104,7 @@ const Sui = () => {
                         The high fi’s were then designed soon after to again capture the clean and consistent branding SUI promotes. 
                         </p>
                         <Fade bottom>
-                            <img id="lowfis" src={lowfis}/>
+                            <img id="lowfis" src={lowfis} alt=""/>
                         </Fade>
                     </div>
                 </Fade>
@@ -114,7 +114,7 @@ const Sui = () => {
                 <div className="slant-bg"></div>
                 <div className="container">
                     <Fade bottom>
-                        <img src={suihifi}></img>
+                        <img src={suihifi} alt=""/>
                     </Fade>
                 </div>
             </div>

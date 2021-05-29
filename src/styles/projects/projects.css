@@ -1721,39 +1721,33 @@
   background-color: #FF5D5D;
 }
 
-.ipad-container {
-  position: relative;
-  margin-bottom: 80px;
+.ipad-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 50px;
 }
 
 .ipad-wrapper {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  float: right;
-  margin-top: -80px;
   position: relative;
+  margin-top: -80px;
 }
 
-#jazelbitesIpad {
+#jbIpad {
   width: 650px;
 }
 
-.ipad-screen {
-  width: 90%;
-  height: 86%;
-  border-radius: 8px;
-  background-color: white;
+.jazelbites-anim {
   position: absolute;
   margin: auto auto;
-  top: -2.8%;
-  bottom: 0;
-  left: -1%;
+  left: 0;
   right: 0;
-}
-
-#jazelBitesAnim {
-  height: 100%;
+  top: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .bc-container {

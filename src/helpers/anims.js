@@ -16,6 +16,7 @@ import suiJson2 from '../svgs/suianim.json';
 import burgerFJson from '../svgs/burgerFdark.json';
 import burgerBJson from '../svgs/burgerBdark.json';
 
+import jazelbitesJson from '../svgs/jazelbitesAnim.json';
 
 export const pepiAnim = {
     renderer: 'svg',
@@ -86,3 +87,11 @@ export const burgerB = {
     autoplay: false,
     animationData: burgerBJson
 }
+
+export const jazelBitesAnim = {
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    animationData: jazelbitesJson
+}
+

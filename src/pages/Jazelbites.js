@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
 import '../styles/projects/projects.css';
@@ -27,17 +28,18 @@ import bc2 from '../images/projects/jazelbites/jbbc2.png';
 import ty1 from '../images/projects/jazelbites/jbty1.png';
 import ty2 from '../images/projects/jazelbites/jbty2.png';
 
-// import jazelbitesAnim from '../images/projects/jazelbites/JazelBites_motion.mov';
+import {jazelBitesAnim} from '../helpers/anims';
+
 
 
 const Jazelbites = () => {
     
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        }
-    }, [])
+    // useEffect(() => {
+    //     window.scrollTo(0, 0);
+    //     window.onbeforeunload = function () {
+    //         window.scrollTo(0, 0);
+    //     }
+    // }, [])
 
     return (
         <>
@@ -93,15 +95,17 @@ const Jazelbites = () => {
 
             <div className="red-bg">
                 <div className="container">
-                        <div className="ipad-container">
+
+                        <div className="ipad-section">
                             <div className="ipad-wrapper">
-                                <img id="jazelbitesIpad" src={ipad}></img>
-                                <div className="ipad-screen">
-                                    {/* <video id="jazelBitesAnim" src={jazelbitesAnim} type="video/mp4" controls>
-                                    </video> */}
-                                </div>
+                                <img id="jbIpad" src={ipad}></img>
+                                <Lottie
+                                    className="jazelbites-anim"
+                                    options={jazelBitesAnim}
+                                    playingState='play'/>
                             </div>
                         </div>
+
                         <Phone 
                             right={false}
                             shell={phone}

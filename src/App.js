@@ -13,6 +13,7 @@ import Jazelbites from './pages/Jazelbites.js';
 import Cg from './pages/Cg.js';
 import Jv from './pages/Jv.js';
 import Sounddistrict from './pages/Sounddistrict.js';
+import Amazon from './pages/Amazon';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 
         <Route path="/sui" exact component={Sui}/>
         <Route path="/nextgen" exact component={Nextgen}/>
+        <Route path="/amazonclone" exact component={Amazon}/>
         <Route path="/pepi" exact component={Pepi}/>
         <Route path="/maryrevs" exact component={Maryrevs}/>
         <Route path="/jazelbites" exact component={Jazelbites}/>

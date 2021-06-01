@@ -16,10 +16,13 @@ import soundColor from '../images/iconscolor/2-3c.png';
 import jv from '../images/icons/3-1.png';
 import jvColor from '../images/iconscolor/3-1c.png';
 
-import cg from '../images/icons/3-2.png';
+import cg from '../images/icons/cgIcon.png';
 
 import jazelbites from '../images/icons/jazelbitesicon.png';
 import jazelbitesColor from '../images/iconscolor/jazelbitescolor.png';
+
+import amazonclone from '../images/icons/amazonIcon.png';
+import amazoncloneColor from '../images/iconscolor/amazonIconC.png';
 
 // import nil from '../images/icons/2-4.png';
 // import nilColor from '../images/iconscolor/2-4c.png';
@@ -53,6 +56,14 @@ export const PROJECTS = [
         bgcolor: "#DE5C5C",
         icon: next,
         iconhover: nextColor
+    },
+    {
+        id: 'amazonclone',
+        title: 'Amazon Clone',
+        color: "black",
+        bgcolor: "#E5BA78",
+        icon: amazonclone,
+        iconhover: amazoncloneColor
     },
     {
         id: 'pepi',
@@ -190,5 +201,36 @@ export const NEXTGEN_TECH_BLOBS = [
     {
         title: "Deployment with Netlify",
         par: "This service allowed for fast and easy deployments allowing us to track website traffic and apply updates when needed.",
+    }
+]
+
+export const AMAZON_TECH_BLOBS = [
+    {
+        title: "Context API",
+        par: "By wrapping the application in a context provider with an assigned initial state and reducer I am able to track current users baskets and push and pull data from any component. ",
+    },
+    {
+        title: "Firebase Authentication",
+        par: "Implemented a full login system including sign up and tracking current logged in user. The user’s account is then stored in the context API allowing us to grab their information when needed. ",
+    },
+    {
+        title: "Payments via Stripe",
+        par: "Using libraries stripe-js and react-stripe-js I was able to link my application to their service and was provided a card element which handles error detection on input. Each transaction requires a client secret so I used a Firebase Cloud Function to setup the backend for the request. ",
+    },
+    {
+        title: "Firebase Cloud Functions",
+        par: "I first setup Express to run on the cloud function and linked the stripe test key. After setting up the backend API (config & middleware) I created my first route which was a post request to retrieve the client secret from Stripe through a payment intent.",
+    },
+    {
+        title: "Finalizing Payment",
+        par: "On every basket change I sent an axios request to retrieve a new client secret. After the card information is entered I sent the payload to stripe along with the client secret and payment method.",
+    },
+    {
+        title: "Firestore",
+        par: "Initializing Firestore in Firebase allowed me to keep a collection of users and their order history. With this I am able to both create new entries and retrieve their orders from a current snapshot of the database collection.",
+    },
+    {
+        title: "Deploying with Firebase ",
+        par: "Through the command line I was able to deploy the firebase cloud function and link the new URL to the application. Finally I deployed the app with firebase hosting and the link was provided.",
     }
 ]

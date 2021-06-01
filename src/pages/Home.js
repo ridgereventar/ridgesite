@@ -16,7 +16,7 @@ import suiSample from '../images/demos/suiDemoFinal.mov';
 import ngphone from '../images/demos/nextgenmobile.mov';
 
 // images
-import me from '../images/me.png';
+// import me from '../images/me.png';
 import darkmac from '../images/darkmac4.png';
 import darkphone from '../images/darkphone3.png';
 
@@ -165,7 +165,7 @@ const Home = (props) => {
 
                 <ProjectGrid/>
 
-                <div className="container home-about">
+                {/* <div className="container home-about">
                     <Fade>
                         <div>
                             <p>I inspire to bring visions to life through visual graphics and full stack applications</p>
@@ -176,7 +176,7 @@ const Home = (props) => {
                     <Fade right>
                         <img src={me} alt=""/>
                     </Fade>
-                </div>
+                </div> */}
 
                 <Footer/>
 

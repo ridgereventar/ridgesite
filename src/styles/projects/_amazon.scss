@@ -1,0 +1,46 @@
+.visit-container {
+    height: max-content;
+    position: relative;
+    margin-top: $marginBottomXLg;
+    margin-bottom: $marginBottomXLg;
+}
+
+.visit-slant-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    background-color: #F8F8F8;
+    z-index: -1;
+}
+
+.visit-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visit-mac-wrapper {
+    height: max-content;
+    width: max-content;
+    // background-color: red;
+    position: relative;
+    margin-right: -80px;
+    margin-top: -50px;
+}
+
+#darkmacVisit {
+    width: 900px;
+}
+
+.visit-mac-screen {
+    width: 75%;
+    height: 76%;
+    background-color: rgb(234, 237, 237);
+    position: absolute;
+    margin: auto auto;
+    top: -20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

@@ -693,7 +693,7 @@
 #ngDemo {
   width: 100%;
   position: absolute;
-  margin: auto auto;
+  margin: 0 auto;
   left: 0;
   right: 0;
   top: 0;
@@ -716,6 +716,65 @@
   color: lightgray;
   background-color: #181818;
   width: 180px;
+}
+
+.visit-container {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.visit-slant-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  background-color: #F8F8F8;
+  z-index: -1;
+}
+
+.visit-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.visit-mac-wrapper {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  margin-right: -80px;
+  margin-top: -50px;
+}
+
+#darkmacVisit {
+  width: 900px;
+}
+
+.visit-mac-screen {
+  width: 75%;
+  height: 76%;
+  background-color: #eaeded;
+  position: absolute;
+  margin: auto auto;
+  top: -20px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .proj-section-header {
@@ -2208,5 +2267,16 @@ img, video {
   margin-bottom: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.grey-btn {
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+  color: lightgray;
+  background-color: #181818;
+  width: 180px;
 }
 /*# sourceMappingURL=projects.css.map */

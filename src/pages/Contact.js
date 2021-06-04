@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
 
@@ -11,6 +11,13 @@ import {fullAnim, fullAnimCenter} from '../helpers/anims';
 
 
 const Contact = (props) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    }, [])
 
     return (
         <>

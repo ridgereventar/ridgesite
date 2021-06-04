@@ -80,12 +80,19 @@ const NavMobile = (props) => {
         <>
             <div className="slider burger-slider" style={showBurgerSlider? {top: "0"} : {top: "-400px"}}>
                 <div className="container">
-                    <h2>About</h2>
+                    <NavLink to="/about">
+                        <h2>About</h2>
+                    </NavLink>
+
                     <h2 onClick={toggleMiniProj}>Projects</h2>
+
                     {toggleMiniProjSlider?
                         <ProjectSlider></ProjectSlider>
                     : null}
-                    <h2>Contact</h2>
+
+                    <NavLink to="/contact">
+                        <h2>Contact</h2>
+                    </NavLink>
                 </div>
             </div>
 

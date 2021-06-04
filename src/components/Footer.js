@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 import '../styles/styles.css';
 import logo from '../images/Rlogo.png';
@@ -15,9 +16,19 @@ const Footer = () => {
                         <p className="footer-desc footer-desc-mobile">Front End Developer <br/> & Designer.</p>
                     </div>
                     <ul className="footer-nav">
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                        <li>
+                            <NavLink to="/about">
+                                About
+                            </NavLink>
+                        </li>
+                        <li>
+                            Projects
+                        </li>
+                        <li>
+                            <NavLink to="/contact">
+                                Contact
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
                 <div className="footer-links">

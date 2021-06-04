@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {NavLink} from "react-router-dom"; 
 import { Fade } from "react-reveal";
 
@@ -8,6 +8,13 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 const About = (props) => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    }, [])
 
     return (
         <>

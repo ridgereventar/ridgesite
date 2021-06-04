@@ -14,6 +14,7 @@ import Cg from './pages/Cg.js';
 import Jv from './pages/Jv.js';
 import Sounddistrict from './pages/Sounddistrict.js';
 import Amazon from './pages/Amazon';
+import Projects from './pages/Projects';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Home}/>
         <Route path="/about" exact component={About}/>
+        <Route path="/projects" exact component={Projects}/>
         <Route path="/contact" exact component={Contact}/>
 
         <Route path="/sui" exact component={Sui}/>

@@ -31,6 +31,47 @@ import amazoncloneColor from '../images/iconscolor/amazonIconC.png';
 // import denz from '../images/icons/3-4.png';
 // import denzColor from '../images/iconscolor/3-4c.png';
 
+// PROJECT CARDS
+
+import suiM from '../images/projectcards/sui-mac.png';
+import ngM from '../images/projectcards/nextgen-tab.png';
+import amazonM from '../images/projectcards/amazon-tab.png';
+import pepiM from '../images/projectcards/pepi-m.png';
+import maryM from '../images/projectcards/maryrevs-phone.png';
+import jazelM from '../images/projectcards/jazelbites-phone.png';
+import sdM from '../images/projectcards/sd-flyer.png';
+import jvM from '../images/projectcards/jv-bc.png';
+import cgM from '../images/projectcards/cg-bc.png';
+
+import suiC from '../images/projectcards/sui-c.png';
+import ngC from '../images/projectcards/ng-c.png';
+import amazonC from '../images/projectcards/amazon-c.png';
+import pepiC from '../images/projectcards/pepi-c.png';
+import maryC from '../images/projectcards/mary-c.png';
+import jazelC from '../images/projectcards/jazel-c.png';
+import sdC from '../images/projectcards/sd-c.png';
+
+import suibg from '../images/projectcards/sui-bg3.png';
+import ngbg from '../images/projectcards/ng-bg.jpg';
+import amazonbg from '../images/projectcards/amazon-bg.png';
+import pepibg from '../images/projectcards/pepi-bg.jpg';
+import marybg from '../images/projectcards/mary-bg2.png';
+import jazelbg from '../images/projectcards/jazelbites-bg.png';
+import sdbg from '../images/projectcards/sd-bg.jpg';
+import jvbg from '../images/projectcards/jv-bg.jpg';
+import cgbg from '../images/projectcards/cg-bg.jpg';
+
+import suiT from '../images/projectcards/sui-t.png';
+import ngT from '../images/projectcards/ng-t.png';
+import amazonT from '../images/projectcards/amazon-t.png';
+import pepiT from '../images/projectcards/pepi-t.png';
+import maryT from '../images/projectcards/mary-t.png';
+import jazelT from '../images/projectcards/jazel-t.png';
+import sdT from '../images/projectcards/sd-t.png';
+import jvT from '../images/projectcards/jv-t.png';
+import cgT from '../images/projectcards/cg-t.png';
+
+
 // TECH images
 
 import landing from '../images/projects/sui/landing.png';
@@ -43,75 +84,144 @@ import npm from '../images/projects/sui/npm.png';
 export const PROJECTS = [
     {
         id: 'sui',
+        idTag: 'sui',
         title: "SUI",
         color: "white",
         bgcolor: "#222121",
         icon: sui,
-        iconhover: suiColor
+        iconhover: suiColor,
+        cardcolor: "#3CB7E6",
+        mockup: suiM,
+        mwidth: "60%",
+        right: true,
+        content: suiC,
+        cardbg: suibg,
+        cardtitle: suiT
     },
     {
         id: 'nextgen',
+        idTag: 'ng',
         title: "NextGen Edu.",
         color: "white",
         bgcolor: "#DE5C5C",
         icon: next,
-        iconhover: nextColor
+        iconhover: nextColor,
+        cardcolor: "#272727",
+        mockup: ngM,
+        mwidth: "43%",
+        content: ngC,
+        cardbg: ngbg,
+        cardtitle: ngT
     },
     {
         id: 'amazonclone',
+        idTag: 'amazon',
         title: 'Amazon Clone',
         color: "black",
         bgcolor: "#E5BA78",
         icon: amazonclone,
-        iconhover: amazoncloneColor
+        iconhover: amazoncloneColor,
+        cardcolor: "#202F3F",
+        mockup: amazonM,
+        mwidth: "57%",
+        right: true,
+        content: amazonC,
+        cardbg: amazonbg,
+        cardtitle: amazonT
+
     },
     {
         id: 'pepi',
+        idTag: 'pepi',
         title: "Pepi's Techsuit",
         color: "black",
         bgcolor: "#F5D1FF",
         icon: pepi,
-        iconhover: pepiColor
+        iconhover: pepiColor,
+        cardcolor: "#00C0D8",
+        squarecard: true,
+        mockup: pepiM,
+        content: pepiC,
+        cardbg: pepibg,
+        cardtitle: pepiT
     },
     {
         id: 'maryrevs',
+        idTag: 'mary',
         title: "Mary Revs",
         color: "white",
         bgcolor: "#FF99D2",
         icon: mary,
-        iconhover: maryColor
+        iconhover: maryColor,
+        cardcolor: "#FF99D2",
+        squarecard: true,
+        mockup: maryM,
+        mwidth: "50%",
+        right: true,
+        content: maryC,
+        cardbg: marybg,
+        cardtitle: maryT
     },
     {
         id: 'jazelbites',
+        idTag: 'jazel',
         title: "Jazel Bites",
         color: "white",
         bgcolor: "#FF5D5D",
         icon: jazelbites,
-        iconhover: jazelbitesColor
+        iconhover: jazelbitesColor,
+        cardcolor: "#FF5D5D",
+        mockup: jazelM,
+        mwidth: "55%",
+        content: jazelC,
+        cardbg: jazelbg,
+        cardtitle: jazelT
     },
     {
         id: 'sounddistrict',
+        idTag: 'sd',
         title: "Sound District",
         color: "white",
         bgcolor: "#222121",
         icon: sound,
-        iconhover: soundColor
+        iconhover: soundColor,
+        cardcolor: "#121212",
+        mockup: sdM,
+        mwidth: "48%",
+        right: true,
+        content: sdC,
+        cardbg: sdbg,
+        cardtitle: sdT
     },
     {
         id: 'jv',
+        idTag: 'jv',
         title: "JV The Barber",
         color: "white",
         bgcolor: "black",
         icon: jv,
-        iconhover: jvColor
+        iconhover: jvColor,
+        cardcolor: "#F4F4F4",
+        squarecard: true,
+        mockup: jvM,
+        mwidth: "80%",
+        cardbg: jvbg,
+        cardtitle: jvT
     },
     {
         id: 'cg',
+        idTag: 'cg',
         title: "Christopher Gonzales",
         color: "black",
         bgcolor: "#EEEEEE",
         icon: cg,
-        iconhover: cg
+        iconhover: cg,
+        cardcolor: "#F4F4F4",
+        squarecard: true,
+        mockup: cgM,
+        mwidth: "80%",
+        cardbg: cgbg,
+        cardtitle: cgT
     }
 ]
 

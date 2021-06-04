@@ -717,4 +717,282 @@
     display: block;
   }
 }
+
+.projects-container {
+  padding-top: 180px;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.projects-container h1 {
+  margin-bottom: 100px;
+}
+
+.projects-split-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectcard-wrapper img {
+  max-width: 100%;
+}
+
+.projectcard-container {
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-size: cover;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .projectcard-container {
+    height: 30vw;
+  }
+}
+
+.projectcard-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  opacity: 0;
+  -webkit-transition: 0.17s ease-in-out;
+  transition: 0.17s ease-in-out;
+  background-size: cover;
+}
+
+.projectcard-bg:hover {
+  opacity: 0.15;
+}
+
+.projectcard-content-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.content-order {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#suiC {
+  width: 300px;
+}
+
+#ngC {
+  width: 300px;
+}
+
+#amazonC {
+  width: 350px;
+}
+
+#pepiC {
+  width: 160px;
+  position: absolute;
+  left: 40px;
+  top: 15%;
+}
+
+#maryC {
+  width: 200px;
+}
+
+#jazelC {
+  width: 250px;
+}
+
+#sdC {
+  width: 70px;
+}
+
+.projectcard-mockup-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.projectcard-mockup-container img {
+  margin-top: -60px;
+}
+
+#pepiM {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+}
+
+#jvM {
+  width: 60%;
+  margin-top: 0;
+}
+
+#cgM {
+  width: 30%;
+  margin-top: 0;
+}
+
+.projectcard-title-container {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 30px;
+  margin-bottom: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-arrow {
+  margin-left: 20px;
+  width: 15px;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+
+.projectcard-container:hover + .projectcard-title-container .card-arrow {
+  margin-left: 25px;
+}
+
+#suiT {
+  width: 60px;
+}
+
+#ngT {
+  width: 100px;
+}
+
+#amazonT {
+  width: 200px;
+}
+
+#pepiT {
+  width: 130px;
+}
+
+#maryT {
+  width: 150px;
+}
+
+#jazelT {
+  width: 160px;
+}
+
+#sdT {
+  width: 240px;
+}
+
+#jvT {
+  width: 200px;
+}
+
+#cgT {
+  width: 250px;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-split-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .projectcard-wrapper {
+    width: 100% !important;
+  }
+  #pepiM {
+    width: 46%;
+  }
+  #maryM {
+    width: 50%;
+  }
+  #jvM {
+    width: 35%;
+  }
+  #cgM {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .projectcard-container {
+    height: 48vw;
+  }
+  .projectcard-content-container {
+    display: none;
+  }
+  .projectcard-mockup-container {
+    width: unset !important;
+  }
+  .projectcard-mockup-container img {
+    margin-top: -7vw;
+  }
+  .projectcard-title-container {
+    margin-bottom: 100px;
+    -webkit-transform-origin: left center;
+            transform-origin: left center;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  #ngM {
+    width: 68%;
+  }
+  #amazonM {
+    width: 95%;
+  }
+  #pepiM {
+    width: 75%;
+  }
+  #maryM {
+    width: 40%;
+  }
+  #jazelM {
+    width: 90%;
+  }
+  #sdM {
+    width: 75%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

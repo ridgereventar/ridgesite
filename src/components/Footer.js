@@ -23,7 +23,9 @@ const Footer = () => {
                             </NavLink>
                         </li>
                         <li>
-                            Projects
+                            <NavLink to="/projects">
+                                Projects
+                            </NavLink>
                         </li>
                         <li>
                             <NavLink to="/contact">
@@ -34,7 +36,9 @@ const Footer = () => {
                 </div>
                 <div className="footer-links">
                     <Socials/>
-                    <img src={logo} alt=""></img>
+                    <NavLink to="/">
+                        <img src={logo} alt=""></img>
+                    </NavLink>
                 </div>
                 
             </div>

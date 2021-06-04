@@ -74,8 +74,9 @@
 
 .mac-mockup {
     z-index: 1;
-    // background-color: red;
+    pointer-events: none;
 }
+
 
 .mobile-mockup {
     margin-left: -10%;
@@ -148,7 +149,7 @@
         position: unset;
     }
     .hero-mockup {
-        bottom: 0;
+        bottom: 15px;
         top: unset;
     }
 }
@@ -168,6 +169,7 @@
 
 .bg-intro {
     height: max-content;
+    margin-top: 20px;
     margin-bottom: 150px;
     @include displayFlex(row, space-between, flex-start);
     // background-color: black;
@@ -194,31 +196,26 @@
     .bg-intro {
         flex-direction: column;
         align-items: flex-end;
+        margin-top: 80px;
+        margin-bottom: 100px;
     }
     .bg-intro-p {
         max-width: unset;
         order: 2;
     }
     .bg-intro-anim {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: -125px;
-        margin-bottom: 50px;
+        display: none;
+        // margin-left: 0;
+        // margin-right: 0;
+        // margin-top: -160px;
+        // margin-bottom: 50px;
     }
-    .dev-anim {
-        width: unset;
-        max-width: 500px;
-    }
+    // .dev-anim {
+    //     width: unset;
+    //     max-width: 400px;
+    // }
 }
 
-@media screen and (max-width: 600px) {
-    .bg-intro-anim {
-        margin-top: -70px;
-    }
-    .dev-anim {
-        transform: scaleX(-1);
-    }
-}
 
 .bg-logo {
     width: 40px;
@@ -231,7 +228,6 @@
 .tools-section { 
     max-width: 770px;   
     @include displayFlex(row, space-between, flex-start);
-    margin-bottom: 150px;
     // background-color: aquamarine; 
 }
 
@@ -256,7 +252,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .tools-section {
         flex-direction: column;
     }
@@ -266,7 +262,10 @@
         justify-content: flex-start;
         align-items: center;
         text-align: left;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        .tool-icon-wrapper {
+            margin-bottom: 0px;
+        }
         .tool-icon {
             width: 100px;
             min-width: 100px;
@@ -280,6 +279,7 @@
             display: none;
         }
         .tools-inline {
+            margin: 0;
             display: block;
         }
     }
@@ -289,9 +289,16 @@
 // Projects Section
 
 .projects-title {
+    margin-top: 150px;
     h1 {
         margin: 50px 0;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projects-title {
+        margin-top: 100px;
     }
 }
 

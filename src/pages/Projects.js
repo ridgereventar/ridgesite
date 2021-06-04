@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 
 import '../styles/styles.css';
 
@@ -9,6 +9,14 @@ import ProjectCard from '../components/ProjectCard';
 import {PROJECTS} from '../helpers/constants';
 
 function Projects() {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
+    }, [])
+
     return (
         <div>
             <Nav defaultNav={true}/>

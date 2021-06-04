@@ -61,11 +61,11 @@ const NavMobile = (props) => {
         setShowBurgerSlider(!showBurgerSlider);
     }
 
-    const [toggleMiniProjSlider, setToggleMiniProjSlider] = useState(false);
+    // const [toggleMiniProjSlider, setToggleMiniProjSlider] = useState(false);
     
-    const toggleMiniProj = () => {
-        setToggleMiniProjSlider(!toggleMiniProjSlider);
-    }
+    // const toggleMiniProj = () => {
+    //     setToggleMiniProjSlider(!toggleMiniProjSlider);
+    // }
 
     useEffect(() => {
         if(downToHide) {
@@ -84,11 +84,13 @@ const NavMobile = (props) => {
                         <h2>About</h2>
                     </NavLink>
 
-                    <h2 onClick={toggleMiniProj}>Projects</h2>
+                    <NavLink to="/projects">
+                        <h2>Projects</h2>
+                    </NavLink>
 
-                    {toggleMiniProjSlider?
+                    {/* {toggleMiniProjSlider?
                         <ProjectSlider></ProjectSlider>
-                    : null}
+                    : null} */}
 
                     <NavLink to="/contact">
                         <h2>Contact</h2>
@@ -139,7 +141,7 @@ const NavDesktop = (props) => {
     return (
 
         <>
-            <div className="slider proj-slider" style={showProjSlider? {top: "0"} : {top: "-200px"}}>
+            <div className="slider proj-slider" onMouseLeave={toggleProjSlider} style={showProjSlider? {top: "0"} : {top: "-200px"}}>
                 <ProjectSlider/>
             </div>
 
@@ -156,7 +158,9 @@ const NavDesktop = (props) => {
                         <li className="nav-link">About</li>
                     </NavLink>
 
-                    <li className="nav-link" onClick={toggleProjSlider}>Projects</li>
+                    <NavLink to="/projects">
+                        <li className="nav-link" onMouseEnter={toggleProjSlider}>Projects</li>
+                    </NavLink>
 
                     <NavLink to="/contact">
                         <li className="nav-link">Contact</li>

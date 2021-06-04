@@ -50,13 +50,19 @@ function Amazon() {
             <div className="visit-container">
                 <div className="visit-slant-bg"></div>
                 <div className="container visit-content">
-                    <button className="grey-btn">Visit Site</button>
-                    <div className="visit-mac-wrapper">
-                       <img id="darkmacVisit" src={darkmac} alt=""/>
-                       <div className="visit-mac-screen">
-                            <video src={demo} playsInline autoPlay loop muted/>
-                       </div>
-                    </div>
+                    <Fade>
+                        <a href="https://clone-d6432.web.app/" target="_blank" rel="noreferrer">
+                            <button className="grey-btn">Visit Site</button>
+                        </a>
+                    </Fade>
+                    <Fade bottom>
+                        <div className="visit-mac-wrapper">
+                        <img id="darkmacVisit" src={darkmac} alt=""/>
+                        <div className="visit-mac-screen">
+                                <video src={demo} playsInline autoPlay loop muted/>
+                        </div>
+                        </div>
+                    </Fade>
                 </div>
             </div>
 

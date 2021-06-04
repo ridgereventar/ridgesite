@@ -39,7 +39,7 @@ const Jv = () => {
             <div className="container breakdown">
                 <div className="breakdown-1">
                     <h2>Deliverables</h2>
-                    <p>Responsive Website <br/> Brand Identity <br/> Placeholder</p>
+                    <p>Logo Design <br/> Personal Brand Identity <br/> Merchandise</p>
                 </div>
                 <div className="breakdown-2">
                     <h2>Goals</h2>

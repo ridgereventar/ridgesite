@@ -42,7 +42,7 @@ const Sounddistrict = () => {
             <div className="container breakdown">
                 <div className="breakdown-1">
                     <h2>Deliverables</h2>
-                    <p>Responsive Website <br/> Brand Identity <br/> Placeholder</p>
+                    <p>Logo Design <br/> Brand Identity <br/> Promotional Flyers <br/> Social Media Posts</p>
                 </div>
                 <div className="breakdown-2">
                     <h2>Goals</h2>

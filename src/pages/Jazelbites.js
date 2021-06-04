@@ -58,7 +58,7 @@ const Jazelbites = () => {
                 </div>
                 <div className="breakdown-2">
                     <h2>Goals</h2>
-                    <p>Creating a tool to assist the early stages of both design and development. When beginning a new project one of the best ways to establish a solid foundation for consistency down the road is through the use of a style guide. The goal of SUi is to allow users to easily generate their own custom style guides and UI components through one seamless interface.</p>
+                    <p>The goal of this project was to create a branding that was simplistic, minimalist, and fun to look at. A strong colour palette was important to the brand in order to catch eyes and make a lasting impression. The itself should encapsulate the business as a whole. “J” for the owners name, and a symbol to represent the yummy desserts she has to offer. </p>
                 </div>
             </div>
 

@@ -134,7 +134,9 @@ const Nextgen = () => {
             <div className="visit-site">
                 <video id="ngDemo" src={demo} playsInline autoPlay loop muted>
                 </video>
-                <button className="visit-btn">Visit Site</button>
+                <a href="https://www.nextgenbarbers.ca/" target="_blank" rel="noreferrer">
+                    <button className="visit-btn">Visit Site</button>
+                </a>
             </div>
 
             <ProjectGrid/>

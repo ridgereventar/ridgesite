@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom';
 
 import '../styles/styles.css';
 import logo from '../images/Rlogo.png';
+import Socials from './Socials';
 
 const Footer = () => {
 
@@ -32,12 +33,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="footer-links">
-                    <div className="socials">
-                        <div id="mail" className="social-icon"></div>
-                        <div id="ig" className="social-icon"></div>
-                        <div id="linked" className="social-icon"></div>
-                        <div id="git" className="social-icon"></div>
-                    </div>
+                    <Socials/>
                     <img src={logo} alt=""></img>
                 </div>
                 

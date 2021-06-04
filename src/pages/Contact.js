@@ -8,6 +8,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 import {fullAnim, fullAnimCenter} from '../helpers/anims';
+import Socials from '../components/Socials';
 
 
 const Contact = (props) => {
@@ -28,12 +29,7 @@ const Contact = (props) => {
                     <div>
                         <Fade left>
                             <h1>Get in touch</h1>
-                            <div className="socials">
-                                <div id="mail" className="social-icon"></div>
-                                <div id="ig" className="social-icon"></div>
-                                <div id="linked" className="social-icon"></div>
-                                <div id="git" className="social-icon"></div>
-                            </div>
+                            <Socials/>
                         </Fade>
                     </div>
                     <Lottie

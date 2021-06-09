@@ -1,7 +1,7 @@
 .dev-section {
     height: max-content;
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     /* background-color: gray; */
 }
 
@@ -81,6 +81,9 @@
 }
 
 @media screen and (max-width: 992px) {
+    .tech-trigger {
+        display: none;
+    }
     .screen-wrapper {
         display: none;
     }

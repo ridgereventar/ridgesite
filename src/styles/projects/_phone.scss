@@ -3,9 +3,10 @@
     @include displayFlex(row, flex-start, center);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .phone-container {
-        margin-top: 120px;
+        zoom: 0.7;
+        margin-bottom: 200px;
     }
 }
 

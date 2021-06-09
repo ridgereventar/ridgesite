@@ -57,10 +57,10 @@ function Amazon() {
                     </Fade>
                     <Fade bottom>
                         <div className="visit-mac-wrapper">
-                        <img id="darkmacVisit" src={darkmac} alt=""/>
-                        <div className="visit-mac-screen">
-                                <video src={demo} playsInline autoPlay loop muted/>
-                        </div>
+                            <img id="darkmacVisit" src={darkmac} alt=""/>
+                            <div className="visit-mac-screen">
+                                    <video src={demo} playsInline autoPlay loop muted/>
+                            </div>
                         </div>
                     </Fade>
                 </div>

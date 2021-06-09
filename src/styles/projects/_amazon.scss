@@ -22,15 +22,11 @@
 
 .visit-mac-wrapper {
     height: max-content;
-    width: max-content;
+    max-width: 900px;
     // background-color: red;
     position: relative;
     margin-right: -80px;
     margin-top: -50px;
-}
-
-#darkmacVisit {
-    width: 900px;
 }
 
 .visit-mac-screen {
@@ -39,8 +35,25 @@
     background-color: rgb(234, 237, 237);
     position: absolute;
     margin: auto auto;
-    top: -20px;
+    top: -2vw;
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .visit-container {
+        margin-top: $marginBottomLg;
+    }
+    .visit-content {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .visit-mac-wrapper {
+        order: 1;
+        max-width: 600px;
+        margin-right: 0;
+        margin-top: 50px;
+
+    }
 }

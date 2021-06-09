@@ -94,7 +94,7 @@ const Pepi = () => {
                 </Fade>
             </div>
 
-            <div className="grey-bg">
+            <div className="grey-bg pepi-grey-section">
                 <div className="container pepi-brand-container">
                     <Fade left>
                         <img className="suit" src={techsuit} alt=""/>

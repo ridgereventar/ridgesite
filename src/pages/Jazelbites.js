@@ -91,32 +91,33 @@ const Jazelbites = () => {
                 <span className="light-header light-list">Animation  &nbsp;&nbsp; | &nbsp;&nbsp; Instagram  &nbsp;&nbsp; | &nbsp;&nbsp; Business Cards</span>
             </div>
 
+            <div className="deliverables-container">
+                <div className="red-bg">
+                    <div className="container">
 
-            <div className="red-bg">
-                <div className="container">
-
-                        <div className="ipad-section">
-                            <div className="ipad-wrapper">
-                                <img id="jbIpad" src={ipad} alt=""/>
-                                <Lottie
-                                    className="jazelbites-anim"
-                                    options={jazelBitesAnim}
-                                    playingState='play'/>
+                            <div className="ipad-section">
+                                <div className="ipad-wrapper">
+                                    <img id="jbIpad" src={ipad} alt=""/>
+                                    <Lottie
+                                        className="jazelbites-anim"
+                                        options={jazelBitesAnim}
+                                        playingState='play'/>
+                                </div>
                             </div>
-                        </div>
 
-                        <Phone 
-                            right={false}
-                            shell={phone}
-                            slide={post}/>        
-                        <div className="bc-container bc-container-right">
-                            <img className="jazelbites-card-right" src={bc1} alt=""/>
-                            <img  className="jazelbites-card-right"src={bc2} alt=""/>
-                        </div>
-                        <div className="bc-container">
-                            <img  className="jazelbites-card-left" src={ty1} alt=""/>
-                            <img  className="jazelbites-card-left" src={ty2} alt=""/>
-                        </div>
+                            <Phone 
+                                right={false}
+                                shell={phone}
+                                slide={post}/>        
+                            <div className="bc-container bc-container-right">
+                                <img className="jazelbites-card-right" src={bc1} alt=""/>
+                                <img  className="jazelbites-card-right"src={bc2} alt=""/>
+                            </div>
+                            <div className="bc-container">
+                                <img  className="jazelbites-card-left" src={ty1} alt=""/>
+                                <img  className="jazelbites-card-left" src={ty2} alt=""/>
+                            </div>
+                    </div>
                 </div>
             </div>
 

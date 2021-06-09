@@ -20,6 +20,7 @@ $marginBottomXLg: 200px;
 
 img, video {
     max-width: 100%;
+    object-fit: contain;
 }
 
 .light-header {
@@ -30,7 +31,7 @@ img, video {
 .light-list {
     display: block;
     margin-top: 0;
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 }
 
 .white-gradient {
@@ -51,7 +52,7 @@ img, video {
 
 .grey-bg {
     background-color: $lightGreyBg;
-    margin-bottom: $marginBottomSm;
+    margin-bottom: $marginBottomXLg;
     padding-top: 50px;
     padding-bottom: 50px;
 }

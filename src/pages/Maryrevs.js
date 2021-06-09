@@ -88,23 +88,26 @@ const Maryrevs = () => {
             </div>
 
 
-            <div className="pink-bg">
-                <div className="container">
-                    <Fade>
-                        <Phone 
-                            right={true}
-                            shell={phone}
-                            slide={sushi}/>                    
-                        <Phone 
-                            right={false}
-                            shell={phone}
-                            slide={mango}/>
-                        <div className="ig-post-container">
-                            <img id="maryrevsIg2" src={ig2} alt=""/>
-                            <img id="maryrevsIg1" src={ig1} alt=""/>
-                        </div>
-                    </Fade>
+            <div className="deliverables-container">
+                <div className="pink-bg">
+                    <div className="container">
+                        <Fade>
+                            <Phone 
+                                right={true}
+                                shell={phone}
+                                slide={sushi}/>                    
+                            <Phone 
+                                right={false}
+                                shell={phone}
+                                slide={mango}/>
+                            <div className="ig-post-container">
+                                <img id="maryrevsIg2" src={ig2} alt=""/>
+                                <img id="maryrevsIg1" src={ig1} alt=""/>
+                            </div>
+                        </Fade>
+                    </div>                     
                 </div>
+
             </div>
 
             <ProjectGrid/>

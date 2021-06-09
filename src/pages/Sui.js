@@ -40,7 +40,6 @@ const Sui = () => {
             <div className="container proj-hero">
                 <Fade>
                     <img id="suiHeroTitle" src={suiLogo} alt=""/>
-                    <p>A Style Guide & Ui Component Generator</p>
                 </Fade>
             </div>
 

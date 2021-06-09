@@ -166,7 +166,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 180px;
 }
 
 .hero-slant {
@@ -219,24 +219,18 @@
 .dev-anim2 {
   position: absolute;
   right: 0;
-  top: 180px;
-  max-width: 650px;
+  top: 200px;
+  max-width: 550px;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   z-index: -1;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 1100px) {
   .hero-mockup2 {
     max-width: 85vw;
     right: -280px;
-  }
-  .dev-anim2 {
-    max-width: 60vw;
-  }
-  .hero2 {
-    margin-bottom: 13vw;
   }
 }
 
@@ -252,10 +246,10 @@
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
   .hero-slant {
-    height: 71%;
+    height: 65%;
   }
   .hero-content {
     -webkit-box-orient: vertical;
@@ -273,7 +267,7 @@
     position: unset;
     max-width: 100%;
     margin-right: -20px;
-    margin-top: -10px;
+    margin-top: 50px;
   }
   .dev-anim2 {
     position: unset;

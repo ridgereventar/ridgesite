@@ -58,10 +58,10 @@ const About = (props) => {
                                         <NavLink className="about-proj-link" to="/sounddistrict"> Sound District</NavLink> &nbsp;&nbsp; | &nbsp;&nbsp; 
                                         <NavLink className="about-proj-link" to="/nextgen">Next Gen</NavLink>&nbsp;&nbsp; | &nbsp;&nbsp; 
                                         <NavLink className="about-proj-link" to="/cg">Christopher Gonzales</NavLink> &nbsp;&nbsp; | &nbsp;&nbsp;  
-                                        <NavLink className="about-proj-link" to="/jazelbites">Jazelbites</NavLink> 
+                                        <NavLink className="about-proj-link" to="/jazelbites">Jazel bites</NavLink> 
                                     </li>
                                     <li>
-                                        Capable of a variety of design deliverables such as logos, brand concepts, business cards, marketing content, etc. 
+                                        Capable of producing a variety of design deliverables such as logos, brand concepts, business cards, marketing content, etc. 
                                     </li>
                                     <li>
                                         Further assisted businesses in maintaining and managing brand consistency through style guides and outlines. 

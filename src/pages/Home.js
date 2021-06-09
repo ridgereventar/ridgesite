@@ -1,26 +1,21 @@
 import React, {useState, useEffect} from 'react';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
+import { NavLink } from 'react-router-dom';
 
 import '../styles/styles.css';
 
 // components 
 import Nav from '../components/Nav';
 import Trigger from '../components/Trigger';
-import ProjectGrid from '../components/ProjectGrid';
 import Footer from '../components/Footer';
+import ProjectSection from '../components/ProjectSection';
 
 // anims
 import {lowfiAnim, desAnim, devAnim, motionAnim} from '../helpers/anims';
-import suiSample from '../images/demos/suiDemoFinal.mov';
-import ngphone from '../images/demos/nextgenmobile.mov';
 
 // images
-// import me from '../images/me.png';
-import darkmac from '../images/darkmac4.png';
-import darkphone from '../images/darkphone3.png';
-import { NavLink } from 'react-router-dom';
-
+import heromockup from '../images/heromockup2.png';
 
 const Home = (props) => {
 
@@ -31,7 +26,7 @@ const Home = (props) => {
         }
     }, [])
 
-    const [playBgAnim, setPlayBgAnim] = useState(false);
+
     const [playDesIcon, setPlayDesIcon] = useState(false);
     const [playDevIcon, setPlayDevIcon] = useState(false);
     const [playMotIcon, setPlayMotIcon] = useState(false);
@@ -44,163 +39,107 @@ const Home = (props) => {
 
     return (
         <>
+            <Nav defaultNav={true}/>
 
-            <Nav defaultNav={false}/>
+                <div className="hero2">
+                    <div className="hero-slant"/>
 
-            <div className="home">
+                    <div className="container hero-content">
+                        <div className="hero-intro">
+                            <h1>RIDGE REVENTAR</h1>
+                            <p>Front End Developer & Designer</p>
+                                <button className="site-btn">                                        
+                                    <NavLink to="/projects">
+                                        View my work
+                                    </NavLink>
+                                </button> 
+                        </div>
+                        <div className="hero-mockup2">
+                            <img src={heromockup} alt=""></img>
+                        </div>
 
-                <div className="hero">
-                    <div className="dg-slant"/>
-                    <div className="container hero-wrapper">
-
-                        <Fade left>
-                            <div className="hero-intro">
-                                <h1>RIDGE REVENTAR</h1>
-                                <p>Front End Developer & Designer</p>
-                                    <button className="site-btn">                                        
-                                        <NavLink to="/projects">
-                                            View my work
-                                        </NavLink>
-                                    </button> 
-                            </div>
-                        </Fade>
-                   
-                        <Fade right>
-                            <div className="hero-mockup">
-                                <div className="mockup-wrapper mac-mockup">
-                                    <div className="mockup-demo mac-demo">
-                                        <video src={suiSample} type="video/mp4" playsInline autoPlay loop muted></video>
-                                    </div>
-                                    <img id="darkMac" src={darkmac} alt=""/>
-                                </div>
-                                <div className="mockup-wrapper mobile-mockup">
-                                    <img id="darkPhone" src={darkphone} alt=""/>
-                                    <div className="mockup-demo phone-demo">
-                                        <video src={ngphone} type="video/mp4" playsInline autoPlay loop muted></video>
-                                    </div>
-                                </div>
-                            </div>
-                        </Fade>
-                        
+                        <Lottie
+                            className="dev-anim2"
+                            options={lowfiAnim}
+                            playingState='play'/>
                     </div>
+                  
+
                 </div>
 
+            <div className="container intro2">
+                <h1 className="section-title">QUALITY & GROWTH</h1>
+                <p>
+                    Through 7 years experience of free lance design I expanded my passion into web development. 
+                    From front end sites to full stack applications, I utilize my design experience and technology capabilities to bring visions to life.
+                    I continue to expand my skills and grow my toolset to ensure my applications meet the current requirements of high level development. 
+                </p>
+            </div>
 
-                <div className="container bg-intro">
-                    <Fade>
-                        <div className="bg-intro-p">
-                            <Trigger onEnterViewport={() => setPlayBgAnim(true)}/>
-                            <h1 className="section-title">QUALITY & GROWTH</h1>
-                            <p>
-                                Through 7 years experience of free lance design I expanded my passion into web development. 
-                                From front end sites to full stack applications, I utilize my design experience and technology capabilities to bring visions to life.
-                                I continue to expand my skills and grow my toolset to ensure my applications meet the current requirements of high level development. 
-                            </p>
-                        </div>
-                    </Fade>
-
-                    {playBgAnim?
-                        <div className="bg-intro-anim">
+            <div className="container tools-section">
+                <div className="tool-category">
+                    {playDesIcon? 
+                    <>
+                        <div className="tool-icon-wrapper"> 
                                 <Lottie
-                                    className="dev-anim"
-                                    options={lowfiAnim}
+                                    className="tool-icon"
+                                    options={desAnim}
+                                    playingState='play'/> 
+                        </div>
+                        <Fade bottom>
+                            <div>
+                                <h1>DESIGN</h1>
+                                <p className="tools-stacked">Sketch <br/> Figma <br/> Illustrator</p>
+                                <p className="tools-inline">Sketch, Figma, Illustrator</p>                                
+                            </div>
+                        </Fade>
+                    </>
+                    :null}
+                </div>
+
+                <div className="tool-category">
+                    {playDevIcon?
+                    <>
+                        <div className="tool-icon-wrapper"> 
+                                <Lottie
+                                    className="tool-icon"
+                                    options={devAnim}
                                     playingState='play'/>
                         </div>
-                    : null}
-                </div> 
-
-
-                <div className="container tools-section">
-                    <div className="tool-category">
-                        {playDesIcon? 
-                        <>
-                            <div className="tool-icon-wrapper"> 
-                                    <Lottie
-                                        className="tool-icon"
-                                        options={desAnim}
-                                        playingState='play'/> 
+                        <Fade bottom>
+                            <div>
+                                <h1>DEVELOPMENT</h1>
+                                <p className="tools-stacked">JavaScript <br/> HTML / CSS <br/> React <br/> Node.js <br/> Express <br/> MongoDB</p>
+                                <p className="tools-inline">JavaScript, HTML / CSS, React, Node.js, Express, MongoDB</p>
                             </div>
-                            <Fade bottom>
-                                <div>
-                                    <h1>DESIGN</h1>
-                                    <p className="tools-stacked">Sketch <br/> Figma <br/> Illustrator</p>
-                                    <p className="tools-inline">Sketch, Figma, Illustrator</p>                                
-                                </div>
-                            </Fade>
-                        </>
-                        :null}
-                    </div>
-
-                    <div className="tool-category">
-                        {playDevIcon?
-                        <>
-                            <div className="tool-icon-wrapper"> 
-                                    <Lottie
-                                        className="tool-icon"
-                                        options={devAnim}
-                                        playingState='play'/>
-                            </div>
-                            <Fade bottom>
-                                <div>
-                                    <h1>DEVELOPMENT</h1>
-                                    <p className="tools-stacked">JavaScript <br/> HTML / CSS <br/> React <br/> Node.js <br/> Express <br/> MongoDB</p>
-                                    <p className="tools-inline">JavaScript, HTML / CSS, React, Node.js, Express, MongoDB</p>
-                                </div>
-                            </Fade>
-                        </>
-                        : null }
-                    </div>
-
-                    <div className="tool-category">
-                        {playMotIcon?
-                        <>
-                            <div className="tool-icon-wrapper"> 
-                                    <Lottie
-                                        className="tool-icon"
-                                        options={motionAnim}
-                                        playingState='play'/>
-                            </div>
-                            <Fade bottom>
-                                <div>
-                                    <h1>MOTION</h1>
-                                    <p className="tools-stacked">After Effects <br/> Bodymovin <br/> AEUX</p>
-                                    <p className="tools-inline">After Effects, Bodymovin, AEUX</p>
-                                </div>
-                            </Fade>
-                        </>
-                        : null}
-                    </div>
-                </div>  
-                <Trigger onEnterViewport={() => playIcons()}/>
-
-
-                <div className="container projects-title">
-                    <h1 className="section-title">PROJECTS</h1>
+                        </Fade>
+                    </>
+                    : null }
                 </div>
-            
-            </div>
-            
-            <div className="home2">
 
-                <ProjectGrid/>
-
-                {/* <div className="container home-about">
-                    <Fade>
-                        <div>
-                            <p>I inspire to bring visions to life through visual graphics and full stack applications</p>
-                            <button className="site-btn">About Me</button> 
-                            <button className="site-btn">Get In Touch</button> 
+                <div className="tool-category">
+                    {playMotIcon?
+                    <>
+                        <div className="tool-icon-wrapper"> 
+                                <Lottie
+                                    className="tool-icon"
+                                    options={motionAnim}
+                                    playingState='play'/>
                         </div>
-                    </Fade>
-                    <Fade right>
-                        <img src={me} alt=""/>
-                    </Fade>
-                </div> */}
-
-                <Footer/>
-
-            </div>
-
+                        <Fade bottom>
+                            <div>
+                                <h1>MOTION</h1>
+                                <p className="tools-stacked">After Effects <br/> Bodymovin <br/> AEUX</p>
+                                <p className="tools-inline">After Effects, Bodymovin, AEUX</p>
+                            </div>
+                        </Fade>
+                    </>
+                    : null}
+                </div>
+            </div>  
+            <Trigger onEnterViewport={() => playIcons()}/>
+            <ProjectSection/>
+            <Footer/>
         </>
     )
 }

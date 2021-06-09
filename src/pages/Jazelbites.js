@@ -58,7 +58,7 @@ const Jazelbites = () => {
                 </div>
                 <div className="breakdown-2">
                     <h2>Goals</h2>
-                    <p>The goal of this project was to create a branding that was simplistic, minimalist, and fun to look at. A strong colour palette was important to the brand in order to catch eyes and make a lasting impression. The itself should encapsulate the business as a whole. “J” for the owners name, and a symbol to represent the yummy desserts she has to offer. </p>
+                    <p>The goal of this project was to create a branding that was simplistic, minimalist, and fun to look at. A strong colour palette was important to the brand in order to catch eyes and make a lasting impression. The logo itself should encapsulate the business as a whole. “J” for the owner's name, and a symbol to represent the yummy desserts she has to offer. </p>
                 </div>
             </div>
 

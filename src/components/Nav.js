@@ -26,18 +26,20 @@ const Nav = (props) => {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
                 setDownToHide(false);
-            } else {
-                setDownToHide(true);
+            } else { 
+                if(isAtTop && currentScrollPos > 100) {
+                    setDownToHide(true);
+                } 
             }
             prevScrollpos = currentScrollPos;
-            if ( window.pageYOffset === 0) {
+            if ( window.pageYOffset < 100) {
                 setIsAtTop(true);
             } 
             if (window.pageYOffset > 200) {
                 setIsAtTop(false);
             }
         }
-    }, []);
+    });
     
     const navClassName = `nav-wrapper ${isAtTop ? 'nav-wrapper--no-bg' : ''} ${downToHide ? 'nav-wrapper--hidden' : ''}`;
     
@@ -101,7 +103,7 @@ const NavMobile = (props) => {
             <div className={`container navbar navbar-mobile ${isDarkTheme ? "dark" : "light"}`}>
                 <NavLink to="/">
                     <Fade>
-                        <img id="navLogo" src={isDarkTheme? logolight : logodark} alt=""></img> 
+                        <img id="navLogo" className={`${isDarkTheme? "invert" : ""}`}src={logodark} alt=""></img> 
                     </Fade>
                 </NavLink>
 

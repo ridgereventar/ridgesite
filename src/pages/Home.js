@@ -26,7 +26,7 @@ const Home = (props) => {
         }
     }, [])
 
-
+    const [playBgAnim, setPlayBgAnim] = useState(false);
     const [playDesIcon, setPlayDesIcon] = useState(false);
     const [playDevIcon, setPlayDevIcon] = useState(false);
     const [playMotIcon, setPlayMotIcon] = useState(false);
@@ -41,10 +41,11 @@ const Home = (props) => {
         <>
             <Nav defaultNav={true}/>
 
-                <div className="hero2">
-                    <div className="hero-slant"/>
+            <div className="hero2">
+                <div className="hero-slant"/>
 
-                    <div className="container hero-content">
+                <div className="container hero-content">
+                    <Fade left>
                         <div className="hero-intro">
                             <h1>RIDGE REVENTAR</h1>
                             <p>Front End Developer & Designer</p>
@@ -54,26 +55,32 @@ const Home = (props) => {
                                     </NavLink>
                                 </button> 
                         </div>
+                    </Fade>
+                    <Fade right>
                         <div className="hero-mockup2">
                             <img src={heromockup} alt=""></img>
                         </div>
+                    </Fade>
 
+                    {playBgAnim?
                         <Lottie
                             className="dev-anim2"
                             options={lowfiAnim}
                             playingState='play'/>
-                    </div>
-                  
-
+                    : null}
                 </div>
+            </div>
+            <Trigger onEnterViewport={() => setPlayBgAnim(true)}/>
 
             <div className="container intro2">
-                <h1 className="section-title">QUALITY & GROWTH</h1>
-                <p>
-                    Through 7 years experience of free lance design I expanded my passion into web development. 
-                    From front end sites to full stack applications, I utilize my design experience and technology capabilities to bring visions to life.
-                    I continue to expand my skills and grow my toolset to ensure my applications meet the current requirements of high level development. 
-                </p>
+                <Fade>
+                    <h1 className="section-title">QUALITY & GROWTH</h1>
+                    <p>
+                        Through 7 years experience of free lance design I expanded my passion into web development. 
+                        From front end sites to full stack applications, I utilize my design experience and technology capabilities to bring visions to life.
+                        I continue to expand my skills and grow my toolset to ensure my applications meet the current requirements of high level development. 
+                    </p>
+                </Fade>
             </div>
 
             <div className="container tools-section">

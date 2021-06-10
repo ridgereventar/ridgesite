@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
-import ReactPlayer from 'react-player';
 
 import '../styles/projects/projects.css';
 
@@ -31,11 +30,6 @@ const Sui = () => {
             window.scrollTo(0, 0);
         }
     }, [])
-
-    const playBtn = () => {
-        var vid = document.getElementById("video");
-        vid.play();
-    }
 
     return (
         <React.Fragment>

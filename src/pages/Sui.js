@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import Lottie from 'lottie-web-react';
 import { Fade } from "react-reveal";
+import ReactPlayer from 'react-player';
 
 import '../styles/projects/projects.css';
 
@@ -15,13 +16,12 @@ import suiLogo from "../images/projects/sui/sui.png";
 import {suiAnim} from '../helpers/anims';
 import lowfis from '../images/projects/sui/lowfis.png';
 import {TECH_BLOBS} from '../helpers/constants';
-import demo from '../images/demos/SUidemoS.mov';
+import video from '../images/demos/suidemoUpdate.mov';
 
 import suibreakdown from '../images/projects/sui/suibreakdown.png';
 import suipalette from '../images/projects/sui/suipalette.png';
 import suistyle from '../images/projects/sui/suistyle.png';
 import suihifi from '../images/projects/sui/suihifi2.png';
-
 
 const Sui = () => {
 
@@ -31,6 +31,11 @@ const Sui = () => {
             window.scrollTo(0, 0);
         }
     }, [])
+
+    const playBtn = () => {
+        var vid = document.getElementById("video");
+        vid.play();
+    }
 
     return (
         <React.Fragment>
@@ -126,7 +131,7 @@ const Sui = () => {
             <div className="demo-section">
                 <div className="container demo-container">
                     <h2>Demo</h2>
-                    <video src={demo} controls></video>
+                    <video src={video} playsInline controls loop muted/>
                 </div>
             </div>
 

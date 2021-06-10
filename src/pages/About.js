@@ -18,9 +18,9 @@ const About = (props) => {
 
     return (
         <>
-            <Nav defaultNav={false}/>
+            <Nav defaultNav={true}/>
             <div className="about-container">
-
+                {/* <div className="about-slant"/> */}
                 <div className="container about-header">
                     <Fade>
                         <h1>RIDGE REVENTAR</h1>

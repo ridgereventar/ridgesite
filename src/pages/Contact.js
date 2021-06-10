@@ -22,14 +22,15 @@ const Contact = (props) => {
 
     return (
         <>
-            <Nav defaultNav={false}/>
+            <Nav defaultNav={true}/>
 
             <div className="contact-container">
+                {/* <div className="hero-slant"/> */}
                 <div className="container contact-content">
                     <div>
                         <Fade left>
                             <h1>Get in touch</h1>
-                            <Socials/>
+                            <Socials dark={true}/>
                         </Fade>
                     </div>
                     <Lottie

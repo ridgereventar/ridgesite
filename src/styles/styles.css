@@ -134,6 +134,16 @@
   background-image: url("../images/gitc.png");
 }
 
+.dark-icon {
+  -webkit-filter: invert(0.5);
+          filter: invert(0.5);
+}
+
+.dark-icon:hover {
+  -webkit-filter: unset;
+          filter: unset;
+}
+
 @media screen and (max-width: 500px) {
   .footer-desc-desktop {
     display: none;
@@ -415,10 +425,8 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#181818), to(#343434));
-  background-image: linear-gradient(to top right, #181818, #343434);
   overflow: hidden;
-  color: white;
+  color: #5E5E5E;
 }
 
 .about-header {
@@ -441,11 +449,19 @@
 }
 
 .about-content .about-col1 {
-  width: 65%;
+  width: 60%;
 }
 
 .about-content .about-col2 {
   width: 26%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0 40px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+          box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
 }
 
 .about-section {
@@ -454,7 +470,7 @@
 
 .about-section h2 {
   padding-bottom: 20px;
-  border-bottom: 1px solid #3D3D3D;
+  border-bottom: 1px solid #CDCDCD;
   margin-bottom: 0;
 }
 
@@ -513,22 +529,39 @@
   }
   .about-content .about-col2 {
     width: 100%;
+    padding: 0 0;
+    border-radius: 0px;
+    background-color: unset;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
   }
 }
 
 .about-proj-link {
-  color: #A0A0A0;
+  color: black;
 }
 
 .about-proj-link:hover {
   color: #E96D2F;
 }
 
+.about-slant {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 75%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#FDFDFD), to(#D5D5D5));
+  background-image: linear-gradient(to top right, #FDFDFD, #D5D5D5);
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+  -webkit-transform: skewY(-10deg);
+          transform: skewY(-10deg);
+  z-index: -1;
+}
+
 .contact-container {
   width: 100%;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left bottom, right top, from(#181818), to(#343434));
-  background-image: linear-gradient(to top right, #181818, #343434);
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -553,7 +586,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
+  color: #5E5E5E;
 }
 
 .contact-content h1 {
@@ -562,17 +595,23 @@
 }
 
 .full-anim {
-  max-width: 550px;
+  position: absolute;
+  right: 11vw;
+  max-width: 700px;
   opacity: 0.1;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .full-anim-center {
   max-width: 550px;
   opacity: 0.1;
+  -webkit-filter: invert(1);
+          filter: invert(1);
   display: none;
 }
 
-@media screen and (max-width: 905px) {
+@media screen and (max-width: 768px) {
   .contact-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

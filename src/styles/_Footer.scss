@@ -103,6 +103,14 @@
     }
 }
 
+.dark-icon {
+    filter: invert(0.5);
+    &:hover {
+        filter: unset;
+
+    }
+}
+
 @media screen and (max-width: 500px) {
     .footer-desc-desktop {
         display: none;

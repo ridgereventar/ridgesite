@@ -2,7 +2,6 @@ import sui from '../images/icons/1-1.png';
 import suiColor from '../images/iconscolor/1-1c.png';
 
 import next from '../images/icons/ngicon.png';
-import nextColor from '../images/iconscolor/ngiconcolor.png';
 
 import pepi from '../images/icons/2-1.png';
 import pepiColor from '../images/iconscolor/2-1c.png';

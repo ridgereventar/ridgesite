@@ -39,38 +39,15 @@ p {
 
 
 .site-btn {
-  margin-top: 20px;
   border: none;
   padding: 0.7em 1.50em;
   border-radius: 4px;
-  font-size: 1rem;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.1rem;
   font-weight: 700;
-  /* background-color: #E96D2F; */
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: #434343;
   color: white;
-  margin-right: 25px;
-}
-
-.proj-btn {
-  border: none;
-  padding: 0.9em 0.5em;
-  border-radius: 4px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  color: lightgray;
-  background-color: #181818;
-  width: 100px;
-}
-
-.round-btn {
-  margin-top: 20px;
-  border: none;
-  padding: .5em 1.50em;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  background-color: #E74949;
-  color: white;
+  z-index: 999;
+  cursor: pointer;
+  white-space: nowrap;
 }

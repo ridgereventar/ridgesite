@@ -52,7 +52,7 @@ function Amazon() {
                 <div className="container visit-content">
                     <Fade>
                         <a href="https://clone-d6432.web.app/" target="_blank" rel="noreferrer">
-                            <button className="grey-btn">Visit Site</button>
+                            <button className="site-btn">Visit Site</button>
                         </a>
                     </Fade>
                     <Fade bottom>

@@ -12,6 +12,7 @@ import nextgenLogo from '../images/projects/nextgen/nextgenLogo.png';
 
 import ngproto from '../images/projects/nextgen/ngprototyping.png';
 import ngmockups from '../images/projects/nextgen/ngmockups.png';
+import darkmac from '../images/darkmac.png';
 
 import {NEXTGEN_TECH_BLOBS} from '../helpers/constants';
 
@@ -131,12 +132,23 @@ const Nextgen = () => {
                 blobs={NEXTGEN_TECH_BLOBS}
             />
 
-            <div className="visit-site">
-                <video id="ngDemo" src={demo} playsInline autoPlay loop muted>
-                </video>
-                <a href="https://www.nextgenbarbers.ca/" target="_blank" rel="noreferrer">
-                    <button className="visit-btn">Visit Site</button>
-                </a>
+            <div className="visit-container">   
+                <div className="visit-slant-bg"></div>
+                <div className="container visit-content">
+                    <Fade>
+                        <a href="https://www.nextgenbarbers.ca/" target="_blank" rel="noreferrer">
+                            <button className="site-btn">Visit Site</button>
+                        </a>
+                    </Fade>
+                    <Fade bottom>
+                        <div className="visit-mac-wrapper">
+                            <img id="darkmacVisit" src={darkmac} alt=""/>
+                            <div className="visit-mac-screen">
+                                    <video src={demo} playsInline autoPlay loop muted height="100%"/>
+                            </div>
+                        </div>
+                    </Fade>
+                </div>
             </div>
 
             <ProjectGrid/>

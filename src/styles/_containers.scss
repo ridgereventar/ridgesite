@@ -202,3 +202,66 @@
     height: max-content;
     overflow: hidden;
 }
+
+
+
+
+.visit-container {
+    height: max-content;
+    position: relative;
+    margin-top: $marginBottomXLg;
+    margin-bottom: $marginBottomXLg;
+}
+
+.visit-slant-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+    background-color: #F8F8F8;
+    z-index: -1;
+}
+
+.visit-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visit-mac-wrapper {
+    height: max-content;
+    max-width: 900px;
+    // background-color: red;
+    position: relative;
+    margin-right: -80px;
+    margin-top: -50px;
+}
+
+.visit-mac-screen {
+    width: 75%;
+    height: 76%;
+    background-color: rgb(234, 237, 237);
+    position: absolute;
+    margin: auto auto;
+    top: -2vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .visit-container {
+        margin-top: $marginBottomLg;
+    }
+    .visit-content {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .visit-mac-wrapper {
+        order: 1;
+        max-width: 600px;
+        margin-right: 0;
+        margin-top: 50px;
+
+    }
+}

@@ -15,7 +15,8 @@ import suiLogo from "../images/projects/sui/sui.png";
 import {suiAnim} from '../helpers/anims';
 import lowfis from '../images/projects/sui/lowfis.png';
 import {TECH_BLOBS} from '../helpers/constants';
-import video from '../images/demos/suidemoUpdate.mov';
+import video from '../images/demos/SUidemoMed.mov';
+// import video from '../images/demos/nextDemo.mov';
 
 import suibreakdown from '../images/projects/sui/suibreakdown.png';
 import suipalette from '../images/projects/sui/suipalette.png';
@@ -125,7 +126,9 @@ const Sui = () => {
             <div className="demo-section">
                 <div className="container demo-container">
                     <h2>Demo</h2>
-                    <video src={video} playsInline controls loop muted/>
+                    {/* <video src={video} playsInline controls loop muted/> */}
+                    <video src={video} controls/>
+
                 </div>
             </div>
 

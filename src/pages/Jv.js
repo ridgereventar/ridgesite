@@ -10,7 +10,7 @@ import Footer from '../components/Footer';
 import jvLogo from '../images/projects/jv/jvlogo.png';
 import breakdown from '../images/projects/jv/jvbreakdown.png';
 import bc1 from '../images/projects/jv/jvbc1.png';
-import bc2 from '../images/projects/jv/jvbc2.png';
+import bc2 from '../images/projects/jv/jvback.png';
 
 import jvbanner from '../images/projects/jv/jvbanner.jpg';
 import jvintro from '../images/projects/jv/jvintro.png';
@@ -75,7 +75,7 @@ const Jv = () => {
                 <div className="container half-split">
                     <Fade>
                         <img src={bc1} alt=""/>
-                        {/* <img src={bc2} alt=""/> */}
+                        <img src={bc2} alt=""/>
                     </Fade>
                 </div>
             </div>

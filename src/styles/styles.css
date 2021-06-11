@@ -126,8 +126,8 @@
 }
 
 .dark-icon {
-  -webkit-filter: invert(0.5);
-          filter: invert(0.5);
+  -webkit-filter: invert(0.7);
+          filter: invert(0.7);
 }
 
 .dark-icon:hover {

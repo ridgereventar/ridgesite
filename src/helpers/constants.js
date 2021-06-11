@@ -1,8 +1,8 @@
 import sui from '../images/icons/1-1.png';
 import suiColor from '../images/iconscolor/1-1c.png';
 
-import next from '../images/icons/1-3.png';
-import nextColor from '../images/iconscolor/1-3c.png';
+import next from '../images/icons/ngicon.png';
+import nextColor from '../images/iconscolor/ngiconcolor.png';
 
 import pepi from '../images/icons/2-1.png';
 import pepiColor from '../images/iconscolor/2-1c.png';
@@ -102,10 +102,10 @@ export const PROJECTS = [
         id: 'nextgen',
         idTag: 'ng',
         title: "NextGen Edu.",
-        color: "white",
-        bgcolor: "#DE5C5C",
+        color: "black",
+        bgcolor: "#EEEEEE",
         icon: next,
-        iconhover: nextColor,
+        iconhover: next,
         cardcolor: "#A8A8A8",
         mockup: ngM,
         mwidth: "43%",

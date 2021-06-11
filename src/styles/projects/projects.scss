@@ -63,7 +63,10 @@ img, video {
     border: none;
     border-radius: 4px;
     font-weight: 700;
-    color: lightgray;
+    color: white;
     background-color: #181818;
     width: 180px;
+    &:hover {
+        cursor: pointer;
+    }
 }

@@ -761,9 +761,13 @@
   border: none;
   border-radius: 4px;
   font-weight: 700;
-  color: lightgray;
+  color: white;
   background-color: #181818;
   width: 180px;
+}
+
+.visit-btn:hover {
+  cursor: pointer;
 }
 
 .visit-container {
@@ -2425,8 +2429,12 @@ img, video {
   border: none;
   border-radius: 4px;
   font-weight: 700;
-  color: lightgray;
+  color: white;
   background-color: #181818;
   width: 180px;
+}
+
+.grey-btn:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=projects.css.map */

@@ -78,11 +78,6 @@
   margin-bottom: 100px;
 }
 
-.breakdown p {
-  font-size: 1.1rem;
-  line-height: 2.125rem;
-}
-
 @media screen and (min-width: 768px) {
   .breakdown {
     -webkit-box-orient: horizontal;
@@ -208,7 +203,6 @@
 }
 
 .text-img p {
-  font-size: 1.1rem;
   margin: 0;
   width: 50%;
   min-width: 300px;
@@ -566,11 +560,6 @@
   margin-bottom: 100px;
 }
 
-.breakdown p {
-  font-size: 1.1rem;
-  line-height: 2.125rem;
-}
-
 @media screen and (min-width: 768px) {
   .breakdown {
     -webkit-box-orient: horizontal;
@@ -696,7 +685,6 @@
 }
 
 .text-img p {
-  font-size: 1.1rem;
   margin: 0;
   width: 50%;
   min-width: 300px;
@@ -957,11 +945,6 @@
   margin-bottom: 100px;
 }
 
-.breakdown p {
-  font-size: 1.1rem;
-  line-height: 2.125rem;
-}
-
 @media screen and (min-width: 768px) {
   .breakdown {
     -webkit-box-orient: horizontal;
@@ -1087,7 +1070,6 @@
 }
 
 .text-img p {
-  font-size: 1.1rem;
   margin: 0;
   width: 50%;
   min-width: 300px;
@@ -1318,11 +1300,6 @@
   margin-bottom: 100px;
 }
 
-.breakdown p {
-  font-size: 1.1rem;
-  line-height: 2.125rem;
-}
-
 @media screen and (min-width: 768px) {
   .breakdown {
     -webkit-box-orient: horizontal;
@@ -1448,7 +1425,6 @@
 }
 
 .text-img p {
-  font-size: 1.1rem;
   margin: 0;
   width: 50%;
   min-width: 300px;
@@ -1807,11 +1783,6 @@
   margin-bottom: 100px;
 }
 
-.breakdown p {
-  font-size: 1.1rem;
-  line-height: 2.125rem;
-}
-
 @media screen and (min-width: 768px) {
   .breakdown {
     -webkit-box-orient: horizontal;
@@ -1937,7 +1908,6 @@
 }
 
 .text-img p {
-  font-size: 1.1rem;
   margin: 0;
   width: 50%;
   min-width: 300px;
@@ -2242,11 +2212,6 @@
   margin-bottom: 100px;
 }
 
-.breakdown p {
-  font-size: 1.1rem;
-  line-height: 2.125rem;
-}
-
 @media screen and (min-width: 768px) {
   .breakdown {
     -webkit-box-orient: horizontal;
@@ -2372,7 +2337,6 @@
 }
 
 .text-img p {
-  font-size: 1.1rem;
   margin: 0;
   width: 50%;
   min-width: 300px;

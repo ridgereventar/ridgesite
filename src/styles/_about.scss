@@ -2,7 +2,6 @@
     width: 100%;
     height: max-content; 
     overflow: hidden;
-    color: #5E5E5E;
 }
 
 .about-header {
@@ -63,10 +62,6 @@
         display: inline-block; /* Needed to add space between the bullet and the text */
         width: 1em; /* Also needed for space (tweak if needed) */
         margin-left: -1em; /* Also needed for space (tweak if needed) */
-    }
-    li {
-        margin-bottom: 10px;
-        line-height: 1.7rem;
     }
 }
 

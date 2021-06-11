@@ -63,10 +63,6 @@
   margin-top: 0;
 }
 
-.footer-nav li {
-  margin-top: 15px;
-}
-
 .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -426,7 +422,6 @@
   height: -moz-max-content;
   height: max-content;
   overflow: hidden;
-  color: #5E5E5E;
 }
 
 .about-header {
@@ -510,11 +505,6 @@
   /* Also needed for space (tweak if needed) */
   margin-left: -1em;
   /* Also needed for space (tweak if needed) */
-}
-
-.about-section li {
-  margin-bottom: 10px;
-  line-height: 1.7rem;
 }
 
 @media screen and (max-width: 768px) {

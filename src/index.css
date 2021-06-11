@@ -32,7 +32,8 @@ a {
   color: inherit;
 }
 
-p {
+p, li {
+  color: #585858;
   font-size: 1rem;
   line-height: 2rem;
 }

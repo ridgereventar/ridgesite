@@ -150,13 +150,11 @@
     height: 377px;
     max-width: 770px;   
     @include displayFlex(row, space-between, flex-start);
-    // background-color: aquamarine; 
 }
 
 .tool-category {
     width: 30%; 
     @include displayFlex(column, center, center);
-    // background-color: blue;
     text-align: center;
     .tool-icon-wrapper {
         height: 90px;

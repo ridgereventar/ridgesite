@@ -62,10 +62,6 @@
 .breakdown {
     @include displayFlex(column, flex-start , flex-start);
     margin-bottom: $marginBottomLg;
-    p {
-        font-size: 1.1rem;
-        line-height: 2.125rem;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -133,7 +129,6 @@
     @include displayFlex(row, flex-start, flex-start);
     margin-bottom: $marginBottomXLg;
     p {
-        font-size: 1.1rem;
         margin: 0;
         width: 50%;
         min-width: 300px;

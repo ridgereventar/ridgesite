@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink} from 'react-router-dom';
 
 import '../styles/styles.css';
-import logo from '../images/Rlogo.png';
+import logo from '../images/logolight.png';
 import Socials from './Socials';
 
 const Footer = () => {

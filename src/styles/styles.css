@@ -2,9 +2,12 @@
   height: 200px;
   width: 100%;
   background-color: #181818;
-  color: white;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.footer-container p, .footer-container li {
+  color: white;
 }
 
 .footer {
@@ -99,35 +102,27 @@
 
 #mail {
   width: 31px;
-  background-image: url("../images/mail.png");
+  background-image: url("../images/icons/mail.png");
 }
 
 #mail:hover {
-  background-image: url("../images/mailc.png");
-}
-
-#ig {
-  background-image: url("../images/ig.png");
-}
-
-#ig:hover {
-  background-image: url("../images/igc.png");
+  background-image: url("../images/iconscolor/mailc.png");
 }
 
 #linked {
-  background-image: url("../images/linked.png");
+  background-image: url("../images/icons/linked.png");
 }
 
 #linked:hover {
-  background-image: url("../images/linkedc.png");
+  background-image: url("../images/iconscolor/linkedc.png");
 }
 
 #git {
-  background-image: url("../images/git.png");
+  background-image: url("../images/icons/git.png");
 }
 
 #git:hover {
-  background-image: url("../images/gitc.png");
+  background-image: url("../images/iconscolor/gitc.png");
 }
 
 .dark-icon {
@@ -567,7 +562,8 @@
 }
 
 .contact-content h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  letter-spacing: normal;
   margin-bottom: 30px;
 }
 

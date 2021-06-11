@@ -25,12 +25,6 @@ const About = (props) => {
                     <Fade>
                         <h1>RIDGE REVENTAR</h1>
                     </Fade>
-                    {/* <div className="socials">
-                        <div id="mail" className="social-icon"></div>
-                        <div id="ig" className="social-icon"></div>
-                        <div id="linked" className="social-icon"></div>
-                        <div id="git" className="social-icon"></div>
-                    </div> */}
                 </div>
 
                 <div className="container about-content">

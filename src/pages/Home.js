@@ -95,7 +95,7 @@ const Home = (props) => {
                         </div>
                         <Fade bottom>
                             <div>
-                                <h1>DESIGN</h1>
+                                <h2>DESIGN</h2>
                                 <p className="tools-stacked">Sketch <br/> Figma <br/> Illustrator</p>
                                 <p className="tools-inline">Sketch, Figma, Illustrator</p>                                
                             </div>
@@ -115,7 +115,7 @@ const Home = (props) => {
                         </div>
                         <Fade bottom>
                             <div>
-                                <h1>DEVELOPMENT</h1>
+                                <h2>DEVELOPMENT</h2>
                                 <p className="tools-stacked">JavaScript <br/> HTML / CSS <br/> React <br/> Node.js <br/> Express <br/> MongoDB</p>
                                 <p className="tools-inline">JavaScript, HTML / CSS, React, Node.js, Express, MongoDB</p>
                             </div>
@@ -135,7 +135,7 @@ const Home = (props) => {
                         </div>
                         <Fade bottom>
                             <div>
-                                <h1>MOTION</h1>
+                                <h2>MOTION</h2>
                                 <p className="tools-stacked">After Effects <br/> Bodymovin <br/> AEUX</p>
                                 <p className="tools-inline">After Effects, Bodymovin, AEUX</p>
                             </div>

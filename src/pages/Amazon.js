@@ -68,7 +68,7 @@ function Amazon() {
 
             <div className="proj-section-header">
                 <div className="container">
-                    <Fade left>
+                    <Fade>
                        <h2>Features</h2>
                     </Fade>
                 </div>

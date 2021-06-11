@@ -5,11 +5,6 @@
     align-items: $a;
 }
 
-.section-title {
-    letter-spacing: 3px;
-    color: #5E5E5E;
-}
-
 // at 768 go straight into mobile FOR ALL PAGES. Fixed heights for heros. Fixed heights for ALL 
 
 .hero-wrapper {
@@ -49,12 +44,13 @@
 
 .hero-intro {
     color: #5E5E5E;
-    // background-color: lightblue;
     h1 {
         font-size: 2.5rem;
         letter-spacing: 5px;
     }
     p {
+        margin-top: 10px;
+        margin-bottom: 50px;
         max-width: 450px;
     }
 }
@@ -162,10 +158,6 @@
     }
     .tool-icon {
         height: 100%;
-    }
-    h1 {
-        letter-spacing: 2px;
-        font-size: 1.4rem;
     }
     .tools-inline {
         display: none;

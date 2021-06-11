@@ -2,10 +2,7 @@
 body {
   margin: 0;
   height: 100%;
-  /* put default font here */
   font-family: 'Source Sans Pro', sans-serif;
-
-  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -25,6 +22,12 @@ body {
 
 h1 {
   margin: 0;
+  letter-spacing: 3px;
+  color: #434343;
+}
+
+h2 {
+  color: #434343;
 }
 
 a {

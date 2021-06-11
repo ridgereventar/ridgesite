@@ -66,7 +66,7 @@ const Pepi = () => {
 
             <div className="proj-section-header">
                 <div className="container">
-                    <Fade left>
+                    <Fade>
                        <h2>Rebranding Project</h2>
                     </Fade>
                 </div>
@@ -101,7 +101,7 @@ const Pepi = () => {
                     </Fade>
                     <div>
                         <Fade>
-                            <h1>The Techsuit</h1>
+                            <h2>The Techsuit</h2>
                             <p>The Tech Channel. From everyday tech videos to product overviews and reviews, Pepi gears up in his techsuit to provide quality content of the most recent products in the industry. </p>
                             <img className="hexColor mobile-hex" src={blue} alt=""/>
                         </Fade>
@@ -116,7 +116,7 @@ const Pepi = () => {
                     </Fade>
                     <div>
                         <Fade>
-                            <h1>The Wetsuit</h1>
+                            <h2>The Wetsuit</h2>
                             <p>The Lifestyle Channel. Join as Pepi puts on his wetsuit and enjoys life. This brand shares lifestyle content, and features the different journeys of the creator. </p>
                             <img className="hexColor mobile-hex" src={yellow} alt=""/>
                         </Fade>
@@ -131,7 +131,7 @@ const Pepi = () => {
                     </Fade>
                     <div>
                         <Fade>
-                            <h1>The Spacesuit</h1>
+                            <h2>The Spacesuit</h2>
                             <p>The Entertainment Channel. Pepi throws on his new suit to explore a larger space showing off his creative side. From short films to entertaining videos this channel promotes nothing but good vibes.  </p>
                             <img className="hexColor mobile-hex" src={purple} alt=""/>
                         </Fade>

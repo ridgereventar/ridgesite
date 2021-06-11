@@ -149,11 +149,6 @@
   }
 }
 
-.section-title {
-  letter-spacing: 3px;
-  color: #5E5E5E;
-}
-
 .hero-wrapper {
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -213,6 +208,8 @@
 }
 
 .hero-intro p {
+  margin-top: 10px;
+  margin-bottom: 50px;
   max-width: 450px;
 }
 
@@ -364,11 +361,6 @@
   height: 100%;
 }
 
-.tool-category h1 {
-  letter-spacing: 2px;
-  font-size: 1.4rem;
-}
-
 .tool-category .tools-inline {
   display: none;
 }
@@ -426,12 +418,7 @@
 
 .about-header {
   margin-top: 200px;
-}
-
-.about-header h1 {
-  font-size: 2rem;
-  letter-spacing: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .about-content {
@@ -464,16 +451,16 @@
 }
 
 .about-section h2 {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   border-bottom: 1px solid #CDCDCD;
   margin-bottom: 0;
 }
 
 .about-section h3 {
   display: inline-block;
-  color: #E96D2F;
   margin-right: 25px;
   margin-bottom: 0;
+  color: #E96D2F;
 }
 
 .about-section span {

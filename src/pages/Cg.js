@@ -68,7 +68,9 @@ const Cg = () => {
 
             <div className="proj-section-header">
                 <div className="container">
-                    <h2>Design Process</h2>
+                    <Fade>
+                        <h2>Design Process</h2>
+                    </Fade>
                 </div>
             </div>
 

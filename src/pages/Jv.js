@@ -44,8 +44,8 @@ const Jv = () => {
                 <div className="breakdown-2">
                     <h2>Goals</h2>
                     <p>
-                        Creating a modern logo to promote and represent the personal brand of a Toronto barber. 
-                        Main goal was to blend the initials ‘JV’ with a distinct symbol that showcases the barber aspect of the brand. 
+                        Creating a modern logo to promote and represent the personal brand of a Toronto barber, Jian Villanueva. 
+                        The main goal was to blend the initials ‘JV’ with a distinct symbol that showcases the barber aspect of the brand. 
                     </p>
                 </div>
             </div>
@@ -75,7 +75,7 @@ const Jv = () => {
                 <div className="container half-split">
                     <Fade>
                         <img src={bc1} alt=""/>
-                        <img src={bc2} alt=""/>
+                        {/* <img src={bc2} alt=""/> */}
                     </Fade>
                 </div>
             </div>

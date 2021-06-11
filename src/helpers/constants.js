@@ -279,7 +279,7 @@ export const TECH_BLOBS = [
 
     {
         title: "MERN Stack",
-        par: "The full stack application involves all the technologies of MongoDB, Express, React, and Node. This 3 tier architecture allowed me to structure a database, server, and front-end. MongoDB contained storage for all the users, their public/private style guide projects, and image files while express (running inside a Node.js server) handled the models for URL routing and handling HTTP requests and responses to allow our react front end to communicate with the backend.",
+        par: "The full stack application involves all the technologies of MongoDB, Express, React, and Node. This 3 tier architecture allowed me to structure a database, server, and front-end. MongoDB contained storage for all the users, their public/private projects, and image files. Express (running inside a Node.js server) handled the models for URL routing and HTTP requests, allowing our react front end to communicate with the backend.",
         img: mern 
     },
     {
@@ -289,12 +289,12 @@ export const TECH_BLOBS = [
     },
     {
         title: "Animations",
-        par: "After importing vector designs and creating animations within Adobe After Effects, I experimented with a plugin called bodymovin to export the animation as a json file which then could be used in web through the library ‘Lottie’.",
+        par: "After importing vector designs and creating animations within Adobe After Effects, I used a plugin called bodymovin to export the animation as a json file which is rendered through the library ‘Lottie’.",
         img: animation
     },
     {
         title: "Npm Package",
-        par: "To allow users to export their theme and apply it to their own UI components I created an npm package. First step was to transform the theme made on the application to a downloadable json document using a library called ‘Blob’. I then used a rollup wrapper called ‘micro-bundle’ to create my react component library which is distributed through a private npm registry from GitHub. Users can then download the package to obtain the default components and simply link their json file to transform them into their own defined colours and fonts.",
+        par: "To allow users to export their theme and apply it to their own UI components, I created an npm package. First step was to transform the theme made on the application to a downloadable json document using a library called ‘Blob’. Next, I used a rollup wrapper called ‘micro-bundle’ to create my react component library which is distributed through a private npm registry from GitHub. Finally, users can download the package to obtain the default components and link their json file to transform them into their own defined colours and fonts.",
         img: npm
     } 
 ]
@@ -306,7 +306,7 @@ export const NEXTGEN_TECH_BLOBS = [
     },
     {
         title: "Simple Register System ",
-        par: "Rather than using a backend for tracking interested customers, the site includes a simple register system involving email newsletter sign up. This allows the business owners to store their clients emails and distribute any updates simultaneously. ",
+        par: "Rather than using a back-end for tracking interested customers, the site includes a simple register system involving email newsletter sign up. This allows the business owners to store their clients' emails and distribute any updates simultaneously. ",
     },
     {
         title: "Deployment with Netlify",
@@ -317,30 +317,30 @@ export const NEXTGEN_TECH_BLOBS = [
 export const AMAZON_TECH_BLOBS = [
     {
         title: "Context API",
-        par: "By wrapping the application in a context provider with an assigned initial state and reducer I am able to track current users baskets and push and pull data from any component. ",
+        par: "By wrapping the application in a context provider with an assigned initial state and reducer, I am able to track the current user's basket and push/pull data from any component. ",
     },
     {
         title: "Firebase Authentication",
-        par: "Implemented a full login system including sign up and tracking current logged in user. The user’s account is then stored in the context API allowing us to grab their information when needed. ",
+        par: "Login system was implemented using Firebase Authentication Service allowing tracking of the logged in user. The user’s account is then stored in the context API for their information to be pulled when needed.",
     },
     {
         title: "Payments via Stripe",
-        par: "Using libraries stripe-js and react-stripe-js I was able to link my application to their service and was provided a card element which handles error detection on input. Each transaction requires a client secret so I used a Firebase Cloud Function to setup the backend for the request. ",
+        par: "Using libraries stripe-js and react-stripe-js, I was able to link my application to their service and was provided a card element that handles error detection on input. To obtain the client secret for each transaction, I used a Firebase Cloud Function to setup the back-end for the request. ",
     },
     {
         title: "Firebase Cloud Functions",
-        par: "I first setup Express to run on the cloud function and linked the stripe test key. After setting up the backend API (config & middleware) I created my first route which was a post request to retrieve the client secret from Stripe through a payment intent.",
+        par: "First, I setup Express.js to run on the cloud function and linked the stripe test key. After setting up the back-end API (config & middleware), I created my first route which was a post request to retrieve the client secret from Stripe through a payment intent.",
     },
     {
         title: "Finalizing Payment",
-        par: "On every basket change I sent an axios request to retrieve a new client secret. After the card information is entered I sent the payload to stripe along with the client secret and payment method.",
+        par: "On every basket change, I sent an axios request to retrieve a new client secret. After the card information is entered, I sent the payload to stripe along with the client secret and payment method.",
     },
     {
         title: "Firestore",
-        par: "Initializing Firestore in Firebase allowed me to keep a collection of users and their order history. With this I am able to both create new entries and retrieve their orders from a current snapshot of the database collection.",
+        par: "Initializing Firestore allowed me to keep a collection of users and their order history. With this I am able to create new entries and retrieve their orders from a current snapshot of the database collection.",
     },
     {
         title: "Deploying with Firebase ",
-        par: "Through the command line I was able to deploy the firebase cloud function and link the new URL to the application. Finally I deployed the app with firebase hosting and the link was provided.",
+        par: "Through the command line I was able to deploy the firebase cloud function and link the new URL to the application. Finally, I deployed the app with firebase hosting and the link was provided.",
     }
 ]

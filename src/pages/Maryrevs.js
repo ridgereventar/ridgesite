@@ -51,7 +51,7 @@ const Maryrevs = () => {
                 <div className="breakdown-2">
                     <h2>Goals</h2>
                     <p>
-                        Creating a unified logo and brand that appropriately represents the home to home feel of this small business. 
+                        Creating a unified logo and brand that appropriately represents the home-to-home feel of this small business. 
                         The goal was to create a light, simple, and unique design for the logo icon that incorporates an ‘M’ for the owners name and utensils to symbolize the meals.
                     </p>
                 </div>

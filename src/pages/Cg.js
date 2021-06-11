@@ -87,7 +87,7 @@ const Cg = () => {
                 <div className="container half-split">
                     <Fade>
                         <img src={bc1} alt=""></img>
-                        <img src={bc2} alt=""></img>
+                        {/* <img src={bc2} alt=""></img> */}
                     </Fade>
                 </div>
             </div>

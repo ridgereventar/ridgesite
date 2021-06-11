@@ -49,7 +49,7 @@ const Sounddistrict = () => {
                     <p>
                     Creating an impactful brand to showcase the professionalism behind Sound District’s events and promotions. 
                     The company strives to give local artists a platform and stage to share their art through different social gatherings and events. 
-                    The direction for the logo and branding needed to encapsulate both the music these events showcase and the source being Toronto. 
+                    he direction for the logo and branding needed to signify Toronto and the music its ready to showcase. 
                     </p>
                 </div>
             </div>

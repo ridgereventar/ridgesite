@@ -75,8 +75,8 @@ const Nextgen = () => {
                     <h2>Brand Definition</h2>
                     <div className="text-img">
                         <p>
-                            The direction for the rebrand focused on encapsulating the businesses professionalism. 
-                            The minimal yet effective colour palette of white, back and gold accents results in a clean and modern look. 
+                            The direction for the rebrand focused on representing the business's professionalism. 
+                            The minimal yet effective colour palette of white, black, and gold accents, results in a clean and modern look. 
                             The logo incorporating a pair of barber sheers gives the viewer an immediate understanding of the company.
                         </p>
                         <Fade bottom>
@@ -91,9 +91,9 @@ const Nextgen = () => {
                     <h2>Design Process</h2>
                     <div className="text-img">
                         <p>
-                            The web design consisted of lowfi renders and a prototype to plan out the page navigation. 
-                            This project required responsive design, therefore both desktop and mobile versions were created. 
-                            The highfi’s display a unique layout for the site rather than the conventional full page scroll. 
+                            The web design consists of lo-fi renders and a prototype to plan out the page navigation. 
+                            This project required responsive design, therefore, both desktop and mobile versions were created. 
+                            The hi-fi renders display a unique layout for the site rather than the conventional full page scroll. 
                             The left panel is stationary while the right panel is the main scrollable container. 
                         </p>
                         <Fade bottom>

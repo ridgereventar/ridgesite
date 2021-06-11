@@ -35,14 +35,14 @@ function Amazon() {
             <div className="container breakdown">
                 <div className="breakdown-1">
                     <h2>Deliverables</h2>
-                    <p>Full Stack Application <br/> Deployement with Firebase</p>
+                    <p>Full Stack Application <br/> Deployment with Firebase</p>
                 </div>
                 <div className="breakdown-2">
                     <h2>Goals</h2>
                     <p>
                         The purpose of this project was to gain further practice with full stack development. 
-                        Applying my front end experience I was able to create a clone of Amazon's interface and mimic the exact user experience while navigating the application.
-                        Furthermore, I was able to implement Context API's, Firebase, and Stripe to allow the user to make a fully functioning transaction that communicates to the backend. 
+                        Applying my front-end experience I was able to create a clone of Amazon's interface and mimic the exact user experience while navigating the application.
+                        Furthermore, I was able to implement Context APIs, Firebase, and Stripe to allow the user to make a fully functioning transaction that communicates to the back-end. 
                     </p>
                 </div>
             </div>

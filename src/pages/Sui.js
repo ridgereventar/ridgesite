@@ -73,8 +73,8 @@ const Sui = () => {
                     <h2>Brand Definition</h2>
                     <div className="text-img">
                         <p>
-                            The logo design and brand execution for this project played a large role in encapsulating what SUI is all about; quality and consistent branding. 
-                            The final logo is minimal yet incorporates all three letters in ‘SUI’ when viewed upright and rotated on its side to reveal the ‘UI’.
+                            The logo design and brand execution for this project played a large role in showcasing what SUI is all about &#8212; quality and consistent branding. 
+                            The final logo is minimal yet it incorporates all three letters: ‘S’ when viewed upright and 'UI' when rotated on its side.
                         </p>
                         <Fade bottom>
                             <img id="suiBreakdown" src={suibreakdown} alt=""/>
@@ -97,9 +97,9 @@ const Sui = () => {
                     <h2>Design / Prototyping</h2>
                     <div className="text-img">
                         <p>
-                        The UI design of the application consisted of low-fi renders of each page as well as a prototype to plan user navigation within the site. 
-                        The purpose of SUI is to make the early design process simpler for users therefore ease of use within the interface was prioritized. 
-                        The high fi’s were then designed soon after to again capture the clean and consistent branding SUI promotes. 
+                        The UI design of the application consists of lo-fi renders of each page as well as a prototype to plan user navigation within the site. 
+                        In addition, the hi-fi renders were designed to capture the clean and consistent branding that SUI promotes. The purpose of SUI is to make 
+                        the early design process simpler for users, therefore, ease of use within the interface was prioritized. 
                         </p>
                         <Fade bottom>
                             <img id="lowfis" src={lowfis} alt=""/>

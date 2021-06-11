@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="footer-content">
                     <div className="personal-desc">
                         <p id="footerName">RIDGE REVENTAR</p>
-                        <p className="footer-desc footer-desc-desktop">Front end developer and designer that inspires to bring visions to life through visual graphics and full stack applications.</p>
+                        <p className="footer-desc footer-desc-desktop">Front-end developer and designer who inspires to bring visions to life through visual graphics and responsive applications.</p>
                         <p className="footer-desc footer-desc-mobile">Front End Developer <br/> & Designer.</p>
                     </div>
                     <ul className="footer-nav">

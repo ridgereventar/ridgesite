@@ -56,7 +56,7 @@ const Pepi = () => {
                         The goal for this project was to create a foundation in which the three sub-brands could co-exist under the umbrella of Pepi’s Universe. 
                         This consists of three separate social media outlets and YouTube channels based around different content categories. 
                         The challenge was to provide each with their own distinct look while being unified under the same general branding/format. 
-                        This was accomplished through a base avatar as the logo styled three different ways with differentiable colour schemes. 
+                        This was accomplished through a base avatar being styled in three different ways with unique colour schemes. 
                     </p>
                 </div>
             </div>

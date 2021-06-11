@@ -133,6 +133,7 @@
     @include displayFlex(row, flex-start, flex-start);
     margin-bottom: $marginBottomXLg;
     p {
+        font-size: 1.1rem;
         margin: 0;
         width: 50%;
         min-width: 300px;

@@ -63,12 +63,6 @@ const NavMobile = (props) => {
         setShowBurgerSlider(!showBurgerSlider);
     }
 
-    // const [toggleMiniProjSlider, setToggleMiniProjSlider] = useState(false);
-    
-    // const toggleMiniProj = () => {
-    //     setToggleMiniProjSlider(!toggleMiniProjSlider);
-    // }
-
     useEffect(() => {
         if(downToHide) {
             setShowBurgerSlider(false);
@@ -89,10 +83,6 @@ const NavMobile = (props) => {
                     <NavLink to="/projects">
                         <h2>Projects</h2>
                     </NavLink>
-
-                    {/* {toggleMiniProjSlider?
-                        <ProjectSlider></ProjectSlider>
-                    : null} */}
 
                     <NavLink to="/contact">
                         <h2>Contact</h2>

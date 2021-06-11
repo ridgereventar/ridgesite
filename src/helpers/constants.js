@@ -278,7 +278,7 @@ export const TECH_BLOBS = [
 
     {
         title: "MERN Stack",
-        par: "The full stack application involves all the technologies of MongoDB, Express, React, and Node. This 3 tier architecture allowed me to structure a database, server, and front-end. MongoDB contained storage for all the users, their public/private projects, and image files. Express (running inside a Node.js server) handled the models for URL routing and HTTP requests, allowing our react front end to communicate with the backend.",
+        par: "The full stack application involves all the technologies of MongoDB, Express, React, and Node. This 3 tier architecture allowed me to structure a database, server, and front-end. MongoDB contained storage for all the users and their public/private projects while Express handled URL routing and HTTP requests.",
         img: mern 
     },
     {
@@ -293,7 +293,7 @@ export const TECH_BLOBS = [
     },
     {
         title: "Npm Package",
-        par: "To allow users to export their theme and apply it to their own UI components, I created an npm package. First step was to transform the theme made on the application to a downloadable json document using a library called ‘Blob’. Next, I used a rollup wrapper called ‘micro-bundle’ to create my react component library which is distributed through a private npm registry from GitHub. Finally, users can download the package to obtain the default components and link their json file to transform them into their own defined colours and fonts.",
+        par: "To allow users to export their theme and apply it to their own UI components, I created an npm package. First step was to transform the theme made on the application to a downloadable json document using a library called ‘Blob’. Next, I used a rollup wrapper called ‘micro-bundle’ to create my react component library. Finally, users can download the package to obtain the default components and link their json file to transform them into their own defined colours and fonts.",
         img: npm
     } 
 ]

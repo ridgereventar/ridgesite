@@ -99,8 +99,7 @@ const Sui = () => {
                     <div className="text-img">
                         <p>
                         The UI design of the application consists of lo-fi renders of each page as well as a prototype to plan user navigation within the site. 
-                        In addition, the hi-fi renders were designed to capture the clean and consistent branding that SUI promotes. The purpose of SUI is to make 
-                        the early design process simpler for users, therefore, ease of use within the interface was prioritized. 
+                        In addition, the hi-fi renders were designed to capture the clean and consistent branding that SUI promotes.
                         </p>
                         <Fade bottom>
                             <img id="lowfis" src={lowfis} alt=""/>

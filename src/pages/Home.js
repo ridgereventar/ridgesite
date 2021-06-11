@@ -76,7 +76,6 @@ const Home = (props) => {
                 <Fade>
                     <h1 className="section-title">QUALITY & GROWTH</h1>
                     <p>
-                        Through 7 years experience of free lance design I expanded my passion into web development. 
                         From front-end sites to full stack applications, I utilize my design experience and technology capabilities to bring visions to life.
                         I continue to expand my skills and grow my toolset to ensure my applications meet the current requirements of high level development. 
                     </p>
@@ -116,8 +115,8 @@ const Home = (props) => {
                         <Fade bottom>
                             <div>
                                 <h2>DEVELOPMENT</h2>
-                                <p className="tools-stacked">JavaScript <br/> HTML / CSS <br/> React <br/> Node.js <br/> Express <br/> MongoDB</p>
-                                <p className="tools-inline">JavaScript, HTML / CSS, React, Node.js, Express, MongoDB</p>
+                                <p className="tools-stacked">JavaScript <br/> HTML | CSS <br/> React.js <br/> Node.js | Express <br/> MongoDB | Firebase </p>
+                                <p className="tools-inline">JavaScript, HTML, CSS, React.js, Node.js, Express, MongoDB, Firebase</p>
                             </div>
                         </Fade>
                     </>

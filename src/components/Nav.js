@@ -27,7 +27,7 @@ const Nav = (props) => {
             if (prevScrollpos > currentScrollPos) {
                 setDownToHide(false);
             } else { 
-                if(isAtTop && currentScrollPos > 100) {
+                if(currentScrollPos > 100) {
                     setDownToHide(true);
                 } 
             }
